@@ -4,47 +4,71 @@ import locations from '../data/locations.json'; // Your master list
 
 // This is a special Astro function
 export async function getStaticPaths() {
-  const allCities = [];
+  // 1. We find all the city data files *inside* this function
+  const allCityData = await import.meta.glob('../data/cities/*.json');
   
-  // Go through your master list and get all city slugs
-  locations.states.forEach(state => {
-    state.cities.forEach(city => {
-      allCities.push({ params: { city: city.slug } });
-    });
-  });
-  locations.unionTerritories.forEach(ut => {
-    ut.cities.forEach(city => {
-      allCities.push({ params: { city: city.slug } });
-    });
-  });
+  const allPages = [];
 
-  return allCities;
+  // We use Promise.all to load all data in parallel, which is faster
+  await Promise.all(
+    locations.states.map(async (state) => {
+      await Promise.all(
+        state.cities.map(async (city) => {
+          const importPath = `../data/cities/${city.slug}.json`;
+          // 2. We check if the data file actually exists
+          if (allCityData[importPath]) {
+            // 3. We load the data for this city
+            const cityDataModule = await allCityData[importPath]();
+            const places = cityDataModule.default;
+            
+            // 4. We pass the city slug as "params" and all our data as "props"
+            allPages.push({ 
+              params: { city: city.slug },
+              props: {
+                cityName: city.name,
+                stateName: state.name,
+                heroImageUrl: city.imageUrl || "https://placehold.co/1200x600/ccc/aaa?text=Where+In+India",
+                mapUrl: city.mapUrl || "#",
+                places: places // Here is our loaded data!
+              }
+            });
+          }
+        })
+      );
+    })
+  );
+
+  await Promise.all(
+    locations.unionTerritories.map(async (ut) => {
+      await Promise.all(
+        ut.cities.map(async (city) => {
+          const importPath = `../data/cities/${city.slug}.json`;
+          if (allCityData[importPath]) {
+            const cityDataModule = await allCityData[importPath]();
+            const places = cityDataModule.default;
+            
+            allPages.push({ 
+              params: { city: city.slug },
+              props: {
+                cityName: city.name,
+                stateName: ut.name,
+                heroImageUrl: city.imageUrl || "https://placehold.co/1200x600/ccc/aaa?text=Where+In+India",
+                mapUrl: city.mapUrl || "#",
+                places: places
+              }
+            });
+          }
+        })
+      );
+    })
+  );
+
+  // This tells Astro to build a page for every city found
+  return allPages;
 }
 
-const { city } = Astro.params;
-
-// Find the "pretty name", "imageUrl", and new "mapUrl"
-let cityName = "City Guide";
-let stateName = "India";
-let heroImageUrl = "https://placehold.co/1200x600/ccc/aaa?text=Where+In+India";
-let mapUrl = "#"; // <-- Default fallback link for the map button
-
-[...locations.states, ...locations.unionTerritories].forEach(loc => {
-  loc.cities.forEach(c => {
-    if (c.slug === city) {
-      cityName = c.name;
-      stateName = loc.name;
-      heroImageUrl = c.imageUrl;
-      if (c.mapUrl) {
-        mapUrl = c.mapUrl; // <-- We found the new map URL!
-      }
-    }
-  });
-});
-
-// Dynamically import the *correct* JSON file from your data folder
-const cityData = await import(`../data/cities/${city}.json`);
-const places = cityData.default; 
+// 5. We get all our data from Astro.props, which was passed from getStaticPaths
+const { cityName, stateName, heroImageUrl, mapUrl, places } = Astro.props;
 ---
 
 <Layout title=`${cityName} - Where In India`>
@@ -84,14 +108,9 @@ const places = cityData.default;
 			</div>
 		</div>
 
-		<!-- 
-		  NEW FLOATING MAP BUTTON:
-		  Updated structure with separate icon and text spans.
-		  We've added an id="map-button" for the script.
-		-->
+		<!-- Floating Map Button -->
 		<a href={mapUrl} class="floating-map-button" id="map-button" target="_blank" rel="noopener noreferrer">
 			<span class="map-icon">
-				<!-- New Google Maps Icon -->
 				<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5Z" fill="currentColor"/>
 				</svg>
@@ -101,15 +120,11 @@ const places = cityData.default;
 
 	</main>
 
-	<!-- 
-	  NEW SCRIPT for button animation.
-	  This will run on the city page to control the 5-second timer.
-	-->
+	<!-- Button animation script -->
 	<script is:raw>
 		document.addEventListener('DOMContentLoaded', () => {
 			const mapButton = document.getElementById('map-button');
 			if (mapButton) {
-				// After 5 seconds, add the 'collapsed' class
 				setTimeout(() => {
 					mapButton.classList.add('collapsed');
 				}, 5000);
