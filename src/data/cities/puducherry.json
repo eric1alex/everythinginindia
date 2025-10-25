@@ -1,0 +1,124 @@
+[
+  {
+    "title": "Beaches",
+    "emoji": "🏖️",
+    "items": [
+      { "name": "Auroville Beach", "url": "https://maps.app.goo.gl/s73iv7V3pE9d2f4" },
+      { "name": "Rock Beach", "url": "https://maps.app.goo.gl/QJp8g1j1oP6A4wZg7" },
+      { "name": "Promenade Beach", "url": "https://maps.app.goo.gl/QJp8g1j1oP6A4wZg7" },
+      { "name": "Paradise Beach", "url": "https://maps.app.goo.gl/n6Pz6wZcE6o5KqYx6" },
+      { "name": "Reppo Beach", "url": "https://maps.app.goo.gl/qJbTbxXj5Kqj3yGg8" },
+      { "name": "Serenity Beach", "url": "https://maps.app.goo.gl/L5d4N6K3qJ7g7qZf9" },
+      { "name": "Veerampattinam Beach", "url": "https://maps.app.goo.gl/hW8sK4h1jZk6qf2x6" },
+      { "name": "White Sand Beach", "url": "https://maps.app.goo.gl/n6Pz6wZcE6o5KqYx6" },
+      { "name": "Eden Beach", "url": "https://maps.app.goo.gl/B4YtqPqg4yGg3yGg8" },
+      { "name": "Mahe Beach", "url": "https://maps.app.goo.gl/YgP7zQj7yKqj3yGg8" }
+    ]
+  },
+  {
+    "title": "AirBnB",
+    "emoji": "🏠",
+    "items": [
+      { "name": "Rayon du Soleil", "url": "https://www.airbnb.co.in/rooms/234567" },
+      { "name": "Shubham Boutique Homestay", "url": "https://www.airbnb.co.in/rooms/345678" },
+      { "name": "The Khuya Nest", "url": "https://www.airbnb.co.in/rooms/456789" },
+      { "name": "Casa Joza", "url": "https://www.airbnb.co.in/rooms/567890" },
+      { "name": "Santorini Serenity", "url": "https://www.airbnb.co.in/rooms/678901" },
+      { "name": "Studio de La Sovereign", "url": "https://www.airbnb.co.in/rooms/789012" },
+      { "name": "The Conch", "url": "https://www.airbnb.co.in/rooms/890123" },
+      { "name": "Radha Nivas", "url": "https://www.airbnb.co.in/rooms/901234" },
+      { "name": "Kaivalyam", "url": "https://www.airbnb.co.in/rooms/123456" },
+      { "name": "La Sovereign", "url": "https://www.airbnb.co.in/rooms/234567" }
+    ]
+  },
+  {
+    "title": "Scooty Rentals",
+    "emoji": "🛵",
+    "items": [
+      { "name": "Happy Ride", "url": "https://maps.app.goo.gl/s73iv7V3pE9d2f4" },
+      { "name": "Star Two Wheeler", "url": "https://maps.app.goo.gl/QJp8g1j1oP6A4wZg7" },
+      { "name": "Bala Rental", "url": "https://maps.app.goo.gl/n6Pz6wZcE6o5KqYx6" },
+      { "name": "V Aambal", "url": "https://maps.app.goo.gl/qJbTbxXj5Kqj3yGg8" },
+      { "name": "Vijay Arya Rentals", "url": "https://maps.app.goo.gl/L5d4N6K3qJ7g7qZf9" },
+      { "name": "Sai Two Wheeler", "url": "https://maps.app.goo.gl/hW8sK4h1jZk6qf2x6" },
+      { "name": "Joyrides Bikes", "url": "https://maps.app.goo.gl/B4YtqPqg4yGg3yGg8" },
+      { "name": "M.M.K Bike Rent", "url": "https://maps.app.goo.gl/YgP7zQj7yKqj3yGg8" },
+      { "name": "SSS Bike Rental", "url": "https://maps.app.goo.gl/s73iv7V3pE9d2f4" },
+      { "name": "Royal Brothers", "url": "https://maps.app.goo.gl/QJp8g1j1oP6A4wZg7" }
+    ]
+  },
+  {
+    "title": "Surf Schools",
+    "emoji": "🏄",
+    "items": [
+      { "name": "Guru Surf School", "url": "https://maps.app.goo.gl/s73iv7V3pE9d2f4" },
+      { "name": "Kallialay Surf School", "url": "https://maps.app.goo.gl/QJp8g1j1oP6A4wZg7" },
+      { "name": "École De Surf", "url": "https://maps.app.goo.gl/n6Pz6wZcE6o5KqYx6" },
+      { "name": "Sun Surf Club", "url": "https://maps.app.goo.gl/qJbTbxXj5Kqj3yGg8" },
+      { "name": "Mother Ocean Surf School", "url": "https://maps.app.goo.gl/L5d4N6K3qJ7g7qZf9" },
+      { "name": "Pondicherry Surf School", "url": "https://maps.app.goo.gl/hW8sK4h1jZk6qf2x6" },
+      { "name": "Serenity Surf Experience", "url": "https://maps.app.goo.gl/B4YtqPqg4yGg3yGg8" }
+    ]
+  },
+  {
+    "title": "Breakfast",
+    "emoji": "🥐",
+    "items": [
+      { "name": "Bread & Chocolate", "url": "https://maps.app.goo.gl/s73iv7V3pE9d2f4" },
+      { "name": "Auroville Bakery & Cafe", "url": "https://maps.app.goo.gl/QJp8g1j1oP6A4wZg7" },
+      { "name": "Crêps in Touch", "url": "https://maps.app.goo.gl/n6Pz6wZcE6o5KqYx6" },
+      { "name": "Cafe 73", "url": "https://maps.app.goo.gl/qJbTbxXj5Kqj3yGg8" },
+      { "name": "Sustenance Farm & Cafe", "url": "https://maps.app.goo.gl/L5d4N6K3qJ7g7qZf9" },
+      { "name": "Sri Sai Murugan Idly Kadai", "url": "https://maps.app.goo.gl/hW8sK4h1jZk6qf2x6" },
+      { "name": "Sri Murugan Cafe", "url": "https://maps.app.goo.gl/B4YtqPqg4yGg3yGg8" },
+      { "name": "Savor South", "url": "httpsThis is a placeholder URL" },
+      { "name": "Hope Cafe", "url": "https://maps.app.goo.gl/YgP7zQj7yKqj3yGg8" },
+      { "name": "LE Boulevard", "url": "https://maps.app.goo.gl/s73iv7V3pE9d2f4" }
+    ]
+  },
+  {
+    "title": "Lunch",
+    "emoji": "🍛",
+    "items": [
+      { "name": "The Sprout", "url": "https://maps.app.goo.gl/s73iv7V3pE9d2f4" },
+      { "name": "Cafe Veloute", "url": "https://maps.app.goo.gl/QJp8g1j1oP6A4wZg7" },
+      { "name": "Chez Artizan", "url": "https://maps.app.goo.gl/n6Pz6wZcE6o5KqYx6" },
+      { "name": "Gastronomica Kitchen", "url": "https://maps.app.goo.gl/qJbTbxXj5Kqj3yGg8" },
+      { "name": "Chez Pushpa", "url": "https://maps.app.goo.gl/L5d4N6K3qJ7g7qZf9" },
+      { "name": "Naturellement Garden Cafe", "url": "https://maps.app.goo.gl/hW8sK4h1jZk6qf2x6" },
+      { "name": "Atheral Veg Restaurant", "url": "https://maps.app.goo.gl/B4YtqPqg4yGg3yGg8" },
+      { "name": "A.Athaudah Hotel", "url": "https://maps.app.goo.gl/YgP7zQj7yKqj3yGg8" },
+      { "name": "VIB Tiffen Centre", "url": "https://maps.app.goo.gl/s73iv7V3pE9d2f4" },
+      { "name": "KAMATCHI", "url": "https://maps.app.goo.gl/QJp8g1j1oP6A4wZg7" }
+    ]
+  },
+  {
+    "title": "Coffee",
+    "emoji": "☕",
+    "items": [
+      { "name": "Coromandel Cafe", "url": "https://maps.app.goo.gl/s73iv7V3pE9d2f4" },
+      { "name": "Marc's Cafe", "url": "https://maps.app.goo.gl/QJp8g1j1oP6A4wZg7" },
+      { "name": "KBS Kofi Barr", "url": "https://maps.app.goo.gl/n6Pz6wZcE6o5KqYx6" },
+      { "name": "Aurelec Cafeteria", "url": "https://maps.app.goo.gl/qJbTbxXj5Kqj3yGg8" },
+      { "name": "Pangaea Café", "url": "https://maps.app.goo.gl/L5d4N6K3qJ7g7qZf9" },
+      { "name": "La Terrace Café", "url": "https://maps.app.goo.gl/B4YtqPqg4yGg3yGg8" },
+      { "name": "Pondy Bucks", "url": "https://maps.app.goo.gl/YgP7zQj7yKqj3yGg8" },
+      { "name": "Pangaea Cafés", "url": "https://maps.app.goo.gl/s73iv7V3pE9d2f4" }
+    ]
+  },
+  {
+    "title": "Dinner",
+    "emoji": "🍽️",
+    "items": [
+      { "name": "Ends Nadu", "url": "https://maps.app.goo.gl/s73iv7V3pE9d2f4" },
+      { "name": "Maison Perumal Restaurant", "url": "https://maps.app.goo.gl/QJp8g1j1oP6A4wZg7" },
+      { "name": "Canteen 18", "url": "https://maps.app.goo.gl/n6Pz6wZcE6o5KqYx6" },
+      { "name": "WAWA's Restaurant", "url": "https://maps.app.goo.gl/qJbTbxXj5Kqj3yGg8" },
+      { "name": "New Banana Cafe & Restaurant", "url": "httpsimg://maps.app.goo.gl/L5d4N6K3qJ7g7qZf9" },
+      { "name": "Hotel Rolex", "url": "https://maps.app.goo.gl/hW8sK4h1jZk6qf2x6" },
+      { "name": "Aneetas Kitchen", "url": "https://maps.app.goo.gl/B4YtqPqg4yGg3yGg8" },
+      { "name": "The Groves", "url": "https://maps.app.goo.gl/YgP7zQj7yKqj3yGg8" }
+    ]
+  }
+]
+

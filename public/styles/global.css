@@ -1,0 +1,648 @@
+/* Reset and Base Styles */
+:root {
+  --background-color: #fff;
+  --text-color: #1a1a1a;
+  --link-color: #333;
+  --link-hover-color: #000;
+  --card-background: #fff;
+  --card-border: #e2e2e2;
+  --footer-text: #888;
+  --hero-bg: #f4f4f4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- NEW HERO STYLES --- */
+.hero {
+  display: flex;
+  flex-direction: column;
+  md:flex-row;
+  width: 100%;
+  background-color: var(--hero-bg);
+  min-height: 150px;
+}
+
+.hero-image {
+  flex: 1;
+  background-image: url('https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1176');
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+}
+
+.hero-image-city {
+  flex: 2;
+  background-image: imageUrl;
+  background-size: cover;
+  background-position:  40% 60%;
+  min-height: 250px;
+}
+
+.hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: clamp(2rem, 2vw, 4rem);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.2rem;
+}
+
+.hero-text p {
+  font-size: clamp(1rem, 2vw, 1rem);
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.socials a:hover {
+  transform: scale(1.1);
+}
+.socials a:nth-child(1) { background-color: #25D366; } /* WhatsApp */
+.socials a:nth-child(2) { background-color: #1DA1F2; } /* Twitter/X */
+.socials a:nth-child(3) { background-color: #000; } /* X/Other */
+
+.socials svg {
+  width: 22px;
+  height: 22px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+  }
+  .hero-text {
+    padding: 4rem;
+  }
+}
+
+/* --- NEW SEARCH STYLES --- */
+.search-container {
+  padding: 2rem 1rem;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.search-bar svg {
+  width: 20px;
+  height: 20px;
+  color: #888;
+  margin-right: 0.75rem;
+}
+
+.search-bar input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+}
+.search-bar input::placeholder {
+  color: #aaa;
+}
+
+
+/* Main Content Area */
+.main-content {
+  padding: 1rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- NEW 4-COLUMN LIST STYLES --- */
+.list-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .list-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .list-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.list-column {
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.list-column h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.list-column ol {
+  list-style: none;
+  counter-reset: item;
+  padding-left: 0;
+}
+
+.list-column li {
+  counter-increment: item;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style for the list number */
+.list-column li::before {
+  content: counter(item) ".";
+  margin-right: 0.5rem;
+  color: var(--footer-text);
+  min-width: 1.5em;
+}
+
+.list-column a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  /* Make the link take up available space */
+  flex: 1;
+}
+
+.list-column a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Arrow icon */
+.list-column li svg {
+  width: 16px;
+  height: 16px;
+  color: #aaa;
+  transition: transform 0.3s ease;
+}
+.list-column a:hover + svg {
+  transform: translateX(3px);
+}
+
+
+/* --- NEW MODAL (FLOATING WINDOW) STYLES --- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.visible .modal-content {
+  transform: translateY(0);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.modal-header h2 {
+  font-size: 1.5rem;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #888;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* Re-using list styles for the modal */
+.modal-content ol {
+  list-style: none;
+  counter-reset: item;
+  padding-left: 0;
+}
+.modal-content li {
+  counter-increment: item;
+  margin-bottom: 0.75rem;
+  display: flex;
+}
+.modal-content li::before {
+  content: counter(item) ".";
+  margin-right: 0.5rem;
+  color: var(--footer-text);
+  min-width: 1.5em;
+}
+.modal-content a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+}
+.modal-content a:hover {
+  color: var(--link-hover-color);
+}
+.modal-content a::after {
+  content: '↗';
+  margin-left: 0.25rem;
+  font-size: 0.8em;
+}
+
+
+/* --- STYLES for CITY PAGE (puducherry.astro) --- */
+/* Renamed to avoid conflicts */
+.recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.recommendation-card {
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: cardFadeIn 0.5s forwards;
+}
+
+/* These .card styles are now .recommendation-card */
+.recommendation-card h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.recommendation-card ol {
+  list-style: none;
+  counter-reset: item;
+  padding-left: 0;
+}
+
+.recommendation-card li {
+  counter-increment: item;
+  margin-bottom: 0.75rem;
+  display: flex;
+}
+
+.recommendation-card li::before {
+  content: counter(item) ".";
+  margin-right: 0.5rem;
+  color: var(--footer-text);
+  min-width: 1.5em;
+}
+
+.recommendation-card a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.recommendation-card a:hover {
+  color: var(--link-hover-color);
+}
+
+.recommendation-card a::after {
+  content: '↗';
+  margin-left: 0.25rem;
+  font-size: 0.8em;
+}
+
+/* --- SITE HEADER STYLES --- */
+.site-header {
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--card-border);
+  padding: 1rem;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.header-submit {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #1a1a1a;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.header-submit:hover {
+  background-color: #333;
+}
+
+
+/* --- SITE FOOTER STYLES --- */
+.site-footer {
+  background-color: #f9f9f9;
+  border-top: 1px solid var(--card-border);
+  padding: 2rem 0.2rem 0.2rem;
+  color: var(--footer-text);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1300px;
+  margin: 0 auto 2rem auto;
+}
+
+.footer-column {
+  font-size: 0.9rem;
+}
+
+.footer-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-link {
+  color: var(--footer-text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+.footer-donate-button {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-color);
+  background-color: #fff;
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 1px solid var(--card-border);
+  transition: all 0.3s ease;
+}
+
+.footer-donate-button:hover {
+  background-color: #f4f4f4;
+  border-color: #ccc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--card-border);
+  font-size: 0.9rem;
+  color: #aaa;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* --- NEW ANIMATED FLOATING MAP BUTTON STYLES --- */
+.floating-map-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #1a1a1a;
+  color: #fff;
+  border-radius: 50px; /* Fully rounded corners */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0 );
+  
+  /* This is the key: we transition the width.
+    The overflow: hidden is also critical.
+  */
+  overflow: hidden;
+  white-space: nowrap;
+  transition: width 0.5s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease;
+  
+  /* Set initial (expanded) width */
+  width: 220px; 
+}
+
+.floating-map-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.floating-map-button .map-icon {
+  /* This ensures the icon has a static, square size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px; /* Square shape */
+  height: 44px;
+}
+
+.floating-map-button .map-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.floating-map-button .map-text {
+  /* The text also transitions its width */
+  display: inline-block;
+  padding-right: 1.5rem; /* Padding for when it's expanded */
+  width: 176px; /* 220px (total) - 44px (icon) */
+  opacity: 1;
+  transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* --- THE COLLAPSED STATE (after 5 seconds) ---
+  This class is added by the script in [city].astro
+*/
+.floating-map-button.collapsed {
+  /* Shrink the button to just the icon's width */
+  width: 44px;
+  cursor: pointer;
+}
+
+.floating-map-button.collapsed .map-text {
+  /* Shrink the text to nothing and hide it */
+  width: 0;
+  padding-right: 0;
+  opacity: 0;
+}
+
+/* --- HOVER EFFECT (for desktop) ---
+  When a collapsed button is hovered, expand it.
+*/
+@media (min-width: 768px) {
+  .floating-map-button.collapsed:hover {
+    width: 220px; /* Expand back to full width */
+  }
+  
+  .floating-map-button.collapsed:hover .map-text {
+    width: 176px; /* Expand text back to full width */
+    padding-right: 1.25rem;
+    opacity: 1;
+  }
+}
+
+
+/* --- MOBILE STYLES --- */
+@media (max-width: 767px) {
+  .floating-map-button {
+    bottom: 1rem;
+    right: 1rem;
+    
+    /* On mobile, it starts smaller */
+    width: 200px; 
+    font-size: 0.8rem;
+  }
+
+  .floating-map-button .map-icon {
+    width: 40px; /* Smaller icon circle */
+    height: 40px;
+  }
+  
+  .floating-map-button .map-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .floating-map-button .map-text {
+    width: 160px; /* 200px - 40px */
+    padding-right: 1rem;
+  }
+
+  /* When collapsed on mobile, it just stays collapsed */
+  .floating-map-button.collapsed {
+    width: 40px;
+  }
+  
+  .floating-map-button.collapsed .map-text {
+    width: 0;
+  }
+}
+
+
+
+/* Animations */
+@keyframes cardFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
