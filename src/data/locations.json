@@ -6,7 +6,8 @@
         {
           "name": "Goa",
           "slug": "goa",
-          "imageUrl": "https://placehold.co/1200x600/74AEE8/FFFFFF?text=Goa"
+          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1l-Q-_GSUQwtdBCPEJn6CTMrZm376fRU&usp=sharing",
+          "imageUrl": "https://plus.unsplash.com/premium_photo-1697730411634-5313371ad8fe?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
         }
       ]
     },
@@ -16,7 +17,8 @@
         {
           "name": "Bangalore",
           "slug": "bengaluru",
-          "imageUrl": "https://placehold.co/1200x600/E87474/FFFFFF?text=Bengaluru"
+          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=106bPLjBko61yYIC114dJBCREET5qSw0&usp=sharing",
+          "imageUrl": "https://plus.unsplash.com/premium_photo-1697729606469-027395aadb6f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
         },
         {
           "name": "Mysore",

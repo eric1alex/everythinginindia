@@ -1,0 +1,202 @@
+[
+  {
+    "title": "Beaches",
+    "emoji": "🏖️",
+    "items": [
+      {
+        "name": "Baga Beach",
+        "url": "https://maps.google.com/?cid=13434350667262444000"
+      },
+      {
+        "name": "Anjuna Beach",
+        "url": "https://maps.google.com/?cid=15526102552613289889"
+      },
+      {
+        "name": "Palolem Beach",
+        "url": "https://maps.google.com/?cid=2169545886941559797"
+      },
+      {
+        "name": "Calangute Beach",
+        "url": "https://maps.google.com/?cid=14652795284265205015"
+      },
+      {
+        "name": "Vagator Beach",
+        "url": "https://maps.google.com/?cid=2299015755817294595"
+      },
+      {
+        "name": "Morjim Beach",
+        "url": "https://maps.google.com/?cid=10163254927124642201"
+      },
+      {
+        "name": "Colva Beach",
+        "url": "https://maps.google.com/?cid=13104941790697163061"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Thalassa",
+        "url": "https://maps.google.com/?cid=6936201024142943676"
+      },
+      {
+        "name": "Gunpowder",
+        "url": "https://maps.google.com/?cid=11621766487240373066"
+      },
+      {
+        "name": "Fisherman's Wharf",
+        "url": "https://maps.google.com/?cid=9702393433282642372"
+      },
+      {
+        "name": "Antares Restaurant & Beach Club",
+        "url": "https://maps.google.com/?cid=7853548847268226536"
+      },
+      {
+        "name": "Martin's Corner",
+        "url": "https://maps.google.com/?cid=557956864238280341"
+      },
+      {
+        "name": "Tuscany Gardens",
+        "url": "https://maps.google.com/?cid=1088934797944766725"
+      },
+      {
+        "name": "Brittos",
+        "url": "https://maps.google.com/?cid=5400565344108990532"
+      }
+    ]
+  },
+  {
+    "title": "Cafes / Shacks",
+    "emoji": "☕",
+    "items": [
+      {
+        "name": "Curlies Beach Shack",
+        "url": "https://maps.google.com/?cid=2275617403466601617"
+      },
+      {
+        "name": "Shiva Valley",
+        "url": "https://maps.google.com/?cid=9228660492423884670"
+      },
+      {
+        "name": "Artjuna Cafe",
+        "url": "https://maps.google.com/?cid=10413137421516158434"
+      },
+      {
+        "name": "Cafe CO2 Goa",
+        "url": "https://maps.google.com/?cid=5703866522508361401"
+      },
+      {
+        "name": "German Bakery",
+        "url": "https://maps.google.com/?cid=18166142861061889894"
+      },
+      {
+        "name": "ICE BOX BEACH SHACK",
+        "url": "https://maps.google.com/?cid=3991412901481307507"
+      },
+      {
+        "name": "Guru Bar",
+        "url": "https://maps.google.com/?cid=11788910071290342855"
+      }
+    ]
+  },
+  {
+    "title": "Hotels",
+    "emoji": "🏨",
+    "items": [
+      {
+        "name": "W Goa",
+        "url": "https://maps.google.com/?cid=5071144359842669182"
+      },
+      {
+        "name": "Grand Hyatt Goa",
+        "url": "https://maps.google.com/?cid=13340661976445235098"
+      },
+      {
+        "name": "Taj Exotica Resort & Spa",
+        "url": "https://maps.google.com/?cid=3577895111904199784"
+      },
+      {
+        "name": "Vivanta by Taj - Panaji",
+        "url": "https://maps.google.com/?cid=2364290728042337109"
+      },
+      {
+        "name": "Alila Diwa Goa",
+        "url": "https://maps.google.com/?cid=4088066109193354724"
+      },
+      {
+        "name": "Casa Baga",
+        "url": "https://maps.google.com/?cid=8546199384733309865"
+      }
+    ]
+  },
+  {
+    "title": "Nightlife",
+    "emoji": "🌃",
+    "items": [
+      {
+        "name": "Tito's Lane",
+        "url": "https://maps.google.com/?cid=2620403295419803159"
+      },
+      {
+        "name": "Club LPK Waterfront",
+        "url": "https://maps.google.com/?cid=1475460059931692614"
+      },
+      {
+        "name": "Hammerzz Nightclub",
+        "url": "https://maps.google.com/?cid=3555772666686219172"
+      },
+      {
+        "name": "Cohiba Bar & Kitchen",
+        "url": "https://maps.google.com/?cid=16765143987069820552"
+      },
+      {
+        "name": "SinQ Night Club",
+        "url": "https://maps.google.com/?cid=4064647926809813818"
+      },
+      {
+        "name": "Soro - The Village Pub",
+        "url": "https://maps.google.com/?cid=16578563329949774361"
+      },
+      {
+        "name": "Leopard Valley",
+        "url": "https://maps.google.com/?cid=3178905454967003059"
+      }
+    ]
+  },
+  {
+    "title": "Attractions",
+    "emoji": "🗺️",
+    "items": [
+      {
+        "name": "Dudhsagar Falls",
+        "url": "https://maps.google.com/?cid=18272309745798545957"
+      },
+      {
+        "name": "Fort Aguada",
+        "url": "https://maps.google.com/?cid=11782391001671891740"
+      },
+      {
+        "name": "Basilica of Bom Jesus",
+        "url": "https://maps.google.com/?cid=2197851625502386104"
+      },
+      {
+        "name": "Chapora Fort",
+        "url": "https://maps.google.com/?cid=3966512387993215239"
+      },
+      {
+        "name": "Goa State Museum",
+        "url": "https://maps.google.com/?cid=10735649641859217348"
+      },
+      {
+        "name": "Salim Ali Bird Sanctuary",
+        "url": "https://maps.google.com/?cid=15215378127878781305"
+      },
+      {
+        "name": "Fontainhas",
+        "url": "https://maps.google.com/?cid=11733140210155931401"
+      }
+    ]
+  }
+]
