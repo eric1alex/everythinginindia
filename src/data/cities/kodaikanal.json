@@ -1,0 +1,164 @@
+[
+  {
+    "title": "Hotels / Stay",
+    "emoji": "🏨",
+    "items": [
+      {
+        "name": "The Carlton Kodaikanal",
+        "url": "https://maps.google.com/?cid=7284195892924795675"
+      },
+      {
+        "name": "Sterling Kodaikanal",
+        "url": "https://maps.google.com/?cid=4305897979776852144"
+      },
+      {
+        "name": "Kodai Resort Hotel",
+        "url": "https://maps.google.com/?cid=15302817842078323557"
+      },
+      {
+        "name": "Abirami Residency",
+        "url": "https://maps.google.com/?cid=17635328633265819469"
+      },
+      {
+        "name": "Treebo The Regalia Rooms",
+        "url": "https://maps.google.com/?cid=18291290386061429915"
+      },
+      {
+        "name": "Elephant Valley Eco Farm",
+        "url": "https://maps.google.com/?cid=3891886507138207080"
+      },
+      {
+        "name": "Hotel Kodai International",
+        "url": "https://maps.google.com/?cid=12736469425424026133"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Mann Manam",
+        "url": "https://maps.google.com/?cid=7479635549950803813"
+      },
+      {
+        "name": "Cloud Street",
+        "url": "https://maps.google.com/?cid=3654549701339256545"
+      },
+      {
+        "name": "The Pulney Hills Café",
+        "url": "https://maps.google.com/?cid=797833073906522876"
+      },
+      {
+        "name": "Altaf's Cafe",
+        "url": "https://maps.google.com/?cid=7262757133109857594"
+      },
+      {
+        "name": "Woody's",
+        "url": "https://maps.google.com/?cid=15156319366902132332"
+      },
+      {
+        "name": "Aromas of Kodai",
+        "url": "https://maps.google.com/?cid=10995153079755062689"
+      },
+      {
+        "name": "Pastry Corner",
+        "url": "https://maps.google.com/?cid=2781759816876971009"
+      }
+    ]
+  },
+  {
+    "title": "Viewpoints",
+    "emoji": "⛰️",
+    "items": [
+      {
+        "name": "Coaker's Walk",
+        "url": "https://maps.google.com/?q=Coaker%27s+Walk,+Kodaikanal,+Tamil+Nadu+624101,+India&ftid=0x3b07665d55df2ddf:0x5272c250856a4406"
+      },
+      {
+        "name": "Pillar Rocks",
+        "url": "https://maps.google.com/?cid=452319748536911724"
+      },
+      {
+        "name": "Green Valley View (Suicide Point)",
+        "url": "https://maps.google.com/?cid=2029695062768601120"
+      },
+      {
+        "name": "Dolphin's Nose",
+        "url": "https://maps.google.com/?cid=7715385411681633325"
+      },
+      {
+        "name": "Moir Point",
+        "url": "https://maps.google.com/?cid=14794404301134641773"
+      },
+      {
+        "name": "Pine Forest Viewpoint",
+        "url": "https://maps.google.com/?cid=9058384620577993441"
+      },
+      {
+        "name": "Berijam Lake Viewpoint",
+        "url": "https://maps.google.com/?cid=3581438398378877018"
+      }
+    ]
+  },
+  {
+    "title": "Waterfalls",
+    "emoji": "🏞️",
+    "items": [
+      {
+        "name": "Kumbakkarai Falls",
+        "url": "https://maps.google.com/?cid=5661481399347315795"
+      },
+      {
+        "name": "Vattakanal Waterfalls",
+        "url": "https://maps.google.com/?cid=6721982563305508028"
+      },
+      {
+        "name": "Silver Cascade Falls",
+        "url": "https://maps.google.com/?cid=4616339161443082263"
+      },
+      {
+        "name": "Pambar Falls",
+        "url": "https://maps.google.com/?cid=3142118215713620069"
+      },
+      {
+        "name": "Fairy Falls",
+        "url": "https://maps.google.com/?cid=16412841665129418219"
+      },
+      {
+        "name": "Thalaiyar Falls (Distant View)",
+        "url": "https://maps.google.com/?cid=5400478298385620633"
+      }
+    ]
+  },
+  {
+    "title": "Attractions",
+    "emoji": "🏰",
+    "items": [
+      {
+        "name": "Kodaikanal Lake",
+        "url": "https://maps.google.com/?cid=17130466229107753994"
+      },
+      {
+        "name": "Bryant Park",
+        "url": "https://maps.google.com/?cid=15900931003896344489"
+      },
+      {
+        "name": "Guna Caves (Devil's Kitchen)",
+        "url": "https://maps.google.com/?cid=17806996146761807664"
+      },
+      {
+        "name": "Solar Physical Observatory",
+        "url": "https://maps.google.com/?cid=3167798432899652319"
+      },
+      {
+        "name": "Shembaganur Museum of Natural History",
+        "url": "https://maps.google.com/?cid=2146947025392983495"
+      },
+      {
+        "name": "Kurunji Andavar Temple",
+        "url": "https://maps.google.com/?cid=11919106082883537767"
+      }
+    ]
+  }
+]

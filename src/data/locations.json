@@ -83,7 +83,8 @@
         {
           "name": "Kodaikanal",
           "slug": "kodaikanal",
-          "imageUrl": "https://placehold.co/1200x600/E88574/FFFFFF?text=Kodaikanal"
+          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1vQjiW6vCE_WhK__XAoW-27BB3hQBib4&usp=sharing",
+          "imageUrl": "https://images.unsplash.com/photo-1593692867948-bb6ba7c03fd1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1384"
         }
       ]
     }
