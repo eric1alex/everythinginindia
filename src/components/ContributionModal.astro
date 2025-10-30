@@ -1,0 +1,174 @@
+<!-- 
+  This component contains the HTML for the pop-up modal
+  and the client-side script to control it.
+  - Replaced 'X' with a text 'Close' button
+  - Title is now perfectly centered
+-->
+<div id="contribution-modal" class="modal-overlay">
+    <div class="modal-content">
+        <div class="modal-header">
+            <!-- UPDATED: Added emoji, title will center by default -->
+            <h2 id="contribution-modal-title">🌍 Help Build This Site</h2>
+            <!-- REMOVED: The 'X' button is gone -->
+            <!-- <button id="contribution-modal-close" class="modal-close" aria-label="Close modal">&times;</button> -->
+        </div>
+        
+        <div class="modal-body">
+            <p class="modal-text">
+                This travel directory runs entirely on public contributions, for every city in India.
+            </p>
+            <p class="modal-text" style="margin-top: 1rem;">
+                Help us uncover the best local spots by adding your favorite place and get it featured! ✨📍
+            </p>
+            <a href="https://forms.gle/JqRqaRjVqDba1Dso7" class="contribution-button" target="_blank" rel="noopener noreferrer">Submit a Place</a>
+        
+            <!-- ADDED: New text-based close button -->
+            <button id="contribution-modal-close" class="close-text-button">Close</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* This assumes .modal-overlay, .modal-content, etc. are defined in global.css */
+	
+    /* Mobile-first styles: 
+      Smaller padding and fonts by default
+    */
+	#contribution-modal .modal-content {
+        /* UPDATED: Simplified padding */
+		padding: 2rem 1.5rem; 
+		max-width: 550px;
+        text-align: center;
+        /* position: relative; */ /* <-- REMOVED, no longer needed */
+	}
+
+    /* Centering Fix:
+      This is no longer needed as the 'X' button is gone
+    */
+    #contribution-modal .modal-header {
+        padding-bottom: 0.5rem; 
+        margin-bottom: 1rem; 
+    }
+
+    #contribution-modal .modal-header h2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* REMOVED: Old 'X' button styles are gone */
+    /*
+    #contribution-modal .modal-close { ... }
+    */
+
+    .modal-body {
+        padding-top: 0;
+    }
+
+	.modal-text {
+		font-size: 1rem; /* Smaller text for mobile */
+		color: #333;
+		line-height: 1.6;
+	}
+
+	.contribution-button {
+		display: inline-block;
+		font-size: 1rem; /* Smaller font for mobile */
+		font-weight: 600;
+		color: #fff;
+		background-color: #1a1a1a;
+		padding: 0.75rem 1.5rem; /* Smaller padding for mobile */
+		border-radius: 8px;
+		text-decoration: none;
+		transition: all 0.3s ease;
+		margin-top: 1.5rem; /* Mobile margin */
+		width: 100%;
+		text-align: center;
+		box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+	}
+
+	.contribution-button:hover {
+		background-color: #333;
+		box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+		transform: translateY(-2px);
+	}
+
+    /* ADDED: Styles for the new text 'Close' button */
+    .close-text-button {
+        background: none;
+        border: none;
+        font-size: 0.8rem;
+        color: #888;
+        opacity: 0.8;
+        cursor: pointer;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        transition: opacity 0.3s ease;
+    }
+    .close-text-button:hover {
+        opacity: 1;
+    }
+
+    /* Desktop styles: 
+      Increase padding and font sizes on larger screens
+    */
+    @media (min-width: 768px) {
+        #contribution-modal .modal-content {
+            padding: 2.5rem; /* Consistent padding */
+        }
+        
+        /* REMOVED: Old 'X' button styles
+        #contribution-modal .modal-close { ... }
+        */
+
+        .modal-text {
+            font-size: 1.1rem; /* Larger text */
+        }
+
+        .contribution-button {
+            font-size: 1.05rem; /* Larger font */
+            padding: 0.85rem 1.5rem; /* More padding */
+            margin-top: 2rem;
+        }
+    }
+</style>
+
+<script is:inline>
+    // This script runs on the client and is bundled with the component.
+    document.addEventListener('DOMContentLoaded', () => {
+        const contributionModal = document.getElementById('contribution-modal');
+        // This ID now points to the new text button, so the script works perfectly
+        const contributionModalClose = document.getElementById('contribution-modal-close');
+        
+        // 1. Check if the user has seen the modal before
+        const hasSeenModal = localStorage.getItem('hasSeenContributionModal');
+
+        // 2. If they haven't seen it AND the modal exists...
+        if (!hasSeenModal && contributionModal) {
+            // Wait 3 seconds
+            setTimeout(() => {
+                // Show the modal
+                contributionModal.classList.add('visible');
+                // Set the flag in localStorage so it never shows again
+                localStorage.setItem('hasSeenContributionModal', 'true');
+            }, 3000);
+        }
+
+        // 3. Logic to close the modal
+        const closeContributionModal = () => {
+            if (contributionModal) {
+                contributionModal.classList.remove('visible');
+            }
+        }
+        if (contributionModalClose) {
+            contributionModalClose.addEventListener('click', closeContributionModal);
+        }
+        if (contributionModal) {
+            contributionModal.addEventListener('click', (e) => {
+                if (e.target === contributionModal) {
+                    closeContributionModal();
+                }
+            });
+        }
+    });
+</script>
+
