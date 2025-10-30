@@ -1,0 +1,198 @@
+[
+  {
+    "title": "Hotels / Stays",
+    "emoji": "🏨",
+    "items": [
+      {
+        "name": "The Himalayan",
+        "url": "https://maps.google.com/?cid=7845175456359491873"
+      },
+      {
+        "name": "Manuallaya The Resort",
+        "url": "https://maps.google.com/?cid=13095999922371274721"
+      },
+      {
+        "name": "Manali Inn",
+        "url": "https://maps.google.com/?cid=13645273803078421987"
+      },
+      {
+        "name": "Hadimba Cottages",
+        "url": "https://maps.google.com/?cid=10134239008482432387"
+      },
+      {
+        "name": "Zostel Manali",
+        "url": "https://maps.google.com/?cid=10812470477382439337"
+      },
+      {
+        "name": "Neeralaya Estate",
+        "url": "https://maps.google.com/?cid=2133599925992012168"
+      },
+      {
+        "name": "Johnson's Lodge & Restaurant",
+        "url": "https://maps.google.com/?cid=15318972168245963243"
+      }
+    ]
+  },
+  {
+    "title": "Cafes / Restaurants",
+    "emoji": "☕",
+    "items": [
+      {
+        "name": "Singh Saab Food Truck & Riverside Restaurant",
+        "url": "https://maps.google.com/?cid=18217944096566904250"
+      },
+      {
+        "name": "Cafe 1947",
+        "url": "https://maps.google.com/?cid=16349313308763280428"
+      },
+      {
+        "name": "Dylans Toasted & Roasted Coffee House",
+        "url": "https://maps.google.com/?cid=6688405209942900445"
+      },
+      {
+        "name": "Chopsticks",
+        "url": "https://maps.google.com/?cid=1333227146972206893"
+      },
+      {
+        "name": "Johnson's Cafe",
+        "url": "https://maps.google.com/?cid=16493807488697696469"
+      },
+      {
+        "name": "Fat Plate Cafe",
+        "url": "https://maps.google.com/?cid=561835632109054563"
+      },
+      {
+        "name": "Sunshine Cafe",
+        "url": "https://maps.google.com/?cid=1133400081163872956"
+      },
+      {
+        "name": "Corner House",
+        "url": "https://maps.google.com/?cid=1008652996358930507"
+      }
+    ]
+  },
+  {
+    "title": "Trekking",
+    "emoji": "⛰️",
+    "items": [
+      {
+        "name": "Bhrigu Lake Trek",
+        "url": "https://maps.google.com/?cid=8641469137471698425"
+      },
+      {
+        "name": "Beas Kund Trek",
+        "url": "https://maps.google.com/?cid=9529778388314591893"
+      },
+      {
+        "name": "Hampta Pass Trek",
+        "url": "https://maps.google.com/?cid=14564158019384230916"
+      },
+      {
+        "name": "Patalsu Peak Trek",
+        "url": "https://maps.google.com/?cid=14628644052406453944"
+      },
+      {
+        "name": "Lamadugh Meadow Trek",
+        "url": "https://maps.google.com/?cid=6068163507218304233"
+      },
+      {
+        "name": "Bijli Mahadev Temple Trek",
+        "url": "https://maps.google.com/?cid=12610445506861639113"
+      }
+    ]
+  },
+  {
+    "title": "Viewpoints",
+    "emoji": "🏞️",
+    "items": [
+      {
+        "name": "Gulaba Viewpoint",
+        "url": "https://maps.google.com/?cid=4246935003966659454"
+      },
+      {
+        "name": "Solang Valley",
+        "url": "https://maps.google.com/?cid=10737879570819143749"
+      },
+      {
+        "name": "Kothi Village",
+        "url": "https://maps.google.com/?cid=16832392208311684250"
+      },
+      {
+        "name": "Naggar Castle",
+        "url": "https://maps.google.com/?cid=7912596790421008424"
+      },
+      {
+        "name": "Old Manali Bridge View",
+        "url": "https://maps.google.com/?cid=407156674088412212"
+      },
+      {
+        "name": "Sethan Village",
+        "url": "https://maps.google.com/?cid=14289124594095469970"
+      },
+      {
+        "name": "Sissu Valley",
+        "url": "https://maps.google.com/?cid=6995630744138823130"
+      }
+    ]
+  },
+  {
+    "title": "Waterfalls",
+    "emoji": "🌊",
+    "items": [
+      {
+        "name": "Knoi Waterfall",
+        "url": "https://maps.google.com/?cid=11342372425190038430"
+      },
+      {
+        "name": "Baror Parsha Waterfall",
+        "url": "Baror Parsha Waterfall"
+      },
+      {
+        "name": "Jana Waterfall, Jana Gaon",
+        "url": "https://maps.google.com/?cid=13697571585812522191"
+      },
+      {
+        "name": "Jogini Falls",
+        "url": "https://maps.google.com/?cid=17192517173995747844"
+      },
+      {
+        "name": "Rahala Waterfalls",
+        "url": "https://maps.google.com/?cid=8654023725308950042"
+      }
+    ]
+  },
+  {
+    "title": "Temples / Monasteries",
+    "emoji": "🛕",
+    "items": [
+      {
+        "name": "Hadimba Devi Temple",
+        "url": "https://maps.google.com/?cid=3290482383344535452"
+      },
+      {
+        "name": "Manu Temple",
+        "url": "https://maps.google.com/?cid=7000778892376485553"
+      },
+      {
+        "name": "Vashisht Temple",
+        "url": "https://maps.google.com/?cid=10966175281046846565"
+      },
+      {
+        "name": "Ghatotkach Temple",
+        "url": "https://maps.google.com/?cid=9832360732916924853"
+      },
+      {
+        "name": "Naggar Castle Monastery",
+        "url": "https://maps.google.com/?cid=7912596790421008424"
+      },
+      {
+        "name": "Buddhist Monastery, Manali",
+        "url": "https://maps.google.com/?cid=16053422117256869720"
+      },
+      {
+        "name": "Bhutanese Buddhist temple",
+        "url": "https://maps.google.com/?cid=9393294264486700304"
+      }
+    ]
+  }
+]

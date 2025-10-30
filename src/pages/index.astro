@@ -2,14 +2,35 @@
 import Layout from '../layouts/Layout.astro';
 import locations from '../data/locations.json';
 
-// Helper function to split states into 3 columns
-const statesCol1 = locations.states.slice(0, 10);
-const statesCol2 = locations.states.slice(10, 20);
-const statesCol3 = locations.states.slice(20);
+// --- NEW LOGIC FOR "FEELING LUCKY" ---
+// 1. Find all the .json files that actually exist.
+const allCityDataFiles = await import.meta.glob('../data/cities/*.json');
+const existingSlugs = Object.keys(allCityDataFiles).map(path => 
+  path.split('/').pop().replace('.json', '')
+);
+
+// 2. Create the list of available slugs by checking against the files that exist.
+const availableSlugs = [];
+[...locations.states, ...locations.unionTerritories].forEach(loc => {
+  loc.cities.forEach(city => {
+    // Only add the slug if its .json file exists!
+    if (existingSlugs.includes(city.slug)) {
+      availableSlugs.push(city.slug);
+    }
+  });
+});
+// --- END OF NEW LOGIC ---
+
+// Simplified data setup
+const states = locations.states;
 const unionTerritories = locations.unionTerritories;
 ---
 
-<Layout title="Where In India - The most trusted list of recos for India">
+<Layout 
+  title="Where In India - The most trusted list of recos for India"
+  description="A hand-curated travel directory for India, built for easy exploration and trip planning. Stop getting lost on Google."
+  ogImage="https://placehold.co/1200x630/333/fff?text=Where+In+India"
+>
 	<main>
 		<!-- New Hero Section -->
 		<header class="hero">
@@ -22,23 +43,26 @@ const unionTerritories = locations.unionTerritories;
 
 		<!-- Search Bar -->
 		<div class="search-container">
-			<div class="search-bar">
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-				</svg>
-				<input type="text" id="state-search" placeholder="Search for a state or city...">
-			</div>
+			<div class="search-wrapper">
+				<div class="search-bar">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+					</svg>
+					<input type="text" id="state-search" placeholder="Search for a state or city...">
+				</div>
+                <button id="feeling-lucky" class="lucky-button">Feeling Lucky?</button>
+            </div>
 		</div>
 
-		<!-- 4-Column List Grid -->
+		<!-- Simplified 2-Column List Grid -->
 		<div class="main-content">
 			<div class="list-grid">
-				<!-- Column 1 -->
+				<!-- Column 1: States -->
 				<div class="list-column">
 					<h2><span class="emoji">📍</span> States</h2>
 					<ol>
-						{statesCol1.map(state => (
-							<li class="list-item" data-name={state.name.toLowerCase()}>
+						{states.map(state => (
+							<li class="list-item" data-name={state.name.toLowerCase()} data-cities={JSON.stringify(state.cities.map(c => c.name.toLowerCase()))}>
 								<a 
 									href="#" 
 									class="state-link"
@@ -50,12 +74,13 @@ const unionTerritories = locations.unionTerritories;
 						))}
 					</ol>
 				</div>
+				
 				<!-- Column 2: Union Territories -->
 				<div class="list-column">
 					<h2><span class="emoji">🇮🇳</span> Union Territories</h2>
 					<ol>
 						{unionTerritories.map(ut => (
-							<li class="list-item" data-name={ut.name.toLowerCase()}>
+							<li class="list-item" data-name={ut.name.toLowerCase()} data-cities={JSON.stringify(ut.cities.map(c => c.name.toLowerCase()))}>
 								<a 
 									href="#" 
 									class="state-link"
@@ -69,7 +94,6 @@ const unionTerritories = locations.unionTerritories;
 				</div>
 			</div>
 		</div>
-
 	</main>
 
 	<!-- Modal (Floating Window) HTML -->
@@ -87,107 +111,98 @@ const unionTerritories = locations.unionTerritories;
 	</div>
 
 	<!-- Client-side script for Search and Modal -->
-	<script is:raw>
+	<script is:raw define:vars={{ availableSlugs }}>
 		document.addEventListener('DOMContentLoaded', () => {
-	// --- STATE/CITY SEARCH LOGIC ---
-	const searchInput = document.getElementById('state-search');
-	const listItems = document.querySelectorAll('.list-item');
+			// --- STATE/CITY SEARCH LOGIC ---
+			const searchInput = document.getElementById('state-search');
+			const listItems = document.querySelectorAll('.list-item');
 
-	searchInput.addEventListener('input', (e) => {
-		const searchTerm = e.target.value.toLowerCase().trim();
+			searchInput.addEventListener('input', (e) => {
+				const searchTerm = e.target.value.toLowerCase().trim();
 
-		listItems.forEach(item => {
-			const stateName = item.dataset.name;
-			const stateLink = item.querySelector('.state-link');
-			const citiesData = stateLink ? stateLink.dataset.cities : '[]';
-			const cities = JSON.parse(citiesData);
+				listItems.forEach(item => {
+                    const itemName = item.dataset.name;
+                    const cityNames = JSON.parse(item.dataset.cities || '[]');
+                    
+                    const nameMatch = itemName.includes(searchTerm);
+                    const cityMatch = cityNames.some(city => city.includes(searchTerm));
 
-			// 1. Check if the state name matches
-			let isMatch = stateName.includes(searchTerm);
-
-			// 2. If not, check if any city name matches
-			if (!isMatch && cities.length > 0) {
-				isMatch = cities.some(city => 
-					city.name.toLowerCase().includes(searchTerm)
-				);
-			}
-
-			// 3. Show or hide the item
-			if (isMatch) {
-				item.style.display = 'flex';
-			} else {
-				item.style.display = 'none';
-			}
-		});
-	});
-
-	// --- MODAL (FLOATING WINDOW) LOGIC ---
-	const modal = document.getElementById('city-modal');
-	const modalTitle = document.getElementById('modal-title');
-	const modalCityList = document.getElementById('modal-city-list');
-	const modalNoCities = document.getElementById('modal-no-cities');
-	const modalClose = document.getElementById('modal-close');
-	const stateLinks = document.querySelectorAll('.state-link');
-
-	stateLinks.forEach(link => {
-		link.addEventListener('click', (e) => {
-			e.preventDefault();
-			
-			const stateName = link.dataset.state;
-			const cities = JSON.parse(link.dataset.cities);
-
-			// Special case: If only one city, go directly to that page.
-			if (cities.length === 1 && cities[0].slug) {
-				window.location.href = `/${cities[0].slug}`;
-				return;
-			}
-			
-			// Update modal title
-			modalTitle.textContent = `Cities in ${stateName}`;
-			
-			// Clear previous list
-			modalCityList.innerHTML = '';
-
-			if (cities.length > 0) {
-				// Hide "no cities" message
-				modalNoCities.style.display = 'none';
-				modalCityList.style.display = 'block';
-
-				// Populate new city list
-				cities.forEach(city => {
-					const li = document.createElement('li');
-					const a = document.createElement('a');
-					a.href = `/${city.slug}`; // Link to the future city page
-					a.textContent = city.name;
-					li.appendChild(a);
-					modalCityList.appendChild(li);
+					if (nameMatch || cityMatch) {
+						item.style.display = 'flex';
+					} else {
+						item.style.display = 'none';
+					}
 				});
-			} else {
-				// Show "no cities" message
-				modalNoCities.style.display = 'block';
-				modalCityList.style.display = 'none';
+			});
+
+			// --- MODAL (FLOATING WINDOW) LOGIC ---
+			const modal = document.getElementById('city-modal');
+			const modalTitle = document.getElementById('modal-title');
+			const modalCityList = document.getElementById('modal-city-list');
+			const modalNoCities = document.getElementById('modal-no-cities');
+			const modalClose = document.getElementById('modal-close');
+			const stateLinks = document.querySelectorAll('.state-link');
+
+			stateLinks.forEach(link => {
+				link.addEventListener('click', (e) => {
+					e.preventDefault();
+					
+					const stateName = link.dataset.state;
+					const cities = JSON.parse(link.dataset.cities);
+
+					if (cities.length === 1 && cities[0].slug) {
+						window.location.href = `/${cities[0].slug}`;
+						return;
+					}
+					
+					modalTitle.textContent = `Cities in ${stateName}`;
+					modalCityList.innerHTML = '';
+
+					if (cities.length > 0) {
+						modalNoCities.style.display = 'none';
+						modalCityList.style.display = 'block';
+
+						cities.forEach(city => {
+							const li = document.createElement('li');
+							const a = document.createElement('a');
+							a.href = `/${city.slug}`;
+							a.textContent = city.name;
+							li.appendChild(a);
+							modalCityList.appendChild(li);
+						});
+					} else {
+						modalNoCities.style.display = 'block';
+						modalCityList.style.display = 'none';
+					}
+
+					modal.classList.add('visible');
+				});
+			});
+
+			const closeModal = () => {
+				modal.classList.remove('visible');
 			}
+			modalClose.addEventListener('click', closeModal);
+			modal.addEventListener('click', (e) => {
+				if (e.target === modal) {
+					closeModal();
+				}
+			});
 
-			// Show the modal
-			modal.classList.add('visible');
+            // --- "FEELING LUCKY?" LOGIC ---
+            const luckyButton = document.getElementById('feeling-lucky');
+            if (luckyButton) {
+                // 3. The 'availableSlugs' variable is now correct and only
+                // contains slugs for pages that have content.
+                luckyButton.addEventListener('click', () => {
+                    if (availableSlugs && availableSlugs.length > 0) {
+                        const randomIndex = Math.floor(Math.random() * availableSlugs.length);
+                        const randomSlug = availableSlugs[randomIndex];
+                        window.location.href = `/${randomSlug}`;
+                    }
+                });
+            }
 		});
-	});
-
-	// Function to close the modal
-	const closeModal = () => {
-		modal.classList.remove('visible');
-	}
-
-	// Close modal when X is clicked
-	modalClose.addEventListener('click', closeModal);
-
-	// Close modal when clicking on the overlay
-	modal.addEventListener('click', (e) => {
-		if (e.target === modal) {
-			closeModal();
-		}
-	});
-});
 	</script>
 </Layout>
 

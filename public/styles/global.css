@@ -33,6 +33,8 @@ body {
   width: 100%;
   background-color: var(--hero-bg);
   min-height: 150px;
+  position: relative; /* add this */
+
 }
 
 .hero-image {
@@ -110,11 +112,25 @@ body {
   }
 }
 
-/* --- NEW SEARCH STYLES --- */
+/* --- UPDATED SEARCH STYLES --- */
 .search-container {
   padding: 2rem 1rem;
   max-width: 768px;
   margin: 0 auto;
+}
+
+/* --- UPDATED SEARCH STYLES --- */
+.search-container {
+  padding: 2rem 1rem;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+/* NEW: Wrapper for flex layout */
+.search-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack on mobile by default */
+  gap: 0.75rem;
 }
 
 .search-bar {
@@ -123,9 +139,11 @@ body {
   width: 100%;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem; /* Removed vertical padding to use height */
   background: #fff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  /* flex: 1; <-- REMOVED from base style */
+  height: 50px; /* Give a fixed height */
 }
 
 .search-bar svg {
@@ -133,10 +151,12 @@ body {
   height: 20px;
   color: #888;
   margin-right: 0.75rem;
+  flex-shrink: 0;
 }
 
 .search-bar input {
   width: 100%;
+  height: 100%;
   border: none;
   outline: none;
   font-size: 1.1rem;
@@ -146,6 +166,41 @@ body {
   color: #aaa;
 }
 
+/* NEW: "Feeling Lucky?" button styles */
+.lucky-button {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 0 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Keep text on one line */
+  height: 50px; /* Match search bar height */
+  width: 100%; /* <-- ADDED: Make button full-width on mobile */
+}
+
+.lucky-button:hover {
+  background-color: #eee;
+  border-color: #ccc;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* On larger screens (tablets and up), put them side-by-side */
+@media (min-width: 640px) {
+  .search-wrapper {
+    flex-direction: row; /* Side-by-side on desktop */
+  }
+  .search-bar {
+    flex: 1; /* <-- ADDED: Search bar expands to fill space on desktop */
+  }
+  .lucky-button {
+    width: auto; /* <-- ADDED: Button shrinks to fit content on desktop */
+  }
+}
 
 /* Main Content Area */
 .main-content {
@@ -645,4 +700,103 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* --- "COMING SOON" PAGE STYLES --- */
+.coming-soon-container {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+}
+
+.coming-soon-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.coming-soon-text {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.coming-soon-button {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #1a1a1a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.coming-soon-button:hover {
+  background-color: #333;
+}
+
+/* --- SUGGESTIONS STYLES --- */
+.suggestions-container {
+  margin-top: 3rem;
+  border-top: 1px solid var(--card-border);
+  padding-top: 2rem;
+}
+
+.suggestions-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.suggestions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.suggestion-card {
+  display: block;
+  position: relative;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  color: white;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.suggestion-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.suggestion-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%);
+}
+
+.suggestion-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.suggestion-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
 }

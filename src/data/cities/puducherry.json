@@ -1,0 +1,228 @@
+[
+  {
+    "title": "Hotels / Stays",
+    "emoji": "🏨",
+    "items": [
+      {
+        "name": "Le Dupleix",
+        "url": "https://maps.google.com/?cid=15441029214772926481"
+      },
+      {
+        "name": "Palais De Mahe",
+        "url": "https://maps.google.com/?cid=9126491825566628867"
+      },
+      {
+        "name": "Gratitude Heritage",
+        "url": "https://maps.google.com/?cid=5425469018671455924"
+      },
+      {
+        "name": "The Promenade",
+        "url": "https://maps.google.com/?cid=9959456107558295783"
+      },
+      {
+        "name": "Mango Hill",
+        "url": "https://maps.google.com/?cid=3783621292393880027"
+      },
+      {
+        "name": "La Villa",
+        "url": "https://maps.google.com/?cid=15471803750367304624"
+      },
+      {
+        "name": "Villa Caserne",
+        "url": "https://maps.google.com/?cid=17669293219097508320"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "☕",
+    "items": [
+      {
+        "name": "Baker Street",
+        "url": "https://maps.google.com/?cid=14735248435283185442"
+      },
+      {
+        "name": "Cafe Xtasi",
+        "url": "https://maps.google.com/?cid=17359941053964204569"
+      },
+      {
+        "name": "Coffee House",
+        "url": "https://maps.google.com/?cid=16026406212508360713"
+      },
+      {
+        "name": "Bread & Chocolate",
+        "url": "https://maps.google.com/?cid=16077675973571283395"
+      },
+      {
+        "name": "Auroville Bakery",
+        "url": "https://maps.google.com/?cid=4723893135598974674"
+      },
+      {
+        "name": "Kasha ki Aasha",
+        "url": "https://maps.google.com/?cid=12106161970152422858"
+      },
+      {
+        "name": "Zuka Choco-la",
+        "url": "https://maps.google.com/?cid=13086481350364995263"
+      },
+      {
+        "name": "New Banana Cafe",
+        "url": "https://maps.google.com/?cid=369889192756723578"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Copper Kitchen",
+        "url": "https://maps.google.com/?cid=7536963474465973478"
+      },
+      {
+        "name": "KAMATCHI ",
+        "url": "https://maps.google.com/?cid=5370644141672233824"
+      },
+      {
+        "name": "Carte Blanche",
+        "url": "https://maps.google.com/?cid=5393598629995767493"
+      },
+      {
+        "name": "Annapoorna",
+        "url": "https://maps.google.com/?cid=18328612002730097360"
+      },
+      {
+        "name": "Bay of Buddha",
+        "url": "https://maps.google.com/?cid=10590783348741321410"
+      },
+      {
+        "name": "Maison Perumal",
+        "url": "https://maps.google.com/?cid=11353973177948947220"
+      },
+      {
+        "name": "Seagulls Restaurant",
+        "url": "https://maps.google.com/?cid=9073514294855636811"
+      }
+    ]
+  },
+  {
+    "title": "Beaches",
+    "emoji": "🏖️",
+    "items": [
+      {
+        "name": "Bay Beach",
+        "url": "https://maps.google.com/?cid=471189717773471964"
+      },
+      {
+        "name": "Rock Beach",
+        "url": "https://maps.google.com/?cid=12599657740789543457"
+      },
+      {
+        "name": "Puducherry Beach",
+        "url": "https://maps.google.com/?cid=1821423667756561511"
+      },
+      {
+        "name": "Serenity Beach",
+        "url": "https://maps.google.com/?cid=8564175483266172061"
+      },
+      {
+        "name": "Paradise Beach",
+        "url": "https://maps.google.com/?cid=4177478798684600859"
+      },
+      {
+        "name": "Auroville Beach",
+        "url": "https://maps.google.com/?cid=711085015990466225"
+      },
+      {
+        "name": "Veerampattinam Beach",
+        "url": "https://maps.google.com/?cid=5345436199714551715"
+      },
+      {
+        "name": "Eden Beach",
+        "url": "https://maps.google.com/?cid=11185380801012671122"
+      },
+      {
+        "name": "Chinnaveerampattinam Beach",
+        "url": "https://maps.google.com/?cid=13863753953816669995"
+      }
+    ]
+  },
+  {
+    "title": "Museums",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Pondicherry Museum",
+        "url": "https://maps.google.com/?cid=14805784674668239233"
+      },
+      {
+        "name": "Bharathidasan Memorial Museum",
+        "url": "https://maps.google.com/?cid=13706914718570698614"
+      },
+      {
+        "name": "Puducherry Science Centre & Planetarium",
+        "url": "https://maps.google.com/?cid=11358610937069831662"
+      }
+    ]
+  },
+  {
+    "title": "Historical Site",
+    "emoji": "🏰",
+    "items": [
+      {
+        "name": "Arikamedu",
+        "url": "https://maps.google.com/?cid=11771681082775439268"
+      },
+      {
+        "name": "Old Lighthouse",
+        "url": "https://maps.google.com/?cid=12944206231524232826"
+      },
+      {
+        "name": "Manakula Vinayagar Temple",
+        "url": "https://maps.google.com/?cid=6950680071425998278"
+      },
+      {
+        "name": "French War Memorial",
+        "url": "https://maps.google.com/?cid=3207150205729886936"
+      },
+      {
+        "name": "Aayi Mandapam",
+        "url": "https://maps.google.com/?cid=9216775583941410626"
+      },
+      {
+        "name": "Dupleix Statue",
+        "url": "https://maps.google.com/?cid=508309769145690976"
+      }
+    ]
+  },
+  {
+    "title": "Shopping",
+    "emoji": "🛍️",
+    "items": [
+      {
+        "name": "Nehru Street",
+        "url": "https://maps.google.com/?q=Nehru+St,+Senthamarai+Nagar,+Chevarapet,+Puducherry,+605003,+India&ftid=0x3a5363df5cd710c5:0x671bb21ac757ddb3"
+      },
+      {
+        "name": "Mission Street",
+        "url": "https://maps.google.com/?q=Mission+St,+MG+Road+Area,+Puducherry,+605001,+India&ftid=0x3a5363d679cc599b:0xc10f95ee1faec19e"
+      },
+      {
+        "name": "Auroville Craft Stores",
+        "url": "https://maps.google.com/?cid=619002245221975910"
+      },
+      {
+        "name": "Janaki",
+        "url": "https://maps.google.com/?cid=15890545034025949289"
+      },
+      {
+        "name": "Sunday Market",
+        "url": "https://maps.google.com/?cid=13535921882922523896"
+      },
+      {
+        "name": "Hidesign Factory Outlet",
+        "url": "https://maps.google.com/?cid=4799676160399809702"
+      }
+    ]
+  }
+]

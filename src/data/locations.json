@@ -58,7 +58,8 @@
         {
           "name": "Mumbai",
           "slug": "mumbai",
-          "imageUrl": "https://placehold.co/1200x600/E874B9/FFFFFF?text=Mumbai"
+          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1kmmbzn6hUQk5vdLVVpHssM6LOj7DJq0&usp=sharing",
+          "imageUrl": "https://plus.unsplash.com/premium_photo-1670788667595-37df3ae70545?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
         },
         {
           "name": "Pune",
@@ -87,6 +88,17 @@
           "imageUrl": "https://images.unsplash.com/photo-1593692867948-bb6ba7c03fd1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1384"
         }
       ]
+    },
+    {
+      "name": "Himachal Pradesh",
+      "cities": [
+        {
+          "name": "Manali",
+          "slug": "manali",
+          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1H5pVThubUyP35znF-klt36_OiE5YZGg&usp=sharing",
+          "imageUrl": "https://images.unsplash.com/photo-1593181629936-11c609b8db9b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
+        }
+      ]
     }
   ],
   "unionTerritories": [
@@ -96,7 +108,7 @@
         {
           "name": "Pondicherry",
           "slug": "puducherry",
-          "mapUrl": "https://maps.app.goo.gl/s73iv7V3pE9d2f4",
+          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1-fkfAkFASbzQQuaJ3wDA0Czqp5898-M&usp=sharing",
           "imageUrl": "https://images.unsplash.com/photo-1598677833732-7857ae95afce?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=990"
         }
       ]

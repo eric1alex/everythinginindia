@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Restaurants",
+    "emoji": "🍲",
+    "items": [
+      {
+        "name": "The Bombay Canteen",
+        "url": "https://maps.google.com/?cid=7371392037146984617"
+      },
+      {
+        "name": "Britannia & Co. Restaurant",
+        "url": "https://maps.google.com/?cid=14658569313884345562"
+      },
+      {
+        "name": "Gajalee",
+        "url": "https://maps.google.com/?cid=11647659474680570114"
+      },
+      {
+        "name": "Swati Snacks",
+        "url": "https://maps.google.com/?cid=11217860342706596800"
+      },
+      {
+        "name": "O Pedro",
+        "url": "https://maps.google.com/?cid=17937293282269675930"
+      },
+      {
+        "name": "Mahesh Lunch Home",
+        "url": "https://maps.google.com/?cid=2940605209354155114"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "☕",
+    "items": [
+      {
+        "name": "Kala Ghoda Cafe",
+        "url": "https://maps.google.com/?cid=10662298444487936803"
+      },
+      {
+        "name": "Prithvi Cafe",
+        "url": "https://maps.google.com/?cid=17276058869733511356"
+      },
+      {
+        "name": "Blue Tokai Coffee Roasters (Bandra)",
+        "url": "https://maps.google.com/?cid=2880557828914949876"
+      },
+      {
+        "name": "Grandmama's Cafe",
+        "url": "https://maps.google.com/?cid=6165357271816602172"
+      },
+      {
+        "name": "The Nutcracker",
+        "url": "https://maps.google.com/?cid=16861955774551383575"
+      },
+      {
+        "name": "Mockingbird Cafe & Bar",
+        "url": "https://maps.google.com/?cid=5120380686526027612"
+      }
+    ]
+  },
+  {
+    "title": "Hotels / Stays",
+    "emoji": "🏨",
+    "items": [
+      {
+        "name": "The Taj Mahal Palace, Mumbai",
+        "url": "https://maps.google.com/?cid=13846603501370031959"
+      },
+      {
+        "name": "The Oberoi Mumbai",
+        "url": "https://maps.google.com/?cid=4061871268329864897"
+      },
+      {
+        "name": "Novotel Mumbai Juhu Beach",
+        "url": "https://maps.google.com/?cid=721098853997857606"
+      },
+      {
+        "name": "Abode Bombay",
+        "url": "https://maps.google.com/?cid=11329700791829472607"
+      },
+      {
+        "name": "The St. Regis Mumbai",
+        "url": "https://maps.google.com/?cid=4132853287433548325"
+      },
+      {
+        "name": "The Lalit Mumbai",
+        "url": "https://maps.google.com/?cid=3107000729813343111"
+      }
+    ]
+  },
+  {
+    "title": "Beaches",
+    "emoji": "🏖️",
+    "items": [
+      {
+        "name": "Juhu Beach",
+        "url": "https://maps.google.com/?cid=15233250799684907383"
+      },
+      {
+        "name": "Chowpatty Beach",
+        "url": "https://maps.google.com/?cid=13901590956132764726"
+      },
+      {
+        "name": "Aksa Beach",
+        "url": "https://maps.google.com/?cid=5211294253046099447"
+      },
+      {
+        "name": "Versova Beach",
+        "url": "https://maps.google.com/?cid=6816058009267325071"
+      },
+      {
+        "name": "Gorai Beach",
+        "url": "https://maps.google.com/?cid=1775585586070245798"
+      }
+    ]
+  },
+  {
+    "title": "Attractions",
+    "emoji": "🎡",
+    "items": [
+      {
+        "name": "Gateway of India",
+        "url": "https://maps.google.com/?cid=14342317363051655996"
+      },
+      {
+        "name": "Chhatrapati Shivaji Maharaj Terminus",
+        "url": "https://maps.google.com/?cid=11876918521030452299"
+      },
+      {
+        "name": "Elephanta Caves",
+        "url": "https://maps.google.com/?cid=17630211670962795839"
+      },
+      {
+        "name": "Haji Ali Dargah",
+        "url": "https://maps.google.com/?cid=9625488183952519509"
+      },
+      {
+        "name": "Bandra-Worli Sea Link",
+        "url": "https://maps.google.com/?cid=15404756529957071358"
+      },
+      {
+        "name": "Global Vipassana Pagoda",
+        "url": "https://maps.google.com/?cid=5541797966175574202"
+      }
+    ]
+  },
+  {
+    "title": "Nightlife",
+    "emoji": "🍾",
+    "items": [
+      {
+        "name": "AER (Four Seasons)",
+        "url": "https://maps.google.com/?cid=4019450429003192029"
+      },
+      {
+        "name": "Olive Bar & Kitchen",
+        "url": "https://maps.google.com/?cid=12223927885628971276"
+      },
+      {
+        "name": "Dome (InterContinental Mumbai)",
+        "url": "https://maps.google.com/?cid=16065528136085508130"
+      },
+      {
+        "name": "Gadda Da Vida (Novotel Mumbai Juhu Beach)",
+        "url": "https://maps.google.com/?cid=11547771828690023570"
+      },
+      {
+        "name": "Toit",
+        "url": "https://maps.google.com/?cid=16886121530627244755"
+      },
+      {
+        "name": "Tryst",
+        "url": "https://maps.google.com/?cid=11085462879905078099"
+      }
+    ]
+  },
+  {
+    "title": "Museums",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Chhatrapati Shivaji Maharaj Vastu Sangrahalaya (CSMVS)",
+        "url": "https://maps.google.com/?cid=4964978965790757459"
+      },
+      {
+        "name": "Dr. Bhau Daji Lad Mumbai City Museum",
+        "url": "https://maps.google.com/?cid=8786485953797303813"
+      },
+      {
+        "name": "National Gallery of Modern Art",
+        "url": "https://maps.google.com/?cid=231797977766698702"
+      },
+      {
+        "name": "Mani Bhavan Gandhi Sangrahalaya",
+        "url": "https://maps.google.com/?cid=13885008832326285821"
+      },
+      {
+        "name": "Nehru Science Centre",
+        "url": "https://maps.google.com/?cid=17919872616827938107"
+      },
+      {
+        "name": "RBI Monetary Museum",
+        "url": "https://maps.google.com/?cid=2593424273119725821"
+      }
+    ]
+  },
+  {
+    "title": "Shopping",
+    "emoji": "🛍️",
+    "items": [
+      {
+        "name": "Colaba Causeway",
+        "url": "https://maps.google.com/?q=Colaba+Causeway,+Badhwar+Park,+Apollo+Bandar,+Colaba,+Mumbai,+Maharashtra,+India&ftid=0x3be7d194218579c9:0xd9ae43411acdb561"
+      },
+      {
+        "name": "Linking Road (Bandra)",
+        "url": "https://maps.google.com/?cid=4105983659893513853"
+      },
+      {
+        "name": "High Street Phoenix",
+        "url": "https://maps.google.com/?cid=7325305838549719239"
+      },
+      {
+        "name": "Crawford Market",
+        "url": "https://maps.google.com/?cid=9773657006804612471"
+      },
+      {
+        "name": "Palladium Mall",
+        "url": "https://maps.google.com/?q=Palladium+Mall+Pedestrian+Walkway,+Gandhi+Nagar,+Upper+Worli,+Worli,+Mumbai,+Maharashtra+400013,+India&ftid=0x3be7ce8c80112577:0x1cfb9766a915ef35"
+      },
+      {
+        "name": "Fashion Street",
+        "url": "https://maps.google.com/?cid=17791719222368042043"
+      },
+      {
+        "name": "Chor Bazaar",
+        "url": "https://maps.google.com/?cid=6155052589213284843"
+      }
+    ]
+  }
+]
