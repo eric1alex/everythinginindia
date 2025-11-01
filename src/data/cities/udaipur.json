@@ -1,0 +1,182 @@
+[
+  {
+    "title": "Hotels / Stays",
+    "emoji": "🏨",
+    "items": [
+      {
+        "name": "The Artist House",
+        "url": "https://maps.google.com/?cid=609757340457027261"
+      },
+      {
+        "name": "The Hostel Crown Udaipur",
+        "url": "https://maps.google.com/?cid=10888981630480558451"
+      },
+      {
+        "name": "Hotel Lake Pichola",
+        "url": "https://maps.google.com/?cid=2853267652864711353"
+      },
+      {
+        "name": "Hotel Fateh Garh",
+        "url": "https://maps.google.com/?cid=17554007809464248680"
+      },
+      {
+        "name": "Hotel Mahendra Prakash",
+        "url": "https://maps.google.com/?cid=7577571814601050568"
+      },
+      {
+        "name": "The Lalit Laxmi Vilas Palace Udaipur",
+        "url": "https://maps.google.com/?cid=290866380790378176"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Ambrai Restaurant",
+        "url": "https://maps.google.com/?cid=16404611817941260945"
+      },
+      {
+        "name": "Khamma Ghani Restaurant",
+        "url": "https://maps.google.com/?cid=10413829625136439682"
+      },
+      {
+        "name": "Udai Kothi Restaurant",
+        "url": "https://maps.google.com/?cid=8745889902866943605"
+      },
+      {
+        "name": "Natraj Dining Hall & Restaurant",
+        "url": "https://maps.google.com/?cid=266128787437808050"
+      },
+      {
+        "name": "Restaurant 1559 AD",
+        "url": "https://maps.google.com/?cid=2422489531384356702"
+      },
+      {
+        "name": "Santosh Bhojanalaya",
+        "url": "https://maps.google.com/?cid=18206421560609644108"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "☕",
+    "items": [
+      {
+        "name": "Jheel's Ginger Coffee Bar & Bakery",
+        "url": "https://maps.google.com/?cid=4962119991369523672"
+      },
+      {
+        "name": "Cafe Edelweiss",
+        "url": "https://maps.google.com/?cid=9301767168862011054"
+      },
+      {
+        "name": "Sun & Moon Cafe",
+        "url": "https://maps.google.com/?cid=8489910439537585935"
+      },
+      {
+        "name": "Hello Boho Lake Side Cafe",
+        "url": "https://maps.google.com/?cid=14397702338910772782"
+      },
+      {
+        "name": "Brew Villa - Cafe & Restro",
+        "url": "https://maps.google.com/?cid=6788109175198395280"
+      },
+      {
+        "name": "The Artist House",
+        "url": "https://maps.google.com/?cid=609757340457027261"
+      }
+    ]
+  },
+  {
+    "title": "Lakes / Boat Rides",
+    "emoji": "⛵",
+    "items": [
+      {
+        "name": "Lake Pichola",
+        "url": "https://maps.google.com/?cid=16136281485325290960"
+      },
+      {
+        "name": "Fateh Sagar Lake",
+        "url": "https://maps.google.com/?cid=8754412202283979704"
+      },
+      {
+        "name": "Doodh Talai Lake",
+        "url": "https://maps.google.com/?cid=1588946485181738673"
+      },
+      {
+        "name": "Swaroop Sagar Lake",
+        "url": "https://maps.google.com/?cid=7174507751741692132"
+      },
+      {
+        "name": "Badi Lake / Jiyan Sagar",
+        "url": "https://maps.google.com/?cid=610842835066440974"
+      }
+    ]
+  },
+  {
+    "title": "Palaces / Heritage Sites",
+    "emoji": "🏰",
+    "items": [
+      {
+        "name": "Ambrai Ghat",
+        "url": "https://maps.google.com/?cid=9264987387168891034"
+      },
+      {
+        "name": "City Palace",
+        "url": "https://maps.google.com/?cid=10545089978061990670"
+      },
+      {
+        "name": "Jag Mandir Palace",
+        "url": "https://maps.google.com/?cid=5951116065565877862"
+      },
+      {
+        "name": "Jagdish Temple",
+        "url": "https://maps.google.com/?cid=17298046345835533112"
+      },
+      {
+        "name": "Saheliyon-ki-Bari",
+        "url": "https://maps.google.com/?cid=11340521396609279041"
+      },
+      {
+        "name": "Bagore Ki Haveli",
+        "url": "https://maps.google.com/?cid=17526235240995823629"
+      },
+      {
+        "name": "Monsoon Palace (Sajjangarh Palace)",
+        "url": "https://maps.google.com/?cid=9255976409530578213"
+      },
+      {
+        "name": "Ahar Cenotaphs",
+        "url": "https://maps.google.com/?cid=11084978375282937264"
+      }
+    ]
+  },
+  {
+    "title": "Markets / Shopping",
+    "emoji": "🛍️",
+    "items": [
+      {
+        "name": "Ashwini Bazaar Road",
+        "url": "https://maps.google.com/?q=Ashwini+Bazaar+Rd,+Basti+Ram+Jiki+Badi,+Udaipur,+Rajasthan+313004,+India&ftid=0x3967e571ab19ae0f:0xb7ddd0d1f50622e"
+      },
+      {
+        "name": "Bada Bazaar",
+        "url": "https://maps.google.com/?q=Sindhi+Bazar+Rd,+Old+City,+Rao+Ji+Ka+Hata,+Udaipur,+Rajasthan+313001,+India&ftid=0x3967e57961295cf7:0x7ebdac1702552269"
+      },
+      {
+        "name": "Chetak Circle",
+        "url": "https://maps.google.com/?cid=10061598874622877005"
+      },
+      {
+        "name": "Shilpgram",
+        "url": "https://maps.google.com/?cid=193133210102250982"
+      },
+      {
+        "name": "Mochiwada Bazaar",
+        "url": "https://maps.google.com/?cid=13603448466003310333"
+      }
+    ]
+  }
+]
