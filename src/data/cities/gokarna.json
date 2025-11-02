@@ -1,0 +1,160 @@
+[
+  {
+    "title": "Hotels / Stays",
+    "emoji": "🏨",
+    "items": [
+      {
+        "name": "Nimmu House",
+        "url": "https://maps.google.com/?cid=11545914665051000348"
+      },
+      {
+        "name": "Zostel Gokarna",
+        "url": "https://maps.google.com/?cid=6995848335341176454"
+      },
+      {
+        "name": "Namaste Cafe Cottages",
+        "url": "https://maps.google.com/?cid=13389097492260398226"
+      },
+      {
+        "name": "SAMUDRA BEACH RESORT",
+        "url": "https://maps.google.com/?cid=13358222578026012358"
+      },
+      {
+        "name": "Sanskruti Resort",
+        "url": "https://maps.google.com/?cid=14962003833323390043"
+      },
+      {
+        "name": "Om Beach Resort",
+        "url": "https://maps.google.com/?cid=9182939761985032102"
+      },
+      {
+        "name": "Stone Wood Nature Resort",
+        "url": "https://maps.google.com/?cid=5934152904744657418"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "☕",
+    "items": [
+      {
+        "name": "Bhagavan Cafe",
+        "url": "https://maps.google.com/?cid=5031461493840081209"
+      },
+      {
+        "name": "Ganga Cafe",
+        "url": "https://maps.google.com/?cid=13877336351214934604"
+      },
+      {
+        "name": "Dolphin Shanti Cafe",
+        "url": "https://maps.google.com/?cid=2235049165918110664"
+      },
+      {
+        "name": "Half Moon Cafe",
+        "url": "https://maps.google.com/?cid=4743866419382511320"
+      },
+      {
+        "name": "Cafe Paradise",
+        "url": "https://maps.google.com/?cid=12620439566821920926"
+      },
+      {
+        "name": "Shiva Cafe",
+        "url": "https://maps.google.com/?cid=4550794350240278546"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Mahalaxmi Restaurant",
+        "url": "https://maps.google.com/?cid=15563541382390017984"
+      },
+      {
+        "name": "Shree Shakti Pure Veg",
+        "url": "https://maps.google.com/?cid=2667384490568790304"
+      },
+      {
+        "name": "Namaste Samudra",
+        "url": "https://maps.google.com/?cid=7118249792878986672"
+      },
+      {
+        "name": "Mantra Cafe",
+        "url": "https://maps.google.com/?cid=14801790840604921901"
+      },
+      {
+        "name": "Sea Rock Cafe",
+        "url": "https://maps.google.com/?cid=18441993676635169055"
+      },
+      {
+        "name": "Hotel Gokarna International",
+        "url": "https://maps.google.com/?cid=2372565153101016688"
+      }
+    ]
+  },
+  {
+    "title": "Beaches",
+    "emoji": "🏖️",
+    "items": [
+      {
+        "name": "Gokarna Main Beach",
+        "url": "https://maps.google.com/?cid=10418255072641029977"
+      },
+      {
+        "name": "Kudle Beach",
+        "url": "https://maps.google.com/?cid=5026394495678506561"
+      },
+      {
+        "name": "Om Beach",
+        "url": "https://maps.google.com/?cid=2976685267142006899"
+      },
+      {
+        "name": "Half Moon Beach",
+        "url": "https://maps.google.com/?cid=10538361646011272541"
+      },
+      {
+        "name": "Paradise Beach",
+        "url": "https://maps.google.com/?cid=3438147879393229547"
+      },
+      {
+        "name": "Small Hell Beach",
+        "url": "https://maps.google.com/?cid=5763250848594761577"
+      },
+      {
+        "name": "Nirvana Beach",
+        "url": "https://maps.google.com/?cid=2767407341545402221"
+      }
+    ]
+  },
+  {
+    "title": "Trekking / Viewpoints",
+    "emoji": "⛰️",
+    "items": [
+      {
+        "name": "Half Moon Beach Trek",
+        "url": "https://maps.google.com/?cid=15320113373367163006"
+      },
+      {
+        "name": "Gokarna Cliff Viewpoint",
+        "url": "https://maps.google.com/?cid=8906177242679185875"
+      },
+      {
+        "name": "Tadri Lighthouse",
+        "url": "https://maps.google.com/?cid=3442122602846840166"
+      },
+      {
+        "name": "Paradise Beach Trek",
+        "url": "https://maps.google.com/?cid=7104607341089293307"
+      },
+      {
+        "name": "Om Beach Viewpoint",
+        "url": "https://maps.google.com/?cid=1455735904025900056"
+      },
+      {
+        "name": "Mirjan Fort",
+        "url": "https://maps.google.com/?cid=11730475394730943432"
+      }
+    ]
+  }
+]

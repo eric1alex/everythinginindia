@@ -1,0 +1,126 @@
+[
+  {
+    "title": "Hotels / Stays",
+    "emoji": "🏨",
+    "items": [
+      {
+        "name": "Clafouti Beach Resort",
+        "url": "https://maps.google.com/?cid=12358656532661968842"
+      },
+      {
+        "name": "Neon Nirvana by Absolute",
+        "url": "https://maps.google.com/?cid=13197661496361911718"
+      },
+      {
+        "name": "Gateway Varkala",
+        "url": "https://maps.google.com/?cid=6216255726415666653"
+      },
+      {
+        "name": "Zostel Varkala",
+        "url": "https://maps.google.com/?cid=15701242482252846713"
+      },
+      {
+        "name": "Kaiya House",
+        "url": "https://maps.google.com/?cid=1751748429376238128"
+      },
+      {
+        "name": "Villa Akaya",
+        "url": "https://maps.google.com/?cid=12955586297691203525"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "☕",
+    "items": [
+      {
+        "name": "Cafe del Mar",
+        "url": "https://maps.google.com/?cid=1757999155444723408"
+      },
+      {
+        "name": "Coffee Temple",
+        "url": "https://maps.google.com/?cid=11977233794159108191"
+      },
+      {
+        "name": "InDa Cafe",
+        "url": "https://maps.google.com/?cid=320443760869727183"
+      },
+      {
+        "name": "Little Tibet",
+        "url": "https://maps.google.com/?cid=9055713266384868211"
+      },
+      {
+        "name": "Rock N Roll Cafe",
+        "url": "https://maps.google.com/?cid=4572050798770989211"
+      },
+      {
+        "name": "Aum Cafe",
+        "url": "https://maps.google.com/?cid=6138493833623375387"
+      },
+      {
+        "name": "Lumuma Cafe",
+        "url": "https://maps.google.com/?cid=18158935240543595905"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Theeram Beach Restaurant",
+        "url": "https://maps.google.com/?cid=8909126398599507938"
+      },
+      {
+        "name": "Abba Restaurant",
+        "url": "https://maps.google.com/?cid=8381138096722083074"
+      },
+      {
+        "name": "God's Own Country Kitchen",
+        "url": "https://maps.google.com/?cid=13330976175180632248"
+      },
+      {
+        "name": "Tibetan Kitchen",
+        "url": "https://www.google.com/maps?cid=9055713266384868211"
+      },
+      {
+        "name": "Mamma Champos",
+        "url": "https://maps.google.com/?cid=8498696016850963433"
+      }
+    ]
+  },
+  {
+    "title": "Beaches / Cliffs",
+    "emoji": "🏖️",
+    "items": [
+      {
+        "name": "Crab Beach",
+        "url": "https://maps.google.com/?cid=16268253459456300368"
+      },
+      {
+        "name": "Varkala Cliff",
+        "url": "https://maps.google.com/?cid=5952106106515175065"
+      },
+      {
+        "name": "Papanasam Beach",
+        "url": "https://maps.google.com/?cid=16972721441786795315"
+      },
+      {
+        "name": "Kappil Beach",
+        "url": "https://maps.google.com/?cid=12720552926195516728"
+      },
+      {
+        "name": "Edava Beach",
+        "url": "https://maps.google.com/?cid=276950108226944565"
+      },
+      {
+        "name": "Black Beach",
+        "url": "https://maps.google.com/?cid=2465469815741631145"
+      },
+      {
+        "name": "Odayam Beach",
+        "url": "https://maps.google.com/?cid=10684738801387950923"
+      }
+    ]
+  }
+]

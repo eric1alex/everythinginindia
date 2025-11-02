@@ -1,0 +1,84 @@
+---
+// FIX: Using '~/' alias instead of '../'
+import Layout from '~/layouts/Layout.astro';
+import contributors from '~/data/contributors.json';
+---
+<Layout
+  title="Our Contributors - Where In India"
+  description="A list of all the amazing people helping to build this travel directory."
+>
+  <main class="contributor-page-container">
+    <header class="contributor-header">
+      <h1>Meet the Contributors</h1>
+      <p class="subtitle">
+        This site is built by travelers, for travelers. These are the amazing people who have shared their recommendations to help build this public guide.
+      </p>
+    </header>
+
+    <div class="contributor-list-wrapper">
+      <ul class="contributor-list">
+        {contributors.map(contributor => (
+          <li class="contributor-item">
+            <a href={contributor.profileUrl} target="_blank" rel="noopener noreferrer" class="contributor-link">
+              {contributor.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .contributor-page-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem 1rem;
+  }
+  .contributor-header {
+    text-align: center;
+    margin: 2rem auto 3rem auto;
+  }
+  .contributor-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .contributor-header .subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+  }
+  .contributor-list-wrapper {
+    background-color: var(--card-background);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+  }
+  .contributor-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  .contributor-item {
+    border-bottom: 1px solid var(--card-border);
+  }
+  .contributor-item:last-child {
+    border-bottom: none;
+  }
+  .contributor-link {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 1rem 0.5rem;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+  }
+  .contributor-link:hover {
+    background-color: #f9f9f9;
+    color: var(--link-hover-color);
+    padding-left: 1rem;
+  }
+</style>
+

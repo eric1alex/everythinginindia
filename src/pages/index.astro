@@ -1,6 +1,7 @@
 ---
+// FIX: Using '~/' alias instead of '../'
 import Layout from '../layouts/Layout.astro';
-import locations from '../data/locations.json';
+import locations from '~/data/locations.json';
 
 // --- NEW LOGIC FOR "FEELING LUCKY" ---
 // 1. Find all the .json files that actually exist.
@@ -25,14 +26,14 @@ const availableSlugs = [];
 const states = locations.states;
 const unionTerritories = locations.unionTerritories;
 ---
-
+<!-- Rest of the file is identical... -->
 <Layout 
   title="Where In India - The most trusted list of recos for India"
   description="A hand-curated travel directory for India, built for easy exploration and trip planning. Stop getting lost on Google."
   ogImage="https://placehold.co/1200x630/333/fff?text=Where+In+India"
 >
 	<main>
-		<!-- New Hero Section -->
+		<!-- (Hero, Search, and List Grid sections are here...) -->
 		<header class="hero">
 			<div class="hero-image"></div>
 			<div class="hero-text">
@@ -40,53 +41,34 @@ const unionTerritories = locations.unionTerritories;
 				<p>A curated directory of places, culture, and experiences across every state — explored, mapped, and made easy for you.</p>
 			</div>
 		</header>
-
-		<!-- Search Bar -->
 		<div class="search-container">
 			<div class="search-wrapper">
 				<div class="search-bar">
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
 					<input type="text" id="state-search" placeholder="Search for a state or city...">
 				</div>
                 <button id="feeling-lucky" class="lucky-button">Feeling Lucky?</button>
             </div>
 		</div>
-
-		<!-- Simplified 2-Column List Grid -->
 		<div class="main-content">
 			<div class="list-grid">
-				<!-- Column 1: States -->
 				<div class="list-column">
 					<h2><span class="emoji">📍</span> States</h2>
 					<ol>
 						{states.map(state => (
 							<li class="list-item" data-name={state.name.toLowerCase()} data-cities={JSON.stringify(state.cities.map(c => c.name.toLowerCase()))}>
-								<a 
-									href="#" 
-									class="state-link"
-									data-state={state.name}
-									data-cities={JSON.stringify(state.cities)}
-								>{state.name}</a>
+								<a href="#" class="state-link" data-state={state.name} data-cities={JSON.stringify(state.cities)}>{state.name}</a>
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
 							</li>
 						))}
 					</ol>
 				</div>
-				
-				<!-- Column 2: Union Territories -->
 				<div class="list-column">
 					<h2><span class="emoji">🇮🇳</span> Union Territories</h2>
 					<ol>
 						{unionTerritories.map(ut => (
 							<li class="list-item" data-name={ut.name.toLowerCase()} data-cities={JSON.stringify(ut.cities.map(c => c.name.toLowerCase()))}>
-								<a 
-									href="#" 
-									class="state-link"
-									data-state={ut.name}
-									data-cities={JSON.stringify(ut.cities)}
-								>{ut.name}</a>
+								<a href="#" class="state-link" data-state={ut.name} data-cities={JSON.stringify(ut.cities)}>{ut.name}</a>
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
 							</li>
 						))}
@@ -95,8 +77,6 @@ const unionTerritories = locations.unionTerritories;
 			</div>
 		</div>
 	</main>
-
-	<!-- Modal (Floating Window) HTML -->
 	<div id="city-modal" class="modal-overlay">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -109,24 +89,17 @@ const unionTerritories = locations.unionTerritories;
 			</div>
 		</div>
 	</div>
-
-	<!-- Client-side script for Search and Modal -->
 	<script is:raw define:vars={{ availableSlugs }}>
 		document.addEventListener('DOMContentLoaded', () => {
-			// --- STATE/CITY SEARCH LOGIC ---
 			const searchInput = document.getElementById('state-search');
 			const listItems = document.querySelectorAll('.list-item');
-
 			searchInput.addEventListener('input', (e) => {
 				const searchTerm = e.target.value.toLowerCase().trim();
-
 				listItems.forEach(item => {
                     const itemName = item.dataset.name;
                     const cityNames = JSON.parse(item.dataset.cities || '[]');
-                    
                     const nameMatch = itemName.includes(searchTerm);
                     const cityMatch = cityNames.some(city => city.includes(searchTerm));
-
 					if (nameMatch || cityMatch) {
 						item.style.display = 'flex';
 					} else {
@@ -134,66 +107,48 @@ const unionTerritories = locations.unionTerritories;
 					}
 				});
 			});
-
-			// --- MODAL (FLOATING WINDOW) LOGIC ---
-			const modal = document.getElementById('city-modal');
-			const modalTitle = document.getElementById('modal-title');
-			const modalCityList = document.getElementById('modal-city-list');
-			const modalNoCities = document.getElementById('modal-no-cities');
-			const modalClose = document.getElementById('modal-close');
+			const cityModal = document.getElementById('city-modal');
+			const cityModalTitle = document.getElementById('modal-title');
+			const cityModalList = document.getElementById('modal-city-list');
+			const cityModalNoCities = document.getElementById('modal-no-cities');
+			const cityModalClose = document.getElementById('modal-close');
 			const stateLinks = document.querySelectorAll('.state-link');
-
 			stateLinks.forEach(link => {
 				link.addEventListener('click', (e) => {
 					e.preventDefault();
-					
 					const stateName = link.dataset.state;
 					const cities = JSON.parse(link.dataset.cities);
-
 					if (cities.length === 1 && cities[0].slug) {
 						window.location.href = `/${cities[0].slug}`;
 						return;
 					}
-					
-					modalTitle.textContent = `Cities in ${stateName}`;
-					modalCityList.innerHTML = '';
-
+					cityModalTitle.textContent = `Cities in ${stateName}`;
+					cityModalList.innerHTML = '';
 					if (cities.length > 0) {
-						modalNoCities.style.display = 'none';
-						modalCityList.style.display = 'block';
-
+						cityModalNoCities.style.display = 'none';
+						cityModalList.style.display = 'block';
 						cities.forEach(city => {
 							const li = document.createElement('li');
 							const a = document.createElement('a');
 							a.href = `/${city.slug}`;
 							a.textContent = city.name;
 							li.appendChild(a);
-							modalCityList.appendChild(li);
+							cityModalList.appendChild(li);
 						});
 					} else {
-						modalNoCities.style.display = 'block';
-						modalCityList.style.display = 'none';
+						cityModalNoCities.style.display = 'block';
+						cityModalList.style.display = 'none';
 					}
-
-					modal.classList.add('visible');
+					cityModal.classList.add('visible');
 				});
 			});
-
-			const closeModal = () => {
-				modal.classList.remove('visible');
-			}
-			modalClose.addEventListener('click', closeModal);
-			modal.addEventListener('click', (e) => {
-				if (e.target === modal) {
-					closeModal();
-				}
+			const closeCityModal = () => cityModal.classList.remove('visible');
+			cityModalClose.addEventListener('click', closeCityModal);
+			cityModal.addEventListener('click', (e) => {
+				if (e.target === cityModal) closeCityModal();
 			});
-
-            // --- "FEELING LUCKY?" LOGIC ---
             const luckyButton = document.getElementById('feeling-lucky');
             if (luckyButton) {
-                // 3. The 'availableSlugs' variable is now correct and only
-                // contains slugs for pages that have content.
                 luckyButton.addEventListener('click', () => {
                     if (availableSlugs && availableSlugs.length > 0) {
                         const randomIndex = Math.floor(Math.random() * availableSlugs.length);

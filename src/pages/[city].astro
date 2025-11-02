@@ -1,10 +1,11 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import locations from '../data/locations.json'; // Your master list
+// FIX: Using '~/' alias instead of '../'
+import Layout from '~/layouts/Layout.astro';
+import locations from '~/data/locations.json'; // Your master list
 
 // This is a special Astro function
 export async function getStaticPaths() {
-  // 1. Find all *existing* JSON data files
+  // 1. We find all the city data files *inside* this function
   const allCityData = await import.meta.glob('../data/cities/*.json');
   
   const allPages = [];
@@ -131,7 +132,7 @@ const filteredSuggestions = suggestions
         <p class="coming-soon-text">
           Know a great spot? Be the first to contribute and help us build this page!
         </p>
-        <a href= "https://docs.google.com/forms/d/e/1FAIpQLScOGneda4XsF2NyMZeto6f59Niz4R8bn7eKFPPAQ4ymaEE6Vw/viewform?usp=dialog"  target="_blank" rel="noopener noreferrer"  class="coming-soon-button">Contribute a Place</a>
+        <a href= "https://docs.google.com/forms/d/e/1FAIpQLScOGneda4XsF2NyMZeto6f59Niz4R8bn7eKFPPAQ4ymaEE6Vw/viewform?usp=dialog" 	target="_blank" rel="noopener noreferrer" 	class="coming-soon-button">Contribute a Place</a>
 
         <!-- Suggestions Section -->
         {filteredSuggestions.length > 0 && (
