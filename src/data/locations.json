@@ -115,6 +115,12 @@
           "slug": "udaipur",
           "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1o-FbSY9PHn0KQUh_-ey_vT0xDjGTG68&usp=sharing",
           "imageUrl": "https://plus.unsplash.com/premium_photo-1697730426227-9056296a0315?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+        },
+        {
+          "name": "Jaipur",
+          "slug": "jaipur",
+          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1sJ7Pagblwp4W9u-v7GtqGgBf_uBJ2-w&usp=sharing",
+          "imageUrl": "https://images.unsplash.com/photo-1477586957327-847a0f3f4fe3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
         }
       ]
     }

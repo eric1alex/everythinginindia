@@ -1,0 +1,194 @@
+[
+  {
+    "title": "Hotels / Stays",
+    "emoji": "🏨",
+    "items": [
+      {
+        "name": "Pearl Palace Heritage",
+        "url": "https://maps.google.com/?cid=13515078123060888676"
+      },
+      {
+        "name": "Hotel Arya Niwas",
+        "url": "https://maps.google.com/?cid=18052708930009386839"
+      },
+      {
+        "name": "Shahpura House",
+        "url": "https://maps.google.com/?cid=213745007535542725"
+      },
+      {
+        "name": "Dera Rawatsar",
+        "url": "https://maps.google.com/?cid=5913607175003160142"
+      },
+      {
+        "name": "Umaid Mahal - A Heritage Hotel",
+        "url": "https://maps.google.com/?cid=12284158776235014231"
+      },
+      {
+        "name": "Samode Haveli",
+        "url": "https://maps.google.com/?cid=13443189738546563270"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Rawat Misthan Bhandar",
+        "url": "https://maps.google.com/?cid=12642927634706444064"
+      },
+      {
+        "name": "Spice Court",
+        "url": "https://maps.google.com/?cid=15338035396026959247"
+      },
+      {
+        "name": "Handi Restaurant",
+        "url": "https://maps.google.com/?cid=14433092704581672109"
+      },
+      {
+        "name": "Niros",
+        "url": "https://maps.google.com/?cid=6765645601380862042"
+      },
+      {
+        "name": "Baluchi at The Lalit Jaipur",
+        "url": "https://maps.google.com/?cid=11772362276451505167"
+      },
+      {
+        "name": "Sethi Bar-Be-Que",
+        "url": "https://maps.google.com/?cid=9954605224654996253"
+      },
+      {
+        "name": "Kanha Restaurant",
+        "url": "https://maps.google.com/?cid=3400241091002588371"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "☕",
+    "items": [
+      {
+        "name": "Tapri Central",
+        "url": "https://maps.google.com/?cid=12502191192263122506"
+      },
+      {
+        "name": "Anokhi Cafe",
+        "url": "https://maps.google.com/?cid=10971838361334104819"
+      },
+      {
+        "name": "Curious Life Coffee Roasters",
+        "url": "https://maps.google.com/?cid=16813533208246670210"
+      },
+      {
+        "name": "Cafe Bae",
+        "url": "https://maps.google.com/?cid=304095306035974032"
+      },
+      {
+        "name": "The Tattoo Cafe & Lounge",
+        "url": "https://maps.google.com/?cid=11819943941184933124"
+      },
+      {
+        "name": "OTH (On The House)",
+        "url": "https://maps.google.com/?cid=10866123031082923333"
+      }
+    ]
+  },
+  {
+    "title": "Forts / Palaces",
+    "emoji": "🏰",
+    "items": [
+      {
+        "name": "Amber Fort",
+        "url": "https://maps.google.com/?cid=7071178524615540267"
+      },
+      {
+        "name": "Nahargarh Fort",
+        "url": "https://maps.google.com/?cid=768610193590099595"
+      },
+      {
+        "name": "Jaigarh Fort",
+        "url": "https://maps.google.com/?cid=13554080739731002241"
+      },
+      {
+        "name": "City Palace",
+        "url": "https://maps.google.com/?cid=4935968491820645216"
+      },
+      {
+        "name": "Hawa Mahal",
+        "url": "https://maps.google.com/?cid=9659760862336692748"
+      },
+      {
+        "name": "Jal Mahal (Viewpoint)",
+        "url": "https://maps.google.com/?cid=10940174856982080466"
+      },
+      {
+        "name": "Panna Meena ka Kund",
+        "url": "https://maps.google.com/?cid=16089960436941263472"
+      }
+    ]
+  },
+  {
+    "title": "Markets / Bazaars",
+    "emoji": "🛍️",
+    "items": [
+      {
+        "name": "Johari Bazaar",
+        "url": "https://maps.google.com/?cid=14661966290454385460"
+      },
+      {
+        "name": "Bapu Bazaar",
+        "url": "https://maps.google.com/?cid=8924709007358644531"
+      },
+      {
+        "name": "Nehru Bazaar",
+        "url": "https://maps.google.com/?cid=15083066967009851568"
+      },
+      {
+        "name": "Kishanpole Bazaar",
+        "url": "https://maps.google.com/?cid=18375807824380771691"
+      },
+      {
+        "name": "Tripolia Bazaar",
+        "url": "https://maps.google.com/?cid=16409519141840141708"
+      },
+      {
+        "name": "Chandpole Bazaar",
+        "url": "https://maps.google.com/?cid=6375533732932522948"
+      },
+      {
+        "name": "Chaura Rasta",
+        "url": "https://maps.google.com/?cid=15885248535926106729"
+      }
+    ]
+  },
+  {
+    "title": "Heritage Sites",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Jantar Mantar",
+        "url": "https://maps.google.com/?cid=16810253135964384190"
+      },
+      {
+        "name": "Galtaji Temple",
+        "url": "https://maps.google.com/?cid=11348130656272944704"
+      },
+      {
+        "name": "Sisodia Rani Ka Bagh",
+        "url": "https://maps.google.com/?cid=17720047048609439798"
+      },
+      {
+        "name": "Gaitore Ki Chhatriyan",
+        "url": "https://maps.google.com/?cid=5565317460805966565"
+      },
+      {
+        "name": "Govind Dev Ji Temple",
+        "url": "https://maps.google.com/?cid=2477209854261747804"
+      },
+      {
+        "name": "Lakshmi Narayan Temple (Birla Mandir)",
+        "url": "https://maps.google.com/?cid=3255477369421070190"
+      }
+    ]
+  }
+]
