@@ -1,46 +1,58 @@
 ---
-// FIX: Using '~/' alias instead of '../'
+// 1. Import your components and data
 import Layout from '~/layouts/Layout.astro';
-import locations from '~/data/locations.json'; // Your master list
+import locations from '~/data/locations.json';
+import FeedbackWidget from '~/components/FeedbackWidget.astro';
+import RelatedDestinations from '~/components/RelatedDestinations.astro'; // NEW: Import Related Destinations
+
+// 2. --- PASTE YOUR GOOGLE FORM DETAILS HERE ---
+const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSerku0WY4t5LWlWBEoSYmoWqUiWKNDpLMzb_6R8T7LoqRHUag/formResponse";
+const CITY_ENTRY_ID = "entry.693458303";
+const HELPFUL_ENTRY_ID = "entry.1400638291";
+const FEEDBACK_ENTRY_ID = "entry.1933085880";
+// ---------------------------------------------
 
 // This is a special Astro function
 export async function getStaticPaths() {
-  // 1. We find all the city data files *inside* this function
+  // Find all *existing* JSON data files
   const allCityData = await import.meta.glob('../data/cities/*.json');
   
   const allPages = [];
   const availableCities = []; // A list of cities that HAVE content
 
-  // 2. First, let's find out which cities are available
+  // First, let's find out which cities are available
   for (const loc of [...locations.states, ...locations.unionTerritories]) {
     for (const city of loc.cities) {
       const importPath = `../data/cities/${city.slug}.json`;
       if (allCityData[importPath]) {
-        availableCities.push(city);
+        // Only add if it has lat/lon for the new feature
+        if (city.lat && city.lon) {
+           availableCities.push(city);
+        }
       }
     }
   }
 
-  // 3. Now, create a page for *every* city in locations.json
+  // Now, create a page for *every* city in locations.json
   for (const loc of [...locations.states, ...locations.unionTerritories]) {
     for (const city of loc.cities) {
       
       const importPath = `../data/cities/${city.slug}.json`;
       let placesData = null; // Default to null (no content)
 
-      // 4. If the JSON file exists, load its content
+      // If the JSON file exists, load its content
       if (allCityData[importPath]) {
         const cityDataModule = await allCityData[importPath]();
         placesData = cityDataModule.default;
       }
 
-      // 5. Pass all data to the page. `places` will be null if no content exists.
+      // Pass all data to the page. `places` will be null if no content exists.
       allPages.push({ 
         params: { city: city.slug },
         props: {
           cityName: city.name,
           stateName: loc.name,
-          heroImageUrl: city.imageUrl || "https://placehold.co/1200x600/ccc/aaa?text=Where+In+India",
+          heroImageUrl: city.imageUrl || "httpss://placehold.co/1200x600/ccc/aaa?text=Where+In+India",
           mapUrl: city.mapUrl || "#",
           places: placesData, // This is the key! It's either the data or null.
           suggestions: availableCities // Pass the list of available cities
@@ -52,14 +64,31 @@ export async function getStaticPaths() {
   return allPages;
 }
 
-// 6. Get all our props. `places` will be null for empty pages.
+// Get all our props. `places` will be null for empty pages.
 const { cityName, stateName, heroImageUrl, mapUrl, places, suggestions } = Astro.props;
+const currentCitySlug = Astro.params.city;
 
-// 7. Create a filtered list of suggestions (max 3, and not this current page)
+// Create a filtered list of suggestions (max 3, and not this current page)
 const filteredSuggestions = suggestions
-    .filter(c => c.slug !== Astro.params.city)
+    .filter(c => c.slug !== currentCitySlug)
     .sort(() => 0.5 - Math.random()) // Randomize
     .slice(0, 3); // Take the first 3
+
+// NEW: Create a flat list of all cities with coords to pass to the new component
+const allCitiesList = [];
+[...locations.states, ...locations.unionTerritories].forEach(loc => {
+    loc.cities.forEach(c => {
+        if (c.lat && c.lon) {
+            allCitiesList.push({
+                slug: c.slug,
+                name: c.name,
+                lat: c.lat,
+                lon: c.lon,
+                imageUrl: c.imageUrl // <-- THIS IS THE NEW LINE
+            });
+        }
+    });
+});
 ---
 
 <Layout 
@@ -68,12 +97,6 @@ const filteredSuggestions = suggestions
   ogImage={heroImageUrl}
 >
 	<main>
-    <!-- 
-      ===============================================================
-      START: THE CONDITIONAL LOGIC
-      If 'places' (our data) exists, show the recommendations.
-      ===============================================================
-    -->
 		{places ? (
       <>
         <!-- New Hero Section -->
@@ -107,6 +130,24 @@ const filteredSuggestions = suggestions
               </div>
             ))}
           </div>
+
+          <!-- Feedback Widget -->
+          <FeedbackWidget 
+            cityName={cityName}
+            formUrl={FORM_URL}
+            cityEntry={CITY_ENTRY_ID}
+            helpfulEntry={HELPFUL_ENTRY_ID}
+            feedbackEntry={FEEDBACK_ENTRY_ID}
+          />
+
+          <!-- 
+            NEW: Add the Related Destinations Widget
+          -->
+          <RelatedDestinations
+            currentCitySlug={currentCitySlug}
+            allCities={allCitiesList}
+          />
+          
         </div>
 
         <!-- Floating Map Button -->
@@ -121,9 +162,7 @@ const filteredSuggestions = suggestions
       </>
     ) : (
     <!-- 
-      ===============================================================
-      ELSE: If 'places' is null, show the "Coming Soon" page.
-      ===============================================================
+      ("Coming Soon" page logic)
     -->
       <div class="coming-soon-container">
         <h1 class="coming-soon-title">Coming Soon!</h1>
@@ -132,9 +171,7 @@ const filteredSuggestions = suggestions
         <p class="coming-soon-text">
           Know a great spot? Be the first to contribute and help us build this page!
         </p>
-        <a href= "https://docs.google.com/forms/d/e/1FAIpQLScOGneda4XsF2NyMZeto6f59Niz4R8bn7eKFPPAQ4ymaEE6Vw/viewform?usp=dialog" 	target="_blank" rel="noopener noreferrer" 	class="coming-soon-button">Contribute a Place</a>
-
-        <!-- Suggestions Section -->
+        <a href= "httpss://docs.google.com/forms/d/e/1FAIpQLScOGneda4XsF2NyMZeto6f59Niz4R8bn7eKFPPAQ4ymaEE6Vw/viewform?usp=dialog" 	target="_blank" rel="noopener noreferrer" 	class="coming-soon-button">Contribute a Place</a>
         {filteredSuggestions.length > 0 && (
           <div class="suggestions-container">
             <h2 class="suggestions-title">In the meantime, you might want to check out...</h2>
@@ -151,7 +188,6 @@ const filteredSuggestions = suggestions
         )}
       </div>
     )}
-    <!-- END: CONDITIONAL LOGIC -->
 	</main>
 
 	<!-- Button animation script (only runs if the button exists) -->
@@ -166,4 +202,3 @@ const filteredSuggestions = suggestions
 		});
 	</script>
 </Layout>
-

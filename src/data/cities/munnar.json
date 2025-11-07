@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Hotels / Stays",
+    "emoji": "🏨",
+    "items": [
+      {
+        "name": "Spice Tree Munnar",
+        "url": "https://maps.google.com/?cid=8814793889546908919"
+      },
+      {
+        "name": "Deshadan Mountain Resort",
+        "url": "https://maps.google.com/?cid=17309444620217394884"
+      },
+      {
+        "name": "Windermere Estate",
+        "url": "https://maps.google.com/?cid=11939435750693059010"
+      },
+      {
+        "name": "Eden Heights",
+        "url": "https://maps.google.com/?cid=14718825635112204124"
+      },
+      {
+        "name": "The Siena Village",
+        "url": "https://maps.google.com/?cid=6624341024338158211"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "☕",
+    "items": [
+      {
+        "name": "Tea Tales Cafe",
+        "url": "https://maps.google.com/?cid=2798595037586768145"
+      },
+      {
+        "name": "Munnar Cafe",
+        "url": "https://maps.google.com/?cid=10449338755917956249"
+      },
+      {
+        "name": "ChillOut",
+        "url": "https://maps.google.com/?cid=7796305159182642597"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Rapsy Restaurant",
+        "url": "https://maps.google.com/?cid=557339003858970721"
+      },
+      {
+        "name": "Rochas Restaurant",
+        "url": "https://maps.google.com/?cid=11675129612910096644"
+      },
+      {
+        "name": "Hotel Saravana Bhavan",
+        "url": "https://maps.google.com/?cid=6963491665407823451"
+      },
+      {
+        "name": "Hotel Gurubhavan",
+        "url": "https://maps.google.com/?cid=15275698556300127054"
+      },
+      {
+        "name": "East End",
+        "url": "https://maps.google.com/?cid=10117586068745321271"
+      }
+    ]
+  },
+  {
+    "title": "Viewpoints",
+    "emoji": "🏞️",
+    "items": [
+      {
+        "name": "Pothamedu Viewpoint",
+        "url": "https://maps.google.com/?cid=15575903156572323293"
+      },
+      {
+        "name": "Chithirapuram Viewpoint",
+        "url": "https://maps.google.com/?cid=233353963667460572"
+      },
+      {
+        "name": "Attukad Waterfalls Viewpoint",
+        "url": "https://maps.google.com/?cid=1578527597596709082"
+      },
+      {
+        "name": "Lock Heart Gap Viewpoint",
+        "url": "https://maps.google.com/?cid=9519565711346580068"
+      },
+      {
+        "name": "Kolukkumalai Tea Estate Viewpoint",
+        "url": "https://maps.google.com/?cid=5314835618563833938"
+      },
+      {
+        "name": "Anayirankal Dam Viewpoint",
+        "url": "https://maps.google.com/?cid=4712645668023273101"
+      }
+    ]
+  },
+  {
+    "title": "Nature Trails / Treks",
+    "emoji": "🚶‍♂️",
+    "items": [
+      {
+        "name": "Chokramudi Peak Trek",
+        "url": "https://maps.google.com/?cid=11651972754853332335"
+      },
+      {
+        "name": "Rhodo Valley Trek",
+        "url": "https://maps.google.com/?cid=9755267549294853351"
+      },
+      {
+        "name": "Phantom Rock Trail",
+        "url": "https://maps.google.com/?cid=6309729225363248885"
+      },
+      {
+        "name": "Lakshmi Hills Trek",
+        "url": "https://maps.google.com/?cid=4114252177196445233"
+      },
+      {
+        "name": "Anaerangal Camp Trail",
+        "url": "https://maps.google.com/?cid=4643508427650641127"
+      }
+    ]
+  },
+  {
+    "title": "Waterfalls",
+    "emoji": "🌊",
+    "items": [
+      {
+        "name": "Lakkam Waterfalls",
+        "url": "https://maps.google.com/?cid=1003657979723056441"
+      },
+      {
+        "name": "Nyayamakad Waterfalls",
+        "url": "https://maps.google.com/?cid=5754331536069661082"
+      },
+      {
+        "name": "Valara Waterfalls",
+        "url": "https://maps.google.com/?cid=14482398237935533688"
+      },
+      {
+        "name": "Cheeyappara Waterfalls",
+        "url": "https://maps.google.com/?cid=3024405414896447274"
+      },
+      {
+        "name": "Thoovanam Waterfalls",
+        "url": "https://maps.google.com/?cid=2875633395285587281"
+      },
+      {
+        "name": "Kuthumkal Waterfalls",
+        "url": "https://maps.google.com/?cid=13284220253525563919"
+      },
+      {
+        "name": "Periyakanal Waterfalls",
+        "url": "https://maps.google.com/?cid=1735551145173227165"
+      }
+    ]
+  }
+]

@@ -7,7 +7,9 @@
           "name": "Goa",
           "slug": "goa",
           "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1l-Q-_GSUQwtdBCPEJn6CTMrZm376fRU&usp=sharing",
-          "imageUrl": "https://plus.unsplash.com/premium_photo-1697730411634-5313371ad8fe?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+          "imageUrl": "https://plus.unsplash.com/premium_photo-1697730411634-5313371ad8fe?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+          "lat": 15.3494864, 
+          "lon": 73.6767497
         }
       ]
     },
@@ -18,7 +20,9 @@
           "name": "Bangalore",
           "slug": "bengaluru",
           "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=106bPLjBko61yYIC114dJBCREET5qSw0&usp=sharing",
-          "imageUrl": "https://plus.unsplash.com/premium_photo-1697729606469-027395aadb6f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+          "imageUrl": "https://plus.unsplash.com/premium_photo-1697729606469-027395aadb6f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+          "lat": 12.9539456, 
+          "lon": 77.4661262
         },
         {
           "name": "Mysore",
@@ -29,7 +33,9 @@
           "name": "Gokarna",
           "slug": "gokarna",
           "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1hPPcXXP9DY-r3iXVQx7bJ5buEZFEMtg&usp=sharing",
-          "imageUrl": "https://images.unsplash.com/photo-1585435126907-43110c69def0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
+          "imageUrl": "https://images.unsplash.com/photo-1585435126907-43110c69def0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074",
+          "lat": 14.5372442, 
+          "lon": 74.2851715
         }
       ]
     },
@@ -50,12 +56,17 @@
           "name": "Varkala",
           "slug": "varkala",
           "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=15hGIcxZgyLNXW1ppt_ZfwMqTWxbm3e8&usp=sharing",
-          "imageUrl": "https://images.unsplash.com/photo-1610817201767-793a9130ce07?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1062"
+          "imageUrl": "https://images.unsplash.com/photo-1610817201767-793a9130ce07?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1062",
+          "lat": 8.7432562, 
+          "lon": 76.6968829
         },
         {
           "name": "Munnar",
           "slug": "munnar",
-          "imageUrl": "https://placehold.co/1200x600/94E874/FFFFFF?text=Munnar"
+          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1cvMuxBSaIP4P8_sEh7MlsityRuJIPjE&usp=sharing",
+          "imageUrl": "https://images.unsplash.com/photo-1470123808288-1e59739dea12?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171",
+          "lat": 10.0806494, 
+          "lon": 77.0538781
         }
       ]
     },
@@ -66,7 +77,9 @@
           "name": "Mumbai",
           "slug": "mumbai",
           "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1kmmbzn6hUQk5vdLVVpHssM6LOj7DJq0&usp=sharing",
-          "imageUrl": "https://plus.unsplash.com/premium_photo-1670788667595-37df3ae70545?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+          "imageUrl": "https://plus.unsplash.com/premium_photo-1670788667595-37df3ae70545?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+          "lat": 19.0824822, 
+          "lon": 72.7141285
         },
         {
           "name": "Pune",
@@ -92,7 +105,9 @@
           "name": "Kodaikanal",
           "slug": "kodaikanal",
           "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1vQjiW6vCE_WhK__XAoW-27BB3hQBib4&usp=sharing",
-          "imageUrl": "https://images.unsplash.com/photo-1593692867948-bb6ba7c03fd1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1384"
+          "imageUrl": "https://images.unsplash.com/photo-1593692867948-bb6ba7c03fd1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1384",
+          "lat": 10.2360925, 
+          "lon": 77.4777206
         }
       ]
     },
@@ -103,7 +118,9 @@
           "name": "Manali",
           "slug": "manali",
           "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1H5pVThubUyP35znF-klt36_OiE5YZGg&usp=sharing",
-          "imageUrl": "https://images.unsplash.com/photo-1593181629936-11c609b8db9b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
+          "imageUrl": "https://images.unsplash.com/photo-1593181629936-11c609b8db9b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074",
+          "lat": 32.2394704, 
+          "lon": 77.1665202
         }
       ]
     },
@@ -114,13 +131,17 @@
           "name": "Udaipur",
           "slug": "udaipur",
           "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1o-FbSY9PHn0KQUh_-ey_vT0xDjGTG68&usp=sharing",
-          "imageUrl": "https://plus.unsplash.com/premium_photo-1697730426227-9056296a0315?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+          "imageUrl": "https://plus.unsplash.com/premium_photo-1697730426227-9056296a0315?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+          "lat": 24.6082638, 
+          "lon": 73.6224704
         },
         {
           "name": "Jaipur",
           "slug": "jaipur",
           "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1sJ7Pagblwp4W9u-v7GtqGgBf_uBJ2-w&usp=sharing",
-          "imageUrl": "https://images.unsplash.com/photo-1477586957327-847a0f3f4fe3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+          "imageUrl": "https://images.unsplash.com/photo-1477586957327-847a0f3f4fe3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+          "lat": 26.8851151, 
+          "lon": 75.6257462
         }
       ]
     }
@@ -133,7 +154,9 @@
           "name": "Pondicherry",
           "slug": "puducherry",
           "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1-fkfAkFASbzQQuaJ3wDA0Czqp5898-M&usp=sharing",
-          "imageUrl": "https://images.unsplash.com/photo-1598677833732-7857ae95afce?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=990"
+          "imageUrl": "https://images.unsplash.com/photo-1598677833732-7857ae95afce?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=990",
+          "lat": 11.9392201, 
+          "lon": 79.7719936
         }
       ]
     }

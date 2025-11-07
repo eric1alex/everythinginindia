@@ -1,0 +1,89 @@
+---
+// This component receives the current city and a list of all other cities
+export interface Props {
+  currentCitySlug: string;
+  allCities: any[]; // A list of all cities from locations.json
+}
+
+const { currentCitySlug, allCities } = Astro.props;
+
+// --- 1. Find the coordinates of our CURRENT city ---
+let currentCity = null;
+for (const loc of allCities) {
+    if (loc.slug === currentCitySlug) {
+        currentCity = loc;
+        break;
+    }
+}
+
+let nearbyCities = [];
+
+if (currentCity) {
+  // --- 2. Calculate the distance to every OTHER city ---
+  nearbyCities = allCities
+    .filter(city => city.slug !== currentCitySlug && city.imageUrl) // Don't suggest itself & ensure it has an image
+    .map(city => {
+      const distance = getDistance(currentCity.lat, currentCity.lon, city.lat, city.lon);
+      return { ...city, distance };
+    })
+    // --- THIS IS THE NEW VALIDATION ---
+    .filter(city => city.distance < 300) // 
+    // ----------------------------------
+    .sort((a, b) => a.distance - b.distance) // Sort by closest
+    .slice(0, 3); // --- 3. Pick the top 3 closest cities ---
+}
+
+
+/**
+ * Haversine formula to calculate distance between two lat/lon points in km.
+ */
+function getDistance(lat1, lon1, lat2, lon2) {
+  const R = 6371; // Radius of the Earth in km
+  const dLat = deg2rad(lat2 - lat1);
+  const dLon = deg2rad(lon2 - lon1);
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) *
+    Math.sin(dLon / 2) * Math.sin(dLon / 2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  const d = R * c; // Distance in km
+  return d;
+}
+
+function deg2rad(deg) {
+  return deg * (Math.PI / 180);
+}
+---
+
+<!-- 
+  This component will now inherit its styles 
+  (like .suggestions-container, .suggestions-grid, etc.)
+  directly from your global.css file.
+-->
+{nearbyCities.length > 0 && currentCity && (
+  <section class="suggestions-container nearby-destinations">
+    
+    <!-- THIS IS THE FIXED LINE -->
+    <h2 class="suggestions-title">Discover places to visit near {currentCity.name}</h2>
+
+    <div class="suggestions-grid">
+      {nearbyCities.map(city => (
+        <a 
+          href={`/${city.slug}`} 
+          class="suggestion-card"
+          style={`background-image: url(${city.imageUrl || 'https://placehold.co/400x300/ccc/aaa?text=No+Image'});`}
+        >
+          <div class="suggestion-card-content">
+            <h3>{city.name}</h3>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+)}
+
+<!-- 
+  REMOVED: The broken <style> tag is gone!
+  This component will now use the correct styles 
+  from your public/styles/global.css file.
+-->

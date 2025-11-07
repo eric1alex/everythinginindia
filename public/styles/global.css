@@ -578,7 +578,7 @@ body {
   color: #fff;
   border-radius: 50px; /* Fully rounded corners */
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.9rem;
   display: flex;
   align-items: center;
@@ -743,48 +743,135 @@ body {
   background-color: #333;
 }
 
-/* --- SUGGESTIONS STYLES --- */
+/* =================================
+  NEW: FEEDBACK WIDGET STYLES
+=================================
+*/
+
+    .feedback-state {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%; /* Take full width */
+        margin: 0rem auto 3rem auto;
+        padding-top: 2rem; /* Was a full box, now just padding */
+        border-top: 0px solid var(--card-border); /* Just a simple top line */
+        text-align: center;
+    }
+
+    .feedback-title {
+        font-size: 1.25rem; /* Was 1.5rem */
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+    .button-group {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .feedback-button {
+        font-size: 0.9rem; /* Was 1rem */
+        font-weight: 600;
+        padding: 0.5rem 1rem; /* Was 0.75rem 1.5rem */
+        border-radius: 6px; /* Was 8px */
+        border: 1px solid #ccc;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background-color: #fff;
+    }
+    .feedback-button.yes:hover {
+        background-color: #e6f7ec;
+        border-color: #a3d9b1;
+    }
+    .feedback-button.no:hover {
+        background-color: #fdebee;
+        border-color: #f7b5b5;
+    }
+    .feedback-button.submit {
+        background-color: #1a1a1a;
+        color: #fff;
+        border-color: #1a1a1a;
+        width: 100%;
+        max-width: 300px; /* Stop it from being full-width */
+    }
+    .feedback-button.submit:hover {
+        background-color: #333;
+         max-width: 300px;
+    }
+ .feedback-textarea {
+        width: 100%;
+        max-width: 500px; /* Constrain width */
+        min-height: 100px;
+        padding: 0.75rem; /* <-- Adds breathing room for text */
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        margin-bottom: 1rem; /* <-- Adds space below the box */
+    }
+    .feedback-skip {
+        background: none;
+        border: none;
+        color: #888;
+        font-size: 0.9rem;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+
+/* =================================
+  FIXED: SUGGESTIONS STYLES
+=================================
+*/
 .suggestions-container {
-  margin-top: 3rem;
-  border-top: 1px solid var(--card-border);
+  /* max-width: 50%; */ /* <-- This was part of the problem */
+  max-width: 900px; /* <-- A stable max-width is better */
+  margin: 4rem auto 2rem auto;
   padding-top: 2rem;
+  border-top: 1px solid var(--card-border);
+  text-align: center;
 }
 
 .suggestions-title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
+  color: var(--title-color); /* Use theme color */
 }
 
 .suggestions-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
+  gap: 1.5rem; /* More gap */
+  justify-content: center; 
 }
 
 .suggestion-card {
   display: block;
   position: relative;
-  height: 150px;
-  border-radius: 8px;
+  aspect-ratio: 1 / 1; /* This makes it a perfect square */
+  border-radius: 12px; /* Match theme radius */
   overflow: hidden;
   color: white;
   text-decoration: none;
-  background-size: cover;
-  background-position: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-size: cover; 
+  background-position: center center; 
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-md); /* Add theme shadow */
+  
+  /* We add a max-width as a final safeguard */
+  max-width: 250px; 
 }
 
 .suggestion-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Darker hover shadow */
 }
 
 .suggestion-card::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%);
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 70%); /* Stronger gradient */
 }
 
 .suggestion-card-content {
@@ -792,11 +879,13 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 1rem;
+  padding: 1.25rem; /* More padding */
   z-index: 1;
+  text-align: center;
 }
 
 .suggestion-card h3 {
   font-size: 1.25rem;
   font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Add text shadow for readability */
 }
