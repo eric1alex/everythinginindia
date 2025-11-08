@@ -43,9 +43,12 @@
       "name": "Kerala",
       "cities": [
         {
-          "name": "Kochi",
-          "slug": "kochi",
-          "imageUrl": "https://placehold.co/1200x600/74E885/FFFFFF?text=Kochi"
+          "name": "Fort Kochi",
+          "slug": "fortkochi",
+          "imageUrl": "https://images.unsplash.com/photo-1696966358360-f64c761e0cb5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2125",
+          "lat": 9.9865001, 
+          "lon": 76.1373067
+
         },
         {
           "name": "Alleppey",
@@ -147,6 +150,19 @@
     }
   ],
   "unionTerritories": [
+    {
+      "name": "Delhi",
+      "cities": [
+        {
+          "name": "Delhi",
+          "slug": "delhi",
+          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=YOUR_MAP_ID",
+          "imageUrl": "https://images.unsplash.com/photo-1576519465852-4d119fcccf33?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2103",
+          "lat": 28.6139,
+          "lon": 77.2090
+        }
+      ]
+    },
     {
       "name": "Puducherry",
       "cities": [

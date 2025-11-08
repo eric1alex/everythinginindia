@@ -1,0 +1,166 @@
+[
+  {
+    "title": "Hotels / Stays",
+    "emoji": "🏨",
+    "items": [
+      {
+        "name": "The Imperial",
+        "url": "https://maps.google.com/?cid=14884189500773067945"
+      },
+      {
+        "name": "Leela Palace",
+        "url": "https://maps.google.com/?cid=11789845502643853303"
+      },
+      {
+        "name": "Roseate House",
+        "url": "https://maps.google.com/?cid=4607427863958797274"
+      },
+      {
+        "name": "Hyatt Regency Delhi",
+        "url": "https://maps.google.com/?cid=4256736749981362284"
+      },
+      {
+        "name": "Taj Palace",
+        "url": "https://maps.google.com/?cid=1105283725292789147"
+      },
+      {
+        "name": "Andaz Delhi",
+        "url": "https://maps.google.com/?cid=3998181411675945049"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "☕",
+    "items": [
+      {
+        "name": "Blue Tokai Coffee Roasters",
+        "url": "https://maps.google.com/?cid=5398932286258703521"
+      },
+      {
+        "name": "Big Chill Cafe",
+        "url": "https://maps.google.com/?cid=4757838612067977425"
+      },
+      {
+        "name": "Diggin Cafe",
+        "url": "https://maps.google.com/?cid=10536850271464331904"
+      },
+      {
+        "name": "Rose Cafe",
+        "url": "https://maps.google.com/?cid=16490677547324405113"
+      },
+      {
+        "name": "Ama Cafe",
+        "url": "https://maps.google.com/?cid=10788841886554459827"
+      },
+      {
+        "name": "Third Wave Coffee Roasters",
+        "url": "https://maps.google.com/?cid=8908757060241105984"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Indian Accent",
+        "url": "https://maps.google.com/?cid=18235984543408532518"
+      },
+      {
+        "name": "Bukhara (ITC Maurya)",
+        "url": "https://maps.google.com/?cid=11128754767225469245"
+      },
+      {
+        "name": "Karim's",
+        "url": "https://maps.google.com/?cid=4430913657428603197"
+      },
+      {
+        "name": "Moti Mahal Delux",
+        "url": "https://maps.google.com/?cid=3782665240195862084"
+      },
+      {
+        "name": "Dum Pukht (ITC Maurya)",
+        "url": "https://maps.google.com/?cid=1674376735495521805"
+      },
+      {
+        "name": "Saravana Bhavan",
+        "url": "https://maps.google.com/?cid=173920835258415332"
+      }
+    ]
+  },
+  {
+    "title": "Historical Sites / Monuments",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Qutub Minar",
+        "url": "https://maps.google.com/?cid=9460257356206415288"
+      },
+      {
+        "name": "Humayun's Tomb",
+        "url": "https://maps.google.com/?cid=13398695069844744205"
+      },
+      {
+        "name": "Red Fort",
+        "url": "https://maps.google.com/?cid=4908416671633375995"
+      },
+      {
+        "name": "India Gate",
+        "url": "https://maps.google.com/?cid=511043182630420061"
+      },
+      {
+        "name": "Lotus Temple",
+        "url": "https://maps.google.com/?cid=7294682539436721786"
+      },
+      {
+        "name": "Jantar Mantar",
+        "url": "https://maps.google.com/?cid=11694281193640434444"
+      }
+    ]
+  },
+  {
+    "title": "Museums / Art Galleries",
+    "emoji": "🖼️",
+    "items": [
+      {
+        "name": "National Museum",
+        "url": "https://maps.google.com/?cid=2324595356918476495"
+      },
+      {
+        "name": "National Rail Museum",
+        "url": "https://maps.google.com/?cid=15800545424413862402"
+      },
+      {
+        "name": "Crafts Museum",
+        "url": "https://maps.google.com/?cid=45417273872685570"
+      },
+      {
+        "name": "Kiran Nadar Museum of Art",
+        "url": "https://maps.google.com/?cid=9553506046077884333"
+      },
+      {
+        "name": "Sanskriti Kendra Museums",
+        "url": "https://maps.google.com/?cid=11958668777013369283"
+      }
+    ]
+  },
+  {
+    "title": "Markets / Shopping",
+    "emoji": "🛍️",
+    "items": [
+      {
+        "name": "Dilli Haat",
+        "url": "https://maps.google.com/?cid=17533572276851875844"
+      },
+      {
+        "name": "Chandni Chowk",
+        "url": "https://maps.google.com/?cid=166532288977157713"
+      },
+      {
+        "name": "Sarojini Nagar Market",
+        "url": "https://maps.google.com/?cid=13998257908350362705"
+      }
+    ]
+  }
+]

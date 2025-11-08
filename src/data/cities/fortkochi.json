@@ -1,0 +1,154 @@
+[
+  {
+    "title": "Hotels / Stays",
+    "emoji": "🏨",
+    "items": [
+      {
+        "name": "Brunton Boatyard",
+        "url": "https://maps.google.com/?cid=12655169031125319271"
+      },
+      {
+        "name": "Old Harbour Hotel",
+        "url": "https://maps.google.com/?cid=15568545462711895254"
+      },
+      {
+        "name": "The Tower House",
+        "url": "https://maps.google.com/?cid=15190762763362552908"
+      },
+      {
+        "name": "Forte Kochi",
+        "url": "https://maps.google.com/?cid=14214806553311949883"
+      },
+      {
+        "name": "Le Colonial",
+        "url": "https://maps.google.com/?cid=3997143621709179193"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "☕",
+    "items": [
+      {
+        "name": "Kashi Art Cafe",
+        "url": "https://maps.google.com/?cid=7450356519731343985"
+      },
+      {
+        "name": "Loafers Cafe",
+        "url": "https://maps.google.com/?cid=10023721611015390979"
+      },
+      {
+        "name": "Pepper House Cafe",
+        "url": "https://maps.google.com/?cid=6266547905633857724"
+      },
+      {
+        "name": "Qissa Cafe",
+        "url": "https://maps.google.com/?cid=7393419170994746190"
+      },
+      {
+        "name": "Tea Pot Cafe",
+        "url": "https://maps.google.com/?cid=16729970121188042644"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Dal Roti",
+        "url": "https://maps.google.com/?cid=1087659397130421389"
+      },
+      {
+        "name": "Oceanos Restaurant",
+        "url": "https://maps.google.com/?cid=2395764134138034321"
+      },
+      {
+        "name": "Rice Boat (Taj Malabar Resort & Spa)",
+        "url": "https://maps.google.com/?cid=5988952717613638296"
+      },
+      {
+        "name": "The Eighth Bastion",
+        "url": "https://maps.google.com/?cid=8222375705608825066"
+      },
+      {
+        "name": "Rasoi Fort Kochi",
+        "url": "https://maps.google.com/?cid=17561483208071387898"
+      }
+    ]
+  },
+  {
+    "title": "Historical Sites / Forts",
+    "emoji": "🏰",
+    "items": [
+      {
+        "name": "Mattancherry Palace",
+        "url": "https://maps.google.com/?cid=7530199669452092872"
+      },
+      {
+        "name": "St. Francis Church",
+        "url": "https://maps.google.com/?cid=10042024578390689953"
+      },
+      {
+        "name": "Santa Cruz Basilica",
+        "url": "https://maps.google.com/?cid=5681460040086821435"
+      },
+      {
+        "name": "Paradesi Synagogue",
+        "url": "https://maps.google.com/?cid=15129028867864759726"
+      },
+      {
+        "name": "Chinese Fishing Nets",
+        "url": "https://maps.google.com/?cid=14917941290917562193"
+      }
+    ]
+  },
+  {
+    "title": "Art Galleries / Museums",
+    "emoji": "🖼️",
+    "items": [
+      {
+        "name": "Kashi Art Gallery",
+        "url": "https://maps.google.com/?cid=7450356519731343985"
+      },
+      {
+        "name": "David Hall Art Gallery",
+        "url": "https://maps.google.com/?cid=3006216982943788746"
+      },
+      {
+        "name": "Kerala Folklore Museum",
+        "url": "https://maps.google.com/?cid=7045254143261777009"
+      },
+      {
+        "name": "Indo-Portuguese Museum",
+        "url": "https://maps.google.com/?cid=16410514492633711089"
+      },
+      {
+        "name": "Durbar Hall Art Gallery",
+        "url": "https://maps.google.com/?cid=13531466605411697096"
+      }
+    ]
+  },
+  {
+    "title": "Markets / Shopping",
+    "emoji": "🛍️",
+    "items": [
+      {
+        "name": "Jew Town",
+        "url": "https://maps.google.com/?cid=3483943149208220345"
+      },
+      {
+        "name": "Princess Street",
+        "url": "https://maps.google.com/?cid=2813639766935279377"
+      },
+      {
+        "name": "Bazaar Road",
+        "url": "https://maps.google.com/?q=Bazaar+Rd,+Fort+Kochi,+Kochi,+Kerala,+India&ftid=0x3b086d4eb9edd829:0x446e1326de4a901"
+      },
+      {
+        "name": "Cochin Spice Market",
+        "url": "https://maps.google.com/?cid=2338358098519381070"
+      }
+    ]
+  }
+]

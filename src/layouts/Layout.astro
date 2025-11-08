@@ -17,11 +17,26 @@ const {
 const canonicalURL = Astro.url.href;
 
 // 4. IMPORT YOUR NEW MODAL COMPONENT
-import ContributionModal from '../components/ContributionModal.astro';
+//    (Make sure this path is correct, e.g., '~/components/ContributionModal.astro')
+import ContributionModal from '../components/ContributionModal.astro'; 
 ---
 <!doctype html>
 <html lang="en">
 	<head>
+        <!-- 
+		  =================================
+		  START: Google Tag Manager (GTM)
+		  =================================
+		-->
+        <!-- Paste this code as high in the <head> of the page as possible: -->
+        <!-- Added 'is:inline' as required by Astro -->
+        <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5FWZWB22');</script>
+        <!-- End Google Tag Manager -->
+        
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/flag.png" />
@@ -66,25 +81,20 @@ import ContributionModal from '../components/ContributionModal.astro';
 		-->
 
 		<!-- 
-		  =================================
-		  START: Google Analytics 4 (GA4) Snippet
-		  =================================
-		-->
-		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-K6T8GBK4MF"></script>
-		<script is:inline>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'G-K6T8GBK4MF');
-		</script>
-		<!-- 
-		  =================================
-		  END: Google Analytics 4 (GA4) Snippet
-		  =================================
+		  REMOVED: Old GA4 Snippet is gone
 		-->
 	</head>
 	<body>
+        <!-- 
+		  =================================
+		  START: Google Tag Manager (noscript)
+		  =================================
+		-->
+        <!-- Paste this code immediately after the opening <body> tag: -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FWZWB22"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
 		<!-- Site Header -->
 		<header class="site-header">
 			<nav class="header-nav">
@@ -99,9 +109,6 @@ import ContributionModal from '../components/ContributionModal.astro';
 		</main>
 
 		<!-- New Site Footer -->
-        <!-- 
-          FIX: Removed the extra, duplicated <footer class="site-footer"> tag here 
-        -->
 		<footer class="site-footer">
 			<div class="footer-grid">
 				<!-- Column 1: About Us / Mission -->
@@ -145,4 +152,3 @@ import ContributionModal from '../components/ContributionModal.astro';
 		<script is:raw src="/scripts/main.js"></script>
 	</body>
 </html>
-
