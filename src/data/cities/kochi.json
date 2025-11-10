@@ -1,0 +1,158 @@
+[
+  {
+    "title": "Hotels",
+    "emoji": "📍",
+    "items": [
+      {
+        "name": "Brunton Boatyard",
+        "url": "https://maps.google.com/?cid=12655169031125319271"
+      },
+      {
+        "name": "The Malabar House",
+        "url": "https://maps.google.com/?cid=17241834975425694953"
+      },
+      {
+        "name": "Eighth Bastion",
+        "url": "https://maps.google.com/?cid=8222375705608825066"
+      },
+      {
+        "name": "Cochin Club",
+        "url": "https://maps.google.com/?cid=13221700101887917016"
+      },
+      {
+        "name": "Xandari Harbour",
+        "url": "https://maps.google.com/?cid=6333648416653174997"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "⭐",
+    "items": [
+      {
+        "name": "Kashi Art Cafe",
+        "url": "https://maps.google.com/?cid=7450356519731343985"
+      },
+      {
+        "name": "Qissa Cafe",
+        "url": "https://maps.google.com/?cid=7393419170994746190"
+      },
+      {
+        "name": "Loafers Corner Cafe",
+        "url": "https://maps.google.com/?cid=10023721611015390979"
+      },
+      {
+        "name": "Pepper House Cafe",
+        "url": "https://maps.google.com/?cid=6266547905633857724"
+      },
+      {
+        "name": "Tea Pot Cafe",
+        "url": "https://maps.google.com/?cid=16729970121188042644"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🗺️",
+    "items": [
+      {
+        "name": "Dal Roti",
+        "url": "https://maps.google.com/?cid=1087659397130421389"
+      },
+      {
+        "name": "The Rice Boat",
+        "url": "https://maps.google.com/?cid=5988952717613638296"
+      },
+      {
+        "name": "Fort House Restaurant",
+        "url": "https://maps.google.com/?cid=16211437879403175842"
+      },
+      {
+        "name": "Grand Pavilion",
+        "url": "https://maps.google.com/?cid=7388571776457796662"
+      },
+      {
+        "name": "Oceanos Restaurant",
+        "url": "https://maps.google.com/?cid=2395764134138034321"
+      }
+    ]
+  },
+  {
+    "title": "Beaches",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Fort Kochi Beach",
+        "url": "https://maps.google.com/?cid=15592985211711799084"
+      },
+      {
+        "name": "Cherai Beach",
+        "url": "https://maps.google.com/?cid=13828093533428178227"
+      },
+      {
+        "name": "Puthuvype Beach",
+        "url": "https://maps.google.com/?cid=11094967991710683796"
+      },
+      {
+        "name": "Kuzhupilly Beach",
+        "url": "https://maps.google.com/?cid=10914702353621339244"
+      },
+      {
+        "name": "Njarakkal Beach",
+        "url": "https://maps.google.com/?cid=6698777495756305869"
+      }
+    ]
+  },
+  {
+    "title": "Attractions",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Chinese Fishing Nets",
+        "url": "https://maps.google.com/?cid=14917941290917562193"
+      },
+      {
+        "name": "Mattancherry Palace",
+        "url": "https://maps.google.com/?cid=7530199669452092872"
+      },
+      {
+        "name": "St. Francis Church",
+        "url": "https://maps.google.com/?cid=10042024578390689953"
+      },
+      {
+        "name": "Jewish Synagogue",
+        "url": "https://maps.google.com/?cid=11723462229914143240"
+      },
+      {
+        "name": "Santa Cruz Basilica",
+        "url": "https://maps.google.com/?cid=5681460040086821435"
+      }
+    ]
+  },
+  {
+    "title": "Shopping",
+    "emoji": "🌳",
+    "items": [
+      {
+        "name": "Jew Town",
+        "url": "https://maps.google.com/?cid=15412299403191662442"
+      },
+      {
+        "name": "Marine Drive",
+        "url": "https://maps.google.com/?cid=14278660169659061970"
+      },
+      {
+        "name": "Lulu International Shopping Mall",
+        "url": "https://maps.google.com/?cid=6436192621425828734"
+      },
+      {
+        "name": "Princess Street",
+        "url": "https://maps.google.com/?cid=2813639766935279377"
+      },
+      {
+        "name": "Broadway Market",
+        "url": "https://maps.google.com/?cid=12267022317704134616"
+      }
+    ]
+  }
+]

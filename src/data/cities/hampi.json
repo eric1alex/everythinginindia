@@ -1,0 +1,158 @@
+[
+  {
+    "title": "Hotels",
+    "emoji": "📍",
+    "items": [
+      {
+        "name": "Kishkinda Heritage Resort",
+        "url": "https://maps.google.com/?cid=221741568275522288"
+      },
+      {
+        "name": "Evolve Back Hampi",
+        "url": "https://maps.google.com/?cid=5566366989383626719"
+      },
+      {
+        "name": "KSTDC Hotel Mayura Bhuvaneshwari",
+        "url": "https://maps.google.com/?cid=11298857920908719008"
+      },
+      {
+        "name": "Clark's Inn Hampi",
+        "url": "https://maps.google.com/?cid=16849098098479433325"
+      },
+      {
+        "name": "Hampi Boulders Resort",
+        "url": "https://maps.google.com/?cid=6558268478156423979"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "⭐",
+    "items": [
+      {
+        "name": "Mango Tree Restaurant",
+        "url": "https://maps.google.com/?cid=771685909018070965"
+      },
+      {
+        "name": "Laughing Buddha Cafe",
+        "url": "https://maps.google.com/?cid=922820100396631884"
+      },
+      {
+        "name": "Gopi Island Restaurant",
+        "url": "https://maps.google.com/?cid=14235972805227761553"
+      },
+      {
+        "name": "Mayur Cafe",
+        "url": "https://maps.google.com/?cid=8046035877600903502"
+      },
+      {
+        "name": "Chillout Cafe",
+        "url": "https://maps.google.com/?cid=9491139873324980466"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🗺️",
+    "items": [
+      {
+        "name": "Mango Tree Restaurant",
+        "url": "https://maps.google.com/?cid=771685909018070965"
+      },
+      {
+        "name": "Tomato Cafe",
+        "url": "https://maps.google.com/?cid=4313152424500378089"
+      },
+      {
+        "name": "Krishna Cafe",
+        "url": "https://maps.google.com/?cid=14400258167788101141"
+      },
+      {
+        "name": "Bhagawan Restaurant",
+        "url": "https://maps.google.com/?cid=8326531278124186784"
+      },
+      {
+        "name": "Garden Paradise Restaurant",
+        "url": "https://maps.google.com/?cid=5417969122694690939"
+      }
+    ]
+  },
+  {
+    "title": "Temples",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Virupaksha Temple",
+        "url": "https://maps.google.com/?cid=4727749493327849997"
+      },
+      {
+        "name": "Vittala Temple",
+        "url": "https://maps.google.com/?cid=11703949993497433197"
+      },
+      {
+        "name": "Achyutaraya Temple",
+        "url": "https://maps.google.com/?cid=12188461617304782855"
+      },
+      {
+        "name": "Hazara Rama Temple",
+        "url": "https://maps.google.com/?cid=6711998325548132584"
+      },
+      {
+        "name": "Krishna Temple",
+        "url": "https://maps.google.com/?cid=1789686407588664628"
+      }
+    ]
+  },
+  {
+    "title": "Ruins / Monuments",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Stone Chariot",
+        "url": "https://maps.google.com/?cid=4353177017768843332"
+      },
+      {
+        "name": "Queen's Bath",
+        "url": "https://maps.google.com/?cid=18014252487286514979"
+      },
+      {
+        "name": "Elephant Stables",
+        "url": "https://maps.google.com/?cid=1732608320396810811"
+      },
+      {
+        "name": "Lotus Mahal",
+        "url": "https://maps.google.com/?cid=2764866153203647745"
+      },
+      {
+        "name": "Hemakuta Hill Monuments",
+        "url": "https://maps.google.com/?cid=16518542748161161520"
+      }
+    ]
+  },
+  {
+    "title": "Viewpoints",
+    "emoji": "🌳",
+    "items": [
+      {
+        "name": "Matanga Hill",
+        "url": "https://maps.google.com/?cid=16726972542964973804"
+      },
+      {
+        "name": "Hemakuta Hill",
+        "url": "https://maps.google.com/?cid=16518542748161161520"
+      },
+      {
+        "name": "Anjaneya Hill",
+        "url": "https://maps.google.com/?cid=13283496446412919140"
+      },
+      {
+        "name": "Coracle Ride viewpoint",
+        "url": "https://maps.google.com/?cid=14496971277927534125"
+      },
+      {
+        "name": "Riverside viewpoint",
+        "url": "https://maps.google.com/?cid=7850130448578063842"
+      }
+    ]
+  }
+]

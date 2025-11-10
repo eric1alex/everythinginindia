@@ -29,6 +29,13 @@
           "slug": "mysore",
           "imageUrl": "https://placehold.co/1200x600/E8A274/FFFFFF?text=Mysore"
         },
+         {
+          "name": "Hampi",
+          "slug": "hampi",
+          "imageUrl": "https://images.unsplash.com/photo-1636903684031-e187417f3e77?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+          "lat": 12.9539456, 
+          "lon": 77.4661262
+        },
         {
           "name": "Gokarna",
           "slug": "gokarna",
@@ -43,8 +50,8 @@
       "name": "Kerala",
       "cities": [
         {
-          "name": "Fort Kochi",
-          "slug": "fortkochi",
+          "name": "Kochi",
+          "slug": "kochi",
           "imageUrl": "https://images.unsplash.com/photo-1696966358360-f64c761e0cb5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2125",
           "lat": 9.9865001, 
           "lon": 76.1373067
