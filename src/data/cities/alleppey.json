@@ -1,0 +1,180 @@
+[
+  {
+    "title": "Backwaters",
+    "emoji": "📍",
+    "items": [
+      {
+        "name": "Punnamada Lake",
+        "url": "https://maps.google.com/?cid=16829064228546763240"
+      },
+      {
+        "name": "Kuttanad Backwaters",
+        "url": "https://maps.google.com/?cid=8915551364558829293"
+      },
+      {
+        "name": "Vembanad Lake",
+        "url": "https://maps.google.com/?cid=4349586211699782748"
+      },
+      {
+        "name": "Pathiramanal Island",
+        "url": "https://maps.google.com/?cid=15353935297185769764"
+      },
+      {
+        "name": "Thanneermukkom Bund",
+        "url": "https://maps.google.com/?cid=8819031440600143289"
+      },
+      {
+        "name": "Champakulam Backwaters",
+        "url": "https://maps.google.com/?cid=6790452550043805771"
+      },
+      {
+        "name": "R-Block Kuttanad",
+        "url": "https://maps.google.com/?cid=7692660245291538778"
+      }
+    ]
+  },
+  {
+    "title": "Beaches",
+    "emoji": "⭐",
+    "items": [
+      {
+        "name": "Alappuzha Beach",
+        "url": "https://maps.google.com/?cid=11986476419882547799"
+      },
+      {
+        "name": "Marari Beach",
+        "url": "https://maps.google.com/?cid=9175204167992123400"
+      },
+      {
+        "name": "Thumboli Beach",
+        "url": "https://maps.google.com/?cid=9482214271962984554"
+      },
+      {
+        "name": "Andhakaranazhi Beach",
+        "url": "https://maps.google.com/?cid=4175170544247689471"
+      },
+      {
+        "name": "Valiya Azheekal Beach",
+        "url": "https://maps.google.com/?cid=2932830367631395680"
+      },
+      {
+        "name": "Poochakkal Beach",
+        "url": "https://maps.google.com/?cid=7471959009638972693"
+      },
+      {
+        "name": "Chettikad Beach",
+        "url": "https://maps.google.com/?cid=2251240934387754388"
+      }
+    ]
+  },
+  {
+    "title": "Museums",
+    "emoji": "🗺️",
+    "items": [
+      {
+        "name": "Revi Karunakaran Museum",
+        "url": "https://maps.google.com/?cid=17119077156983073486"
+      },
+      {
+        "name": "International Coir Museum",
+        "url": "https://maps.google.com/?cid=11715273444960345225"
+      },
+      {
+        "name": "Alappuzha Lighthouse Museum",
+        "url": "https://maps.google.com/?cid=16607168727819985188"
+      },
+      {
+        "name": "Krishnapuram Palace Museum",
+        "url": "https://maps.google.com/?cid=17634259357483177459"
+      },
+      {
+        "name": "Kuttanad Museum",
+        "url": "https://maps.google.com/?cid=6667847340926717633"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Halais Restaurant",
+        "url": "https://maps.google.com/?cid=3007976237780181865"
+      },
+      {
+        "name": "Thaff Delicacy",
+        "url": "https://maps.google.com/?cid=7107565043593961394"
+      },
+      {
+        "name": "Harbour Restaurant",
+        "url": "https://maps.google.com/?cid=11446625254078876569"
+      },
+      {
+        "name": "Cassia Restaurant",
+        "url": "https://maps.google.com/?cid=4644417358232425440"
+      },
+      {
+        "name": "Kream Korner",
+        "url": "https://maps.google.com/?cid=13201818017815867305"
+      },
+      {
+        "name": "Cafe Catamaran",
+        "url": "https://maps.google.com/?cid=8192670677793114941"
+      },
+      {
+        "name": "The Grand Multispeciality Restaurant",
+        "url": "https://maps.google.com/?cid=14783030907502464885"
+      },
+      {
+        "name": "Dreamers Cafe",
+        "url": "https://maps.google.com/?cid=3590692584594346592"
+      },
+      {
+        "name": "Chakara Restaurant",
+        "url": "https://maps.google.com/?cid=8192670677793114941"
+      }
+    ]
+  },
+  {
+    "title": "Houseboats",
+    "emoji": "🎨",
+    "items": [
+      {
+        "name": "Spice Routes Luxury Houseboats",
+        "url": "https://maps.google.com/?cid=15717801410418452495"
+      },
+      {
+        "name": "Lake View Houseboats",
+        "url": "https://maps.google.com/?cid=13692847261307401876"
+      },
+      {
+        "name": "Evergreen Houseboats",
+        "url": "https://maps.google.com/?cid=9775438481336064976"
+      },
+      {
+        "name": "Rainbow Cruises",
+        "url": "https://maps.google.com/?cid=9928453645248373538"
+      },
+      {
+        "name": "Johnson's Houseboats",
+        "url": "https://maps.google.com/?cid=3106898191296520741"
+      },
+      {
+        "name": "Alleppey Houseboat Club",
+        "url": "https://maps.google.com/?cid=3123934937511425936"
+      },
+      {
+        "name": "Cosy Houseboats",
+        "url": "https://maps.google.com/?cid=5388721500266355185"
+      },
+      {
+        "name": "Xandari Riverscapes",
+        "url": "https://maps.google.com/?cid=15674893929846919626"
+      },
+      {
+        "name": "Blue Bird Houseboats",
+        "url": "https://maps.google.com/?cid=4481954581884527026"
+      }
+    ]
+  }
+]

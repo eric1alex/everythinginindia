@@ -1,0 +1,346 @@
+---
+import Layout from '~/layouts/Layout.astro';
+
+// --- Your UPI Details ---
+const UPI_ID = "eric14alex@okhdfcbank";
+const PAYEE_NAME = "Eric Alex";
+---
+
+<Layout
+  title="Support the Project - Where In India"
+  description="If you find this directory useful, please consider supporting the project with a small donation."
+>
+  <main class="donate-page-wrapper">
+    
+    <!-- 
+      =================================
+      NEW SPLIT LAYOUT (with new class names)
+      =================================
+    -->
+    <div class="donate-grid">
+
+      <!-- Column 1: Content -->
+      <div class="donate-column-left">
+        <div class="chai-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M0 0h24v24H0V0z" fill="none"/>
+            <path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4v-2z"/>
+          </svg>
+        </div>
+
+        <h1 class="donate-heading">Support us with a Chai?</h1>
+        
+        <p class="donate-text">
+         Your small gesture keeps this community-built site running (and us happily caffeinated). Pick or enter an amount to generate your QR code.
+        </p>
+
+        <div class="pay-selector">
+          <div class="pay-buttons">
+            <button class="pay-button" data-amount="50">₹50</button>
+            <button class="pay-button active" data-amount="100">₹100</button>
+            <button class="pay-button" data-amount="200">₹200</button>
+          </div>
+          <div class="pay-custom">
+            <span>₹</span>
+            <input type="number" id="pay-custom-input" class="pay-custom-field" value="100" min="1" placeholder="100">
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2: QR Code -->
+      <div class="donate-column-right">
+        <div id="qr-code-box">
+          <div id="qr-code-target"></div>
+          <p class="qr-note">Scan to pay with any UPI app</p>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+</Layout>
+
+<!-- 
+  =================================
+  NEW STYLES (with new class names)
+  =================================
+-->
+<style>
+  .donate-page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 4rem 2rem;
+    background-color: var(--background-color);
+  }
+
+  /* --- New Split Layout --- */
+  .donate-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 3rem;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  /* Switch to 2 columns on desktop */
+  @media (min-width: 768px) {
+    .donate-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .donate-column-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Left-align content */
+    text-align: left;
+  }
+
+  .donate-column-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Center the left column on mobile */
+  @media (max-width: 767px) {
+    .donate-column-left {
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+  /* --- Content Styles --- */
+  .chai-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 2rem;
+    color: var(--title-color, #1a5276);
+  }
+
+  .donate-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--title-color, #1a5276);
+    margin-bottom: 1rem;
+  }
+
+  .donate-text {
+    font-size: 1.1rem;
+    color: var(--text-color, #34495e);
+    max-width: 500px;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+  }
+
+  /* --- Amount Picker Styles --- */
+  .pay-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .pay-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to stack nicely */
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .pay-button {
+    /* Let the buttons size themselves, but grow if needed */
+    flex: 1 1 auto; 
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    background-color: var(--card-background);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .pay-button.active,
+  .pay-button:hover {
+    background-color: var(--title-color);
+    color: #000000;
+    border-color: var(--title-color);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+
+  .pay-custom {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--title-color);
+  }
+
+  .pay-custom-field {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--title-color);
+    border: none;
+    border-bottom: 2px solid var(--card-border);
+    background: none;
+    text-align: left;
+    width: 100px;
+    padding: 0.25rem;
+    transition: border-color 0.3s ease;
+  }
+  .pay-custom-field:focus {
+    outline: none;
+    border-color: var(--link-color);
+  }
+  /* Hide number input arrows */
+  .pay-custom-field::-webkit-outer-spin-button,
+  .pay-custom-field::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .pay-custom-field[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  /* Center the amount pickers on mobile */
+  @media (max-width: 767px) {
+    .pay-selector {
+        align-items: center;
+    }
+    .pay-buttons {
+        justify-content: center;
+    }
+    .pay-custom {
+        justify-content: center;
+    }
+    .pay-custom-field {
+        text-align: center;
+    }
+  }
+
+  /* --- QR Code Styles --- */
+  #qr-code-box {
+    width: 100%;
+    max-width: 300px; /* Max size of the QR box */
+    aspect-ratio: 1 / 1; /* Force it to be square */
+    padding: 1rem;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid var(--card-border);
+    box-shadow: var(--shadow-md);
+    display: flex; /* Center content */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #qr-code-target {
+    width: 100%;
+    height: 100%;
+  }
+
+  #qr-code-target > * {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .qr-note {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 1rem;
+  }
+</style>
+
+<!-- Load the QR Code generator library -->
+<script is:raw src="/scripts/qrcode.min.js"></script>
+
+<!-- Run the page logic -->
+<script is:inline define:vars={{ UPI_ID, PAYEE_NAME }}>
+  document.addEventListener('DOMContentLoaded', () => {
+    
+    // --- 1. Get all our elements (using new IDs) ---
+    const customAmountInput = document.getElementById('pay-custom-input');
+    const amountButtons = document.querySelectorAll('.pay-button');
+    const qrContainer = document.getElementById('qr-code-target'); // New ID
+    
+    let qrCode = null;
+
+    // --- 2. The function to generate the QR code ---
+    function generateQR(amount) {
+      if (!amount || amount < 1) {
+        amount = '100';
+      }
+      
+      const encodedPayeeName = encodeURIComponent(PAYEE_NAME);
+      const upiString = `upi://pay?pa=${UPI_ID}&pn=${encodedPayeeName}&am=${amount}&cu=INR`;
+      
+      qrContainer.innerHTML = '';
+
+      // Get container size
+      const qrSize = qrContainer.clientWidth;
+
+      qrCode = new QRCode(qrContainer, {
+        text: upiString,
+        width: qrSize,
+        height: qrSize,
+        colorDark : "#000000",
+        colorLight : "#ffffff",
+        correctLevel : QRCode.CorrectLevel.H
+      });
+    }
+
+    // --- 3. Add event listeners for the buttons ---
+    amountButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        amountButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        const amount = button.dataset.amount;
+        customAmountInput.value = amount;
+        generateQR(amount);
+      });
+    });
+
+    // --- 4. Add event listener for the custom input field ---
+    customAmountInput.addEventListener('input', () => {
+      amountButtons.forEach(btn => btn.classList.remove('active'));
+      const amount = customAmountInput.value;
+      
+      amountButtons.forEach(btn => {
+        if (btn.dataset.amount === amount) {
+          btn.classList.add('active');
+        }
+      });
+
+      setTimeout(() => {
+        if (customAmountInput.value === amount) {
+          generateQR(amount);
+        }
+      }, 300);
+    });
+
+    // --- 5. Generate the initial QR code on page load ---
+    setTimeout(() => {
+        generateQR(customAmountInput.value);
+    }, 100);
+    
+    // --- 6. Regenerate QR on resize (for responsiveness) ---
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        qrContainer.innerHTML = ''; // Clear QR
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            generateQR(customAmountInput.value);
+        }, 250); // Debounce resize
+    });
+  });
+</script>

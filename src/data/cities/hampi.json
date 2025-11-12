@@ -4,82 +4,68 @@
     "emoji": "📍",
     "items": [
       {
-        "name": "Kishkinda Heritage Resort",
-        "url": "https://maps.google.com/?cid=221741568275522288"
-      },
-      {
-        "name": "Evolve Back Hampi",
-        "url": "https://maps.google.com/?cid=5566366989383626719"
-      },
-      {
-        "name": "KSTDC Hotel Mayura Bhuvaneshwari",
-        "url": "https://maps.google.com/?cid=11298857920908719008"
-      },
-      {
-        "name": "Clark's Inn Hampi",
-        "url": "https://maps.google.com/?cid=16849098098479433325"
-      },
-      {
-        "name": "Hampi Boulders Resort",
+        "name": "Hampi's Boulders Resort",
         "url": "https://maps.google.com/?cid=6558268478156423979"
-      }
-    ]
-  },
-  {
-    "title": "Cafes",
-    "emoji": "⭐",
-    "items": [
-      {
-        "name": "Mango Tree Restaurant",
-        "url": "https://maps.google.com/?cid=771685909018070965"
       },
       {
-        "name": "Laughing Buddha Cafe",
-        "url": "https://maps.google.com/?cid=922820100396631884"
+        "name": "Hotel Hampi International",
+        "url": "https://maps.google.com/?cid=14993730989660611968"
       },
       {
-        "name": "Gopi Island Restaurant",
-        "url": "https://maps.google.com/?cid=14235972805227761553"
+        "name": "Kishkinda Trust Guest House",
+        "url": "https://maps.google.com/?cid=1897183148565287264"
       },
       {
-        "name": "Mayur Cafe",
-        "url": "https://maps.google.com/?cid=8046035877600903502"
+        "name": "Shanthi Guest House",
+        "url": "https://maps.google.com/?cid=2874027557983005478"
       },
       {
-        "name": "Chillout Cafe",
-        "url": "https://maps.google.com/?cid=9491139873324980466"
+        "name": "Netra Guest House",
+        "url": "https://maps.google.com/?cid=11829087912717403145"
+      },
+      {
+        "name": "Rocky's Guest House",
+        "url": "https://maps.google.com/?cid=7829307295833367670"
+      },
+      {
+        "name": "Thilak Home Stay",
+        "url": "https://maps.google.com/?cid=13788914868083743648"
       }
     ]
   },
   {
     "title": "Restaurants",
-    "emoji": "🗺️",
+    "emoji": "⭐",
     "items": [
       {
-        "name": "Mango Tree Restaurant",
-        "url": "https://maps.google.com/?cid=771685909018070965"
+        "name": "Laughing Buddha Cafe",
+        "url": "https://maps.google.com/?cid=922820100396631884"
       },
       {
-        "name": "Tomato Cafe",
-        "url": "https://maps.google.com/?cid=4313152424500378089"
+        "name": "Tipples Restaurant",
+        "url": "https://maps.google.com/?cid=842475046075737313"
       },
       {
-        "name": "Krishna Cafe",
-        "url": "https://maps.google.com/?cid=14400258167788101141"
+        "name": "Evergreen Cafe",
+        "url": "https://maps.google.com/?cid=9144106511348612703"
       },
       {
-        "name": "Bhagawan Restaurant",
-        "url": "https://maps.google.com/?cid=8326531278124186784"
+        "name": "Hampi Roof Restaurant",
+        "url": "https://maps.google.com/?cid=14899607991321925098"
       },
       {
-        "name": "Garden Paradise Restaurant",
-        "url": "https://maps.google.com/?cid=5417969122694690939"
+        "name": "Shanthi Restaurant",
+        "url": "https://maps.google.com/?cid=2874027557983005478"
+      },
+      {
+        "name": "Udupi Sri Krishna Bhavan",
+        "url": "https://maps.google.com/?cid=3807432737930608013"
       }
     ]
   },
   {
     "title": "Temples",
-    "emoji": "🏛️",
+    "emoji": "🗺️",
     "items": [
       {
         "name": "Virupaksha Temple",
@@ -94,44 +80,76 @@
         "url": "https://maps.google.com/?cid=12188461617304782855"
       },
       {
-        "name": "Hazara Rama Temple",
-        "url": "https://maps.google.com/?cid=6711998325548132584"
+        "name": "Hemakuta Hill Temples",
+        "url": "https://maps.google.com/?cid=16518542748161161520"
       },
       {
         "name": "Krishna Temple",
         "url": "https://maps.google.com/?cid=1789686407588664628"
+      },
+      {
+        "name": "Lakshmi Narasimha Temple",
+        "url": "https://maps.google.com/?cid=13134150062170850235"
+      },
+      {
+        "name": "Hazara Rama Temple",
+        "url": "https://maps.google.com/?cid=6711998325548132584"
+      },
+      {
+        "name": "Kodanda Rama Temple",
+        "url": "https://maps.google.com/?cid=3840290351625356902"
+      },
+      {
+        "name": "Pattabhirama Temple",
+        "url": "https://maps.google.com/?cid=16776925360325304536"
       }
     ]
   },
   {
-    "title": "Ruins / Monuments",
-    "emoji": "🍽️",
+    "title": "Monuments",
+    "emoji": "🏛️",
     "items": [
       {
         "name": "Stone Chariot",
         "url": "https://maps.google.com/?cid=4353177017768843332"
       },
       {
-        "name": "Queen's Bath",
-        "url": "https://maps.google.com/?cid=18014252487286514979"
-      },
-      {
         "name": "Elephant Stables",
         "url": "https://maps.google.com/?cid=1732608320396810811"
+      },
+      {
+        "name": "Queen's Bath",
+        "url": "https://maps.google.com/?cid=18014252487286514979"
       },
       {
         "name": "Lotus Mahal",
         "url": "https://maps.google.com/?cid=2764866153203647745"
       },
       {
-        "name": "Hemakuta Hill Monuments",
-        "url": "https://maps.google.com/?cid=16518542748161161520"
+        "name": "Mahanavami Dibba",
+        "url": "https://maps.google.com/?cid=14475770357179818036"
+      },
+      {
+        "name": "Pushkarini (Stepped Tank)",
+        "url": "https://maps.google.com/?cid=4539182302432023864"
+      },
+      {
+        "name": "King's Balance",
+        "url": "https://maps.google.com/?cid=15047197707585098650"
+      },
+      {
+        "name": "Hampi Bazaar",
+        "url": "https://maps.google.com/?cid=777639695611320330"
+      },
+      {
+        "name": "Pattabhirama Temple Complex",
+        "url": "https://maps.google.com/?cid=16776925360325304536"
       }
     ]
   },
   {
     "title": "Viewpoints",
-    "emoji": "🌳",
+    "emoji": "🍽️",
     "items": [
       {
         "name": "Matanga Hill",
@@ -142,16 +160,68 @@
         "url": "https://maps.google.com/?cid=16518542748161161520"
       },
       {
-        "name": "Anjaneya Hill",
+        "name": "Anjaneya Hill (Monkey Temple)",
         "url": "https://maps.google.com/?cid=13283496446412919140"
       },
       {
-        "name": "Coracle Ride viewpoint",
+        "name": "Sunset Point (near Virupaksha Temple)",
+        "url": "https://maps.google.com/?cid=14105948764832077104"
+      },
+      {
+        "name": "Rishyamukha Hill",
         "url": "https://maps.google.com/?cid=14496971277927534125"
       },
       {
-        "name": "Riverside viewpoint",
-        "url": "https://maps.google.com/?cid=7850130448578063842"
+        "name": "Tungabhadra River banks",
+        "url": "https://maps.google.com/?cid=6028651096775718411"
+      },
+      {
+        "name": "View from Vittala Temple complex",
+        "url": "https://maps.google.com/?cid=11703949993497433197"
+      }
+    ]
+  },
+  {
+    "title": "Shopping",
+    "emoji": "🌳",
+    "items": [
+      {
+        "name": "Hampi Bazaar",
+        "url": "https://maps.google.com/?cid=777639695611320330"
+      },
+      {
+        "name": "Local artisan stalls",
+        "url": "https://maps.google.com/?cid=777639695611320330"
+      },
+      {
+        "name": "Crafts Village",
+        "url": "https://maps.google.com/?cid=2269728250992953114"
+      },
+      {
+        "name": "Shops near Hampi Bus Stand",
+        "url": "https://maps.google.com/?cid=777639695611320330"
+      },
+      {
+        "name": "Anegundi village shops",
+        "url": "https://maps.google.com/?cid=11093293629880312173"
+      }
+    ]
+  },
+  {
+    "title": "Museums",
+    "emoji": "🎨",
+    "items": [
+      {
+        "name": "Archaeological Museum, Hampi",
+        "url": "https://maps.google.com/?cid=17817151674238356670"
+      },
+      {
+        "name": "Anegundi Heritage Centre",
+        "url": "https://maps.google.com/?cid=12142298483755865776"
+      },
+      {
+        "name": "Kishkinda Trust Display",
+        "url": "https://maps.google.com/?cid=1897183148565287264"
       }
     ]
   }
