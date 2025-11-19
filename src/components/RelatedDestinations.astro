@@ -21,24 +21,17 @@ let nearbyCities = [];
 if (currentCity) {
   // --- 2. Calculate the distance to every OTHER city ---
   nearbyCities = allCities
-    .filter(city => city.slug !== currentCitySlug && city.imageUrl) // Don't suggest itself & ensure it has an image
+    .filter(city => city.slug !== currentCitySlug && city.imageUrl) 
     .map(city => {
       const distance = getDistance(currentCity.lat, currentCity.lon, city.lat, city.lon);
       return { ...city, distance };
     })
-    // --- THIS IS THE NEW VALIDATION ---
-    .filter(city => city.distance < 300) // 
-    // ----------------------------------
-    .sort((a, b) => a.distance - b.distance) // Sort by closest
-    .slice(0, 3); // --- 3. Pick the top 3 closest cities ---
+    .sort((a, b) => a.distance - b.distance) 
+    .slice(0, 3); 
 }
 
-
-/**
- * Haversine formula to calculate distance between two lat/lon points in km.
- */
 function getDistance(lat1, lon1, lat2, lon2) {
-  const R = 6371; // Radius of the Earth in km
+  const R = 6371; 
   const dLat = deg2rad(lat2 - lat1);
   const dLon = deg2rad(lon2 - lon1);
   const a =
@@ -46,7 +39,7 @@ function getDistance(lat1, lon1, lat2, lon2) {
     Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) *
     Math.sin(dLon / 2) * Math.sin(dLon / 2);
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  const d = R * c; // Distance in km
+  const d = R * c; 
   return d;
 }
 
@@ -55,21 +48,17 @@ function deg2rad(deg) {
 }
 ---
 
-<!-- 
-  This component will now inherit its styles 
-  (like .suggestions-container, .suggestions-grid, etc.)
-  directly from your global.css file.
--->
-{nearbyCities.length > 0 && currentCity && (
+{nearbyCities.length > 0 && (
   <section class="suggestions-container nearby-destinations">
-    
-    <!-- THIS IS THE FIXED LINE -->
-    <h2 class="suggestions-title">Discover places to visit near {currentCity.name}</h2>
-
+    <h2 class="suggestions-title">Nearby Destinations to Explore</h2>
     <div class="suggestions-grid">
       {nearbyCities.map(city => (
+        /* FIXED LINK: Now uses /stateSlug/citySlug 
+           The 'city' object here comes from 'allCitiesList' in [city].astro,
+           which we updated in Step 2 to include 'stateSlug'.
+        */
         <a 
-          href={`/${city.slug}`} 
+          href={`/${city.stateSlug}/${city.slug}`} 
           class="suggestion-card"
           style={`background-image: url(${city.imageUrl || 'https://placehold.co/400x300/ccc/aaa?text=No+Image'});`}
         >
@@ -81,9 +70,3 @@ function deg2rad(deg) {
     </div>
   </section>
 )}
-
-<!-- 
-  REMOVED: The broken <style> tag is gone!
-  This component will now use the correct styles 
-  from your public/styles/global.css file.
--->

@@ -1,94 +1,83 @@
 ---
-// 1. Import your components and data
 import Layout from '~/layouts/Layout.astro';
 import locations from '~/data/locations.json';
 import FeedbackWidget from '~/components/FeedbackWidget.astro';
-import RelatedDestinations from '~/components/RelatedDestinations.astro'; // NEW: Import Related Destinations
+import RelatedDestinations from '~/components/RelatedDestinations.astro';
 
-// 2. --- PASTE YOUR GOOGLE FORM DETAILS HERE ---
-const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSerku0WY4t5LWlWBEoSYmoWqUiWKNDpLMzb_6R8T7LoqRHUag/formResponse";
+// --- FORM DETAILS ---
+const FEEDBACK_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSerku0WY4t5LWlWBEoSYmoWqUiWKNDpLMzb_6R8T7LoqRHUag/formResponse";
 const CITY_ENTRY_ID = "entry.693458303";
 const HELPFUL_ENTRY_ID = "entry.1400638291";
 const FEEDBACK_ENTRY_ID = "entry.1933085880";
-// ---------------------------------------------
 
-// This is a special Astro function
+// --- GET STATIC PATHS ---
 export async function getStaticPaths() {
-  // Find all *existing* JSON data files
-  const allCityData = await import.meta.glob('../data/cities/*.json');
+  const allCityData = await import.meta.glob('../../data/cities/*.json');
   
   const allPages = [];
-  const availableCities = []; // A list of cities that HAVE content
 
-  // First, let's find out which cities are available
-  for (const loc of [...locations.states, ...locations.unionTerritories]) {
-    for (const city of loc.cities) {
-      const importPath = `../data/cities/${city.slug}.json`;
-      if (allCityData[importPath]) {
-        // Only add if it has lat/lon for the new feature
-        if (city.lat && city.lon) {
-           availableCities.push(city);
+  const processLocations = async (locList) => {
+    for (const loc of locList) {
+      for (const city of loc.cities) {
+        
+        const importPath = `../../data/cities/${city.slug}.json`;
+        let placesData = null;
+
+        if (allCityData[importPath]) {
+          const cityDataModule = await allCityData[importPath]();
+          placesData = cityDataModule.default;
         }
+
+        allPages.push({ 
+          params: { 
+            state: loc.slug, 
+            city: city.slug 
+          },
+          props: {
+            cityName: city.name,
+            stateName: loc.name,
+            heroImageUrl: city.imageUrl || "https://placehold.co/1200x600/ccc/aaa?text=Where+In+India",
+            mapUrl: city.mapUrl || "#",
+            places: placesData,
+            currentStateSlug: loc.slug 
+          }
+        });
       }
     }
-  }
+  };
 
-  // Now, create a page for *every* city in locations.json
-  for (const loc of [...locations.states, ...locations.unionTerritories]) {
-    for (const city of loc.cities) {
-      
-      const importPath = `../data/cities/${city.slug}.json`;
-      let placesData = null; // Default to null (no content)
-
-      // If the JSON file exists, load its content
-      if (allCityData[importPath]) {
-        const cityDataModule = await allCityData[importPath]();
-        placesData = cityDataModule.default;
-      }
-
-      // Pass all data to the page. `places` will be null if no content exists.
-      allPages.push({ 
-        params: { city: city.slug },
-        props: {
-          cityName: city.name,
-          stateName: loc.name,
-          heroImageUrl: city.imageUrl || "httpss://placehold.co/1200x600/ccc/aaa?text=Where+In+India",
-          mapUrl: city.mapUrl || "#",
-          places: placesData, // This is the key! It's either the data or null.
-          suggestions: availableCities // Pass the list of available cities
-        }
-      });
-    }
-  }
+  await processLocations(locations.states);
+  await processLocations(locations.unionTerritories);
 
   return allPages;
 }
 
-// Get all our props. `places` will be null for empty pages.
-const { cityName, stateName, heroImageUrl, mapUrl, places, suggestions } = Astro.props;
+const { cityName, stateName, heroImageUrl, mapUrl, places, currentStateSlug } = Astro.props;
 const currentCitySlug = Astro.params.city;
 
-// Create a filtered list of suggestions (max 3, and not this current page)
-const filteredSuggestions = suggestions
-    .filter(c => c.slug !== currentCitySlug)
-    .sort(() => 0.5 - Math.random()) // Randomize
-    .slice(0, 3); // Take the first 3
-
-// NEW: Create a flat list of all cities with coords to pass to the new component
+// --- PREPARE SUGGESTIONS LIST ---
 const allCitiesList = [];
 [...locations.states, ...locations.unionTerritories].forEach(loc => {
     loc.cities.forEach(c => {
         if (c.lat && c.lon) {
             allCitiesList.push({
                 slug: c.slug,
+                stateSlug: loc.slug,
                 name: c.name,
                 lat: c.lat,
                 lon: c.lon,
-                imageUrl: c.imageUrl // <-- THIS IS THE NEW LINE
+                imageUrl: c.imageUrl
             });
         }
     });
 });
+
+// Filter and randomize suggestions for the "Coming Soon" page fallback
+const filteredSuggestions = allCitiesList
+    .filter(c => c.slug !== currentCitySlug)
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 3);
+
 ---
 
 <Layout 
@@ -96,10 +85,9 @@ const allCitiesList = [];
   description={`The most trusted, hand-curated list of recommendations for ${cityName}, ${stateName}. Find the best cafes, stays, and hidden gems.`}
   ogImage={heroImageUrl}
 >
-	<main>
-		{places ? (
+  <main>
+    {places ? (
       <>
-        <!-- New Hero Section -->
         <header class="hero">
           <div 
             class="hero-image hero-image-city" 
@@ -111,7 +99,6 @@ const allCitiesList = [];
           </div>
         </header>
 
-        <!-- Main content grid -->
         <div class="main-content">
           <div class="recommendation-grid">
             {places.map(category => (
@@ -131,18 +118,15 @@ const allCitiesList = [];
             ))}
           </div>
 
-          <!-- Feedback Widget -->
+          <!-- Feedback Widget (Standalone) -->
           <FeedbackWidget 
             cityName={cityName}
-            formUrl={FORM_URL}
+            formUrl={FEEDBACK_FORM_URL}
             cityEntry={CITY_ENTRY_ID}
             helpfulEntry={HELPFUL_ENTRY_ID}
             feedbackEntry={FEEDBACK_ENTRY_ID}
           />
 
-          <!-- 
-            NEW: Add the Related Destinations Widget
-          -->
           <RelatedDestinations
             currentCitySlug={currentCitySlug}
             allCities={allCitiesList}
@@ -150,7 +134,6 @@ const allCitiesList = [];
           
         </div>
 
-        <!-- Floating Map Button -->
         <a href={mapUrl} class="floating-map-button" id="map-button" target="_blank" rel="noopener noreferrer">
           <span class="map-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -161,23 +144,22 @@ const allCitiesList = [];
         </a>
       </>
     ) : (
-    <!-- 
-      ("Coming Soon" page logic)
-    -->
       <div class="coming-soon-container">
         <h1 class="coming-soon-title">Coming Soon!</h1>
         <p class="coming-soon-text">
-          We haven't built our guide for <strong>{cityName}</strong> just yet. </p>
+          We haven't built our guide for <strong>{cityName}</strong> just yet. 
+        </p>
         <p class="coming-soon-text">
           Know a great spot? Be the first to contribute and help us build this page!
         </p>
-        <a href= "httpss://docs.google.com/forms/d/e/1FAIpQLScOGneda4XsF2NyMZeto6f59Niz4R8bn7eKFPPAQ4ymaEE6Vw/viewform?usp=dialog" 	target="_blank" rel="noopener noreferrer" 	class="coming-soon-button">Contribute a Place</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScOGneda4XsF2NyMZeto6f59Niz4R8bn7eKFPPAQ4ymaEE6Vw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="coming-soon-button">Contribute a Place</a>
+        
         {filteredSuggestions.length > 0 && (
           <div class="suggestions-container">
             <h2 class="suggestions-title">In the meantime, you might want to check out...</h2>
             <div class="suggestions-grid">
               {filteredSuggestions.map(city => (
-                <a href={`/${city.slug}`} class="suggestion-card" style={`background-image: url(${city.imageUrl})`}>
+                <a href={`/${city.stateSlug}/${city.slug}`} class="suggestion-card" style={`background-image: url(${city.imageUrl})`}>
                   <div class="suggestion-card-content">
                     <h3>{city.name}</h3>
                   </div>
@@ -188,17 +170,16 @@ const allCitiesList = [];
         )}
       </div>
     )}
-	</main>
+  </main>
 
-	<!-- Button animation script (only runs if the button exists) -->
-	<script is:raw>
-		document.addEventListener('DOMContentLoaded', () => {
-			const mapButton = document.getElementById('map-button');
-			if (mapButton) {
-				setTimeout(() => {
-					mapButton.classList.add('collapsed');
-				}, 5000);
-			}
-		});
-	</script>
+  <script is:raw>
+    document.addEventListener('DOMContentLoaded', () => {
+      const mapButton = document.getElementById('map-button');
+      if (mapButton) {
+        setTimeout(() => {
+          mapButton.classList.add('collapsed');
+        }, 5000);
+      }
+    });
+  </script>
 </Layout>
