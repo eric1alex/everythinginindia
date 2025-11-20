@@ -1,0 +1,222 @@
+[
+  {
+    "title": "Viewpoints",
+    "emoji": "📍",
+    "items": [
+      {
+        "name": "Doddabetta Peak",
+        "url": "https://maps.google.com/?cid=12464487913492439417"
+      },
+      {
+        "name": "Pine Forest",
+        "url": "https://maps.google.com/?cid=8272696789164804016"
+      },
+      {
+        "name": "Wenlock Downs",
+        "url": "https://maps.google.com/?cid=3573832516857425123"
+      },
+      {
+        "name": "Dolphin's Nose",
+        "url": "https://maps.google.com/?cid=1100572562688597383"
+      },
+      {
+        "name": "Lamb's Rock",
+        "url": "https://maps.google.com/?cid=6471543660076174103"
+      },
+      {
+        "name": "Needle Rock Viewpoint",
+        "url": "https://maps.google.com/?cid=5495632777427017569"
+      },
+      {
+        "name": "Catherine Falls Viewpoint",
+        "url": "https://maps.google.com/?cid=14230113048116429009"
+      },
+      {
+        "name": "Glenmorgan Viewpoint",
+        "url": "https://maps.google.com/?cid=13054170630730153689"
+      }
+    ]
+  },
+  {
+    "title": "Lakes",
+    "emoji": "⭐",
+    "items": [
+      {
+        "name": "Ooty Lake",
+        "url": "https://maps.google.com/?cid=9253629936393629843"
+      },
+      {
+        "name": "Pykara Lake",
+        "url": "https://maps.google.com/?cid=1701194166584622914"
+      },
+      {
+        "name": "Emerald Lake",
+        "url": "https://maps.google.com/?cid=6588041552367557250"
+      },
+      {
+        "name": "Avalanche Lake",
+        "url": "https://maps.google.com/?cid=15808824796755561689"
+      },
+      {
+        "name": "Upper Bhavani Lake",
+        "url": "https://maps.google.com/?cid=15702393937252633986"
+      },
+      {
+        "name": "Kamaraj Sagar Lake",
+        "url": "https://maps.google.com/?cid=4560901724093845479"
+      },
+      {
+        "name": "Parsons Valley Lake",
+        "url": "https://maps.google.com/?cid=1510916632557304715"
+      }
+    ]
+  },
+  {
+    "title": "Museums",
+    "emoji": "🗺️",
+    "items": [
+      {
+        "name": "Government Museum",
+        "url": "https://maps.google.com/?cid=7427360547422747828"
+      },
+      {
+        "name": "Ooty Wax Museum",
+        "url": "https://maps.google.com/?cid=9950816607532306930"
+      },
+      {
+        "name": "Doddabetta Tea Factory & Museum",
+        "url": "https://maps.google.com/?cid=15573124602750895356"
+      },
+      {
+        "name": "Honey & Bee Museum",
+        "url": "https://maps.google.com/?cid=8608796084879203152"
+      },
+      {
+        "name": "Tribal Research Center Museum",
+        "url": "https://maps.google.com/?cid=8788741955114861400"
+      },
+      {
+        "name": "Chocolate Museum",
+        "url": "https://maps.google.com/?cid=6043083529562798694"
+      }
+    ]
+  },
+  {
+    "title": "Shopping",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Commercial Road",
+        "url": "https://maps.google.com/?cid=661713613689468198"
+      },
+      {
+        "name": "Charring Cross",
+        "url": "https://maps.google.com/?cid=16905215376151446120"
+      },
+      {
+        "name": "Ooty Municipal Market",
+        "url": "https://maps.google.com/?cid=18257185567637899377"
+      },
+      {
+        "name": "Adam's Fountain Area Shops",
+        "url": "https://maps.google.com/?cid=4203640643996838358"
+      },
+      {
+        "name": "Nilgiri Super Market",
+        "url": "https://maps.google.com/?cid=16299671876446610292"
+      },
+      {
+        "name": "The Green Shop",
+        "url": "https://maps.google.com/?cid=15219480629416299832"
+      },
+      {
+        "name": "Bombay Kulfi & Snacks",
+        "url": "https://maps.google.com/?cid=3331959028956363382"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Sidewalk Cafe (Hotel Nahar)",
+        "url": "https://maps.google.com/?cid=14080983001500043248"
+      },
+      {
+        "name": "Earl's Secret (King's Cliff)",
+        "url": "https://maps.google.com/?cid=5940351450717023691"
+      },
+      {
+        "name": "Place To Bee",
+        "url": "https://maps.google.com/?cid=586767276704760690"
+      },
+      {
+        "name": "Shinkows Chinese Restaurant",
+        "url": "https://maps.google.com/?cid=5920728672097556824"
+      },
+      {
+        "name": "Garden Restaurant (Hotel Preethi Classic)",
+        "url": "https://maps.google.com/?cid=17817827659281520341"
+      },
+      {
+        "name": "Adyar Ananda Bhavan",
+        "url": "https://maps.google.com/?cid=10120128047671403476"
+      },
+      {
+        "name": "Hotel Welcome",
+        "url": "https://maps.google.com/?cid=1536572961056914386"
+      },
+      {
+        "name": "Angaara Restaurant",
+        "url": "https://maps.google.com/?cid=11494136267396506101"
+      },
+      {
+        "name": "Nahars Restaurant",
+        "url": "https://maps.google.com/?cid=14518577053655202839"
+      }
+    ]
+  },
+  {
+    "title": "Hotels",
+    "emoji": "🌳",
+    "items": [
+      {
+        "name": "The Gateway Hotel Church Road",
+        "url": "https://maps.google.com/?cid=10110253035669550796"
+      },
+      {
+        "name": "Savoy - IHCL Selections",
+        "url": "https://maps.google.com/?cid=14149940726559650613"
+      },
+      {
+        "name": "Sterling Ooty Elk Hill",
+        "url": "https://maps.google.com/?cid=2001536209139381915"
+      },
+      {
+        "name": "King's Cliff",
+        "url": "https://maps.google.com/?cid=10602486580257439516"
+      },
+      {
+        "name": "Fortune Resort Sullivan Court",
+        "url": "https://maps.google.com/?cid=17208393295929318377"
+      },
+      {
+        "name": "Hotel Lakeview",
+        "url": "https://maps.google.com/?cid=5028294114493502742"
+      },
+      {
+        "name": "Club Mahindra Derby Green",
+        "url": "https://maps.google.com/?cid=12848260310440452771"
+      },
+      {
+        "name": "Glyngarth Resorts",
+        "url": "https://maps.google.com/?cid=3169459282324154852"
+      },
+      {
+        "name": "Accord Highland Hotel Ooty",
+        "url": "https://maps.google.com/?cid=11584582369253100782"
+      }
+    ]
+  }
+]
