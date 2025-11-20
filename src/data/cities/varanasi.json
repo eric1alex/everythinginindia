@@ -1,0 +1,214 @@
+[
+  {
+    "title": "Temples",
+    "emoji": "📍",
+    "items": [
+      {
+        "name": "Kashi Vishwanath Temple",
+        "url": "https://maps.google.com/?cid=5215184104416049939"
+      },
+      {
+        "name": "Sankat Mochan Hanuman Temple",
+        "url": "https://maps.google.com/?cid=892498779322628562"
+      },
+      {
+        "name": "Durga Temple",
+        "url": "https://maps.google.com/?cid=2253729730996482129"
+      },
+      {
+        "name": "Tulsi Manas Temple",
+        "url": "https://maps.google.com/?cid=15462148269733888671"
+      },
+      {
+        "name": "Bharat Mata Mandir",
+        "url": "https://maps.google.com/?cid=10128270541442524150"
+      },
+      {
+        "name": "Kal Bhairav Temple",
+        "url": "https://maps.google.com/?cid=9601595516183374279"
+      },
+      {
+        "name": "New Vishwanath Temple (BHU)",
+        "url": "https://maps.google.com/?cid=17724790986172839723"
+      },
+      {
+        "name": "Nepali Temple",
+        "url": "https://maps.google.com/?cid=4335805247785518914"
+      }
+    ]
+  },
+  {
+    "title": "Food",
+    "emoji": "⭐",
+    "items": [
+      {
+        "name": "Kachori Gali",
+        "url": "https://maps.google.com/?cid=2763727002302117088"
+      },
+      {
+        "name": "Ram Bhandar",
+        "url": "https://maps.google.com/?cid=11618173720782935806"
+      },
+      {
+        "name": "Blue Lassi",
+        "url": "https://maps.google.com/?cid=527485727967296743"
+      },
+      {
+        "name": "Dina Chat Bhandar",
+        "url": "https://maps.google.com/?cid=6182659973631916116"
+      },
+      {
+        "name": "Kashi Chat Bhandar",
+        "url": "https://maps.google.com/?cid=12151670069203829558"
+      },
+      {
+        "name": "Baati Chokha Restaurant",
+        "url": "https://maps.google.com/?cid=2031572800050235347"
+      },
+      {
+        "name": "Shree Shiv Thandai",
+        "url": "https://maps.google.com/?cid=11254044531613003070"
+      },
+      {
+        "name": "Malaiyyo Stalls",
+        "url": "https://maps.google.com/?cid=14011567933396357777"
+      }
+    ]
+  },
+  {
+    "title": "Shopping",
+    "emoji": "🗺️",
+    "items": [
+      {
+        "name": "Godowlia Market",
+        "url": "https://maps.google.com/?cid=5954642519352523084"
+      },
+      {
+        "name": "Thatheri Bazaar",
+        "url": "https://maps.google.com/?cid=14767021124057955056"
+      },
+      {
+        "name": "Gyanvapi Market",
+        "url": "https://maps.google.com/?cid=17282669926162235862"
+      },
+      {
+        "name": "Chowk Bazaar",
+        "url": "https://maps.google.com/?cid=14374271023304388508"
+      },
+      {
+        "name": "Lahurabir",
+        "url": "https://maps.google.com/?cid=17341471864467170865"
+      },
+      {
+        "name": "Banarasi Silk Emporium",
+        "url": "https://maps.google.com/?cid=6370796494956281088"
+      },
+      {
+        "name": "Vishwanath Gali",
+        "url": "https://maps.google.com/?cid=8060477221744904482"
+      }
+    ]
+  },
+  {
+    "title": "Heritage Sites",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Dashashwamedh Ghat",
+        "url": "https://maps.google.com/?cid=11969141977600804924"
+      },
+      {
+        "name": "Manikarnika Ghat",
+        "url": "https://maps.google.com/?cid=9034287784815775792"
+      },
+      {
+        "name": "Assi Ghat",
+        "url": "https://maps.google.com/?cid=9275168188361037964"
+      },
+      {
+        "name": "Sarnath",
+        "url": "https://maps.google.com/?cid=11656307264043592052"
+      },
+      {
+        "name": "Ramnagar Fort",
+        "url": "https://maps.google.com/?cid=11713985735756136538"
+      },
+      {
+        "name": "Alamgir Mosque",
+        "url": "https://maps.google.com/?cid=14604175264545333109"
+      },
+      {
+        "name": "Kedar Ghat",
+        "url": "https://maps.google.com/?cid=333540781198690290"
+      }
+    ]
+  },
+  {
+    "title": "Cafes & Restaurants",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Brown Bread Bakery",
+        "url": "https://maps.google.com/?cid=14173149163143906258"
+      },
+      {
+        "name": "Kashi Cafe",
+        "url": "https://maps.google.com/?cid=6026058881267810217"
+      },
+      {
+        "name": "Aum Cafe",
+        "url": "https://maps.google.com/?cid=12694110036965978543"
+      },
+      {
+        "name": "Open Hand Cafe",
+        "url": "https://maps.google.com/?cid=11313076001281609943"
+      },
+      {
+        "name": "Dosa Cafe",
+        "url": "https://maps.google.com/?cid=6381924093030287337"
+      },
+      {
+        "name": "Pizzeria Vaatika Cafe",
+        "url": "https://maps.google.com/?cid=7311440646687993835"
+      },
+      {
+        "name": "Mona Lisa Cafe",
+        "url": "https://maps.google.com/?cid=15417791263477582198"
+      }
+    ]
+  },
+  {
+    "title": "Hotels",
+    "emoji": "🌳",
+    "items": [
+      {
+        "name": "BrijRama Palace",
+        "url": "https://maps.google.com/?cid=5802851482424224561"
+      },
+      {
+        "name": "Taj Ganges",
+        "url": "https://maps.google.com/?cid=17312077160453205974"
+      },
+      {
+        "name": "Radisson Hotel Varanasi",
+        "url": "https://maps.google.com/?cid=9990832122222701665"
+      },
+      {
+        "name": "Hotel Ganges Grand",
+        "url": "https://maps.google.com/?cid=9827934031483301383"
+      },
+      {
+        "name": "Ramada Plaza by Wyndham",
+        "url": "https://maps.google.com/?cid=1402701523164044592"
+      },
+      {
+        "name": "Palace on Steps",
+        "url": "https://maps.google.com/?cid=8711940168099226769"
+      },
+      {
+        "name": "Hotel Alka",
+        "url": "https://maps.google.com/?cid=6519747674333572254"
+      }
+    ]
+  }
+]
