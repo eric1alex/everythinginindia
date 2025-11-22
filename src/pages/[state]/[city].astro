@@ -3,6 +3,7 @@ import Layout from '~/layouts/Layout.astro';
 import locations from '~/data/locations.json';
 import FeedbackPopup from '~/components/FeedbackPopup.astro'; // Use the popup version
 import RelatedDestinations from '~/components/RelatedDestinations.astro';
+import CityRequestWidget from '~/components/CityRequestWidget.astro'; // NEW IMPORT
 
 // --- FORM DETAILS ---
 const FEEDBACK_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSerku0WY4t5LWlWBEoSYmoWqUiWKNDpLMzb_6R8T7LoqRHUag/formResponse";
@@ -10,30 +11,27 @@ const CITY_ENTRY_ID = "entry.693458303";
 const HELPFUL_ENTRY_ID = "entry.1400638291";
 const FEEDBACK_ENTRY_ID = "entry.1933085880";
 
+// --- REQUEST FORM DETAILS (Please fill these in) ---
+// You will need to create a new form for this feature!
+const REQUEST_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSf9A2_VeOdq71UAhs8u2ttB6WJlljMl0PdGcEJIlwZ3meFnBA/formResponse"; 
+const REQUEST_ENTRY_ID = "entry.1044411969"; 
+
 // --- GET STATIC PATHS ---
 export async function getStaticPaths() {
-  // Use ../../ because we are two levels deep in [state]/[city]
   const allCityData = await import.meta.glob('../../data/cities/*.json');
-  
   const allPages = [];
 
   const processLocations = async (locList) => {
     for (const loc of locList) {
       for (const city of loc.cities) {
-        
         const importPath = `../../data/cities/${city.slug}.json`;
         let placesData = null;
-
         if (allCityData[importPath]) {
           const cityDataModule = await allCityData[importPath]();
           placesData = cityDataModule.default;
         }
-
         allPages.push({ 
-          params: { 
-            state: loc.slug, 
-            city: city.slug 
-          },
+          params: { state: loc.slug, city: city.slug },
           props: {
             cityName: city.name,
             stateName: loc.name,
@@ -49,7 +47,6 @@ export async function getStaticPaths() {
 
   await processLocations(locations.states);
   await processLocations(locations.unionTerritories);
-
   return allPages;
 }
 
@@ -73,7 +70,6 @@ const allCitiesList = [];
     });
 });
 
-// Filter and randomize suggestions for the "Coming Soon" page fallback
 const filteredSuggestions = allCitiesList
     .filter(c => c.slug !== currentCitySlug)
     .sort(() => 0.5 - Math.random())
@@ -122,6 +118,19 @@ const filteredSuggestions = allCitiesList
             ))}
           </div>
 
+
+          <!-- Related Destinations -->
+          <RelatedDestinations
+            currentCitySlug={currentCitySlug}
+            allCities={allCitiesList}
+          />
+
+            <!-- NEW: City Request Widget -->
+          <CityRequestWidget 
+             formUrl={REQUEST_FORM_URL}
+             entryID={REQUEST_ENTRY_ID}
+          />
+          
           <!-- Feedback Popup (Bottom Right) -->
           <FeedbackPopup 
             cityName={cityName}
@@ -129,12 +138,6 @@ const filteredSuggestions = allCitiesList
             cityEntry={CITY_ENTRY_ID}
             helpfulEntry={HELPFUL_ENTRY_ID}
             feedbackEntry={FEEDBACK_ENTRY_ID}
-          />
-
-          <!-- Related Destinations -->
-          <RelatedDestinations
-            currentCitySlug={currentCitySlug}
-            allCities={allCitiesList}
           />
           
         </div>

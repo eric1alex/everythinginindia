@@ -1,0 +1,134 @@
+---
+export interface Props {
+  formUrl: string;
+  entryID: string;
+}
+
+const { formUrl, entryID } = Astro.props;
+---
+
+<section id="city-request-widget" class="request-container">
+    <div id="request-initial">
+        <h3 class="request-title">Which city should we cover next?</h3>
+        <p class="request-text">We build guides based on what you want. Tell us where to go!</p>
+        
+        <div class="input-wrapper">
+            <input type="text" id="request-input" class="request-input" placeholder="e.g. Jaipur, Shillong, Hampi..." />
+            <button id="request-submit" class="request-btn">Submit</button>
+        </div>
+    </div>
+
+    <div id="request-thanks" style="display: none;">
+        <h3 class="request-title">Thanks! 🚀</h3>
+        <p class="request-text">We've added that to our list.</p>
+    </div>
+</section>
+
+<style>
+    .request-container {
+        max-width: 600px;
+        margin: 4rem auto 2rem auto;
+        padding: 2.5rem 2rem;
+        background-color: #f8fafc; /* Very light cool grey */
+        border: 1px solid #e2e8f0;
+        border-radius: 16px;
+        text-align: center;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+    }
+
+    .request-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #1e293b; /* Slate-800 */
+        margin-bottom: 0.5rem;
+    }
+
+    .request-text {
+        font-size: 0.95rem;
+        color: #64748b; /* Slate-500 */
+        margin-bottom: 1.5rem;
+    }
+
+    .input-wrapper {
+        display: flex;
+        gap: 0.5rem;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .request-input {
+        flex: 1;
+        padding: 0.75rem 1rem;
+        border: 1px solid #cbd5e1;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        outline: none;
+        transition: all 0.2s;
+    }
+
+    .request-input:focus {
+        border-color: #1e293b;
+        box-shadow: 0 0 0 3px rgba(30, 41, 59, 0.1);
+    }
+
+    .request-btn {
+        padding: 0.75rem 1.5rem;
+        background-color: #1e293b;
+        color: white;
+        font-weight: 600;
+        font-size: 0.95rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .request-btn:hover {
+        background-color: #0f172a;
+    }
+
+    @media (max-width: 480px) {
+        .input-wrapper {
+            flex-direction: column;
+        }
+        .request-btn {
+            width: 100%;
+        }
+    }
+</style>
+
+<script is:inline define:vars={{ formUrl, entryID }}>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('request-submit');
+        const input = document.getElementById('request-input');
+        const initialView = document.getElementById('request-initial');
+        const thanksView = document.getElementById('request-thanks');
+        const storageKey = 'city-request-submitted';
+
+        // Optional: Hide if they already submitted recently? 
+        // For now, we let them submit multiple suggestions.
+
+        btn.addEventListener('click', () => {
+            const value = input.value.trim();
+            if (!value) return;
+
+            submitToGoogle(value);
+
+            // Show Thanks
+            initialView.style.display = 'none';
+            thanksView.style.display = 'block';
+            
+            // Save flag (optional usage)
+            localStorage.setItem(storageKey, 'true');
+        });
+
+        async function submitToGoogle(text) {
+            const formData = new FormData();
+            formData.append(entryID, text);
+            
+            try {
+                await fetch(formUrl, { method: 'POST', body: formData, mode: 'no-cors' });
+            } catch (e) { console.error(e); }
+        }
+    });
+</script>
