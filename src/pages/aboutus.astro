@@ -1,0 +1,312 @@
+---
+import Layout from '~/layouts/Layout.astro';
+
+// Image placeholders
+const storyImage1 = "https://images.unsplash.com/photo-1610132459897-e0bf5cc04095?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+const storyImage2 = "https://images.unsplash.com/photo-1580108857809-c56deaf4cf5b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+---
+
+<Layout 
+  title="Our Story - Where In India"
+  description="How a frustrating Google search turned into a community-led movement to map the best of India."
+>
+  <main class="about-page">
+    
+    <!-- Hero Section -->
+    <header class="about-header">
+      <div class="header-content">
+        <h1 class="title">The Story of <span class="highlight">Where In India!</span></h1>
+        <p class="subtitle">From a frustrating Google search to a community-led movement.</p>
+      </div>
+    </header>
+
+    <div class="content-wrapper">
+      
+      <!-- CHAPTER 1: The Problem -->
+      <section class="chapter">
+        <div class="chapter-text">
+          <h2>It started with a trip...</h2>
+          <p>
+            The story starts when I was planning a trip to <strong>Pondicherry</strong>. Like anyone else, I wanted a simple site that just showed me the best places to visit.
+          </p>
+          <p>
+            But searching Google felt like a chore. Every site was cluttered with ads, long-winded SEO text, and endless scrolling. It was overwhelming.
+          </p>
+          <p>
+            That’s when the idea hit: <strong>Why isn't there a simple travel directory?</strong> A clean site that just lists the best places and gives you the direct Google Maps link—because that's what we all use for navigation anyway.
+          </p>
+        </div>
+        <div class="chapter-image">
+          <img src={storyImage1} alt="Planning a trip" />
+        </div>
+      </section>
+
+      <!-- CHAPTER 2: The Solution -->
+      <section class="chapter reverse">
+        <div class="chapter-text">
+          <h2>Real People, No AI</h2>
+          <p>
+            As I started building, I realized another problem. With the AI boom, the internet is flooding with generic, AI-generated listicles. <strong>People don't want that.</strong> They want originality. They want human experiences.
+          </p>
+          <p>
+            So, I decided to build this differently. I turned to the community.
+          </p>
+          <p>
+            I picked 5-6 cities and reached out to locals and travelers on Reddit. I asked them for their genuine favorites. It was a 2-week exercise, but the data we got was pure gold—authentic recommendations you can trust.
+          </p>
+        </div>
+        <div class="chapter-image">
+          <img src={storyImage2} alt="Community contributions" />
+        </div>
+      </section>
+          
+          <!-- New "Social Proof" text -->
+          <div class="social-proof">
+            <p class="proof-text">
+              Today, we're growing fast with <strong class="highlight-text">50+ positive reviews</strong> and contributions from travelers across India.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- FEATURES SECTION -->
+    <section class="features-section">
+      <div class="features-container">
+        <h2 class="features-heading">What Makes Us Different</h2>
+        <div class="features-grid">
+          
+          <div class="feature-item">
+            <div class="icon">🔍</div>
+            <h3>Smart Search</h3>
+            <p>Find cities, specific spots, or categories instantly.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="icon">📍</div>
+            <h3>Curated Pages</h3>
+            <p>Clean pages with key details, images, and direct map links.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="icon">🤝</div>
+            <h3>Community Built</h3>
+            <p>Recommendations submitted by real travelers, verified by us.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="icon">🗺️</div>
+            <h3>Direct Navigation</h3>
+            <p>Every place links directly to its exact Google Maps location.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="icon">📝</div>
+            <h3>Travel Stories</h3>
+            <p>A platform for users to share their own experiences and photos.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="icon">💬</div>
+            <h3>Open Feedback</h3>
+            <p>We listen. Quickly tell us what works and what doesn't.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+</Layout>
+
+<style>
+  /* --- Base Layout --- */
+  .about-page {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+
+  .content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* --- Hero --- */
+  .about-header {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background-color: #f8fafc; /* Very light cool grey */
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 2rem;
+  }
+  
+  .about-header .title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 0.2rem;
+    letter-spacing: -0.02em;
+  }
+
+  .about-header .highlight {
+    color: var(--title-color); /* Use your brand teal */
+  }
+
+  .about-header .subtitle {
+    font-size: 1.25rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* --- Story Chapters --- */
+  .chapter {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 6rem; /* Huge spacing between sections */
+  }
+
+  @media (min-width: 768px) {
+    .chapter {
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem; /* Even more spacing on desktop */
+    }
+    
+    /* Alternating Layout */
+    .chapter.reverse .chapter-text { order: 2; }
+    .chapter.reverse .chapter-image { order: 1; }
+  }
+
+  .chapter-text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+  }
+
+  .chapter-text p {
+    font-size: 1.1rem;
+    color: #475569;
+    margin-bottom: 1.5rem;
+    line-height: 1.75;
+  }
+
+  .chapter-image img {
+    width: 100%;
+    border-radius: 12px; /* Softer radius */
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .chapter-image:hover img {
+    transform: scale(1.02); /* Subtle zoom on hover */
+  }
+
+  /* --- Centered Text Chapter --- */
+  .chapter.centered {
+    display: block;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .chapter.centered h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+  }
+
+  /* --- Social Proof --- */
+  .social-proof {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: #f0f9ff; /* Light blue bg */
+    border: 1px solid #bae6fd;
+    border-radius: 12px;
+    display: inline-block;
+  }
+
+  .proof-text {
+    font-size: 1.2rem;
+    color: #0369a1;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .highlight-text {
+    color: #0284c7;
+    font-weight: 700;
+  }
+
+  /* --- Features Section --- */
+  .features-section {
+    background-color: #f8fafc;
+    padding: 6rem 1.5rem;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .features-container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .features-heading {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 4rem;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .feature-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+  }
+
+  .feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    border-color: #cbd5e1;
+  }
+
+  .feature-item .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    background: #f1f5f9;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+  }
+
+  .feature-item h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0.75rem;
+  }
+
+  .feature-item p {
+    font-size: 1rem;
+    color: #64748b;
+    line-height: 1.6;
+  }
+</style>

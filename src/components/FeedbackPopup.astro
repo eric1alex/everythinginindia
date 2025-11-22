@@ -1,0 +1,218 @@
+---
+export interface Props {
+  cityName: string;
+  formUrl: string;
+  cityEntry: string;
+  helpfulEntry: string;
+  feedbackEntry: string;
+}
+
+const { cityName, formUrl, cityEntry, helpfulEntry, feedbackEntry } = Astro.props;
+---
+
+<!-- The Popup Container (Hidden by default) -->
+<div id="feedback-popup" class="feedback-popup">
+    
+    <!-- Close Button -->
+    <button id="popup-close" class="popup-close">&times;</button>
+
+    <!-- State 1: Question -->
+    <div id="popup-initial">
+        <h4 class="popup-title">Was this helpful?</h4>
+        <div class="popup-buttons">
+            <button id="btn-yes" class="popup-btn yes">👍 Yes</button>
+            <button id="btn-no" class="popup-btn no">👎 No</button>
+        </div>
+    </div>
+
+    <!-- State 2: Form -->
+    <div id="popup-form" style="display: none;">
+        <h4 class="popup-title">How can we improve?</h4>
+        <textarea id="popup-input" class="popup-input" placeholder="Your feedback..."></textarea>
+        <button id="btn-submit" class="popup-submit">Send</button>
+    </div>
+
+    <!-- State 3: Thanks -->
+    <div id="popup-thanks" style="display: none;">
+        <h4 class="popup-title">Thanks! ❤️</h4>
+        <p class="popup-text">Your feedback helps us improve.</p>
+    </div>
+</div>
+
+<style>
+    .feedback-popup {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 260px;
+        background: white;
+        padding: 1.25rem;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        border: 1px solid #eee;
+        z-index: 9999; /* Above everything */
+        
+        /* Initial State: Hidden and moved down */
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+        pointer-events: none;
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .feedback-popup.visible {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        pointer-events: all;
+    }
+
+    .popup-close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        color: #999;
+        cursor: pointer;
+        line-height: 1;
+        padding: 4px;
+    }
+    .popup-close:hover { color: #333; }
+
+    .popup-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .popup-buttons {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .popup-btn {
+        flex: 1;
+        padding: 0.5rem;
+        border-radius: 6px;
+        border: 1px solid #eee;
+        background: #fff;
+        cursor: pointer;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: all 0.2s;
+    }
+    .popup-btn:hover { background: #f9f9f9; transform: translateY(-1px); }
+    .popup-btn.yes { border-color: #d1fae5; color: #047857; }
+    .popup-btn.yes:hover { background: #ecfdf5; }
+    .popup-btn.no { border-color: #fee2e2; color: #b91c1c; }
+    .popup-btn.no:hover { background: #fef2f2; }
+
+    .popup-input {
+        width: 100%;
+        height: 80px;
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+        resize: none;
+    }
+    .popup-input:focus { outline: none; border-color: #333; }
+
+    .popup-submit {
+        width: 100%;
+        background: #1a1a1a;
+        color: white;
+        border: none;
+        padding: 0.5rem;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .popup-submit:hover { background: #333; }
+
+    .popup-text {
+        font-size: 0.9rem;
+        color: #666;
+        text-align: center;
+    }
+</style>
+
+<script is:inline define:vars={{ cityName, formUrl, cityEntry, helpfulEntry, feedbackEntry }}>
+    document.addEventListener('DOMContentLoaded', () => {
+        const popup = document.getElementById('feedback-popup');
+        const btnClose = document.getElementById('popup-close');
+        const btnYes = document.getElementById('btn-yes');
+        const btnNo = document.getElementById('btn-no');
+        const btnSubmit = document.getElementById('btn-submit');
+        const input = document.getElementById('popup-input');
+        
+        const viewInitial = document.getElementById('popup-initial');
+        const viewForm = document.getElementById('popup-form');
+        const viewThanks = document.getElementById('popup-thanks');
+
+        const storageKey = `feedback-submitted-${cityName}`;
+
+        // 1. Check if user already submitted
+        if (localStorage.getItem(storageKey)) {
+            return; // Do nothing, stay hidden
+        }
+
+        // 2. Show after 5 seconds
+        setTimeout(() => {
+            popup.classList.add('visible');
+        }, 5000);
+
+        // Close logic
+        btnClose.addEventListener('click', () => {
+            popup.classList.remove('visible');
+            // Optional: Don't show again for this session? 
+            // For now, we just close it. It will show again on refresh unless submitted.
+        });
+
+        // Yes Click
+        btnYes.addEventListener('click', () => {
+            submitToGoogle('Yes', '');
+            showThanks();
+        });
+
+        // No Click
+        btnNo.addEventListener('click', () => {
+            viewInitial.style.display = 'none';
+            viewForm.style.display = 'block';
+        });
+
+        // Submit Click
+        btnSubmit.addEventListener('click', () => {
+            submitToGoogle('No', input.value);
+            showThanks();
+        });
+
+        function showThanks() {
+            viewInitial.style.display = 'none';
+            viewForm.style.display = 'none';
+            viewThanks.style.display = 'block';
+            
+            localStorage.setItem(storageKey, 'true');
+            
+            // Hide after 3 seconds
+            setTimeout(() => {
+                popup.classList.remove('visible');
+            }, 3000);
+        }
+
+        async function submitToGoogle(isHelpful, feedback) {
+            const formData = new FormData();
+            formData.append(cityEntry, cityName);
+            formData.append(helpfulEntry, isHelpful);
+            formData.append(feedbackEntry, feedback);
+            
+            try {
+                await fetch(formUrl, { method: 'POST', body: formData, mode: 'no-cors' });
+            } catch (e) { console.error(e); }
+        }
+    });
+</script>

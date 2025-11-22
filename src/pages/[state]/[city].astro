@@ -1,7 +1,7 @@
 ---
 import Layout from '~/layouts/Layout.astro';
 import locations from '~/data/locations.json';
-import FeedbackWidget from '~/components/FeedbackWidget.astro';
+import FeedbackPopup from '~/components/FeedbackPopup.astro'; // Use the popup version
 import RelatedDestinations from '~/components/RelatedDestinations.astro';
 
 // --- FORM DETAILS ---
@@ -12,6 +12,7 @@ const FEEDBACK_ENTRY_ID = "entry.1933085880";
 
 // --- GET STATIC PATHS ---
 export async function getStaticPaths() {
+  // Use ../../ because we are two levels deep in [state]/[city]
   const allCityData = await import.meta.glob('../../data/cities/*.json');
   
   const allPages = [];
@@ -81,8 +82,8 @@ const filteredSuggestions = allCitiesList
 ---
 
 <Layout 
-  title=`${cityName} - Where In India`
-  description={`The most trusted, hand-curated list of recommendations for ${cityName}, ${stateName}. Find the best cafes, stays, and hidden gems.`}
+  title={`${cityName} - Where In India`}
+  description={`The most trusted, hand-curated list of recommendations for ${cityName}, ${stateName}.`}
   ogImage={heroImageUrl}
 >
   <main>
@@ -91,11 +92,14 @@ const filteredSuggestions = allCitiesList
         <header class="hero">
           <div 
             class="hero-image hero-image-city" 
-            style=`background-image: url(${heroImageUrl});`
+            style={`background-image: url(${heroImageUrl});`}
           ></div>
+          
           <div class="hero-text">
             <h1>The most trusted guide to {cityName}</h1>
             <p>Discover handpicked places, experiences, and local favorites in {stateName}</p>
+            
+            </div>
           </div>
         </header>
 
@@ -118,8 +122,8 @@ const filteredSuggestions = allCitiesList
             ))}
           </div>
 
-          <!-- Feedback Widget (Standalone) -->
-          <FeedbackWidget 
+          <!-- Feedback Popup (Bottom Right) -->
+          <FeedbackPopup 
             cityName={cityName}
             formUrl={FEEDBACK_FORM_URL}
             cityEntry={CITY_ENTRY_ID}
@@ -127,21 +131,13 @@ const filteredSuggestions = allCitiesList
             feedbackEntry={FEEDBACK_ENTRY_ID}
           />
 
+          <!-- Related Destinations -->
           <RelatedDestinations
             currentCitySlug={currentCitySlug}
             allCities={allCitiesList}
           />
           
         </div>
-
-        <a href={mapUrl} class="floating-map-button" id="map-button" target="_blank" rel="noopener noreferrer">
-          <span class="map-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5Z" fill="currentColor"/>
-            </svg>
-          </span>
-          <span class="map-text">Explore on Google Maps</span>
-        </a>
       </>
     ) : (
       <div class="coming-soon-container">
@@ -174,12 +170,21 @@ const filteredSuggestions = allCitiesList
 
   <script is:raw>
     document.addEventListener('DOMContentLoaded', () => {
-      const mapButton = document.getElementById('map-button');
-      if (mapButton) {
-        setTimeout(() => {
-          mapButton.classList.add('collapsed');
-        }, 5000);
-      }
+        // Info Button Logic
+        const infoBtn = document.getElementById('info-btn');
+        const tooltip = document.getElementById('info-tooltip');
+
+        if (infoBtn && tooltip) {
+            infoBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                tooltip.classList.toggle('visible');
+            });
+            document.addEventListener('click', (e) => {
+                if (!infoBtn.contains(e.target) && !tooltip.contains(e.target)) {
+                    tooltip.classList.remove('visible');
+                }
+            });
+        }
     });
   </script>
 </Layout>

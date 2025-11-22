@@ -10,26 +10,18 @@ interface Props {
 const { 
 	title, 
 	description = "A curated travel directory for India. Stop getting lost on Google.", 
-	ogImage = "https://placehold.co/1200x630/1a1a1a/ffffff?text=Where+In+India" // Default social card
+	ogImage = "https://placehold.co/1200x630/1a1a1a/ffffff?text=Where+In+India" 
 } = Astro.props;
 
 // 3. Get the full page URL
 const canonicalURL = Astro.url.href;
 
-// 4. IMPORT YOUR NEW MODAL COMPONENT
-//    (Make sure this path is correct, e.g., '~/components/ContributionModal.astro')
-import ContributionModal from '../components/ContributionModal.astro'; 
+// REMOVED: ContributionModal import
 ---
 <!doctype html>
 <html lang="en">
 	<head>
-        <!-- 
-		  =================================
-		  START: Google Tag Manager (GTM)
-		  =================================
-		-->
-        <!-- Paste this code as high in the <head> of the page as possible: -->
-        <!-- Added 'is:inline' as required by Astro -->
+        <!-- Google Tag Manager -->
         <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -51,14 +43,8 @@ import ContributionModal from '../components/ContributionModal.astro';
 		<link rel="stylesheet" href="/styles/global.css">
 		<link rel="stylesheet" href="/styles/header-footer.css">
 		<link rel="stylesheet" href="/styles/floating-button.css">
-		<!-- Add this if you made a separate file for it -->
-		<!-- <link rel="stylesheet" href="/styles/coming-soon.css"> -->
 
-		<!-- 
-		  =================================
-		  START: SEO & Social Media Meta Tags
-		  =================================
-		-->
+		<!-- SEO Meta Tags -->
 		<title>{title}</title>
 		<meta name="title" content={title} />
 		<meta name="description" content={description} />
@@ -74,26 +60,23 @@ import ContributionModal from '../components/ContributionModal.astro';
 		<meta property="twitter:title" content={title} />
 		<meta property="twitter:description" content={description} />
 		<meta property="twitter:image" content={ogImage} />
-		<!-- 
-		  =================================
-		  END: SEO & Social Media Meta Tags
-		  =================================
-		-->
-
-		<!-- 
-		  REMOVED: Old GA4 Snippet is gone
-		-->
+        
+        <!-- Google Schema -->
+        <script type="application/ld+json" is:inline>
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Where In India",
+            "alternateName": ["WhereInIndia"],
+            "url": "https://whereinindia.online",
+            "image": "https://whereinindia.online/flag.png"
+          }
+        </script>
 	</head>
 	<body>
-        <!-- 
-		  =================================
-		  START: Google Tag Manager (noscript)
-		  =================================
-		-->
-        <!-- Paste this code immediately after the opening <body> tag: -->
+        <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FWZWB22"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
 
 		<!-- Site Header -->
 		<header class="site-header">
@@ -105,20 +88,18 @@ import ContributionModal from '../components/ContributionModal.astro';
 
 		<!-- Main Page Content -->
 		<main>
-			<slot /> <!-- Your page content (index.astro or [city].astro) goes here -->
+			<slot /> 
 		</main>
 
 		<!-- New Site Footer -->
 		<footer class="site-footer">
 			<div class="footer-grid">
-				<!-- Column 1: About Us / Mission -->
 				<div class="footer-column">
-					<h4 class="footer-heading">About Us</h4>
+					<h4 class="footer-heading"><a href="/aboutus" class="footer-link">About Us</a></h4>
 					<p class="footer-text">
 						"Where In India" is a hand-curated travel directory built for easy exploration and trip planning. Stop getting lost on Google.
 					</p>
 				</div>
-				<!-- Column 2: Other Travel Ventures -->
 				<div class="footer-column">
 					<h4 class="footer-heading">Other Travel Ventures</h4>
 					<ul class="footer-list">
@@ -126,7 +107,6 @@ import ContributionModal from '../components/ContributionModal.astro';
 						<li><a href="https://www.instagram.com/prints.loft/" class="footer-link" target="_blank" rel="noopener noreferrer" >Prints Loft | Get your Travel Prints</a></li>
 					</ul>
 				</div>
-				<!-- Column 3: Audience -->
 				<div class="footer-column">
 					<h4 class="footer-heading">Audience</h4>
 					<ul class="footer-list">
@@ -135,7 +115,6 @@ import ContributionModal from '../components/ContributionModal.astro';
 						<li><a href="/contributors" class="footer-link" 	 	target="_blank" rel="noopener noreferrer" >Contributors</a></li>
 					</ul>
 				</div>
-				<!-- Column 4: Donate -->
 				<div class="footer-column">
 					<h4 class="footer-heading">Support Us</h4>
 					<p class="footer-text">If you find this useful, consider supporting us!</p>
@@ -144,9 +123,7 @@ import ContributionModal from '../components/ContributionModal.astro';
 			</div>
 		</footer>
 
-		<!-- 5. ADD THE MODAL COMPONENT -->
-		<!-- This will now appear on every page -->
-		<ContributionModal />
+		<!-- REMOVED: ContributionModal is gone -->
 
 		<!-- City Page Fade-in Script -->
 		<script is:raw src="/scripts/main.js"></script>

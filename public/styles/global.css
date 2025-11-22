@@ -529,14 +529,15 @@ body {
 }
 
 .footer-link {
-  color: var(--footer-text);
+  color: #000; /* Original: black */
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 
-.footer-link:hover {
-  color: var(--link-hover-color);
-  text-decoration: underline;
+.footer-link:hover,
+.footer-link:focus {
+  color: #666; /* Hover: grey */
+  text-decoration: none;
 }
 
 .footer-donate-button {
@@ -889,3 +890,110 @@ body {
   font-weight: 600;
   text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Add text shadow for readability */
 }
+
+/* --- 9. NEW MINIMAL HERO MAP ACTIONS --- */
+.hero-actions-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  margin-top: 0.1rem;
+}
+
+.map-link-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+}
+
+.map-link-wrapper svg {
+  color: #666;
+  width: 18px;
+  height: 18px;
+}
+
+.link-hero-map {
+  color: #666 !important;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.link-hero-map:hover {
+  color: #000 !important;
+}
+
+.link-hero-map:visited, 
+.link-hero-map:active, 
+.link-hero-map:focus {
+  color: #666 !important; 
+}
+
+.btn-info-minimal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  background: none;
+  color: #999;
+  font-family: serif;
+  font-style: italic;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.btn-info-minimal:hover {
+  border-color: #333;
+  color: #333;
+}
+
+/* Tooltip */
+.hero-tooltip {
+  display: none;
+  margin-top: 0.1rem;
+  background-color: #fff;
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1;
+  max-width: 280px;
+  text-align: center;
+  animation: fadeIn 0.2s ease-in-out;
+  position: 90%;
+  top: 0%;
+  z-index: 20;
+}
+
+.hero-tooltip::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.hero-tooltip.visible {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
