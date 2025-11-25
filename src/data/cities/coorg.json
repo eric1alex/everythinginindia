@@ -1,0 +1,202 @@
+[
+  {
+    "title": "Hotels",
+    "emoji": "📍",
+    "items": [
+      {
+        "name": "The Tamara Coorg",
+        "url": "https://maps.google.com/?cid=18264745182851611594"
+      },
+      {
+        "name": "Evolve Back Coorg",
+        "url": "https://maps.google.com/?cid=398722658310189783"
+      },
+      {
+        "name": "Coorg Wilderness Resort",
+        "url": "https://maps.google.com/?cid=12055605548969547124"
+      },
+      {
+        "name": "Ambatty Greens Resort",
+        "url": "https://maps.google.com/?cid=14568162126496335436"
+      },
+      {
+        "name": "Club Mahindra Madikeri",
+        "url": "https://maps.google.com/?cid=5189054863547883166"
+      },
+      {
+        "name": "Heritage Resort Coorg",
+        "url": "https://maps.google.com/?cid=9285876599054154856"
+      },
+      {
+        "name": "Palace Estate Homestay",
+        "url": "https://maps.google.com/?cid=7659387506966374007"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "⭐",
+    "items": [
+      {
+        "name": "Coorg Cuisine",
+        "url": "https://maps.google.com/?cid=2117278509630553421"
+      },
+      {
+        "name": "Raintree Restaurant",
+        "url": "https://maps.google.com/?cid=13189816883359126504"
+      },
+      {
+        "name": "Fort Mercara Restaurant",
+        "url": "https://maps.google.com/?cid=12911084811807218320"
+      },
+      {
+        "name": "Capitol Village Restaurant",
+        "url": "https://maps.google.com/?cid=5088381738013419910"
+      },
+      {
+        "name": "Taste of Coorg",
+        "url": "https://maps.google.com/?cid=14633884997910768068"
+      },
+      {
+        "name": "Beans N Brews",
+        "url": "https://maps.google.com/?cid=826325603198672098"
+      },
+      {
+        "name": "Hotel Udupi Veg",
+        "url": "https://maps.google.com/?cid=13127322691154624545"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "🗺️",
+    "items": [
+      {
+        "name": "Coffee Blossom",
+        "url": "https://maps.google.com/?cid=10628934921688566722"
+      },
+      {
+        "name": "Big Cup Cafe",
+        "url": "https://maps.google.com/?cid=2920112968916026093"
+      },
+      {
+        "name": "Beans N Brews",
+        "url": "https://maps.google.com/?cid=826325603198672098"
+      },
+      {
+        "name": "Coorg Coffee House",
+        "url": "https://maps.google.com/?cid=2721856854846225721"
+      },
+      {
+        "name": "Cuproast Coffee",
+        "url": "https://maps.google.com/?cid=18165914977321754461"
+      },
+      {
+        "name": "The Funky Bean Cafe",
+        "url": "https://maps.google.com/?cid=826325603198672098"
+      },
+      {
+        "name": "Cafe Coorg",
+        "url": "https://maps.google.com/?cid=12359457517952419725"
+      }
+    ]
+  },
+  {
+    "title": "Viewpoints",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Raja's Seat",
+        "url": "https://maps.google.com/?cid=4966457375673908786"
+      },
+      {
+        "name": "Mandalpatti Viewpoint",
+        "url": "https://maps.google.com/?cid=2954191537605950632"
+      },
+      {
+        "name": "Brahmagiri Hill",
+        "url": "https://maps.google.com/?cid=15948794039050596775"
+      },
+      {
+        "name": "Tadiandamol Peak",
+        "url": "https://maps.google.com/?cid=9404187513946867767"
+      },
+      {
+        "name": "Abbey Falls Viewpoint",
+        "url": "https://maps.google.com/?cid=12481967497890031120"
+      },
+      {
+        "name": "Thadiyandamol Peak Viewpoint",
+        "url": "https://maps.google.com/?cid=9414337089883693909"
+      },
+      {
+        "name": "Kote Betta Peak",
+        "url": "https://maps.google.com/?cid=13825805352003501259"
+      }
+    ]
+  },
+  {
+    "title": "Waterfalls",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Iruppu Falls",
+        "url": "https://maps.google.com/?cid=7227339232506097309"
+      },
+      {
+        "name": "Mallalli Falls",
+        "url": "https://maps.google.com/?cid=7249501979066290052"
+      },
+      {
+        "name": "Chelavara Falls",
+        "url": "https://maps.google.com/?cid=15446347206413111185"
+      },
+      {
+        "name": "Burude Falls",
+        "url": "https://maps.google.com/?cid=4692310028551743209"
+      },
+      {
+        "name": "Devarakolli Falls",
+        "url": "https://maps.google.com/?cid=13454250971319068345"
+      },
+      {
+        "name": "Nalakanad Falls",
+        "url": "https://maps.google.com/?cid=5159128342668063636"
+      }
+    ]
+  },
+  {
+    "title": "Trekking",
+    "emoji": "🌳",
+    "items": [
+      {
+        "name": "Tadiandamol Peak Trek",
+        "url": "https://maps.google.com/?cid=1921969330149926391"
+      },
+      {
+        "name": "Mandalpatti Trek",
+        "url": "https://maps.google.com/?cid=2954191537605950632"
+      },
+      {
+        "name": "Brahmagiri Hill Trek",
+        "url": "https://maps.google.com/?cid=10301088382931641101"
+      },
+      {
+        "name": "Kote Betta Trek",
+        "url": "https://maps.google.com/?cid=13825805352003501259"
+      },
+      {
+        "name": "Galibeedu Trek",
+        "url": "https://maps.google.com/?cid=12786668273018754524"
+      },
+      {
+        "name": "Pushpagiri Trek",
+        "url": "https://maps.google.com/?cid=3870732965429380493"
+      },
+      {
+        "name": "Kakkabe Trail",
+        "url": "https://maps.google.com/?cid=12610980963537759084"
+      }
+    ]
+  }
+]
