@@ -31,6 +31,20 @@
       ]
     },
     {
+      "name": "Himachal Pradesh",
+      "slug": "himachal-pradesh",
+      "cities": [
+        {
+          "name": "Manali",
+          "slug": "manali",
+          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1H5pVThubUyP35znF-klt36_OiE5YZGg&usp=sharing",
+          "imageUrl": "https://images.unsplash.com/photo-1593181629936-11c609b8db9b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074",
+          "lat": 32.2394704,
+          "lon": 77.1665202
+        }
+      ]
+    },
+    {
       "name": "Karnataka",
       "slug": "karnataka",
       "cities": [
@@ -51,8 +65,8 @@
           "name": "Hampi",
           "slug": "hampi",
           "imageUrl": "https://images.unsplash.com/photo-1636903684031-e187417f3e77?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
-          "lat": 15.3350,
-          "lon": 76.4600
+          "lat": 15.335,
+          "lon": 76.46
         },
         {
           "name": "Gokarna",
@@ -125,39 +139,6 @@
       ]
     },
     {
-      "name": "Tamil Nadu",
-      "slug": "tamil-nadu",
-      "cities": [
-        {
-          "name": "Chennai",
-          "slug": "chennai",
-          "imageUrl": "https://placehold.co/1200x600/E87474/FFFFFF?text=Chennai"
-        },
-        {
-          "name": "Kodaikanal",
-          "slug": "kodaikanal",
-          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1vQjiW6vCE_WhK__XAoW-27BB3hQBib4&usp=sharing",
-          "imageUrl": "https://images.unsplash.com/photo-1593692867948-bb6ba7c03fd1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1384",
-          "lat": 10.2360925,
-          "lon": 77.4777206
-        }
-      ]
-    },
-    {
-      "name": "Himachal Pradesh",
-      "slug": "himachal-pradesh",
-      "cities": [
-        {
-          "name": "Manali",
-          "slug": "manali",
-          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1H5pVThubUyP35znF-klt36_OiE5YZGg&usp=sharing",
-          "imageUrl": "https://images.unsplash.com/photo-1593181629936-11c609b8db9b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074",
-          "lat": 32.2394704,
-          "lon": 77.1665202
-        }
-      ]
-    },
-    {
       "name": "Rajasthan",
       "slug": "rajasthan",
       "cities": [
@@ -178,6 +159,55 @@
           "lon": 75.6257462
         }
       ]
+    },
+    {
+      "name": "Tamil Nadu",
+      "slug": "tamil-nadu",
+      "cities": [
+        {
+          "name": "Chennai",
+          "slug": "chennai",
+          "imageUrl": "https://placehold.co/1200x600/E87474/FFFFFF?text=Chennai"
+        },
+        {
+          "name": "Kodaikanal",
+          "slug": "kodaikanal",
+          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1vQjiW6vCE_WhK__XAoW-27BB3hQBib4&usp=sharing",
+          "imageUrl": "https://images.unsplash.com/photo-1593692867948-bb6ba7c03fd1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1384",
+          "lat": 10.2360925,
+          "lon": 77.4777206
+        }
+      ]
+    },
+    {
+      "name": "Uttar Pradesh",
+      "slug": "uttar-pradesh",
+      "cities": [
+        {
+          "name": "Varanasi",
+          "slug": "varanasi",
+          "imageUrl": "https://images.unsplash.com/photo-1571536802807-30451e3955d8?q=80&w=1220&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "mapUrl": "https://www.google.com/maps/place/Varanasi,+Uttar+Pradesh/@25.3207397,82.9087073,12z/data=!3m1!4b1!4m6!3m5!1s0x398e2db76febcf4d:0x68131710853ff0b5!8m2!3d25.3176452!4d82.9739144!16zL20vMDFqOTIy?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D",
+          "lat": 25.3207397,
+          "lon": 82.9087073,
+          "dashboard": {
+            "bestTime": "Nov - Mar",
+            "bestTimeDescription": "Pleasant, cooler weather ideal for sightseeing, boat rides, and exploring ghats. Major festivals like Dev Deepawali and Maha Shivratri occur during this period.\n\n",
+            "idealDuration": "3-5 Days",
+            "budget": {
+              "min": "1500",
+              "max": "3500",
+              "currency": "INR"
+            },
+            "transport": "Taxis, auto-rickshaws, cycle rickshaws, and local buses",
+            "howToReach": {
+              "air": "Lal Bahadur Shastri International Airport (VNS)",
+              "train": "Varanasi Junction (BSB), Banaras Railway Station (BNRS)",
+              "road": ""
+            }
+          }
+        }
+      ]
     }
   ],
   "unionTerritories": [
@@ -191,7 +221,7 @@
           "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=YOUR_MAP_ID",
           "imageUrl": "https://images.unsplash.com/photo-1576519465852-4d119fcccf33?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2103",
           "lat": 28.6139,
-          "lon": 77.2090
+          "lon": 77.209
         }
       ]
     },
