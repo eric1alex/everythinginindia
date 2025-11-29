@@ -51,10 +51,26 @@
         {
           "name": "Bangalore",
           "slug": "bengaluru",
-          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=106bPLjBko61yYIC114dJBCREET5qSw0&usp=sharing",
-          "imageUrl": "https://plus.unsplash.com/premium_photo-1697729606469-027395aadb6f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
-          "lat": 12.9539456,
-          "lon": 77.4661262
+          "imageUrl": "",
+          "mapUrl": "",
+          "lat": 0,
+          "lon": 0,
+          "dashboard": {
+            "bestTime": "Oct - Feb",
+            "bestTimeDescription": "Pleasantly cool weather, ideal for sightseeing and outdoor activities.\n\n",
+            "idealDuration": "3 - 4  Days",
+            "budget": {
+              "min": "1500",
+              "max": "6000",
+              "currency": "INR"
+            },
+            "transport": "BMTC Buses, taxis/app-based cabs and auto-rickshaws ",
+            "howToReach": {
+              "air": "Kempegowda International Airport (BLR)",
+              "train": "KSR Bengaluru City Junction (SBC), Yesvantpur Junction (YPR)",
+              "road": ""
+            }
+          }
         },
         {
           "name": "Mysore",
