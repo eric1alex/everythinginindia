@@ -1,1 +1,194 @@
-[]
+[
+  {
+    "title": "Restaurants",
+    "emoji": "🍔",
+    "items": [
+      {
+        "name": "Olive Beach",
+        "url": "https://www.google.com/maps/place/Olive+Beach/@12.9668972,77.6055095,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae142aad557cd3:0xe6e1a61c52c08c7d!8m2!3d12.966892!4d77.6080844!16s%2Fg%2F1tdk__ng?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Karavalli",
+        "url": "https://www.google.com/maps/place/Karavalli+-+Vivanta+Bengaluru,+Residency+Road/@12.9724525,77.6060786,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae167e46fb00e5:0x777b03419880fc1f!8m2!3d12.9724473!4d77.6086535!16s%2Fg%2F11b75nr421?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Truffles",
+        "url": "https://www.google.com/maps/place/Truffles+-+Indiranagar/@12.9807323,77.6379464,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16bacb0c77fb:0xa25d0ae6e9a9cbbb!8m2!3d12.9807271!4d77.6405213!16s%2Fg%2F11f3tvb5sz?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Shizusan",
+        "url": "https://www.google.com/maps/place/Shizusan+Viman+Nagar/@18.5617918,73.9143024,17z/data=!3m2!4b1!5s0x3bc2c14116bb7089:0x95aa485f7c6c9e15!4m6!3m5!1s0x3bc2c1d4d3f2789f:0x188a09ad21622354!8m2!3d18.5617867!4d73.9168773!16s%2Fg%2F11cn66b636?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Mavalli Tiffin Room (MTR)",
+        "url": "https://www.google.com/maps/place/MTR/@12.9805615,77.6379001,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16a535cbfd23:0x797726e497e5ec59!8m2!3d12.9805563!4d77.640475!16s%2Fg%2F1tg7_xw6?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Vidyarthi Bhavan",
+        "url": "https://www.google.com/maps/place/Vidyarthi+Bhavan/@12.9450397,77.5687974,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15f2e88ad035:0xed7fede7791f8edc!8m2!3d12.9450345!4d77.5713723!16s%2Fm%2F0hhrhzm?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Burma Burma",
+        "url": "https://www.google.com/maps/place/Burma+Burma+Restaurant+%26+Tea+Room/@12.9208581,77.6812132,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1300696a29a5:0xf19fa4f967fee5c6!8m2!3d12.9208529!4d77.6837881!16s%2Fg%2F11xgljz3j6?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "☕",
+    "items": [
+      {
+        "name": "Third Wave Coffee Roasters",
+        "url": "https://www.google.com/maps/place/Third+Wave+Coffee/@12.9208581,77.6812132,17z/data=!4m6!3m5!1s0x3bae13d81f6653c1:0xc23c18b5423c5fa0!8m2!3d12.9209413!4d77.684636!16s%2Fg%2F11pc9h350v?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Matteo Coffea",
+        "url": "https://www.google.com/maps/place/Matteo+Coffea/@12.9781988,77.6412538,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16a4844dd511:0xdb630a8221329920!8m2!3d12.9781936!4d77.6438287!16s%2Fg%2F11r915fsn?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Glen's Bakehouse",
+        "url": "https://www.google.com/maps/place/Glen's+Bakehouse/@12.9781988,77.6412538,17z/data=!4m6!3m5!1s0x3bae16a514f32b63:0x3fe5c3cae3e71143!8m2!3d12.9791429!4d77.6406209!16s%2Fg%2F1pty39k2w?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "DYU Art Cafe",
+        "url": "https://www.google.com/maps/place/Dyu+Art+Cafe/@12.9374301,77.6150817,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae144f0a0442f3:0x5cf634310edf27a8!8m2!3d12.9374249!4d77.6176566!16s%2Fg%2F1ydpv9q4x?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "THE BLOOM ",
+        "url": "https://www.google.com/maps/place/THE+BLOOM+-+Cafe+%26+Patisserie/@12.9261517,77.5872706,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1563d4c4dbff:0x74a597ba36c138c1!8m2!3d12.9261465!4d77.5898455!16s%2Fg%2F11y8nvx9_0?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Indian Coffee House",
+        "url": "https://www.google.com/maps/place/Indian+Coffee+House+%26+Restaurant/@12.9337767,77.6133137,17z/data=!3m2!4b1!5s0x3bae1451d103e5c7:0x4d536690f4d1444a!4m6!3m5!1s0x3bae1451d1ae0acb:0x71b2e16e644c5ace!8m2!3d12.9337715!4d77.6158886!16s%2Fg%2F11b7q4r6m6?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      }
+    ]
+  },
+  {
+    "title": "Stays",
+    "emoji": "🏨",
+    "items": [
+      {
+        "name": "The Elanza Hotel",
+        "url": "https://www.google.com/maps/place/The+Elanza+Hotel/@12.965287,77.5994056,17z/data=!3m1!4b1!4m11!3m10!1s0x3bae15d67841d135:0xbebb4730efab6666!5m4!1s2025-11-11!2i3!4m1!1i2!8m2!3d12.9652818!4d77.6019805!16s%2Fg%2F1hd_234fd?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Ramanashree Richmond Hotel",
+        "url": "google.com/maps/place/Ramanashree+Richmond+Hotel/@12.9661446,77.5904581,17z/data=!4m11!3m10!1s0x3bae15c3b575d4bd:0x811bbd6a525d4517!5m4!1s2025-11-11!2i3!4m1!1i2!8m2!3d12.9661446!4d77.5949642!16s%2Fg%2F1tls18n8?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "The Leela Palace Bengaluru",
+        "url": "https://www.google.com/maps/place/The+Leela+Palace+Bengaluru+-+Garden+City's+Only+Modern+Palace+Hotel/@12.9603417,77.6458612,17z/data=!3m1!4b1!4m9!3m8!1s0x3bae14067cca9bdd:0x111bbe37cc24e71a!5m2!4m1!1i2!8m2!3d12.9603365!4d77.6484361!16s%2Fg%2F1tf00xs5?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Taj West End",
+        "url": "https://www.google.com/maps/place/Taj+West+End,+Bengaluru/@12.9845513,77.5820075,17z/data=!3m1!4b1!4m9!3m8!1s0x3bae1614ae4e21cb:0x43e3a50b3b1a3d3b!5m2!4m1!1i2!8m2!3d12.9845461!4d77.5845824!16s%2Fg%2F1tfb4_z7?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "ITC Gardenia, a Luxury Collection Hotel",
+        "url": "https://www.google.com/maps/place/ITC+Gardenia,+a+Luxury+Collection+Hotel,+Bengaluru/@12.96699,77.5929772,17z/data=!3m1!4b1!4m9!3m8!1s0x3a0276dd2cf216d3:0x523e0c08edd084f2!5m2!4m1!1i2!8m2!3d12.9669848!4d77.5955521!16s%2Fg%2F124stnrjw?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "The Ritz-Carlton, Bangalore",
+        "url": "https://www.google.com/maps/place/The+Ritz-Carlton,+Bangalore/@12.9669848,77.5929772,17z/data=!4m9!3m8!1s0x3bae1678b41def33:0xfe8ae8000ba8c87f!5m2!4m1!1i2!8m2!3d12.9683498!4d77.6011114!16s%2Fg%2F1hhk8y6t0?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      }
+    ]
+  },
+  {
+    "title": "Pubs",
+    "emoji": "🍺",
+    "items": [
+      {
+        "name": "Arbor Brewing Company",
+        "url": "https://www.google.com/maps/place/Arbor+Brewing+Company/@12.9703808,77.6084276,17z/data=!3m1!4b1!4m11!3m10!1s0x3bae1681ac1dd657:0x901cdcb9823220c8!5m4!1s2025-11-11!2i3!4m1!1i2!8m2!3d12.9703756!4d77.6110025!16s%2Fm%2F0pd60ry?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Byg Brewski Brewing Company (Sarjapur Road)",
+        "url": "https://www.google.com/maps/place/Byg+Brewski+Brewing+Company/@12.9131472,77.6805008,17z/data=!3m1!4b1!4m11!3m10!1s0x3bae1311904d59e9:0x2242474248a6064d!5m4!1s2025-11-11!2i3!4m1!1i2!8m2!3d12.913142!4d77.6830757!16s%2Fg%2F1q5bmh7fm?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "District 6",
+        "url": "https://www.google.com/maps/place/District+6+-+Best+German+Microbrewery+in+Bangalore/@13.012333,77.5520503,17z/data=!3m1!4b1!4m11!3m10!1s0x3bae3d78c3e7c1b5:0xcc99c49a0c03c39!5m4!1s2025-11-11!2i3!4m1!1i2!8m2!3d13.0123278!4d77.5546252!16s%2Fg%2F1pp2w_s39?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Ironhill Bengaluru",
+        "url": "https://www.google.com/maps/place/Ironhill+Bengaluru/@12.9508962,77.6961568,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae13acd685adb7:0x83c53190316ea8cd!8m2!3d12.950891!4d77.6987317!16s%2Fg%2F11r4w7wfq5?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Hard Rock Cafe Bengaluru",
+        "url": "https://www.google.com/maps/place/Hard+Rock+Cafe+Bengaluru/@12.976184,77.5989678,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae167b826ffedd:0x8aefb6358f083984!8m2!3d12.9761788!4d77.6015427!16s%2Fg%2F1w3w1hln?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "The Biere Club",
+        "url": "https://www.google.com/maps/place/The+Biere+Club+%7C+Lavelle+Road/@12.976184,77.5989678,17z/data=!3m1!5s0x3bae1679c7b46aa1:0xa6a62654da1f0d30!4m6!3m5!1s0x3bae1679c65e8131:0xad0dab7a4fe4cc32!8m2!3d12.9708863!4d77.5975839!16s%2Fg%2F1t_kdz9t?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Watson's",
+        "url": "https://www.google.com/maps/place/Watson's+Indiranagar/@12.9672778,77.6403664,18z/data=!3m1!4b1!4m6!3m5!1s0x3bae15e399488389:0x19397505ce679162!8m2!3d12.967276!4d77.6412768!16s%2Fg%2F11fjqk0vr2?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      }
+    ]
+  },
+  {
+    "title": "Shopping / Malls",
+    "emoji": "🛍️",
+    "items": [
+      {
+        "name": "Phoenix Marketcity",
+        "url": "https://www.google.com/maps/place/Phoenix+Marketcity/@12.9957919,77.6938262,17z/data=!3m2!4b1!5s0x3bae115dabb584c7:0x7f8d0025f4fe5253!4m6!3m5!1s0x3bae110b04a3be4b:0xcffb252dab2e9643!8m2!3d12.9957867!4d77.6964011!16s%2Fm%2F0_vbklf?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Orion Mall",
+        "url": "https://www.google.com/maps/place/Orion+Mall/@13.0110282,77.5521403,17z/data=!3m2!4b1!5s0x3bae3d78a22062dd:0xbd0b5e0f866f6375!4m6!3m5!1s0x3bae3d4b805e4167:0xa4c255e80b7e5464!8m2!3d13.011023!4d77.5547152!16s%2Fm%2F0_s3hxr?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "UB City",
+        "url": "https://www.google.com/maps/place/UB+City/@12.971648,77.5933618,17z/data=!3m2!4b1!5s0x3bae16774437089d:0x5ce03bb2faa75835!4m6!3m5!1s0x3bae16775069abf7:0xe138768bb2a0df8a!8m2!3d12.9716428!4d77.5959367!16s%2Fm%2F047skbt?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Forum Shantiniketan",
+        "url": "https://www.google.com/maps/place/NEXUS+SHANTINIKETAN/@12.9896512,77.7252248,17z/data=!3m1!5s0x3bae11eea69c5edf:0x34290335b2b0a9c5!4m15!1m8!3m7!1s0x3bae11eea79682f1:0xf9b2e0e9ba0b4926!2sPrestige+Shantiniketan+Apartment+Complex,+FORUM+SHANTINIKETAN+MALL,+PRESTIGE+SHANTINIKETAN,+Whitefield+Main+Rd,+Thigalarapalya,+Krishnarajapuram,+Bengaluru,+Karnataka+560048!3b1!8m2!3d12.989646!4d77.7277997!16s%2Fg%2F11f1478kd6!3m5!1s0x3bae11eea0053a71:0x81f6e5e82b75da88!8m2!3d12.989536!4d77.7281015!16s%2Fg%2F11fzcg2z92?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Garuda Mall",
+        "url": "https://www.google.com/maps/place/Garuda+Mall/@12.9701644,77.6055195,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17eab80cbf77:0x81bdb7b5fc76d166!8m2!3d12.9701592!4d77.6101329!16s%2Fg%2F11n0j1t49c?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Commercial Street",
+        "url": "https://www.google.com/maps/place/Commercial+Street,+Tasker+Town,+Shivaji+Nagar,+Bengaluru,+Karnataka/@12.9822412,77.6057981,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1689d24ec16d:0xb95d15d2169a107d!8m2!3d12.982236!4d77.608373!16s%2Fg%2F11bxfz11gp?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Brigade Road",
+        "url": "https://www.google.com/maps/place/Brigade+Rd,+Ashok+Nagar,+Bengaluru,+Karnataka/@12.9710481,77.6043283,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15d55cf36715:0x67c9c68d327b80dd!8m2!3d12.9710429!4d77.6069032!16s%2Fm%2F03nsqmb?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      }
+    ]
+  },
+  {
+    "title": "Museums",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Visvesvaraya Industrial & Technological Museum",
+        "url": "https://www.google.com/maps/place/Visvesvaraya+Industrial+%26+Technological+Museum/@12.9751645,77.5938449,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15df82222aab:0x7fd53f96474af8a7!8m2!3d12.9751593!4d77.5964198!16zL20vMDFzMXYy?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Government Museum (Bangalore)",
+        "url": "https://www.google.com/maps/place/Government+Museum/@12.9746428,77.5932521,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16709e9ef31d:0x47074d7b480cdacc!8m2!3d12.9746376!4d77.595827!16s%2Fm%2F0n_4zjt?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "HAL Aerospace Museum",
+        "url": "https://www.google.com/maps/place/Hindustan+Aeronautics+Limited+(Museum)/@12.9549681,77.6786486,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae13bde1f4c3a5:0x681d794227e4c354!8m2!3d12.9549629!4d77.6812235!16s%2Fg%2F11v18ybsp4?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Indian Music Experience Museum",
+        "url": "https://www.google.com/maps/place/Indian+Music+Experience+Museum/@12.8917871,77.5811359,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1547381aaaab:0xf35fb2e714520a68!8m2!3d12.8917819!4d77.5837108!16s%2Fg%2F11gcx6tp0n?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "National Gallery of Modern Art",
+        "url": "https://www.google.com/maps/place/National+Gallery+of+Modern+Art+(Bengaluru)/@12.9894168,77.5854804,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16816c3294a9:0x69d86e822f4b337b!8m2!3d12.9894116!4d77.5880553!16s%2Fm%2F0r4khly?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Bangalore Palace",
+        "url": "https://www.google.com/maps/place/Bangalore+Palace,+Palace+Cross+Rd,+Vasanth+Nagar,+Bengaluru,+Karnataka+560006/@12.9966187,77.5874447,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16446ad0c54b:0x424585bd676e8f7e!8m2!3d12.9966135!4d77.5920581!16s%2Fg%2F11bw4q0krm?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      }
+    ]
+  }
+]
