@@ -1,23 +1,39 @@
 ---
-import Layout from '~/layouts/Layout.astro';
+import Layout from "~/layouts/Layout.astro";
+
+// UPI payment configuration
+const UPI_ID = "your-upi-id@bank"; // Replace with your actual UPI ID
+const PAYEE_NAME = "Where In India";
+---
+
+<Layout title="Support Us - Where In India">
+  <main class="donate-page-wrapper">
+    <!--
       NEW SPLIT LAYOUT (with new class names)
       =================================
     -->
     <div class="donate-grid">
-
       <!-- Column 1: Content -->
       <div class="donate-column-left">
         <div class="chai-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M0 0h24v24H0V0z" fill="none"/>
-            <path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4v-2z"/>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none"></path>
+            <path
+              d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4v-2z"
+            ></path>
           </svg>
         </div>
 
         <h1 class="donate-heading">Support us with a Chai?</h1>
-        
+
         <p class="donate-text">
-         Your small gesture keeps this community-built site running (and us happily caffeinated). Pick or enter an amount to generate your QR code.
+          Your small gesture keeps this community-built site running (and us
+          happily caffeinated). Pick or enter an amount to generate your QR
+          code.
         </p>
 
         <div class="pay-selector">
@@ -28,7 +44,14 @@ import Layout from '~/layouts/Layout.astro';
           </div>
           <div class="pay-custom">
             <span>₹</span>
-            <input type="number" id="pay-custom-input" class="pay-custom-field" value="100" min="1" placeholder="100">
+            <input
+              type="number"
+              id="pay-custom-input"
+              class="pay-custom-field"
+              value="100"
+              min="1"
+              placeholder="100"
+            />
           </div>
         </div>
       </div>
@@ -40,7 +63,6 @@ import Layout from '~/layouts/Layout.astro';
           <p class="qr-note">Scan to pay with any UPI app</p>
         </div>
       </div>
-      
     </div>
   </main>
 </Layout>
@@ -98,7 +120,7 @@ import Layout from '~/layouts/Layout.astro';
       text-align: center;
     }
   }
-  
+
   /* --- Content Styles --- */
   .chai-icon {
     width: 60px;
@@ -141,7 +163,7 @@ import Layout from '~/layouts/Layout.astro';
 
   .pay-button {
     /* Let the buttons size themselves, but grow if needed */
-    flex: 1 1 auto; 
+    flex: 1 1 auto;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     font-weight: 600;
@@ -194,23 +216,23 @@ import Layout from '~/layouts/Layout.astro';
     -webkit-appearance: none;
     margin: 0;
   }
-  .pay-custom-field[type=number] {
+  .pay-custom-field[type="number"] {
     -moz-appearance: textfield;
   }
 
   /* Center the amount pickers on mobile */
   @media (max-width: 767px) {
     .pay-selector {
-        align-items: center;
+      align-items: center;
     }
     .pay-buttons {
-        justify-content: center;
+      justify-content: center;
     }
     .pay-custom {
-        justify-content: center;
+      justify-content: center;
     }
     .pay-custom-field {
-        text-align: center;
+      text-align: center;
     }
   }
 
@@ -252,25 +274,24 @@ import Layout from '~/layouts/Layout.astro';
 
 <!-- Run the page logic -->
 <script is:inline define:vars={{ UPI_ID, PAYEE_NAME }}>
-  document.addEventListener('DOMContentLoaded', () => {
-    
+  document.addEventListener("DOMContentLoaded", () => {
     // --- 1. Get all our elements (using new IDs) ---
-    const customAmountInput = document.getElementById('pay-custom-input');
-    const amountButtons = document.querySelectorAll('.pay-button');
-    const qrContainer = document.getElementById('qr-code-target'); // New ID
-    
+    const customAmountInput = document.getElementById("pay-custom-input");
+    const amountButtons = document.querySelectorAll(".pay-button");
+    const qrContainer = document.getElementById("qr-code-target"); // New ID
+
     let qrCode = null;
 
     // --- 2. The function to generate the QR code ---
     function generateQR(amount) {
       if (!amount || amount < 1) {
-        amount = '100';
+        amount = "100";
       }
-      
+
       const encodedPayeeName = encodeURIComponent(PAYEE_NAME);
       const upiString = `upi://pay?pa=${UPI_ID}&pn=${encodedPayeeName}&am=${amount}&cu=INR`;
-      
-      qrContainer.innerHTML = '';
+
+      qrContainer.innerHTML = "";
 
       // Get container size
       const qrSize = qrContainer.clientWidth;
@@ -279,17 +300,17 @@ import Layout from '~/layouts/Layout.astro';
         text: upiString,
         width: qrSize,
         height: qrSize,
-        colorDark : "#000000",
-        colorLight : "#ffffff",
-        correctLevel : QRCode.CorrectLevel.H
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H,
       });
     }
 
     // --- 3. Add event listeners for the buttons ---
-    amountButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        amountButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
+    amountButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        amountButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
         const amount = button.dataset.amount;
         customAmountInput.value = amount;
         generateQR(amount);
@@ -297,13 +318,13 @@ import Layout from '~/layouts/Layout.astro';
     });
 
     // --- 4. Add event listener for the custom input field ---
-    customAmountInput.addEventListener('input', () => {
-      amountButtons.forEach(btn => btn.classList.remove('active'));
+    customAmountInput.addEventListener("input", () => {
+      amountButtons.forEach((btn) => btn.classList.remove("active"));
       const amount = customAmountInput.value;
-      
-      amountButtons.forEach(btn => {
+
+      amountButtons.forEach((btn) => {
         if (btn.dataset.amount === amount) {
-          btn.classList.add('active');
+          btn.classList.add("active");
         }
       });
 
@@ -316,17 +337,17 @@ import Layout from '~/layouts/Layout.astro';
 
     // --- 5. Generate the initial QR code on page load ---
     setTimeout(() => {
-        generateQR(customAmountInput.value);
+      generateQR(customAmountInput.value);
     }, 100);
-    
+
     // --- 6. Regenerate QR on resize (for responsiveness) ---
     let resizeTimer;
-    window.addEventListener('resize', () => {
-        qrContainer.innerHTML = ''; // Clear QR
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(() => {
-            generateQR(customAmountInput.value);
-        }, 250); // Debounce resize
+    window.addEventListener("resize", () => {
+      qrContainer.innerHTML = ""; // Clear QR
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        generateQR(customAmountInput.value);
+      }, 250); // Debounce resize
     });
   });
 </script>
