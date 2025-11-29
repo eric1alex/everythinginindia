@@ -1,29 +1,45 @@
 ---
-import Layout from '~/layouts/Layout.astro';
+import Layout from "~/layouts/Layout.astro";
+---
+
+<Layout title="About Us - Where In India">
+  <main class="about-page">
+    <header class="about-header">
       <div class="header-content">
-        <h1 class="title">The Story of <span class="highlight">Where In India!</span></h1>
-        <p class="subtitle">From a frustrating Google search to a community-led movement.</p>
+        <h1 class="title">
+          The Story of <span class="highlight">Where In India!</span>
+        </h1>
+        <p class="subtitle">
+          From a frustrating Google search to a community-led movement.
+        </p>
       </div>
     </header>
 
     <div class="content-wrapper">
-      
       <!-- CHAPTER 1: The Problem -->
       <section class="chapter">
         <div class="chapter-text">
           <h2>It started with a trip...</h2>
           <p>
-            The story starts when I was planning a trip to <strong>Pondicherry</strong>. Like anyone else, I wanted a simple site that just showed me the best places to visit.
+            The story starts when I was planning a trip to <strong
+              >Pondicherry</strong
+            >. Like anyone else, I wanted a simple site that just showed me the
+            best places to visit.
           </p>
           <p>
-            But searching Google felt like a chore. Every site was cluttered with ads, long-winded SEO text, and endless scrolling. It was overwhelming.
+            But searching Google felt like a chore. Every site was cluttered
+            with ads, long-winded SEO text, and endless scrolling. It was
+            overwhelming.
           </p>
           <p>
-            That’s when the idea hit: <strong>Why isn't there a simple travel directory?</strong> A clean site that just lists the best places and gives you the direct Google Maps link—because that's what we all use for navigation anyway.
+            That's when the idea hit: <strong
+              >Why isn't there a simple travel directory?</strong
+            > A clean site that just lists the best places and gives you the direct
+            Google Maps link—because that's what we all use for navigation anyway.
           </p>
         </div>
         <div class="chapter-image">
-          <img src={storyImage1} alt="Planning a trip" />
+          <div class="image-placeholder">📍</div>
         </div>
       </section>
 
@@ -32,30 +48,34 @@ import Layout from '~/layouts/Layout.astro';
         <div class="chapter-text">
           <h2>Real People, No AI</h2>
           <p>
-            As I started building, I realized another problem. With the AI boom, the internet is flooding with generic, AI-generated listicles. <strong>People don't want that.</strong> They want originality. They want human experiences.
+            As I started building, I realized another problem. With the AI boom,
+            the internet is flooding with generic, AI-generated listicles. <strong
+              >People don't want that.</strong
+            > They want originality. They want human experiences.
           </p>
           <p>
             So, I decided to build this differently. I turned to the community.
           </p>
           <p>
-            I picked 5-6 cities and reached out to locals and travelers on Reddit. I asked them for their genuine favorites. It was a 2-week exercise, but the data we got was pure gold—authentic recommendations you can trust.
+            I picked 5-6 cities and reached out to locals and travelers on
+            Reddit. I asked them for their genuine favorites. It was a 2-week
+            exercise, but the data we got was pure gold—authentic
+            recommendations you can trust.
           </p>
         </div>
         <div class="chapter-image">
-          <img src={storyImage2} alt="Community contributions" />
-        </div>
-      </section>
-          
-          <!-- New "Social Proof" text -->
-          <div class="social-proof">
-            <p class="proof-text">
-              Today, we're growing fast with <strong class="highlight-text">50+ positive reviews</strong> and contributions from travelers across India.
-            </p>
-          </div>
-
+          <div class="image-placeholder">🤝</div>
         </div>
       </section>
 
+      <!-- New "Social Proof" text -->
+      <div class="social-proof">
+        <p class="proof-text">
+          Today, we're growing fast with <strong class="highlight-text"
+            >50+ positive reviews</strong
+          > and contributions from travelers across India.
+        </p>
+      </div>
     </div>
 
     <!-- FEATURES SECTION -->
@@ -63,7 +83,6 @@ import Layout from '~/layouts/Layout.astro';
       <div class="features-container">
         <h2 class="features-heading">What Makes Us Different</h2>
         <div class="features-grid">
-          
           <div class="feature-item">
             <div class="icon">🔍</div>
             <h3>Smart Search</h3>
@@ -91,7 +110,9 @@ import Layout from '~/layouts/Layout.astro';
           <div class="feature-item">
             <div class="icon">📝</div>
             <h3>Travel Stories</h3>
-            <p>A platform for users to share their own experiences and photos.</p>
+            <p>
+              A platform for users to share their own experiences and photos.
+            </p>
           </div>
 
           <div class="feature-item">
@@ -99,11 +120,9 @@ import Layout from '~/layouts/Layout.astro';
             <h3>Open Feedback</h3>
             <p>We listen. Quickly tell us what works and what doesn't.</p>
           </div>
-
         </div>
       </div>
     </section>
-
   </main>
 </Layout>
 
@@ -129,7 +148,7 @@ import Layout from '~/layouts/Layout.astro';
     border-bottom: 1px solid #e2e8f0;
     margin-bottom: 2rem;
   }
-  
+
   .about-header .title {
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 800;
@@ -163,10 +182,14 @@ import Layout from '~/layouts/Layout.astro';
       grid-template-columns: 1fr 1fr;
       gap: 5rem; /* Even more spacing on desktop */
     }
-    
+
     /* Alternating Layout */
-    .chapter.reverse .chapter-text { order: 2; }
-    .chapter.reverse .chapter-image { order: 1; }
+    .chapter.reverse .chapter-text {
+      order: 2;
+    }
+    .chapter.reverse .chapter-image {
+      order: 1;
+    }
   }
 
   .chapter-text h2 {
@@ -183,29 +206,24 @@ import Layout from '~/layouts/Layout.astro';
     line-height: 1.75;
   }
 
-  .chapter-image img {
+  .chapter-image {
     width: 100%;
-    border-radius: 12px; /* Softer radius */
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .chapter-image:hover img {
-    transform: scale(1.02); /* Subtle zoom on hover */
+    border-radius: 12px;
+    overflow: hidden;
   }
 
-  /* --- Centered Text Chapter --- */
-  .chapter.centered {
-    display: block;
-    text-align: center;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .chapter.centered h2 {
-    font-size: 2.25rem;
-    margin-bottom: 2rem;
+  .image-placeholder {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    box-shadow:
+      0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
   }
 
   /* --- Social Proof --- */
@@ -224,7 +242,7 @@ import Layout from '~/layouts/Layout.astro';
     font-weight: 500;
     margin: 0;
   }
-  
+
   .highlight-text {
     color: #0284c7;
     font-weight: 700;
