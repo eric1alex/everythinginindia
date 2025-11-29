@@ -8,6 +8,8 @@
   --card-border: #e2e2e2;
   --footer-text: #888;
   --hero-bg: #f4f4f4;
+  --primary-color: #1a1a1a;
+  --primary-rgb: 26, 26, 26;
 }
 
 * {
@@ -29,11 +31,12 @@ body {
 .hero {
   display: flex;
   flex-direction: column;
-  md:flex-row;
+
   width: 100%;
   background-color: var(--hero-bg);
   min-height: 150px;
-  position: relative; /* add this */
+  position: relative;
+  /* add this */
 
 }
 
@@ -49,7 +52,7 @@ body {
   flex: 2;
   background-image: imageUrl;
   background-size: cover;
-  background-position:  40% 60%;
+  background-position: 40% 60%;
   min-height: 250px;
 }
 
@@ -91,12 +94,26 @@ body {
   text-decoration: none;
   transition: transform 0.3s ease;
 }
+
 .socials a:hover {
   transform: scale(1.1);
 }
-.socials a:nth-child(1) { background-color: #25D366; } /* WhatsApp */
-.socials a:nth-child(2) { background-color: #1DA1F2; } /* Twitter/X */
-.socials a:nth-child(3) { background-color: #000; } /* X/Other */
+
+.socials a:nth-child(1) {
+  background-color: #25D366;
+}
+
+/* WhatsApp */
+.socials a:nth-child(2) {
+  background-color: #1DA1F2;
+}
+
+/* Twitter/X */
+.socials a:nth-child(3) {
+  background-color: #000;
+}
+
+/* X/Other */
 
 .socials svg {
   width: 22px;
@@ -107,6 +124,7 @@ body {
   .hero {
     flex-direction: row;
   }
+
   .hero-text {
     padding: 4rem;
   }
@@ -129,7 +147,8 @@ body {
 /* NEW: Wrapper for flex layout */
 .search-wrapper {
   display: flex;
-  flex-direction: column; /* Stack on mobile by default */
+  flex-direction: column;
+  /* Stack on mobile by default */
   gap: 0.75rem;
 }
 
@@ -139,11 +158,13 @@ body {
   width: 100%;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 0 1rem; /* Removed vertical padding to use height */
+  padding: 0 1rem;
+  /* Removed vertical padding to use height */
   background: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   /* flex: 1; <-- REMOVED from base style */
-  height: 50px; /* Give a fixed height */
+  height: 50px;
+  /* Give a fixed height */
 }
 
 .search-bar svg {
@@ -162,6 +183,7 @@ body {
   font-size: 1.1rem;
   font-family: 'Inter', sans-serif;
 }
+
 .search-bar input::placeholder {
   color: #aaa;
 }
@@ -178,27 +200,35 @@ body {
   font-family: 'Inter', sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
-  white-space: nowrap; /* Keep text on one line */
-  height: 50px; /* Match search bar height */
-  width: 100%; /* <-- ADDED: Make button full-width on mobile */
+  white-space: nowrap;
+  /* Keep text on one line */
+  height: 50px;
+  /* Match search bar height */
+  width: 100%;
+  /* <-- ADDED: Make button full-width on mobile */
 }
 
 .lucky-button:hover {
   background-color: #eee;
   border-color: #ccc;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 /* On larger screens (tablets and up), put them side-by-side */
 @media (min-width: 640px) {
   .search-wrapper {
-    flex-direction: row; /* Side-by-side on desktop */
+    flex-direction: row;
+    /* Side-by-side on desktop */
   }
+
   .search-bar {
-    flex: 1; /* <-- ADDED: Search bar expands to fill space on desktop */
+    flex: 1;
+    /* <-- ADDED: Search bar expands to fill space on desktop */
   }
+
   .lucky-button {
-    width: auto; /* <-- ADDED: Button shrinks to fit content on desktop */
+    width: auto;
+    /* <-- ADDED: Button shrinks to fit content on desktop */
   }
 }
 
@@ -223,10 +253,11 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (min-width: 1024px) {
   .list-grid {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 900px; 
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -290,7 +321,8 @@ body {
   color: #aaa;
   transition: transform 0.3s ease;
 }
-.list-column a:hover + svg {
+
+.list-column a:hover+svg {
   transform: translateX(3px);
 }
 
@@ -320,7 +352,7 @@ body {
   border-radius: 8px;
   width: 90%;
   max-width: 500px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transform: translateY(20px);
   transition: transform 0.3s ease;
 }
@@ -355,17 +387,20 @@ body {
   counter-reset: item;
   padding-left: 0;
 }
+
 .modal-content li {
   counter-increment: item;
   margin-bottom: 0.75rem;
   display: flex;
 }
+
 .modal-content li::before {
   content: counter(item) ".";
   margin-right: 0.5rem;
   color: var(--footer-text);
   min-width: 1.5em;
 }
+
 .modal-content a {
   color: var(--link-color);
   text-decoration: none;
@@ -373,9 +408,11 @@ body {
   display: inline-flex;
   align-items: center;
 }
+
 .modal-content a:hover {
   color: var(--link-hover-color);
 }
+
 .modal-content a::after {
   content: '↗';
   margin-left: 0.25rem;
@@ -529,14 +566,16 @@ body {
 }
 
 .footer-link {
-  color: #000; /* Original: black */
+  color: #000;
+  /* Original: black */
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .footer-link:hover,
 .footer-link:focus {
-  color: #666; /* Hover: grey */
+  color: #666;
+  /* Hover: grey */
   text-decoration: none;
 }
 
@@ -557,7 +596,7 @@ body {
   background-color: #f4f4f4;
   border-color: #ccc;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .footer-bottom {
@@ -624,83 +663,104 @@ body {
 =================================
 */
 
-    .feedback-state {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 100%; /* Take full width */
-        margin: 0rem auto 3rem auto;
-        padding-top: 2rem; /* Was a full box, now just padding */
-        border-top: 0px solid var(--card-border); /* Just a simple top line */
-        text-align: center;
-    }
+.feedback-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  /* Take full width */
+  margin: 0rem auto 3rem auto;
+  padding-top: 2rem;
+  /* Was a full box, now just padding */
+  border-top: 0px solid var(--card-border);
+  /* Just a simple top line */
+  text-align: center;
+}
 
-    .feedback-title {
-        font-size: 1.25rem; /* Was 1.5rem */
-        font-weight: 600;
-        margin-bottom: 1.5rem;
-    }
-    .button-group {
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-    }
-    .feedback-button {
-        font-size: 0.9rem; /* Was 1rem */
-        font-weight: 600;
-        padding: 0.5rem 1rem; /* Was 0.75rem 1.5rem */
-        border-radius: 6px; /* Was 8px */
-        border: 1px solid #ccc;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        background-color: #fff;
-    }
-    .feedback-button.yes:hover {
-        background-color: #e6f7ec;
-        border-color: #a3d9b1;
-    }
-    .feedback-button.no:hover {
-        background-color: #fdebee;
-        border-color: #f7b5b5;
-    }
-    .feedback-button.submit {
-        background-color: #1a1a1a;
-        color: #fff;
-        border-color: #1a1a1a;
-        width: 100%;
-        max-width: 300px; /* Stop it from being full-width */
-    }
-    .feedback-button.submit:hover {
-        background-color: #333;
-         max-width: 300px;
-    }
- .feedback-textarea {
-        width: 100%;
-        max-width: 500px; /* Constrain width */
-        min-height: 100px;
-        padding: 0.75rem; /* <-- Adds breathing room for text */
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        font-family: 'Inter', sans-serif;
-        font-size: 1rem;
-        margin-bottom: 1rem; /* <-- Adds space below the box */
-    }
-    .feedback-skip {
-        background: none;
-        border: none;
-        color: #888;
-        font-size: 0.9rem;
-        cursor: pointer;
-        margin-top: 1rem;
-    }
+.feedback-title {
+  font-size: 1.25rem;
+  /* Was 1.5rem */
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.feedback-button {
+  font-size: 0.9rem;
+  /* Was 1rem */
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  /* Was 0.75rem 1.5rem */
+  border-radius: 6px;
+  /* Was 8px */
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.feedback-button.yes:hover {
+  background-color: #e6f7ec;
+  border-color: #a3d9b1;
+}
+
+.feedback-button.no:hover {
+  background-color: #fdebee;
+  border-color: #f7b5b5;
+}
+
+.feedback-button.submit {
+  background-color: #1a1a1a;
+  color: #fff;
+  border-color: #1a1a1a;
+  width: 100%;
+  max-width: 300px;
+  /* Stop it from being full-width */
+}
+
+.feedback-button.submit:hover {
+  background-color: #333;
+  max-width: 300px;
+}
+
+.feedback-textarea {
+  width: 100%;
+  max-width: 500px;
+  /* Constrain width */
+  min-height: 100px;
+  padding: 0.75rem;
+  /* <-- Adds breathing room for text */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  /* <-- Adds space below the box */
+}
+
+.feedback-skip {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
 
 /* =================================
   FIXED: SUGGESTIONS STYLES
 =================================
 */
 .suggestions-container {
-  /* max-width: 50%; */ /* <-- This was part of the problem */
-  max-width: 900px; /* <-- A stable max-width is better */
+  /* max-width: 50%; */
+  /* <-- This was part of the problem */
+  max-width: 900px;
+  /* <-- A stable max-width is better */
   margin: 4rem auto 2rem auto;
   padding-top: 2rem;
   border-top: 1px solid var(--card-border);
@@ -711,43 +771,50 @@ body {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
-  color: var(--title-color); /* Use theme color */
+  color: var(--title-color);
+  /* Use theme color */
 }
 
 .suggestions-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
-  gap: 1.5rem; /* More gap */
-  justify-content: center; 
+  gap: 1.5rem;
+  /* More gap */
+  justify-content: center;
 }
 
 .suggestion-card {
   display: block;
   position: relative;
-  aspect-ratio: 1 / 1; /* This makes it a perfect square */
-  border-radius: 12px; /* Match theme radius */
+  aspect-ratio: 1 / 1;
+  /* This makes it a perfect square */
+  border-radius: 12px;
+  /* Match theme radius */
   overflow: hidden;
   color: white;
   text-decoration: none;
-  background-size: cover; 
-  background-position: center center; 
+  background-size: cover;
+  background-position: center center;
   transition: all 0.3s ease;
-  box-shadow: var(--shadow-md); /* Add theme shadow */
-  
+  box-shadow: var(--shadow-md);
+  /* Add theme shadow */
+
   /* We add a max-width as a final safeguard */
-  max-width: 250px; 
+  max-width: 250px;
 }
 
 .suggestion-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Darker hover shadow */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  /* Darker hover shadow */
 }
 
 .suggestion-card::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 70%); /* Stronger gradient */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 70%);
+  /* Stronger gradient */
 }
 
 .suggestion-card-content {
@@ -755,7 +822,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 1.25rem; /* More padding */
+  padding: 1.25rem;
+  /* More padding */
   z-index: 1;
   text-align: center;
 }
@@ -763,7 +831,8 @@ body {
 .suggestion-card h3 {
   font-size: 1.25rem;
   font-weight: 600;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Add text shadow for readability */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  /* Add text shadow for readability */
 }
 
 /* --- 9. NEW MINIMAL HERO MAP ACTIONS --- */
@@ -802,10 +871,10 @@ body {
   color: #000 !important;
 }
 
-.link-hero-map:visited, 
-.link-hero-map:active, 
+.link-hero-map:visited,
+.link-hero-map:active,
 .link-hero-map:focus {
-  color: #666 !important; 
+  color: #666 !important;
 }
 
 .btn-info-minimal {
@@ -840,7 +909,7 @@ body {
   border: 1px solid #eee;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   font-size: 0.9rem;
   color: #555;
   line-height: 1;
@@ -853,14 +922,14 @@ body {
 }
 
 .hero-tooltip::before {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -6px;
-    border-width: 6px;
-    border-style: solid;
-    border-color: transparent transparent #fff transparent;
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
 }
 
 .hero-tooltip.visible {
@@ -868,7 +937,13 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-5px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
 
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

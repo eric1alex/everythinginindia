@@ -1,29 +1,39 @@
 ---
 // FIX: Using '~/' alias instead of '../'
-import Layout from '~/layouts/Layout.astro';
-import contributors from '~/data/contributors.json';
+import Layout from "~/layouts/Layout.astro";
+import contributors from "~/data/contributors.json";
 ---
+
 <Layout
-  title="Our Contributors - Where In India"
-  description="A list of all the amazing people helping to build this travel directory."
+  title="Contributors | Where In India"
+  description="Meet the amazing travelers and locals building this community travel directory. Every recommendation comes from real people sharing their experiences."
 >
   <main class="contributor-page-container">
     <header class="contributor-header">
       <h1>Meet the Contributors</h1>
       <p class="subtitle">
-        This site is built by travelers, for travelers. These are the amazing people who have shared their recommendations to help build this public guide.
+        This site is built by travelers, for travelers. These are the amazing
+        people who have shared their recommendations to help build this public
+        guide.
       </p>
     </header>
 
     <div class="contributor-list-wrapper">
       <ul class="contributor-list">
-        {contributors.map(contributor => (
-          <li class="contributor-item">
-            <a href={contributor.profileUrl} target="_blank" rel="noopener noreferrer" class="contributor-link">
-              {contributor.name}
-            </a>
-          </li>
-        ))}
+        {
+          contributors.map((contributor) => (
+            <li class="contributor-item">
+              <a
+                href={contributor.profileUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contributor-link"
+              >
+                {contributor.name}
+              </a>
+            </li>
+          ))
+        }
       </ul>
     </div>
   </main>
@@ -81,4 +91,3 @@ import contributors from '~/data/contributors.json';
     padding-left: 1rem;
   }
 </style>
-

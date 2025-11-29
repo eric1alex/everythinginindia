@@ -1,18 +1,18 @@
 ---
 export interface Props {
-  cityName: string;
-  formUrl: string;
-  cityEntry: string;
-  helpfulEntry: string;
-  feedbackEntry: string;
+    cityName: string;
+    formUrl: string;
+    cityEntry: string;
+    helpfulEntry: string;
+    feedbackEntry: string;
 }
 
-const { cityName, formUrl, cityEntry, helpfulEntry, feedbackEntry } = Astro.props;
+const { cityName, formUrl, cityEntry, helpfulEntry, feedbackEntry } =
+    Astro.props;
 ---
 
 <!-- The Popup Container (Hidden by default) -->
 <div id="feedback-popup" class="feedback-popup">
-    
     <!-- Close Button -->
     <button id="popup-close" class="popup-close">&times;</button>
 
@@ -28,7 +28,10 @@ const { cityName, formUrl, cityEntry, helpfulEntry, feedbackEntry } = Astro.prop
     <!-- State 2: Form -->
     <div id="popup-form" style="display: none;">
         <h4 class="popup-title">How can we improve?</h4>
-        <textarea id="popup-input" class="popup-input" placeholder="Your feedback..."></textarea>
+        <textarea
+            id="popup-input"
+            class="popup-input"
+            placeholder="Your feedback..."></textarea>
         <button id="btn-submit" class="popup-submit">Send</button>
     </div>
 
@@ -48,10 +51,10 @@ const { cityName, formUrl, cityEntry, helpfulEntry, feedbackEntry } = Astro.prop
         background: white;
         padding: 1.25rem;
         border-radius: 12px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         border: 1px solid #eee;
         z-index: 9999; /* Above everything */
-        
+
         /* Initial State: Hidden and moved down */
         opacity: 0;
         transform: translateY(20px) scale(0.95);
@@ -77,7 +80,9 @@ const { cityName, formUrl, cityEntry, helpfulEntry, feedbackEntry } = Astro.prop
         line-height: 1;
         padding: 4px;
     }
-    .popup-close:hover { color: #333; }
+    .popup-close:hover {
+        color: #333;
+    }
 
     .popup-title {
         font-size: 1rem;
@@ -103,11 +108,24 @@ const { cityName, formUrl, cityEntry, helpfulEntry, feedbackEntry } = Astro.prop
         font-weight: 500;
         transition: all 0.2s;
     }
-    .popup-btn:hover { background: #f9f9f9; transform: translateY(-1px); }
-    .popup-btn.yes { border-color: #d1fae5; color: #047857; }
-    .popup-btn.yes:hover { background: #ecfdf5; }
-    .popup-btn.no { border-color: #fee2e2; color: #b91c1c; }
-    .popup-btn.no:hover { background: #fef2f2; }
+    .popup-btn:hover {
+        background: #f9f9f9;
+        transform: translateY(-1px);
+    }
+    .popup-btn.yes {
+        border-color: #d1fae5;
+        color: #047857;
+    }
+    .popup-btn.yes:hover {
+        background: #ecfdf5;
+    }
+    .popup-btn.no {
+        border-color: #fee2e2;
+        color: #b91c1c;
+    }
+    .popup-btn.no:hover {
+        background: #fef2f2;
+    }
 
     .popup-input {
         width: 100%;
@@ -119,7 +137,10 @@ const { cityName, formUrl, cityEntry, helpfulEntry, feedbackEntry } = Astro.prop
         margin-bottom: 0.5rem;
         resize: none;
     }
-    .popup-input:focus { outline: none; border-color: #333; }
+    .popup-input:focus {
+        outline: none;
+        border-color: #333;
+    }
 
     .popup-submit {
         width: 100%;
@@ -132,7 +153,9 @@ const { cityName, formUrl, cityEntry, helpfulEntry, feedbackEntry } = Astro.prop
         font-weight: 600;
         cursor: pointer;
     }
-    .popup-submit:hover { background: #333; }
+    .popup-submit:hover {
+        background: #333;
+    }
 
     .popup-text {
         font-size: 0.9rem;
@@ -141,18 +164,21 @@ const { cityName, formUrl, cityEntry, helpfulEntry, feedbackEntry } = Astro.prop
     }
 </style>
 
-<script is:inline define:vars={{ cityName, formUrl, cityEntry, helpfulEntry, feedbackEntry }}>
-    document.addEventListener('DOMContentLoaded', () => {
-        const popup = document.getElementById('feedback-popup');
-        const btnClose = document.getElementById('popup-close');
-        const btnYes = document.getElementById('btn-yes');
-        const btnNo = document.getElementById('btn-no');
-        const btnSubmit = document.getElementById('btn-submit');
-        const input = document.getElementById('popup-input');
-        
-        const viewInitial = document.getElementById('popup-initial');
-        const viewForm = document.getElementById('popup-form');
-        const viewThanks = document.getElementById('popup-thanks');
+<script
+    is:inline
+    define:vars={{ cityName, formUrl, cityEntry, helpfulEntry, feedbackEntry }}
+>
+    document.addEventListener("DOMContentLoaded", () => {
+        const popup = document.getElementById("feedback-popup");
+        const btnClose = document.getElementById("popup-close");
+        const btnYes = document.getElementById("btn-yes");
+        const btnNo = document.getElementById("btn-no");
+        const btnSubmit = document.getElementById("btn-submit");
+        const input = document.getElementById("popup-input");
+
+        const viewInitial = document.getElementById("popup-initial");
+        const viewForm = document.getElementById("popup-form");
+        const viewThanks = document.getElementById("popup-thanks");
 
         const storageKey = `feedback-submitted-${cityName}`;
 
@@ -163,44 +189,44 @@ const { cityName, formUrl, cityEntry, helpfulEntry, feedbackEntry } = Astro.prop
 
         // 2. Show after 5 seconds
         setTimeout(() => {
-            popup.classList.add('visible');
-        }, 5000);
+            popup.classList.add("visible");
+        }, 8000);
 
         // Close logic
-        btnClose.addEventListener('click', () => {
-            popup.classList.remove('visible');
-            // Optional: Don't show again for this session? 
+        btnClose.addEventListener("click", () => {
+            popup.classList.remove("visible");
+            // Optional: Don't show again for this session?
             // For now, we just close it. It will show again on refresh unless submitted.
         });
 
         // Yes Click
-        btnYes.addEventListener('click', () => {
-            submitToGoogle('Yes', '');
+        btnYes.addEventListener("click", () => {
+            submitToGoogle("Yes", "");
             showThanks();
         });
 
         // No Click
-        btnNo.addEventListener('click', () => {
-            viewInitial.style.display = 'none';
-            viewForm.style.display = 'block';
+        btnNo.addEventListener("click", () => {
+            viewInitial.style.display = "none";
+            viewForm.style.display = "block";
         });
 
         // Submit Click
-        btnSubmit.addEventListener('click', () => {
-            submitToGoogle('No', input.value);
+        btnSubmit.addEventListener("click", () => {
+            submitToGoogle("No", input.value);
             showThanks();
         });
 
         function showThanks() {
-            viewInitial.style.display = 'none';
-            viewForm.style.display = 'none';
-            viewThanks.style.display = 'block';
-            
-            localStorage.setItem(storageKey, 'true');
-            
+            viewInitial.style.display = "none";
+            viewForm.style.display = "none";
+            viewThanks.style.display = "block";
+
+            localStorage.setItem(storageKey, "true");
+
             // Hide after 3 seconds
             setTimeout(() => {
-                popup.classList.remove('visible');
+                popup.classList.remove("visible");
             }, 3000);
         }
 
@@ -209,10 +235,16 @@ const { cityName, formUrl, cityEntry, helpfulEntry, feedbackEntry } = Astro.prop
             formData.append(cityEntry, cityName);
             formData.append(helpfulEntry, isHelpful);
             formData.append(feedbackEntry, feedback);
-            
+
             try {
-                await fetch(formUrl, { method: 'POST', body: formData, mode: 'no-cors' });
-            } catch (e) { console.error(e); }
+                await fetch(formUrl, {
+                    method: "POST",
+                    body: formData,
+                    mode: "no-cors",
+                });
+            } catch (e) {
+                console.error(e);
+            }
         }
     });
 </script>
