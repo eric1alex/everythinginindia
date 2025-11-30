@@ -1,0 +1,152 @@
+[
+  {
+    "title": "Hotels",
+    "emoji": "📍",
+    "items": [
+      {
+        "name": "Aloft Rishikesh",
+        "url": "https://maps.google.com/?cid=11467438741888668591"
+      },
+      {
+        "name": "Ganga Kinare",
+        "url": "https://maps.google.com/?cid=14760253296902921299"
+      },
+      {
+        "name": "The Roseate Ganges",
+        "url": "https://maps.google.com/?cid=7361449368685437193"
+      },
+      {
+        "name": "Swiss Cottage & Spa by Salvus",
+        "url": "https://maps.google.com/?cid=3392754132707991806"
+      },
+      {
+        "name": "Hotel Laxman Jhula",
+        "url": "https://maps.google.com/?cid=6610640692473248853"
+      },
+      {
+        "name": "EllBee Ganga View",
+        "url": "https://maps.google.com/?cid=539187411661005043"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "⭐",
+    "items": [
+      {
+        "name": "Little Buddha Cafe",
+        "url": "https://maps.google.com/?cid=14852766774856582957"
+      },
+      {
+        "name": "Freedom Cafe",
+        "url": "https://maps.google.com/?cid=12448054817507164126"
+      },
+      {
+        "name": "German Bakery",
+        "url": "https://maps.google.com/?cid=7296810112238208589"
+      },
+      {
+        "name": "The Sitting Elephant Cafe",
+        "url": "https://maps.google.com/?cid=7537311754461539425"
+      },
+      {
+        "name": "Oasis Cafe",
+        "url": "https://maps.google.com/?cid=17680407787231125963"
+      },
+      {
+        "name": "Cafe Karma",
+        "url": "https://maps.google.com/?cid=12897359003598365373"
+      },
+      {
+        "name": "Bistro Nirvana",
+        "url": "https://maps.google.com/?cid=15306277080750203630"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🗺️",
+    "items": [
+      {
+        "name": "Chotiwala Restaurant",
+        "url": "https://maps.google.com/?cid=322817184726713429"
+      },
+      {
+        "name": "The Ganga View Restaurant",
+        "url": "https://maps.google.com/?cid=15776935640636023915"
+      },
+      {
+        "name": "Rajasthani Restaurant",
+        "url": "https://maps.google.com/?cid=4755703116050997725"
+      },
+      {
+        "name": "Honest Restaurant",
+        "url": "https://maps.google.com/?cid=16000600629569024447"
+      },
+      {
+        "name": "Ayurpak Restaurant",
+        "url": "https://maps.google.com/?cid=18253652633672039695"
+      },
+      {
+        "name": "Shivani Restaurant",
+        "url": "https://maps.google.com/?cid=859287673415343849"
+      },
+      {
+        "name": "The 60's Cafe",
+        "url": "https://maps.google.com/?cid=7105348679816533620"
+      }
+    ]
+  },
+  {
+    "title": "Waterfalls",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Neer Garh Waterfall",
+        "url": "https://maps.google.com/?cid=13331105910111861866"
+      },
+      {
+        "name": "Garud Chatti Waterfall",
+        "url": "https://maps.google.com/?cid=235830312670458644"
+      },
+      {
+        "name": "Patna Waterfall",
+        "url": "https://maps.google.com/?cid=13525039763878336302"
+      },
+      {
+        "name": "Himshail Waterfall",
+        "url": "https://maps.google.com/?cid=6124405513649786647"
+      },
+      {
+        "name": "Shivpuri Waterfall",
+        "url": "https://maps.google.com/?cid=235830312670458644"
+      }
+    ]
+  },
+  {
+    "title": "Viewpoints",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Kunjapuri Temple Viewpoint",
+        "url": "https://maps.google.com/?cid=15353735518751717680"
+      },
+      {
+        "name": "Lakshman Jhula Bridge View",
+        "url": "https://maps.google.com/?cid=17681564717730321424"
+      },
+      {
+        "name": "Ram Jhula Bridge View",
+        "url": "https://maps.google.com/?cid=9487165647415702138"
+      },
+      {
+        "name": "Vashishta Gufa Surroundings",
+        "url": "https://maps.google.com/?cid=12293318327505517951"
+      },
+      {
+        "name": "Sivananda Ashram Terrace View",
+        "url": "https://maps.google.com/?cid=17035402340431112512"
+      }
+    ]
+  }
+]
