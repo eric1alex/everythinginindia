@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "sort-locations": "node scripts/sort-locations.js"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.6.0",

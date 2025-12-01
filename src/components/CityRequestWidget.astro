@@ -1,20 +1,50 @@
 ---
 export interface Props {
-  formUrl: string;
-  entryID: string;
+    formUrl: string;
+    cityEntryID: string;
+    emailEntryID: string;
 }
 
-const { formUrl, entryID } = Astro.props;
+const { formUrl, cityEntryID, emailEntryID } = Astro.props;
 ---
 
 <section id="city-request-widget" class="request-container">
-    <div id="request-initial">
+    <div id="request-step1">
         <h3 class="request-title">Which city should we cover next?</h3>
-        <p class="request-text">We build guides based on what you want. Tell us where to go!</p>
-        
+        <p class="request-text">
+            We build guides based on what you want. Tell us where to go!
+        </p>
+
         <div class="input-wrapper">
-            <input type="text" id="request-input" class="request-input" placeholder="e.g. Jaipur, Shillong, Hampi..." />
-            <button id="request-submit" class="request-btn">Submit</button>
+            <input
+                type="text"
+                id="city-input"
+                class="request-input"
+                placeholder="e.g. Jaipur, Shillong, Hampi..."
+            />
+            <button id="city-next-btn" class="request-btn">Next</button>
+        </div>
+    </div>
+
+    <div id="request-step2" style="display: none;">
+        <h3 class="request-title">Almost done! ✨</h3>
+        <p class="request-text city-display"></p>
+
+        <div class="email-section">
+            <p class="email-helper">
+                If you'd like to be notified when this city goes live, please
+                share your email (optional)
+            </p>
+            <div class="input-wrapper">
+                <input
+                    type="email"
+                    id="email-input"
+                    class="request-input"
+                    placeholder="your@email.com (optional)"
+                />
+                <button id="request-submit" class="request-btn">Submit</button>
+            </div>
+            <button id="skip-email" class="skip-btn">Skip</button>
         </div>
     </div>
 
@@ -29,24 +59,46 @@ const { formUrl, entryID } = Astro.props;
         max-width: 600px;
         margin: 4rem auto 2rem auto;
         padding: 2.5rem 2rem;
-        background-color: #f8fafc; /* Very light cool grey */
+        background-color: #f8fafc;
         border: 1px solid #e2e8f0;
         border-radius: 16px;
         text-align: center;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+        transition: all 0.3s ease;
     }
 
     .request-title {
         font-size: 1.25rem;
         font-weight: 700;
-        color: #1e293b; /* Slate-800 */
+        color: #1e293b;
         margin-bottom: 0.5rem;
     }
 
     .request-text {
         font-size: 0.95rem;
-        color: #64748b; /* Slate-500 */
+        color: #64748b;
         margin-bottom: 1.5rem;
+    }
+
+    .city-display {
+        font-weight: 600;
+        color: #1e293b;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .email-section {
+        margin-top: 1.5rem;
+    }
+
+    .email-helper {
+        font-size: 0.85rem;
+        color: #64748b;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .input-wrapper {
@@ -87,6 +139,22 @@ const { formUrl, entryID } = Astro.props;
         background-color: #0f172a;
     }
 
+    .skip-btn {
+        margin-top: 0.75rem;
+        padding: 0.5rem 1rem;
+        background: none;
+        border: none;
+        color: #64748b;
+        font-size: 0.85rem;
+        cursor: pointer;
+        text-decoration: underline;
+        transition: color 0.2s;
+    }
+
+    .skip-btn:hover {
+        color: #1e293b;
+    }
+
     @media (max-width: 480px) {
         .input-wrapper {
             flex-direction: column;
@@ -97,38 +165,80 @@ const { formUrl, entryID } = Astro.props;
     }
 </style>
 
-<script is:inline define:vars={{ formUrl, entryID }}>
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.getElementById('request-submit');
-        const input = document.getElementById('request-input');
-        const initialView = document.getElementById('request-initial');
-        const thanksView = document.getElementById('request-thanks');
-        const storageKey = 'city-request-submitted';
+<script is:inline define:vars={{ formUrl, cityEntryID, emailEntryID }}>
+    document.addEventListener("DOMContentLoaded", () => {
+        const step1 = document.getElementById("request-step1");
+        const step2 = document.getElementById("request-step2");
+        const thanksView = document.getElementById("request-thanks");
 
-        // Optional: Hide if they already submitted recently? 
-        // For now, we let them submit multiple suggestions.
+        const cityInput = document.getElementById("city-input");
+        const cityNextBtn = document.getElementById("city-next-btn");
+        const emailInput = document.getElementById("email-input");
+        const submitBtn = document.getElementById("request-submit");
+        const skipBtn = document.getElementById("skip-email");
+        const cityDisplay = document.querySelector(".city-display");
 
-        btn.addEventListener('click', () => {
-            const value = input.value.trim();
-            if (!value) return;
+        let cityValue = "";
 
-            submitToGoogle(value);
+        // Step 1: City name entry
+        cityNextBtn.addEventListener("click", () => {
+            cityValue = cityInput.value.trim();
+            if (!cityValue) return;
 
-            // Show Thanks
-            initialView.style.display = 'none';
-            thanksView.style.display = 'block';
-            
-            // Save flag (optional usage)
-            localStorage.setItem(storageKey, 'true');
+            cityDisplay.textContent = `You requested: ${cityValue}`;
+            step1.style.display = "none";
+            step2.style.display = "block";
         });
 
-        async function submitToGoogle(text) {
+        // Allow Enter key on city input
+        cityInput.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+                cityNextBtn.click();
+            }
+        });
+
+        // Step 2: Submit with email
+        submitBtn.addEventListener("click", () => {
+            const emailValue = emailInput.value.trim();
+            submitToGoogle(cityValue, emailValue);
+            showThanks();
+        });
+
+        // Step 2: Skip email
+        skipBtn.addEventListener("click", () => {
+            submitToGoogle(cityValue, "");
+            showThanks();
+        });
+
+        // Allow Enter key on email input
+        emailInput.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+                submitBtn.click();
+            }
+        });
+
+        function showThanks() {
+            step2.style.display = "none";
+            thanksView.style.display = "block";
+            localStorage.setItem("city-request-submitted", "true");
+        }
+
+        async function submitToGoogle(city, email) {
             const formData = new FormData();
-            formData.append(entryID, text);
-            
+            formData.append(cityEntryID, city);
+            if (email) {
+                formData.append(emailEntryID, email);
+            }
+
             try {
-                await fetch(formUrl, { method: 'POST', body: formData, mode: 'no-cors' });
-            } catch (e) { console.error(e); }
+                await fetch(formUrl, {
+                    method: "POST",
+                    body: formData,
+                    mode: "no-cors",
+                });
+            } catch (e) {
+                console.error(e);
+            }
         }
     });
 </script>

@@ -73,16 +73,28 @@
           }
         },
         {
-          "name": "Mysore",
-          "slug": "mysore",
-          "imageUrl": "https://placehold.co/1200x600/E8A274/FFFFFF?text=Mysore"
-        },
-        {
-          "name": "Hampi",
-          "slug": "hampi",
-          "imageUrl": "https://images.unsplash.com/photo-1636903684031-e187417f3e77?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
-          "lat": 15.335,
-          "lon": 76.46
+          "name": "Coorg",
+          "slug": "coorg",
+          "imageUrl": "https://images.unsplash.com/photo-1560357647-62a43d9897bb?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "mapUrl": "https://maps.app.goo.gl/fZZoEttqy14BPWyq9",
+          "lat": 12.4213726,
+          "lon": 75.7346602,
+          "dashboard": {
+            "bestTime": "Oct - Mar",
+            "bestTimeDescription": "Pleasant weather ideal for outdoor activities, sightseeing, and enjoying misty mountains and coffee plantations.\n\n",
+            "idealDuration": "3-4 Days",
+            "budget": {
+              "min": "1500",
+              "max": "4500",
+              "currency": "INR"
+            },
+            "transport": "Taxi, Auto and Rent Scooters",
+            "howToReach": {
+              "air": "Kannur International Airport (CNN) - 95-112 km",
+              "train": "Mysore Junction (MYS) - 107-130 km",
+              "road": ""
+            }
+          }
         },
         {
           "name": "Gokarna",
@@ -109,28 +121,16 @@
           }
         },
         {
-          "name": "Coorg",
-          "slug": "coorg",
-          "imageUrl": "https://images.unsplash.com/photo-1560357647-62a43d9897bb?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "mapUrl": "https://maps.app.goo.gl/fZZoEttqy14BPWyq9",
-          "lat": 12.4213726,
-          "lon": 75.7346602,
-          "dashboard": {
-            "bestTime": "Oct - Mar",
-            "bestTimeDescription": "Pleasant weather ideal for outdoor activities, sightseeing, and enjoying misty mountains and coffee plantations.\n\n",
-            "idealDuration": "3-4 Days",
-            "budget": {
-              "min": "1500",
-              "max": "4500",
-              "currency": "INR"
-            },
-            "transport": "Taxi, Auto and Rent Scooters",
-            "howToReach": {
-              "air": "Kannur International Airport (CNN) - 95-112 km",
-              "train": "Mysore Junction (MYS) - 107-130 km",
-              "road": ""
-            }
-          }
+          "name": "Hampi",
+          "slug": "hampi",
+          "imageUrl": "https://images.unsplash.com/photo-1636903684031-e187417f3e77?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+          "lat": 15.335,
+          "lon": 76.46
+        },
+        {
+          "name": "Mysore",
+          "slug": "mysore",
+          "imageUrl": "https://placehold.co/1200x600/E8A274/FFFFFF?text=Mysore"
         }
       ]
     },
@@ -139,13 +139,6 @@
       "slug": "kerala",
       "cities": [
         {
-          "name": "Kochi",
-          "slug": "kochi",
-          "imageUrl": "https://images.unsplash.com/photo-1696966358360-f64c761e0cb5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2125",
-          "lat": 9.9865001,
-          "lon": 76.1373067
-        },
-        {
           "name": "Alleppey",
           "slug": "alleppey",
           "imageUrl": "https://images.unsplash.com/photo-1593417033942-bcdf26b74700?q=80&w=1154&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -153,12 +146,11 @@
           "lon": 76.1855483
         },
         {
-          "name": "Varkala",
-          "slug": "varkala",
-          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=15hGIcxZgyLNXW1ppt_ZfwMqTWxbm3e8&usp=sharing",
-          "imageUrl": "https://images.unsplash.com/photo-1610817201767-793a9130ce07?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1062",
-          "lat": 8.7432562,
-          "lon": 76.6968829
+          "name": "Kochi",
+          "slug": "kochi",
+          "imageUrl": "https://images.unsplash.com/photo-1696966358360-f64c761e0cb5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2125",
+          "lat": 9.9865001,
+          "lon": 76.1373067
         },
         {
           "name": "Munnar",
@@ -167,6 +159,14 @@
           "imageUrl": "https://images.unsplash.com/photo-1470123808288-1e59739dea12?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171",
           "lat": 10.0806494,
           "lon": 77.0538781
+        },
+        {
+          "name": "Varkala",
+          "slug": "varkala",
+          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=15hGIcxZgyLNXW1ppt_ZfwMqTWxbm3e8&usp=sharing",
+          "imageUrl": "https://images.unsplash.com/photo-1610817201767-793a9130ce07?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1062",
+          "lat": 8.7432562,
+          "lon": 76.6968829
         }
       ]
     },
@@ -174,6 +174,11 @@
       "name": "Maharashtra",
       "slug": "maharashtra",
       "cities": [
+        {
+          "name": "Lonavala",
+          "slug": "lonavala",
+          "imageUrl": "https://placehold.co/1200x600/A274E8/FFFFFF?text=Lonavala"
+        },
         {
           "name": "Mumbai",
           "slug": "mumbai",
@@ -186,11 +191,6 @@
           "name": "Pune",
           "slug": "pune",
           "imageUrl": "https://placehold.co/1200x600/D174E8/FFFFFF?text=Pune"
-        },
-        {
-          "name": "Lonavala",
-          "slug": "lonavala",
-          "imageUrl": "https://placehold.co/1200x600/A274E8/FFFFFF?text=Lonavala"
         }
       ]
     },
@@ -199,20 +199,20 @@
       "slug": "rajasthan",
       "cities": [
         {
-          "name": "Udaipur",
-          "slug": "udaipur",
-          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1o-FbSY9PHn0KQUh_-ey_vT0xDjGTG68&usp=sharing",
-          "imageUrl": "https://plus.unsplash.com/premium_photo-1697730426227-9056296a0315?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
-          "lat": 24.6082638,
-          "lon": 73.6224704
-        },
-        {
           "name": "Jaipur",
           "slug": "jaipur",
           "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1sJ7Pagblwp4W9u-v7GtqGgBf_uBJ2-w&usp=sharing",
           "imageUrl": "https://images.unsplash.com/photo-1477586957327-847a0f3f4fe3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
           "lat": 26.8851151,
           "lon": 75.6257462
+        },
+        {
+          "name": "Udaipur",
+          "slug": "udaipur",
+          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1o-FbSY9PHn0KQUh_-ey_vT0xDjGTG68&usp=sharing",
+          "imageUrl": "https://plus.unsplash.com/premium_photo-1697730426227-9056296a0315?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+          "lat": 24.6082638,
+          "lon": 73.6224704
         }
       ]
     },
