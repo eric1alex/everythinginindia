@@ -195,6 +195,36 @@
       ]
     },
     {
+      "name": "Meghalaya",
+      "slug": "meghalaya",
+      "cities": [
+        {
+          "name": "Shillong",
+          "slug": "shillong",
+          "imageUrl": "https://images.unsplash.com/photo-1623751814896-dc6f8d237165?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "mapUrl": "https://maps.app.goo.gl/DFHiAvzujifHAaDN6",
+          "lat": 25.5896635,
+          "lon": 91.8100355,
+          "dashboard": {
+            "bestTime": "Sep - May",
+            "bestTimeDescription": "Pleasant weather ideal for sightseeing. Spring brings vibrant blooms, while winter offers a crisp chill and festivals.\n\n",
+            "idealDuration": "3-4 Days",
+            "budget": {
+              "min": "1700",
+              "max": "4000",
+              "currency": "INR"
+            },
+            "transport": "Shared taxis, city buses and Rapido bikes",
+            "howToReach": {
+              "air": "Lokpriya Gopinath Bordoloi International Airport (GAU), Guwahati or Shillong Airport (SHL), Umroi (Limited connectivity)",
+              "train": "Guwahati Railway Station (GHY) (approx. 96-105 km).",
+              "road": ""
+            }
+          }
+        }
+      ]
+    },
+    {
       "name": "Rajasthan",
       "slug": "rajasthan",
       "cities": [
