@@ -1,0 +1,194 @@
+[
+  {
+    "title": "Hotels",
+    "emoji": "📍",
+    "items": [
+      {
+        "name": "Pinewood Hotel",
+        "url": "https://maps.google.com/?cid=17467684413252688746"
+      },
+      {
+        "name": "Hotel Polo Towers",
+        "url": "https://maps.google.com/?cid=9185480343463028842"
+      },
+      {
+        "name": "Ri Kynjai Resort",
+        "url": "https://maps.google.com/?cid=2118984874811233900"
+      },
+      {
+        "name": "Lakewood Hotel",
+        "url": "https://maps.google.com/?cid=10017400897523366250"
+      },
+      {
+        "name": "Hotel Centre Point",
+        "url": "https://maps.google.com/?cid=16017559072098327261"
+      },
+      {
+        "name": "Hotel Heiga",
+        "url": "https://maps.google.com/?cid=972429515790547621"
+      },
+      {
+        "name": "Hotel Serene",
+        "url": "https://maps.google.com/?cid=970629640599456997"
+      },
+      {
+        "name": "Vivanta Shillong",
+        "url": "https://maps.google.com/?cid=6903558056622133321"
+      },
+      {
+        "name": "Amiya Resort",
+        "url": "https://maps.google.com/?cid=11831826292084024310"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "⭐",
+    "items": [
+      {
+        "name": "Dylan's Cafe",
+        "url": "https://maps.google.com/?cid=11082345713538751733"
+      },
+      {
+        "name": "Cafe Shillong",
+        "url": "https://maps.google.com/?cid=9940614228293606152"
+      },
+      {
+        "name": "Living Roof",
+        "url": "https://maps.google.com/?cid=15398364902928099556"
+      },
+      {
+        "name": "ML 05 Cafe",
+        "url": "https://maps.google.com/?cid=951615716726594995"
+      },
+      {
+        "name": "Deja Vu",
+        "url": "https://maps.google.com/?cid=1799906294882560025"
+      },
+      {
+        "name": "The Grub",
+        "url": "https://maps.google.com/?cid=1773341396775603100"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🗺️",
+    "items": [
+      {
+        "name": "Jiva Sizzlers",
+        "url": "https://maps.google.com/?cid=11031240771850346411"
+      },
+      {
+        "name": "Ginger Restaurant",
+        "url": "https://maps.google.com/?cid=10117399868843288648"
+      },
+      {
+        "name": "City Hut Family Dhaba",
+        "url": "https://maps.google.com/?cid=14683584980619898819"
+      },
+      {
+        "name": "La Galerie",
+        "url": "https://maps.google.com/?cid=7315325269750338667"
+      },
+      {
+        "name": "Lal's Bistro",
+        "url": "https://maps.google.com/?cid=8822461230130172580"
+      },
+      {
+        "name": "Broadway Restaurant",
+        "url": "https://maps.google.com/?cid=1387548810624404124"
+      },
+      {
+        "name": "Madras Cafe",
+        "url": "https://maps.google.com/?cid=10094986748148158192"
+      }
+    ]
+  },
+  {
+    "title": "Viewpoints",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Shillong Peak",
+        "url": "https://maps.google.com/?cid=14323646929365765976"
+      },
+      {
+        "name": "Laitlum Canyons",
+        "url": "https://maps.google.com/?cid=524850964348759497"
+      },
+      {
+        "name": "Elephant Falls Viewpoint",
+        "url": "https://maps.google.com/?cid=9631142227465317234"
+      },
+      {
+        "name": "Ward's Lake",
+        "url": "https://maps.google.com/?cid=9526908262842847498"
+      },
+      {
+        "name": "Mawphlang Sacred Forest",
+        "url": "https://maps.google.com/?cid=504949229012798570"
+      },
+      {
+        "name": "Spread Eagle Falls Viewpoint",
+        "url": "https://maps.google.com/?cid=11152730296002598348"
+      }
+    ]
+  },
+  {
+    "title": "Waterfalls",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Elephant Falls",
+        "url": "https://maps.google.com/?cid=5429974205575368080"
+      },
+      {
+        "name": "Sweet Falls",
+        "url": "https://maps.google.com/?cid=3868784963376141472"
+      },
+      {
+        "name": "Spread Eagle Falls",
+        "url": "https://maps.google.com/?cid=11152730296002598348"
+      },
+      {
+        "name": "Bishop Falls",
+        "url": "https://maps.google.com/?cid=10180986236400745876"
+      },
+      {
+        "name": "Beadon Falls",
+        "url": "https://maps.google.com/?cid=15801320652411907895"
+      },
+      {
+        "name": "Weikai Falls",
+        "url": "https://maps.google.com/?cid=1895973294306268846"
+      }
+    ]
+  },
+  {
+    "title": "Museums",
+    "emoji": "🛍️",
+    "items": [
+      {
+        "name": "Don Bosco Centre for Indigenous Cultures",
+        "url": "https://maps.google.com/?cid=3067257739993552237"
+      },
+      {
+        "name": "Meghalaya State Museum",
+        "url": "https://maps.google.com/?cid=11930104802199138699"
+      },
+      {
+        "name": "Ever Living Museum",
+        "url": "https://maps.google.com/?cid=10704791089597519763"
+      },
+      {
+        "name": "Air Force Museum",
+        "url": "https://maps.google.com/?cid=7044159069083439445"
+      },
+      {
+        "name": "Rhino Museum",
+        "url": "https://maps.google.com/?cid=7187045267649354776"
+      }
+    ]
+  }
+]
