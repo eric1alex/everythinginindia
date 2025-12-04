@@ -6,7 +6,7 @@ import { fileURLToPath, URL } from 'url';
 
 // --- This is the updated file ---
 export default defineConfig({
-  site: 'https://whereinindia.online', // Make sure this is your correct URL
+  site: 'https://www.whereinindia.online', // Make sure this is your correct URL
   integrations: [sitemap()],
 
   // --- 2. Add this entire 'vite' block ---
