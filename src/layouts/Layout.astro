@@ -81,11 +81,11 @@ const canonicalURL = Astro.url.href;
 				"@type": "WebSite",
 				"name": "Where In India",
 				"alternateName": ["WhereInIndia", "Where In India Online"],
-				"url": "https://whereinindia.online",
-				"image": "https://whereinindia.online/flag.png",
+				"url": "https://www.whereinindia.online",
+				"image": "https://www.whereinindia.online/flag.png",
 				"potentialAction": {
 					"@type": "SearchAction",
-					"target": "https://whereinindia.online/?s={search_term_string}",
+					"target": "https://www.whereinindia.online/?s={search_term_string}",
 					"query-input": "required name=search_term_string"
 				}
 			}
@@ -104,12 +104,19 @@ const canonicalURL = Astro.url.href;
 		<!-- Site Header -->
 		<header class="site-header">
 			<nav class="header-nav">
-				<a href="/" class="header-logo">📍 Where In India</a>
+				<a href="/" class="header-logo">
+					<img
+						src="/flag.png"
+						alt="Where In India Logo"
+						class="header-logo-img"
+					/>
+					Where In India
+				</a>
 				<a
-					href="https://docs.google.com/forms/d/e/1FAIpQLScOGneda4XsF2NyMZeto6f59Niz4R8bn7eKFPPAQ4ymaEE6Vw/viewform?usp=dialog"
+					href="https://itinerary.whereinindia.online/?utm_source=main&utm_medium=header&utm_campaign=website"
 					class="header-submit"
 					target="_blank"
-					rel="noopener noreferrer">Add Place</a
+					rel="noopener noreferrer">Explore Itineraries</a
 				>
 			</nav>
 		</header>
