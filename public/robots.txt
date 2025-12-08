@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://whereinindia.online/sitemap-index.xml
+Sitemap: https://www.whereinindia.online/sitemap-index.xml

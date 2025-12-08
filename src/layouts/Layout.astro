@@ -10,7 +10,7 @@ interface Props {
 const {
 	title,
 	description = "A curated travel directory for India. Stop getting lost on Google.",
-	ogImage = "https://placehold.co/1200x630/1a1a1a/ffffff?text=Where+In+India",
+	ogImage = "https://www.whereinindia.online/flag.png",
 } = Astro.props;
 
 // 3. Get the full page URL
@@ -188,11 +188,8 @@ const canonicalURL = Astro.url.href;
 							>
 						</li>
 						<li>
-							<a
-								href="/contributors"
-								class="footer-link"
-								target="_blank"
-								rel="noopener noreferrer">Contributors</a
+							<a href="/contributors" class="footer-link"
+								>Contributors</a
 							>
 						</li>
 					</ul>

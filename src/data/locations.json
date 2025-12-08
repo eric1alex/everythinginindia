@@ -278,6 +278,14 @@
           "imageUrl": "https://images.unsplash.com/photo-1593692867948-bb6ba7c03fd1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1384",
           "lat": 10.2360925,
           "lon": 77.4777206
+        },
+        {
+          "name": "Ooty",
+          "slug": "ooty",
+          "mapUrl": "https://maps.app.goo.gl/ooty",
+          "imageUrl": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+          "lat": 11.4102169,
+          "lon": 76.6950324
         }
       ]
     },

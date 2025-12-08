@@ -1,25 +1,25 @@
 ---
-import Layout from '~/layouts/Layout.astro';
-import locations from '~/data/locations.json';
+import Layout from "~/layouts/Layout.astro";
+import locations from "~/data/locations.json";
 
 // --- NEW LOGIC FOR "FEELING LUCKY" ---
 // 1. Find all the .json files that actually exist.
 // We use '../../' because this file is in src/pages/
-const allCityDataFiles = await import.meta.glob('../data/cities/*.json'); 
-const existingSlugs = Object.keys(allCityDataFiles).map(path => 
-  path.split('/').pop().replace('.json', '')
+const allCityDataFiles = await import.meta.glob("../data/cities/*.json");
+const existingSlugs = Object.keys(allCityDataFiles).map((path) =>
+	path.split("/").pop().replace(".json", ""),
 );
 
 // 2. Create the list of available FULL PATHS for lucky redirection
 const availablePaths = [];
-[...locations.states, ...locations.unionTerritories].forEach(loc => {
-  loc.cities.forEach(city => {
-    // Only add the path if the city's data file exists
-    if (existingSlugs.includes(city.slug)) {
-      // Push the full path: /karnataka/bengaluru
-      availablePaths.push(`/${loc.slug}/${city.slug}`);
-    }
-  });
+[...locations.states, ...locations.unionTerritories].forEach((loc) => {
+	loc.cities.forEach((city) => {
+		// Only add the path if the city's data file exists
+		if (existingSlugs.includes(city.slug)) {
+			// Push the full path: /karnataka/bengaluru
+			availablePaths.push(`/${loc.slug}/${city.slug}`);
+		}
+	});
 });
 // --- END OF NEW LOGIC ---
 
@@ -27,10 +27,10 @@ const states = locations.states;
 const unionTerritories = locations.unionTerritories;
 ---
 
-<Layout 
-  title="Where In India - The most trusted list of recos for India"
-  description="A hand-curated travel directory for India, built for easy exploration and trip planning. Stop getting lost on Google."
-  ogImage="https://placehold.co/1200x630/333/fff?text=Where+In+India"
+<Layout
+	title="Where In India - The most trusted list of recos for India"
+	description="A hand-curated travel directory for India, built for easy exploration and trip planning. Stop getting lost on Google."
+	ogImage="https://www.whereinindia.online/flag.png"
 >
 	<main>
 		<!-- New Hero Section -->
@@ -38,7 +38,11 @@ const unionTerritories = locations.unionTerritories;
 			<div class="hero-image"></div>
 			<div class="hero-text">
 				<h1>Discover Everything in India</h1>
-				<p>A curated directory of places, culture, and experiences across every state — explored, mapped, and made easy for you.</p>
+				<p>
+					A curated directory of places, culture, and experiences
+					across every state — explored, mapped, and made easy for
+					you.
+				</p>
 			</div>
 		</header>
 
@@ -46,13 +50,29 @@ const unionTerritories = locations.unionTerritories;
 		<div class="search-container">
 			<div class="search-wrapper">
 				<div class="search-bar">
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+						></path>
 					</svg>
-					<input type="text" id="state-search" placeholder="Search for a state or city...">
+					<input
+						type="text"
+						id="state-search"
+						placeholder="Search for a state or city..."
+					/>
 				</div>
-                <button id="feeling-lucky" class="lucky-button">Feeling Lucky?</button>
-            </div>
+				<button id="feeling-lucky" class="lucky-button"
+					>Feeling Lucky?</button
+				>
+			</div>
 		</div>
 
 		<!-- Simplified 2-Column List Grid -->
@@ -62,35 +82,87 @@ const unionTerritories = locations.unionTerritories;
 				<div class="list-column">
 					<h2><span class="emoji">📍</span> States</h2>
 					<ol>
-						{states.map(state => (
-							<li class="list-item" data-name={state.name.toLowerCase()} data-state-slug={state.slug} data-cities={JSON.stringify(state.cities.map(c => c.name.toLowerCase()))}>
-								<a 
-									href="#" 
-									class="state-link"
-									data-state={state.name}
-									data-cities={JSON.stringify(state.cities)}
-								>{state.name}</a>
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
-							</li>
-						))}
+						{
+							states.map((state) => (
+								<li
+									class="list-item"
+									data-name={state.name.toLowerCase()}
+									data-state-slug={state.slug}
+									data-cities={JSON.stringify(
+										state.cities.map((c) =>
+											c.name.toLowerCase(),
+										),
+									)}
+								>
+									<a
+										href="#"
+										class="state-link"
+										data-state={state.name}
+										data-cities={JSON.stringify(
+											state.cities,
+										)}
+									>
+										{state.name}
+									</a>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke-width="2"
+										stroke="currentColor"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="m8.25 4.5 7.5 7.5-7.5 7.5"
+										/>
+									</svg>
+								</li>
+							))
+						}
 					</ol>
 				</div>
-				
+
 				<!-- Column 2: Union Territories -->
 				<div class="list-column">
 					<h2><span class="emoji">🇮🇳</span> Union Territories</h2>
 					<ol>
-						{unionTerritories.map(ut => (
-							<li class="list-item" data-name={ut.name.toLowerCase()} data-state-slug={ut.slug} data-cities={JSON.stringify(ut.cities.map(c => c.name.toLowerCase()))}>
-								<a 
-									href="#" 
-									class="state-link"
-									data-state={ut.name}
-									data-cities={JSON.stringify(ut.cities)}
-								>{ut.name}</a>
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
-							</li>
-						))}
+						{
+							unionTerritories.map((ut) => (
+								<li
+									class="list-item"
+									data-name={ut.name.toLowerCase()}
+									data-state-slug={ut.slug}
+									data-cities={JSON.stringify(
+										ut.cities.map((c) =>
+											c.name.toLowerCase(),
+										),
+									)}
+								>
+									<a
+										href="#"
+										class="state-link"
+										data-state={ut.name}
+										data-cities={JSON.stringify(ut.cities)}
+									>
+										{ut.name}
+									</a>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke-width="2"
+										stroke="currentColor"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="m8.25 4.5 7.5 7.5-7.5 7.5"
+										/>
+									</svg>
+								</li>
+							))
+						}
 					</ol>
 				</div>
 			</div>
@@ -102,10 +174,17 @@ const unionTerritories = locations.unionTerritories;
 		<div class="modal-content">
 			<div class="modal-header">
 				<h2 id="modal-title">Cities in [State]</h2>
-				<button id="modal-close" class="modal-close" aria-label="Close modal">&times;</button>
+				<button
+					id="modal-close"
+					class="modal-close"
+					aria-label="Close modal">&times;</button
+				>
 			</div>
 			<div id="modal-body">
-				<p id="modal-no-cities" style="display: none;">No specific cities listed yet. The main page for this location is coming soon!</p>
+				<p id="modal-no-cities" style="display: none;">
+					No specific cities listed yet. The main page for this
+					location is coming soon!
+				</p>
 				<ol id="modal-city-list"></ol>
 			</div>
 		</div>
@@ -113,111 +192,115 @@ const unionTerritories = locations.unionTerritories;
 
 	<!-- Client-side script for Search and Modal -->
 	<script is:raw define:vars={{ availablePaths }}>
-		document.addEventListener('DOMContentLoaded', () => {
+		document.addEventListener("DOMContentLoaded", () => {
 			// --- STATE/CITY SEARCH LOGIC ---
-			const searchInput = document.getElementById('state-search');
-			const listItems = document.querySelectorAll('.list-item');
+			const searchInput = document.getElementById("state-search");
+			const listItems = document.querySelectorAll(".list-item");
 
-			searchInput.addEventListener('input', (e) => {
+			searchInput.addEventListener("input", (e) => {
 				const searchTerm = e.target.value.toLowerCase().trim();
 
-				listItems.forEach(item => {
-                    const itemName = item.dataset.name;
-                    const cityNames = JSON.parse(item.dataset.cities || '[]');
-                    
-                    const nameMatch = itemName.includes(searchTerm);
-                    const cityMatch = cityNames.some(city => city.includes(searchTerm));
+				listItems.forEach((item) => {
+					const itemName = item.dataset.name;
+					const cityNames = JSON.parse(item.dataset.cities || "[]");
+
+					const nameMatch = itemName.includes(searchTerm);
+					const cityMatch = cityNames.some((city) =>
+						city.includes(searchTerm),
+					);
 
 					if (nameMatch || cityMatch) {
-						item.style.display = 'flex';
+						item.style.display = "flex";
 					} else {
-						item.style.display = 'none';
+						item.style.display = "none";
 					}
 				});
 			});
 
 			// --- MODAL (FLOATING WINDOW) LOGIC ---
-			const modal = document.getElementById('city-modal');
-			const modalTitle = document.getElementById('modal-title');
-			const modalCityList = document.getElementById('modal-city-list');
-			const modalNoCities = document.getElementById('modal-no-cities');
-			const modalClose = document.getElementById('modal-close');
-			const stateLinks = document.querySelectorAll('.state-link');
+			const modal = document.getElementById("city-modal");
+			const modalTitle = document.getElementById("modal-title");
+			const modalCityList = document.getElementById("modal-city-list");
+			const modalNoCities = document.getElementById("modal-no-cities");
+			const modalClose = document.getElementById("modal-close");
+			const stateLinks = document.querySelectorAll(".state-link");
 
-			stateLinks.forEach(link => {
-				link.addEventListener('click', (e) => {
+			stateLinks.forEach((link) => {
+				link.addEventListener("click", (e) => {
 					e.preventDefault();
-					
+
 					const stateName = link.dataset.state;
 					const cities = JSON.parse(link.dataset.cities);
-                    
-                    // FIX: Get the state slug from the parent <li>
-                    const stateSlug = link.closest('li').dataset.stateSlug;
 
-                    // If only 1 city, go directly to /state/city
+					// FIX: Get the state slug from the parent <li>
+					const stateSlug = link.closest("li").dataset.stateSlug;
+
+					// If only 1 city, go directly to /state/city
 					if (cities.length === 1 && cities[0].slug) {
-                        // Ensure stateSlug exists to prevent broken links
-                        if (stateSlug) {
-						    window.location.href = `/${stateSlug}/${cities[0].slug}`;
-                        } else {
-                            // Fallback (should not happen if JSON is correct)
-                            window.location.href = `/${cities[0].slug}`; 
-                        }
+						// Ensure stateSlug exists to prevent broken links
+						if (stateSlug) {
+							window.location.href = `/${stateSlug}/${cities[0].slug}`;
+						} else {
+							// Fallback (should not happen if JSON is correct)
+							window.location.href = `/${cities[0].slug}`;
+						}
 						return;
 					}
-					
+
 					modalTitle.textContent = `Cities in ${stateName}`;
-					modalCityList.innerHTML = '';
+					modalCityList.innerHTML = "";
 
 					if (cities.length > 0) {
-						modalNoCities.style.display = 'none';
-						modalCityList.style.display = 'block';
+						modalNoCities.style.display = "none";
+						modalCityList.style.display = "block";
 
-						cities.forEach(city => {
-							const li = document.createElement('li');
-							const a = document.createElement('a');
-                            // FIX: Link now points to /state/city
+						cities.forEach((city) => {
+							const li = document.createElement("li");
+							const a = document.createElement("a");
+							// FIX: Link now points to /state/city
 							a.href = `/${stateSlug}/${city.slug}`;
 							a.textContent = city.name;
 							li.appendChild(a);
 							modalCityList.appendChild(li);
 						});
 					} else {
-						modalNoCities.style.display = 'block';
-						modalCityList.style.display = 'none';
+						modalNoCities.style.display = "block";
+						modalCityList.style.display = "none";
 					}
 
-					modal.classList.add('visible');
+					modal.classList.add("visible");
 				});
 			});
 
 			// Function to close the modal
 			const closeModal = () => {
-				modal.classList.remove('visible');
-			}
+				modal.classList.remove("visible");
+			};
 
 			// Close modal when X is clicked
-			modalClose.addEventListener('click', closeModal);
+			modalClose.addEventListener("click", closeModal);
 
 			// Close modal when clicking on the overlay
-			modal.addEventListener('click', (e) => {
+			modal.addEventListener("click", (e) => {
 				if (e.target === modal) {
 					closeModal();
 				}
 			});
 
-            // --- "FEELING LUCKY?" LOGIC ---
-            const luckyButton = document.getElementById('feeling-lucky');
-            if (luckyButton) {
-                luckyButton.addEventListener('click', () => {
-                    // FIX: Use availablePaths which now contains full paths like /state/city
-                    if (availablePaths && availablePaths.length > 0) {
-                        const randomIndex = Math.floor(Math.random() * availablePaths.length);
-                        const randomPath = availablePaths[randomIndex];
-                        window.location.href = randomPath;
-                    }
-                });
-            }
+			// --- "FEELING LUCKY?" LOGIC ---
+			const luckyButton = document.getElementById("feeling-lucky");
+			if (luckyButton) {
+				luckyButton.addEventListener("click", () => {
+					// FIX: Use availablePaths which now contains full paths like /state/city
+					if (availablePaths && availablePaths.length > 0) {
+						const randomIndex = Math.floor(
+							Math.random() * availablePaths.length,
+						);
+						const randomPath = availablePaths[randomIndex];
+						window.location.href = randomPath;
+					}
+				});
+			}
 		});
 	</script>
 </Layout>
