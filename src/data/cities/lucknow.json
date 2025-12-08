@@ -1,0 +1,220 @@
+[
+  {
+    "title": "Monuments",
+    "emoji": "📍",
+    "items": [
+      {
+        "name": "Bara Imambara",
+        "url": "https://maps.google.com/?cid=3832067487070426943"
+      },
+      {
+        "name": "Chota Imambara",
+        "url": "https://maps.google.com/?cid=2606937481108120312"
+      },
+      {
+        "name": "Rumi Darwaza",
+        "url": "https://maps.google.com/?cid=12841745038091676899"
+      },
+      {
+        "name": "British Residency",
+        "url": "https://maps.google.com/?cid=6391775294808710346"
+      },
+      {
+        "name": "Husainabad Clock Tower",
+        "url": "https://maps.google.com/?cid=9502191381661774256"
+      },
+      {
+        "name": "Shah Najaf Imambara",
+        "url": "https://maps.google.com/?cid=16861044943607752027"
+      },
+      {
+        "name": "Dilkusha Kothi",
+        "url": "https://maps.google.com/?cid=7787444153149775939"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "⭐",
+    "items": [
+      {
+        "name": "Tunday Kababi",
+        "url": "https://maps.google.com/?cid=3204521909238061596"
+      },
+      {
+        "name": "Royal Cafe",
+        "url": "https://maps.google.com/?cid=14634895879218345284"
+      },
+      {
+        "name": "Dastarkhwan",
+        "url": "https://maps.google.com/?cid=4426558394339315122"
+      },
+      {
+        "name": "Idris Biryani",
+        "url": "https://maps.google.com/?cid=11777321186609594375"
+      },
+      {
+        "name": "Moti Mahal Delux",
+        "url": "https://maps.google.com/?cid=396442335977345021"
+      },
+      {
+        "name": "Oudhyana",
+        "url": "https://maps.google.com/?cid=13253472367243203856"
+      },
+      {
+        "name": "Sharma Tea Stall",
+        "url": "https://maps.google.com/?cid=15203386876128271390"
+      },
+      {
+        "name": "Grand Cabana",
+        "url": "https://maps.google.com/?cid=13623668521988763739"
+      }
+    ]
+  },
+  {
+    "title": "Gardens",
+    "emoji": "🗺️",
+    "items": [
+      {
+        "name": "Bara Imambara Complex",
+        "url": "https://maps.google.com/?cid=3832067487070426943"
+      },
+      {
+        "name": "Residency Gardens",
+        "url": "https://maps.google.com/?cid=12066049885522315052"
+      },
+      {
+        "name": "National Botanical Research Institute Garden",
+        "url": "https://maps.google.com/?cid=1948709849479737825"
+      },
+      {
+        "name": "Gautam Buddha Park",
+        "url": "https://maps.google.com/?cid=100643587348311131"
+      },
+      {
+        "name": "Ambedkar Memorial Park",
+        "url": "https://maps.google.com/?cid=7109179806645517341"
+      },
+      {
+        "name": "Gomti Riverfront",
+        "url": "https://maps.google.com/?cid=6044467470635911231"
+      }
+    ]
+  },
+  {
+    "title": "Hotels",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Taj Mahal Lucknow",
+        "url": "https://maps.google.com/?cid=16729594004328084795"
+      },
+      {
+        "name": "Hyatt Regency Lucknow",
+        "url": "https://maps.google.com/?cid=14972193087158193699"
+      },
+      {
+        "name": "Renaissance Lucknow Hotel",
+        "url": "https://maps.google.com/?cid=5072125990636390436"
+      },
+      {
+        "name": "The Piccadily",
+        "url": "https://maps.google.com/?cid=14870340950390203937"
+      },
+      {
+        "name": "Hotel Clarks Avadh",
+        "url": "https://maps.google.com/?cid=8414974548526204305"
+      },
+      {
+        "name": "Novotel Lucknow",
+        "url": "https://maps.google.com/?cid=1284025240463191163"
+      },
+      {
+        "name": "Levana Hotel",
+        "url": "https://maps.google.com/?cid=15691288766175371240"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "The Urban Terrace",
+        "url": "https://maps.google.com/?cid=9550404872022978342"
+      },
+      {
+        "name": "Cappuccino Blast",
+        "url": "https://maps.google.com/?cid=15337496229192648568"
+      },
+      {
+        "name": "Garden Bakery & Cafe",
+        "url": "https://maps.google.com/?cid=7977520037371921984"
+      },
+      {
+        "name": "Chai Cofee Co.",
+        "url": "https://maps.google.com/?cid=3168980884701155950"
+      },
+      {
+        "name": "Gossip Cafe & Lounge",
+        "url": "https://maps.google.com/?cid=3412754564254047504"
+      },
+      {
+        "name": "Maison Des Connaisseur",
+        "url": "https://maps.google.com/?cid=6725642844840520533"
+      }
+    ]
+  },
+  {
+    "title": "Museums",
+    "emoji": "🌳",
+    "items": [
+      {
+        "name": "State Museum Lucknow",
+        "url": "https://maps.google.com/?cid=14189872821490311009"
+      },
+      {
+        "name": "Folk Art Museum",
+        "url": "https://maps.google.com/?cid=14189872821490311009"
+      },
+      {
+        "name": "Residency Museum",
+        "url": "https://maps.google.com/?cid=12976506649087398595"
+      },
+      {
+        "name": "Regional Science City",
+        "url": "https://maps.google.com/?cid=1336737555468332533"
+      }
+    ]
+  },
+  {
+    "title": "Viewpoints",
+    "emoji": "🎨",
+    "items": [
+      {
+        "name": "Top of Bara Imambara (Bhool Bhulaiya)",
+        "url": "https://maps.google.com/?cid=3832067487070426943"
+      },
+      {
+        "name": "Gomti Riverfront Promenade",
+        "url": "https://maps.google.com/?cid=6044467470635911231"
+      },
+      {
+        "name": "Ambedkar Memorial Park",
+        "url": "https://maps.google.com/?cid=7109179806645517341"
+      },
+      {
+        "name": "Janeshwar Mishra Park",
+        "url": "https://maps.google.com/?cid=3484102650071778056"
+      },
+      {
+        "name": "Rumi Darwaza area",
+        "url": "https://maps.google.com/?cid=12841745038091676899"
+      },
+      {
+        "name": "Husainabad Clock Tower area",
+        "url": "https://maps.google.com/?cid=9502191381661774256"
+      }
+    ]
+  }
+]
