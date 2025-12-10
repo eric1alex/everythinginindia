@@ -269,7 +269,26 @@
         {
           "name": "Chennai",
           "slug": "chennai",
-          "imageUrl": "https://placehold.co/1200x600/E87474/FFFFFF?text=Chennai"
+          "imageUrl": "https://images.unsplash.com/photo-1661366698983-3cb843219300?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "mapUrl": "https://maps.app.goo.gl/osBzpYKr9BYBF3Lb8",
+          "lat": 13.0474733,
+          "lon": 80.04386,
+          "dashboard": {
+            "bestTime": "November to February",
+            "bestTimeDescription": "Pleasant weather with temperatures between 20-25°C, ideal for sightseeing and cultural festivals.",
+            "idealDuration": "3-4 Days",
+            "budget": {
+              "min": "1,500",
+              "max": "4,000",
+              "currency": "INR"
+            },
+            "transport": "Metro, Suburban Trains, MTC Buses, Auto-rickshaws, Ride-hailing apps (Ola, Uber)",
+            "howToReach": {
+              "air": "Chennai International Airport (MAA)",
+              "train": "Chennai Central Railway Station (Chennai Central)",
+              "road": ""
+            }
+          }
         },
         {
           "name": "Kodaikanal",
