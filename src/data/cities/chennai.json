@@ -1,0 +1,256 @@
+[
+  {
+    "title": "Hotels",
+    "emoji": "📍",
+    "items": [
+      {
+        "name": "Taj Coromandel",
+        "url": "https://maps.google.com/?cid=14025586656386349681"
+      },
+      {
+        "name": "ITC Grand Chola",
+        "url": "https://maps.google.com/?cid=6335245403330376696"
+      },
+      {
+        "name": "The Leela Palace Chennai",
+        "url": "https://maps.google.com/?cid=7374804035710576015"
+      },
+      {
+        "name": "Hyatt Regency Chennai",
+        "url": "https://maps.google.com/?cid=18317749460721632765"
+      },
+      {
+        "name": "Radisson Blu Hotel GRT Chennai",
+        "url": "https://maps.google.com/?cid=8238029069025688433"
+      },
+      {
+        "name": "The Park Chennai",
+        "url": "https://maps.google.com/?cid=13997035344535449581"
+      },
+      {
+        "name": "Hilton Chennai",
+        "url": "https://maps.google.com/?cid=8246999964640828333"
+      },
+      {
+        "name": "Novotel Chennai Chamiers Road",
+        "url": "https://maps.google.com/?cid=1125339864176905545"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "⭐",
+    "items": [
+      {
+        "name": "Dakshin (ITC Grand Chola)",
+        "url": "https://maps.google.com/?cid=6335245403330376696"
+      },
+      {
+        "name": "Annalakshmi Restaurant",
+        "url": "https://maps.google.com/?cid=471429796982750208"
+      },
+      {
+        "name": "Buhari Hotel",
+        "url": "https://maps.google.com/?cid=12657635893200513102"
+      },
+      {
+        "name": "Murugan Idli Shop",
+        "url": "https://maps.google.com/?cid=10685528527644139758"
+      },
+      {
+        "name": "Sangeetha Veg Restaurant",
+        "url": "https://maps.google.com/?cid=10761110846863215183"
+      },
+      {
+        "name": "Ponnusamy Hotel",
+        "url": "https://maps.google.com/?cid=14249738650936078298"
+      },
+      {
+        "name": "Ambur Star Briyani",
+        "url": "https://maps.google.com/?cid=13299139076968956787"
+      },
+      {
+        "name": "Thalappakatti Biriyani",
+        "url": "https://maps.google.com/?cid=9772093419241794964"
+      },
+      {
+        "name": "Saravana Bhavan",
+        "url": "https://maps.google.com/?cid=4977663057189920132"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "🗺️",
+    "items": [
+      {
+        "name": "Writer's Cafe",
+        "url": "https://maps.google.com/?cid=13344130577914221873"
+      },
+      {
+        "name": "Amethyst Cafe",
+        "url": "https://maps.google.com/?cid=8481868054091031660"
+      },
+      {
+        "name": "The Brew Room",
+        "url": "https://maps.google.com/?cid=10642377417811054152"
+      },
+      {
+        "name": "Chamiers Cafe",
+        "url": "https://maps.google.com/?cid=2323879231702500358"
+      },
+      {
+        "name": "Jonah's Bistro",
+        "url": "https://maps.google.com/?cid=16678292625001964542"
+      },
+      {
+        "name": "Madras Coffee House",
+        "url": "https://maps.google.com/?cid=8897268966671878989"
+      }
+    ]
+  },
+  {
+    "title": "Monuments",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Fort St. George",
+        "url": "https://maps.google.com/?cid=818982172841012494"
+      },
+      {
+        "name": "Valluvar Kottam",
+        "url": "https://maps.google.com/?cid=526709916114750824"
+      },
+      {
+        "name": "Ripon Building",
+        "url": "https://maps.google.com/?cid=12185238535027074497"
+      },
+      {
+        "name": "Vivekananda House",
+        "url": "https://maps.google.com/?cid=326711951594524721"
+      },
+      {
+        "name": "Madras High Court",
+        "url": "https://maps.google.com/?cid=6256243913791259378"
+      },
+      {
+        "name": "Light House (Marina Beach)",
+        "url": "https://maps.google.com/?cid=7725666871496495834"
+      },
+      {
+        "name": "Senate House (University of Madras)",
+        "url": "https://maps.google.com/?cid=10213805418006634321"
+      },
+      {
+        "name": "Arignar Anna Memorial",
+        "url": "https://maps.google.com/?cid=9559555118482773779"
+      }
+    ]
+  },
+  {
+    "title": "Beaches",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Marina Beach",
+        "url": "https://maps.google.com/?cid=381063856029611530"
+      },
+      {
+        "name": "Besant Nagar Beach (Elliot's Beach)",
+        "url": "https://maps.google.com/?cid=9533429003285492113"
+      },
+      {
+        "name": "Kovalam Beach",
+        "url": "https://maps.google.com/?cid=5429200788089851116"
+      },
+      {
+        "name": "Muttukadu Boathouse",
+        "url": "https://maps.google.com/?cid=4628987687655710090"
+      },
+      {
+        "name": "Palavakkam Beach",
+        "url": "https://maps.google.com/?cid=12651684680839092592"
+      },
+      {
+        "name": "Neelankarai Beach",
+        "url": "https://maps.google.com/?cid=7943254142870663485"
+      },
+      {
+        "name": "Thiruvanmiyur Beach",
+        "url": "https://maps.google.com/?cid=9396418523440356703"
+      }
+    ]
+  },
+  {
+    "title": "Shopping",
+    "emoji": "🌳",
+    "items": [
+      {
+        "name": "Phoenix Marketcity",
+        "url": "https://maps.google.com/?cid=15796983725351682641"
+      },
+      {
+        "name": "Express Avenue Mall",
+        "url": "https://maps.google.com/?cid=9769892678297998155"
+      },
+      {
+        "name": "T. Nagar (Pondy Bazaar, Ranganathan Street)",
+        "url": "https://maps.google.com/?cid=8036977018540925854"
+      },
+      {
+        "name": "Sowcarpet",
+        "url": "https://maps.google.com/?cid=13534070329507978734"
+      },
+      {
+        "name": "Spencer Plaza",
+        "url": "https://maps.google.com/?cid=17113451026958454351"
+      },
+      {
+        "name": "Nalli Silks",
+        "url": "https://maps.google.com/?cid=9954295348538871290"
+      },
+      {
+        "name": "Saravana Stores",
+        "url": "https://maps.google.com/?cid=14912298340203178125"
+      },
+      {
+        "name": "Mylapore (Kutcheri Road)",
+        "url": "https://maps.google.com/?cid=12885659010914708300"
+      }
+    ]
+  },
+  {
+    "title": "Museums",
+    "emoji": "🎨",
+    "items": [
+      {
+        "name": "Government Museum Chennai",
+        "url": "https://maps.google.com/?cid=10738827242996767798"
+      },
+      {
+        "name": "DakshinaChitra Museum",
+        "url": "https://maps.google.com/?cid=6388113672049129011"
+      },
+      {
+        "name": "Periyar Science and Technology Centre (Planetarium)",
+        "url": "https://maps.google.com/?cid=13511993563432382321"
+      },
+      {
+        "name": "Fort St. George Museum",
+        "url": "https://maps.google.com/?cid=5548234867178509053"
+      },
+      {
+        "name": "Chennai Rail Museum",
+        "url": "https://maps.google.com/?cid=9502542699876413396"
+      },
+      {
+        "name": "Vivekananda House Museum",
+        "url": "https://maps.google.com/?cid=326711951594524721"
+      },
+      {
+        "name": "Connemara Public Library",
+        "url": "https://maps.google.com/?cid=48585070972393929"
+      }
+    ]
+  }
+]
