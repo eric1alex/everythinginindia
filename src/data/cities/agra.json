@@ -1,0 +1,214 @@
+[
+  {
+    "title": "Experiences",
+    "emoji": "📍",
+    "items": [
+      {
+        "name": "Taj Mahal",
+        "url": "https://maps.google.com/?cid=15936801470875598302"
+      },
+      {
+        "name": "Agra Fort",
+        "url": "https://maps.google.com/?cid=7208676187286181238"
+      },
+      {
+        "name": "Mehtab Bagh",
+        "url": "https://maps.google.com/?cid=11297137713572324988"
+      },
+      {
+        "name": "Kinari Bazaar",
+        "url": "https://maps.google.com/?cid=15086453216008242768"
+      },
+      {
+        "name": "Old City Food Tour",
+        "url": "https://maps.google.com/?cid=1594170320688474098"
+      },
+      {
+        "name": "Sheroes Hangout",
+        "url": "https://maps.google.com/?cid=3523574645561133475"
+      },
+      {
+        "name": "Kalakriti Cultural & Convention Center",
+        "url": "https://maps.google.com/?cid=11722571607530929772"
+      },
+      {
+        "name": "Wildlife SOS Elephant Conservation and Care Centre",
+        "url": "https://maps.google.com/?cid=13993326301395516940"
+      }
+    ]
+  },
+  {
+    "title": "Monuments",
+    "emoji": "📍",
+    "items": [
+      {
+        "name": "Taj Mahal",
+        "url": "https://maps.google.com/?cid=15936801470875598302"
+      },
+      {
+        "name": "Agra Fort",
+        "url": "https://maps.google.com/?cid=7208676187286181238"
+      },
+      {
+        "name": "Fatehpur Sikri",
+        "url": "https://maps.google.com/?cid=618071115155241792"
+      },
+      {
+        "name": "Tomb of Itimad-ud-Daulah",
+        "url": "https://maps.google.com/?cid=1438403563923096664"
+      },
+      {
+        "name": "Akbar's Tomb (Sikandra)",
+        "url": "https://maps.google.com/?cid=3372045639634597397"
+      },
+      {
+        "name": "Mehtab Bagh",
+        "url": "https://maps.google.com/?cid=11297137713572324988"
+      },
+      {
+        "name": "Jama Masjid",
+        "url": "https://maps.google.com/?cid=9057856404525515044"
+      },
+      {
+        "name": "Chini ka Rauza",
+        "url": "https://maps.google.com/?cid=8068680675270638649"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "⭐",
+    "items": [
+      {
+        "name": "Pinch of Spice",
+        "url": "https://maps.google.com/?cid=4138647026718746823"
+      },
+      {
+        "name": "Peshawri (ITC Mughal)",
+        "url": "https://maps.google.com/?cid=16365523348208361776"
+      },
+      {
+        "name": "Esphahan (The Oberoi Amarvilas)",
+        "url": "https://maps.google.com/?cid=14333604220416063017"
+      },
+      {
+        "name": "Chapter 1 Cafe",
+        "url": "https://maps.google.com/?cid=8127048340961422079"
+      },
+      {
+        "name": "Dasaprakash",
+        "url": "https://maps.google.com/?cid=6542178010406324091"
+      },
+      {
+        "name": "Deviram Sweets & Restaurant",
+        "url": "https://maps.google.com/?cid=11898098919557870715"
+      },
+      {
+        "name": "The Salt Cafe Kitchen & Bar",
+        "url": "https://maps.google.com/?cid=2719281851311059331"
+      },
+      {
+        "name": "Sheroes Hangout",
+        "url": "https://maps.google.com/?cid=3523574645561133475"
+      }
+    ]
+  },
+  {
+    "title": "Hotels",
+    "emoji": "🗺️",
+    "items": [
+      {
+        "name": "The Oberoi Amarvilas",
+        "url": "https://maps.google.com/?cid=15463794079433072805"
+      },
+      {
+        "name": "ITC Mughal, a Luxury Collection Hotel",
+        "url": "https://maps.google.com/?cid=4946451089327052924"
+      },
+      {
+        "name": "Trident Agra",
+        "url": "https://maps.google.com/?cid=7771251963643958339"
+      },
+      {
+        "name": "Radisson Hotel Agra",
+        "url": "https://maps.google.com/?cid=3315464516297964252"
+      },
+      {
+        "name": "Hotel Clarks Shiraz",
+        "url": "https://maps.google.com/?cid=7166182599153250825"
+      },
+      {
+        "name": "The Gateway Hotel Fatehabad Road Agra",
+        "url": "https://maps.google.com/?cid=3774126816796567328"
+      },
+      {
+        "name": "Crystal Sarovar Premiere Agra",
+        "url": "https://maps.google.com/?cid=6115001340646580040"
+      },
+      {
+        "name": "DoubleTree by Hilton Agra",
+        "url": "https://maps.google.com/?cid=1667746821400872177"
+      }
+    ]
+  },
+  {
+    "title": "Museums",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Taj Museum",
+        "url": "https://maps.google.com/?cid=8421333962372134697"
+      },
+      {
+        "name": "Agra Fort Museum",
+        "url": "https://maps.google.com/?cid=7208676187286181238"
+      },
+      {
+        "name": "Fatehpur Sikri Museum",
+        "url": "https://maps.google.com/?cid=17793363078114814772"
+      },
+      {
+        "name": "Kalakriti Cultural & Convention Center",
+        "url": "https://maps.google.com/?cid=11722571607530929772"
+      },
+      {
+        "name": "Archaeological Museum, Agra",
+        "url": "https://maps.google.com/?cid=8421333962372134697"
+      }
+    ]
+  },
+  {
+    "title": "Viewpoints",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Mehtab Bagh",
+        "url": "https://maps.google.com/?cid=11297137713572324988"
+      },
+      {
+        "name": "Agra Fort (Musamman Burj)",
+        "url": "https://maps.google.com/?cid=4610669116695216099"
+      },
+      {
+        "name": "Taj Ganj Rooftop Cafes",
+        "url": "https://maps.google.com/?cid=11851744433828309025"
+      },
+      {
+        "name": "Yamuna River Bank (specific spots near Taj)",
+        "url": "https://maps.google.com/?cid=15442113485924348"
+      },
+      {
+        "name": "Taj Nature Walk",
+        "url": "https://maps.google.com/?cid=8117895388533137060"
+      },
+      {
+        "name": "The Salt Cafe Kitchen & Bar (rooftop)",
+        "url": "https://maps.google.com/?cid=2719281851311059331"
+      },
+      {
+        "name": "Saniya Palace Hotel Rooftop",
+        "url": "https://maps.google.com/?cid=2638685134233366175"
+      }
+    ]
+  }
+]
