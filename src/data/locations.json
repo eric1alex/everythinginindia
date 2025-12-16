@@ -126,11 +126,6 @@
           "imageUrl": "https://images.unsplash.com/photo-1636903684031-e187417f3e77?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
           "lat": 15.335,
           "lon": 76.46
-        },
-        {
-          "name": "Mysore",
-          "slug": "mysore",
-          "imageUrl": "https://placehold.co/1200x600/E8A274/FFFFFF?text=Mysore"
         }
       ]
     },
@@ -175,22 +170,12 @@
       "slug": "maharashtra",
       "cities": [
         {
-          "name": "Lonavala",
-          "slug": "lonavala",
-          "imageUrl": "https://placehold.co/1200x600/A274E8/FFFFFF?text=Lonavala"
-        },
-        {
           "name": "Mumbai",
           "slug": "mumbai",
           "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1kmmbzn6hUQk5vdLVVpHssM6LOj7DJq0&usp=sharing",
           "imageUrl": "https://plus.unsplash.com/premium_photo-1670788667595-37df3ae70545?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
           "lat": 19.0824822,
           "lon": 72.7141285
-        },
-        {
-          "name": "Pune",
-          "slug": "pune",
-          "imageUrl": "https://placehold.co/1200x600/D174E8/FFFFFF?text=Pune"
         }
       ]
     },
