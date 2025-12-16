@@ -275,7 +275,7 @@
           "lon": 80.04386,
           "dashboard": {
             "bestTime": "November to February",
-            "bestTimeDescription": "Pleasant weather with temperatures between 20-25°C, ideal for sightseeing and cultural festivals.",
+            "bestTimeDescription": "Pleasant weather with temperatures between 20-25Â°C, ideal for sightseeing and cultural festivals.",
             "idealDuration": "3-4 Days",
             "budget": {
               "min": "1,500",
@@ -356,6 +356,30 @@
             "howToReach": {
               "air": "Chaudhary Charan Singh International Airport (LKO)",
               "train": "Lucknow Junction (Charbagh)",
+              "road": ""
+            }
+          }
+        },
+        {
+          "name": "Agra",
+          "slug": "agra",
+          "imageUrl": "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "mapUrl": "https://maps.app.goo.gl/36BdhDpHwYYPsAWp8",
+          "lat": 27.1761504,
+          "lon": 77.8976115,
+          "dashboard": {
+            "bestTime": "October to March",
+            "bestTimeDescription": "Pleasant, cool, and breezy weather ideal for sightseeing, avoiding extreme summer heat and humid monsoons.\n\n",
+            "idealDuration": "2-3 Days",
+            "budget": {
+              "min": "3,000",
+              "max": "5,000",
+              "currency": "INR"
+            },
+            "transport": "Auto-rickshaws, cycle-rickshaws, taxis (including app-based like Uber/Ola), local buses, and walking.",
+            "howToReach": {
+              "air": "Agra Airport (AGR),  Indira Gandhi International Airport (DEL)",
+              "train": "Agra Cantt (AGC)",
               "road": ""
             }
           }
