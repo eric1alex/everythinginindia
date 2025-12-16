@@ -1,0 +1,98 @@
+---
+/**
+ * CityFAQ Component
+ * Displays FAQ section with structured data (FAQPage schema) for SEO
+ * Uses dashboard data to generate Q&A pairs
+ */
+
+interface Props {
+  cityName: string;
+  dashboard: {
+    bestTime?: string;
+    bestTimeDescription?: string;
+    idealDuration?: string;
+    budget?: {
+      min?: string;
+      max?: string;
+      currency?: string;
+    };
+    transport?: string;
+    howToReach?: {
+      air?: string;
+      train?: string;
+      road?: string;
+    };
+  };
+}
+
+const { cityName, dashboard } = Astro.props;
+
+// Build FAQ items from dashboard data
+const faqItems = [];
+
+if (dashboard?.bestTime) {
+  faqItems.push({
+    question: `What is the best time to visit ${cityName}?`,
+    answer: dashboard.bestTimeDescription 
+      ? `${dashboard.bestTime}. ${dashboard.bestTimeDescription}` 
+      : dashboard.bestTime
+  });
+}
+
+if (dashboard?.howToReach) {
+  const reachParts = [];
+  if (dashboard.howToReach.air) reachParts.push(`By Air: ${dashboard.howToReach.air}`);
+  if (dashboard.howToReach.train) reachParts.push(`By Train: ${dashboard.howToReach.train}`);
+  if (dashboard.howToReach.road) reachParts.push(`By Road: ${dashboard.howToReach.road}`);
+  
+  if (reachParts.length > 0) {
+    faqItems.push({
+      question: `How do I get to ${cityName}?`,
+      answer: reachParts.join('. ')
+    });
+  }
+}
+
+if (dashboard?.idealDuration) {
+  faqItems.push({
+    question: `How many days should I spend in ${cityName}?`,
+    answer: `${dashboard.idealDuration} is ideal for exploring ${cityName} at a relaxed pace.`
+  });
+}
+
+if (dashboard?.budget) {
+  const budgetStr = dashboard.budget.min && dashboard.budget.max 
+    ? `${dashboard.budget.currency || 'INR'} ${dashboard.budget.min} - ${dashboard.budget.max} per day`
+    : 'Budget varies based on preferences.';
+  faqItems.push({
+    question: `What is the daily budget for ${cityName}?`,
+    answer: `A typical daily budget for ${cityName} is around ${budgetStr} for a solo traveler, covering accommodation, food, and local transport.`
+  });
+}
+
+if (dashboard?.transport) {
+  faqItems.push({
+    question: `What is the best way to get around in ${cityName}?`,
+    answer: `${dashboard.transport} is the most common way to get around ${cityName}.`
+  });
+}
+
+// Generate FAQPage schema
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqItems.map(item => ({
+    "@type": "Question",
+    "name": item.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.answer
+    }
+  }))
+};
+---
+
+{faqItems.length > 0 && (
+  <!-- FAQPage Schema for SEO (no visible section) -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+)}

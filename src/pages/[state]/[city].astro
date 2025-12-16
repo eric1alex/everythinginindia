@@ -4,7 +4,9 @@ import locations from '~/data/locations.json';
 import FeedbackPopup from '~/components/FeedbackPopup.astro';
 import RelatedDestinations from '~/components/RelatedDestinations.astro';
 import CityRequestWidget from '~/components/CityRequestWidget.astro';
-import CityDashboard from '~/components/CityDashboard.astro'; // NEW IMPORT
+import CityDashboard from '~/components/CityDashboard.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import CityFAQ from '~/components/CityFAQ.astro';
 
 // --- FORM DETAILS ---
 const FEEDBACK_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSerku0WY4t5LWlWBEoSYmoWqUiWKNDpLMzb_6R8T7LoqRHUag/formResponse";
@@ -109,8 +111,12 @@ const filteredSuggestions = allCitiesList
         </header>
 
         <div class="main-content">
-          
-
+          <Breadcrumbs 
+            stateName={stateName} 
+            stateSlug={currentStateSlug}
+            cityName={cityName}
+            citySlug={currentCitySlug}
+          />
 
           <div class="recommendation-grid">
             {places.map(category => (
@@ -133,6 +139,11 @@ const filteredSuggestions = allCitiesList
           <!-- NEW: City Dashboard Component -->
           <!-- This will only render if 'dashboardData' exists for this city -->
           <CityDashboard dashboard={dashboardData} mapUrl={mapUrl} />
+
+          <!-- FAQ Section with Schema for SEO -->
+          {dashboardData && (
+            <CityFAQ cityName={cityName} dashboard={dashboardData} />
+          )}
 
        
 

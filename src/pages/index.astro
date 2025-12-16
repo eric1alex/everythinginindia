@@ -23,6 +23,20 @@ const availablePaths = [];
 });
 // --- END OF NEW LOGIC ---
 
+// --- AUTOCOMPLETE CITIES DATA ---
+const allCities = [];
+[...locations.states, ...locations.unionTerritories].forEach((loc) => {
+	loc.cities.forEach((city) => {
+		allCities.push({
+			cityName: city.name,
+			citySlug: city.slug,
+			stateName: loc.name,
+			stateSlug: loc.slug,
+			hasData: existingSlugs.includes(city.slug),
+		});
+	});
+});
+
 const states = locations.states;
 const unionTerritories = locations.unionTerritories;
 ---
@@ -49,25 +63,30 @@ const unionTerritories = locations.unionTerritories;
 		<!-- Search Bar -->
 		<div class="search-container">
 			<div class="search-wrapper">
-				<div class="search-bar">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-						></path>
-					</svg>
-					<input
-						type="text"
-						id="state-search"
-						placeholder="Search for a state or city..."
-					/>
+				<div class="search-bar-wrapper">
+					<div class="search-bar">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+							></path>
+						</svg>
+						<input
+							type="text"
+							id="state-search"
+							placeholder="Search for a city..."
+							autocomplete="off"
+						/>
+					</div>
+					<!-- Autocomplete Dropdown -->
+					<div id="search-dropdown" class="search-dropdown"></div>
 				</div>
 				<button id="feeling-lucky" class="lucky-button"
 					>Feeling Lucky?</button
@@ -191,30 +210,66 @@ const unionTerritories = locations.unionTerritories;
 	</div>
 
 	<!-- Client-side script for Search and Modal -->
-	<script is:raw define:vars={{ availablePaths }}>
+	<script is:raw define:vars={{ availablePaths, allCities }}>
 		document.addEventListener("DOMContentLoaded", () => {
-			// --- STATE/CITY SEARCH LOGIC ---
+			// --- AUTOCOMPLETE SEARCH LOGIC ---
 			const searchInput = document.getElementById("state-search");
-			const listItems = document.querySelectorAll(".list-item");
+			const dropdown = document.getElementById("search-dropdown");
 
+			// Show autocomplete dropdown when typing
 			searchInput.addEventListener("input", (e) => {
 				const searchTerm = e.target.value.toLowerCase().trim();
 
-				listItems.forEach((item) => {
-					const itemName = item.dataset.name;
-					const cityNames = JSON.parse(item.dataset.cities || "[]");
+				// Show autocomplete dropdown for cities
+				if (searchTerm.length < 2) {
+					dropdown.style.display = "none";
+					dropdown.innerHTML = "";
+					return;
+				}
 
-					const nameMatch = itemName.includes(searchTerm);
-					const cityMatch = cityNames.some((city) =>
-						city.includes(searchTerm),
-					);
+				// Filter cities that match
+				const matches = allCities
+					.filter(
+						(city) =>
+							city.cityName.toLowerCase().includes(searchTerm) ||
+							city.stateName.toLowerCase().includes(searchTerm),
+					)
+					.slice(0, 6); // Limit to 6 results
 
-					if (nameMatch || cityMatch) {
-						item.style.display = "flex";
-					} else {
-						item.style.display = "none";
-					}
-				});
+				if (matches.length === 0) {
+					dropdown.style.display = "none";
+					dropdown.innerHTML = "";
+					return;
+				}
+
+				// Build dropdown HTML
+				dropdown.innerHTML = matches
+					.map(
+						(city) => `
+					<a href="/${city.stateSlug}/${city.citySlug}" class="search-result">
+						<span class="search-result-city">${city.cityName}</span>
+						<span class="search-result-state">${city.stateName}</span>
+					</a>
+				`,
+					)
+					.join("");
+
+				dropdown.style.display = "block";
+			});
+
+			// Hide dropdown when clicking outside
+			document.addEventListener("click", (e) => {
+				if (!e.target.closest(".search-bar-wrapper")) {
+					dropdown.style.display = "none";
+				}
+			});
+
+			// Hide dropdown on escape key
+			searchInput.addEventListener("keydown", (e) => {
+				if (e.key === "Escape") {
+					dropdown.style.display = "none";
+					searchInput.blur();
+				}
 			});
 
 			// --- MODAL (FLOATING WINDOW) LOGIC ---

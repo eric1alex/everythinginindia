@@ -1,0 +1,176 @@
+---
+import Layout from "~/layouts/Layout.astro";
+---
+
+<Layout
+    title="Resources - Where In India"
+    description="Contribute to Where In India, submit your travel stories, places, or explore our other travel ventures."
+>
+    <main class="resources-page">
+        <header class="resources-header">
+            <h1>Resources</h1>
+            <p>Contribute, explore, and connect</p>
+        </header>
+
+        <div class="resources-content">
+            <!-- Contribute Section -->
+            <section class="resource-section">
+                <h2>📝 Contribute</h2>
+                <div class="resource-cards">
+                    <a
+                        href="https://forms.gle/CJzzX4q2gN9K2HWq9"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="resource-card"
+                    >
+                        <strong>Submit Your Travel Stories</strong>
+                        <span
+                            >Share your experiences and tips from your travels</span
+                        >
+                    </a>
+                    <a
+                        href="https://forms.gle/JqRqaRjVqDba1Dso7"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="resource-card"
+                    >
+                        <strong>Submit Your Places</strong>
+                        <span
+                            >Recommend your favorite spots — cafes, hotels,
+                            attractions</span
+                        >
+                    </a>
+                    <a href="/contributors" class="resource-card">
+                        <strong>Contributors</strong>
+                        <span
+                            >Meet the community members who helped build this</span
+                        >
+                    </a>
+                </div>
+            </section>
+
+            <!-- Other Ventures Section -->
+            <section class="resource-section">
+                <h2>🌐 Other Travel Ventures</h2>
+                <div class="resource-cards">
+                    <a
+                        href="https://in.pinterest.com/TravelIndiaNow/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="resource-card"
+                    >
+                        <strong>Travel India Now</strong>
+                        <span>Curated travel inspiration on Pinterest</span>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/prints.loft/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="resource-card"
+                    >
+                        <strong>Prints Loft</strong>
+                        <span>Beautiful travel prints for your walls</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    .resources-page {
+        background-color: var(--background-color);
+        min-height: 60vh;
+    }
+
+    .resources-header {
+        text-align: center;
+        padding: 3rem 1.5rem 2rem;
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #e2e2e2;
+    }
+
+    .resources-header h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin-bottom: 0.25rem;
+    }
+
+    .resources-header p {
+        font-size: 1rem;
+        color: #666;
+    }
+
+    .resources-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2.5rem 1rem;
+    }
+
+    .resource-section {
+        margin-bottom: 3rem;
+    }
+
+    .resource-section h2 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 1rem;
+    }
+
+    .resource-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1rem;
+    }
+
+    .resource-card {
+        display: block;
+        padding: 1.25rem;
+        background: #fff;
+        border: 1px solid #e2e2e2;
+        border-radius: 8px;
+        text-decoration: none;
+        color: inherit;
+        transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease,
+            border-color 0.2s ease;
+    }
+
+    .resource-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        border-color: #ccc;
+    }
+
+    .resource-card strong {
+        display: block;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 0.25rem;
+    }
+
+    .resource-card span {
+        display: block;
+        font-size: 0.85rem;
+        color: #666;
+        line-height: 1.4;
+    }
+
+    @media (min-width: 640px) {
+        .resources-header {
+            padding: 4rem 1.5rem 3rem;
+        }
+
+        .resources-header h1 {
+            font-size: 2.5rem;
+        }
+
+        .resources-content {
+            padding: 3rem 1rem;
+        }
+    }
+</style>

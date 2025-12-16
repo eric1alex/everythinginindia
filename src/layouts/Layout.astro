@@ -74,7 +74,7 @@ const canonicalURL = Astro.url.href;
 		<meta property="twitter:description" content={description} />
 		<meta property="twitter:image" content={ogImage} />
 
-		<!-- Google Schema -->
+		<!-- Google Schema: WebSite -->
 		<script type="application/ld+json" is:inline>
 			{
 				"@context": "https://schema.org",
@@ -88,6 +88,22 @@ const canonicalURL = Astro.url.href;
 					"target": "https://www.whereinindia.online/?s={search_term_string}",
 					"query-input": "required name=search_term_string"
 				}
+			}
+		</script>
+
+		<!-- Google Schema: Organization (for E-E-A-T) -->
+		<script type="application/ld+json" is:inline>
+			{
+				"@context": "https://schema.org",
+				"@type": "Organization",
+				"name": "Where In India",
+				"alternateName": "WhereInIndia",
+				"url": "https://www.whereinindia.online",
+				"logo": "https://www.whereinindia.online/flag.png",
+				"description": "A hand-curated travel directory for India, built for easy exploration and trip planning.",
+				"foundingDate": "2025",
+				"email": "hello@whereinindia.online",
+				"sameAs": ["https://in.pinterest.com/TravelIndiaNow/"]
 			}
 		</script>
 	</head>
@@ -126,7 +142,7 @@ const canonicalURL = Astro.url.href;
 			<slot />
 		</main>
 
-		<!-- New Site Footer -->
+		<!-- Site Footer -->
 		<footer class="site-footer">
 			<div class="footer-grid">
 				<div class="footer-column">
@@ -134,57 +150,21 @@ const canonicalURL = Astro.url.href;
 						<a href="/aboutus" class="footer-link">About Us</a>
 					</h4>
 					<p class="footer-text">
-						"Where In India" is a hand-curated travel directory
-						built for easy exploration and trip planning. Stop
-						getting lost on Google.
+						A hand-curated travel directory for India. Stop getting
+						lost on Google.
 					</p>
 				</div>
 				<div class="footer-column">
-					<h4 class="footer-heading">Other Travel Ventures</h4>
+					<h4 class="footer-heading">Quick Links</h4>
 					<ul class="footer-list">
 						<li>
-							<a
-								href="https://in.pinterest.com/TravelIndiaNow/"
-								class="footer-link"
-								target="_blank"
-								rel="noopener noreferrer"
-								>Travel India Now | Pinterest</a
+							<a href="/resources" class="footer-link"
+								>Resources</a
 							>
 						</li>
-						<li>
-							<a
-								href="https://www.instagram.com/prints.loft/"
-								class="footer-link"
-								target="_blank"
-								rel="noopener noreferrer"
-								>Prints Loft | Get your Travel Prints</a
-							>
-						</li>
-					</ul>
-				</div>
-				<div class="footer-column">
-					<h4 class="footer-heading">Audience</h4>
-					<ul class="footer-list">
 						<li>
 							<a href="/blog" class="footer-link"
 								>Blog & Stories</a
-							>
-						</li>
-						<li>
-							<a
-								href="https://forms.gle/CJzzX4q2gN9K2HWq9"
-								class="footer-link"
-								target="_blank"
-								rel="noopener noreferrer"
-								>Submit Your Travel Stories</a
-							>
-						</li>
-						<li>
-							<a
-								href="https://forms.gle/JqRqaRjVqDba1Dso7"
-								class="footer-link"
-								target="_blank"
-								rel="noopener noreferrer">Submit Your Places</a
 							>
 						</li>
 						<li>
@@ -193,6 +173,15 @@ const canonicalURL = Astro.url.href;
 							>
 						</li>
 					</ul>
+				</div>
+				<div class="footer-column">
+					<h4 class="footer-heading">Contact</h4>
+					<p class="footer-text">
+						<a
+							href="mailto:hello@whereinindia.online"
+							class="footer-link">hello@whereinindia.online</a
+						>
+					</p>
 				</div>
 				<div class="footer-column">
 					<h4 class="footer-heading">Support Us</h4>
