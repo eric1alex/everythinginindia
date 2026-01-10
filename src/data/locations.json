@@ -244,6 +244,30 @@
               "road": "Bus from Mumbai/BLR"
             }
           }
+        },
+        {
+          "name": "Jaisalmer ",
+          "slug": "jaisalmer",
+          "imageUrl": "https://images.unsplash.com/photo-1600871215197-c68059ada01a?q=80&w=2044&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "mapUrl": "https://maps.app.goo.gl/3XJfGZHfvje8krJL9",
+          "lat": 26.9035728,
+          "lon": 70.8535304,
+          "dashboard": {
+            "bestTime": "October to March",
+            "bestTimeDescription": "Pleasant weather ideal for sightseeing, desert safaris, and outdoor activities, with temperatures ranging from 8°C to 25°C.\n\n",
+            "idealDuration": "2-3 Days",
+            "budget": {
+              "min": "1,000",
+              "max": "2,200",
+              "currency": "INR"
+            },
+            "transport": "Auto-rickshaws, bicycles, cabs, and walking",
+            "howToReach": {
+              "air": "Jaisalmer Airport",
+              "train": "Jaisalmer Railway Station",
+              "road": ""
+            }
+          }
         }
       ]
     },
@@ -260,7 +284,7 @@
           "lon": 80.04386,
           "dashboard": {
             "bestTime": "November to February",
-            "bestTimeDescription": "Pleasant weather with temperatures between 20-25Â°C, ideal for sightseeing and cultural festivals.",
+            "bestTimeDescription": "Pleasant weather with temperatures between 20-25ÃÂ°C, ideal for sightseeing and cultural festivals.",
             "idealDuration": "3-4 Days",
             "budget": {
               "min": "1,500",
