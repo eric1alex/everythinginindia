@@ -1,0 +1,154 @@
+[
+  {
+    "title": "Forts",
+    "emoji": "📍",
+    "items": [
+      {
+        "name": "Jaisalmer Fort",
+        "url": "https://maps.google.com/?cid=15322661848046508403"
+      }
+    ]
+  },
+  {
+    "title": "Havelis",
+    "emoji": "⭐",
+    "items": [
+      {
+        "name": "Patwon Ki Haveli",
+        "url": "https://maps.google.com/?cid=8825217264517732677"
+      },
+      {
+        "name": "Salim Singh Ki Haveli",
+        "url": "https://maps.google.com/?cid=13082517580579868662"
+      },
+      {
+        "name": "Nathmal Ki Haveli",
+        "url": "https://maps.google.com/?cid=6105126652536415186"
+      },
+      {
+        "name": "Mandir Palace",
+        "url": "https://maps.google.com/?cid=2886866965336647486"
+      },
+      {
+        "name": "Shreenath Haveli",
+        "url": "https://maps.google.com/?cid=13757551390458116849"
+      },
+      {
+        "name": "Kothari's Patwa Haveli",
+        "url": "https://maps.google.com/?cid=8825217264517732677"
+      }
+    ]
+  },
+  {
+    "title": "Lakes",
+    "emoji": "🗺️",
+    "items": [
+      {
+        "name": "Gadisar Lake",
+        "url": "https://maps.google.com/?cid=11908643667255992773"
+      }
+    ]
+  },
+  {
+    "title": "Museums",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Desert Culture Centre & Museum",
+        "url": "https://maps.google.com/?cid=12086912238187011889"
+      },
+      {
+        "name": "Jaisalmer Folklore Museum",
+        "url": "https://maps.google.com/?cid=6665275877131404404"
+      },
+      {
+        "name": "Government Museum",
+        "url": "https://maps.google.com/?cid=2061238492480465499"
+      },
+      {
+        "name": "Jaisalmer Fort Palace Museum",
+        "url": "https://maps.google.com/?cid=10668439033089593454"
+      },
+      {
+        "name": "Thar Heritage Museum",
+        "url": "https://maps.google.com/?cid=1867950784591976606"
+      },
+      {
+        "name": "Kothari's Patwa Haveli Museum",
+        "url": "https://maps.google.com/?cid=8825217264517732677"
+      }
+    ]
+  },
+  {
+    "title": "Food & Dining",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Cafe The Kaku",
+        "url": "https://maps.google.com/?cid=7890055347081082032"
+      },
+      {
+        "name": "Gaji's Restaurant",
+        "url": "https://maps.google.com/?cid=7857457740345964462"
+      },
+      {
+        "name": "Chandan Shree Restaurant",
+        "url": "https://maps.google.com/?cid=6756277742929422354"
+      },
+      {
+        "name": "Pleasant Haveli Restaurant",
+        "url": "https://maps.google.com/?cid=2474377936718073853"
+      },
+      {
+        "name": "The Trio Restaurant",
+        "url": "https://maps.google.com/?cid=1885347924009134914"
+      },
+      {
+        "name": "Jaisalmer Oasis Restaurant",
+        "url": "https://maps.google.com/?cid=399503247631519313"
+      },
+      {
+        "name": "Desert Boy's Dhani",
+        "url": "https://maps.google.com/?cid=2792580851704864873"
+      },
+      {
+        "name": "Milan Restaurant",
+        "url": "https://maps.google.com/?cid=1153950258459762610"
+      }
+    ]
+  },
+  {
+    "title": "Viewpoints",
+    "emoji": "🌳",
+    "items": [
+      {
+        "name": "Vyas Chhatri",
+        "url": "https://maps.google.com/?cid=17862972781983916467"
+      },
+      {
+        "name": "Sunset Point (Gadisar Lake)",
+        "url": "https://maps.google.com/?cid=3440202422080197884"
+      },
+      {
+        "name": "Jaisalmer Fort Ramparts",
+        "url": "https://maps.google.com/?cid=15322661848046508403"
+      },
+      {
+        "name": "Mandir Palace Rooftop",
+        "url": "https://maps.google.com/?cid=1885347924009134914"
+      },
+      {
+        "name": "Bada Bagh",
+        "url": "https://maps.google.com/?cid=5109130245215655976"
+      },
+      {
+        "name": "Cannon Point",
+        "url": "https://maps.google.com/?cid=17312953070125585582"
+      },
+      {
+        "name": "Jaisalmer Oasis Rooftop",
+        "url": "https://maps.google.com/?cid=399503247631519313"
+      }
+    ]
+  }
+]
