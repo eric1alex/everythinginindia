@@ -1,0 +1,238 @@
+[
+  {
+    "title": "Restaurants",
+    "emoji": "📍",
+    "items": [
+      {
+        "name": "Shabree Restaurant",
+        "url": "https://maps.google.com/?cid=6949257982573282987"
+      },
+      {
+        "name": "Good Luck Cafe",
+        "url": "https://maps.google.com/?cid=8658948330152762135"
+      },
+      {
+        "name": "Durvankur Thali",
+        "url": "https://maps.google.com/?cid=2731617318499829843"
+      },
+      {
+        "name": "Vaishali Restaurant",
+        "url": "https://maps.google.com/?cid=10472716797973979168"
+      },
+      {
+        "name": "Chaitanya Parathas",
+        "url": "https://maps.google.com/?cid=454347218934080171"
+      },
+      {
+        "name": "Marz-o-rin",
+        "url": "https://maps.google.com/?cid=14552292039793765408"
+      },
+      {
+        "name": "German Bakery",
+        "url": "https://maps.google.com/?cid=11497747092582602833"
+      },
+      {
+        "name": "Hotel Shreyas",
+        "url": "https://maps.google.com/?cid=12372758960232485333"
+      },
+      {
+        "name": "SP's Biryani House",
+        "url": "https://maps.google.com/?cid=6134270749183560075"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "⭐",
+    "items": [
+      {
+        "name": "Irani Cafe",
+        "url": "https://maps.google.com/?cid=692879000241773006"
+      },
+      {
+        "name": "Waari Book Cafe",
+        "url": "https://maps.google.com/?cid=16778387254199586206"
+      },
+      {
+        "name": "Katriya Cafe",
+        "url": "https://maps.google.com/?cid=6290328090928613236"
+      },
+      {
+        "name": "Peter's Pan",
+        "url": "https://maps.google.com/?cid=5387581026150811186"
+      },
+      {
+        "name": "Cafe Eastwood",
+        "url": "https://maps.google.com/?cid=811869756174047596"
+      },
+      {
+        "name": "Zen Cafe",
+        "url": "https://maps.google.com/?cid=11214967080516341097"
+      },
+      {
+        "name": "Starbucks (various locations)",
+        "url": "https://maps.google.com/?cid=11289566935565270148"
+      },
+      {
+        "name": "Third Wave Coffee Roasters",
+        "url": "https://maps.google.com/?cid=14112001053197993945"
+      },
+      {
+        "name": "Cafe Delhi Heights",
+        "url": "https://maps.google.com/?cid=1963699324507943166"
+      }
+    ]
+  },
+  {
+    "title": "Forts",
+    "emoji": "🗺️",
+    "items": [
+      {
+        "name": "Sinhagad Fort",
+        "url": "https://maps.google.com/?cid=14678591873247144203"
+      },
+      {
+        "name": "Rajgad Fort",
+        "url": "https://maps.google.com/?cid=16353453953744817457"
+      },
+      {
+        "name": "Torna Fort",
+        "url": "https://maps.google.com/?cid=7365967646774621164"
+      },
+      {
+        "name": "Lohagad Fort",
+        "url": "https://maps.google.com/?cid=288641403003685725"
+      },
+      {
+        "name": "Visapur Fort",
+        "url": "https://maps.google.com/?cid=6190457662375941487"
+      },
+      {
+        "name": "Pratapgad Fort",
+        "url": "https://maps.google.com/?cid=57842066892678891"
+      },
+      {
+        "name": "Korigad Fort",
+        "url": "https://maps.google.com/?cid=7489450772157549659"
+      }
+    ]
+  },
+  {
+    "title": "Museums",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Aga Khan Palace",
+        "url": "https://maps.google.com/?cid=11370352744348810206"
+      },
+      {
+        "name": "Raja Dinkar Kelkar Museum",
+        "url": "https://maps.google.com/?cid=5030356971079101939"
+      },
+      {
+        "name": "Mahatma Phule Museum",
+        "url": "https://maps.google.com/?cid=15194077179636750659"
+      },
+      {
+        "name": "Dajikaka Gadgil Museum",
+        "url": "https://maps.google.com/?cid=13375483741373162572"
+      },
+      {
+        "name": "Darshan Museum",
+        "url": "https://maps.google.com/?cid=4624365805672305194"
+      },
+      {
+        "name": "Joshi's Museum of Miniature Railways",
+        "url": "https://maps.google.com/?cid=11223702584778133221"
+      },
+      {
+        "name": "Pune Tribal Museum",
+        "url": "https://maps.google.com/?cid=6862886575202304220"
+      }
+    ]
+  },
+  {
+    "title": "Shopping",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Laxmi Road",
+        "url": "https://maps.google.com/?cid=10486988457187473921"
+      },
+      {
+        "name": "Fashion Street",
+        "url": "https://maps.google.com/?cid=1801875669350624883"
+      },
+      {
+        "name": "Phoenix Marketcity",
+        "url": "https://maps.google.com/?cid=8034383015643105150"
+      },
+      {
+        "name": "Amanora Mall",
+        "url": "https://maps.google.com/?cid=16080448077101298364"
+      },
+      {
+        "name": "Fergusson College Road",
+        "url": "https://maps.google.com/?cid=14858390434230390793"
+      },
+      {
+        "name": "Hong Kong Lane",
+        "url": "https://maps.google.com/?cid=2572187048226892760"
+      },
+      {
+        "name": "Camp area",
+        "url": "https://maps.google.com/?cid=776791400740593620"
+      },
+      {
+        "name": "J M Road",
+        "url": "https://maps.google.com/?cid=14185403703794588168"
+      },
+      {
+        "name": "MG Road",
+        "url": "https://maps.google.com/?cid=9656941090292335496"
+      }
+    ]
+  },
+  {
+    "title": "Nightlife",
+    "emoji": "🌳",
+    "items": [
+      {
+        "name": "High Spirits Cafe",
+        "url": "https://maps.google.com/?cid=17240113165055999461"
+      },
+      {
+        "name": "Swig",
+        "url": "https://maps.google.com/?cid=18336904813514284512"
+      },
+      {
+        "name": "Effingut Brewerkz",
+        "url": "https://maps.google.com/?cid=7173026014635129701"
+      },
+      {
+        "name": "Toit Brewery",
+        "url": "https://maps.google.com/?cid=9002555247741602170"
+      },
+      {
+        "name": "Unwind",
+        "url": "https://maps.google.com/?cid=14372113663149464953"
+      },
+      {
+        "name": "FBeach House",
+        "url": "https://maps.google.com/?cid=9659010260129386711"
+      },
+      {
+        "name": "Mix@36 (The Westin)",
+        "url": "https://maps.google.com/?cid=14739985648870940002"
+      },
+      {
+        "name": "House of Medici (Conrad)",
+        "url": "https://maps.google.com/?cid=16768843138613220651"
+      },
+      {
+        "name": "One Restaurant & Bar",
+        "url": "https://maps.google.com/?cid=17663848562401845017"
+      }
+    ]
+  }
+]
