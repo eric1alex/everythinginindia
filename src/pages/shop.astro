@@ -1,0 +1,919 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import shopConfig from "~/data/shop-config.json";
+import fs from "node:fs";
+import path from "node:path";
+
+// Parse CSV file
+const csvPath = path.join(process.cwd(), "src/data/products.csv");
+const csvContent = fs.readFileSync(csvPath, "utf-8");
+
+// Parse CSV to array of objects
+function parseCSV(csv: string) {
+    const lines = csv.trim().split("\n");
+    const headers = lines[0].split(",");
+
+    return lines.slice(1).map((line) => {
+        const values = line.split(",");
+        const obj: any = {};
+        headers.forEach((header, index) => {
+            let value: any = values[index] || "";
+            const headerName = header.trim();
+
+            // Handle images column - split by pipe for multiple images
+            if (headerName === "image") {
+                obj.images = value
+                    .split("|")
+                    .map((img: string) => img.trim())
+                    .filter((img: string) => img);
+                obj.image = obj.images[0] || ""; // Keep first image as main
+            }
+            // Parse booleans (case-insensitive)
+            else if (value.toLowerCase() === "true") value = true;
+            else if (value.toLowerCase() === "false") value = false;
+            // Parse numbers
+            else if (!isNaN(Number(value)) && value !== "")
+                value = Number(value);
+            // Handle empty discountPrice
+            else if (value === "") value = null;
+
+            obj[headerName] = value;
+        });
+        return obj;
+    });
+}
+
+const products = parseCSV(csvContent);
+const { whatsappNumber } = shopConfig;
+const siteUrl = "https://www.whereinindia.online";
+---
+
+<Layout
+    title="Shop Photo Prints | Where In India"
+    description="Beautiful photo prints of India's most iconic destinations. A6 size postcards capturing the essence of incredible India."
+    ogImage="https://www.whereinindia.online/flag.png"
+>
+    <main>
+        <!-- Hero Section (Split-screen like homepage) -->
+        <header class="hero">
+            <div class="hero-image shop-hero-image"></div>
+            <div class="hero-text">
+                <h1>Indian Travel Postcards</h1>
+                <p>
+                    Beautiful A6 postcards capturing India's most stunning
+                    moments — perfect for your wall, desk, or as a gift.
+                </p>
+            </div>
+        </header>
+
+        <!-- Shop Controls -->
+        <div class="shop-controls">
+            <div class="shop-controls-inner">
+                <!-- Search -->
+                <div class="shop-search">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                        ></path>
+                    </svg>
+                    <input
+                        type="text"
+                        id="product-search"
+                        placeholder="Search prints..."
+                        autocomplete="off"
+                    />
+                </div>
+
+                <!-- Filters Row -->
+                <div class="shop-filters">
+                    <!-- Sort -->
+                    <select id="sort-filter" class="shop-select">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name">Name: A-Z</option>
+                    </select>
+
+                    <!-- Favorites Toggle -->
+                    <button
+                        id="favorites-toggle"
+                        class="favorites-toggle-btn"
+                        title="Show favorites only"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="heart-icon"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                            ></path>
+                        </svg>
+                        <span>Favorites</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <section class="main-content">
+            <!-- Skeleton Loading (shown initially) -->
+            <div id="skeleton-grid" class="shop-grid">
+                {
+                    [1, 2, 3, 4, 5, 6].map(() => (
+                        <div class="product-skeleton">
+                            <div class="skeleton-image" />
+                            <div class="skeleton-content">
+                                <div class="skeleton-line skeleton-title" />
+                                <div class="skeleton-line skeleton-price" />
+                                <div class="skeleton-line skeleton-button" />
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+
+            <!-- Actual Products Grid (hidden initially) -->
+            <div id="products-grid" class="shop-grid" style="display: none;">
+                {
+                    products.map((product: any) => (
+                        <div
+                            class={`product-card ${!product.inStock ? "out-of-stock" : ""}`}
+                            data-id={product.id}
+                            data-name={product.name}
+                            data-price={product.discountPrice || product.price}
+                            data-original-price={product.price}
+                            data-category={product.category}
+                            data-featured={product.featured}
+                            data-slug={product.slug}
+                            data-in-stock={product.inStock}
+                        >
+                            {/* Product Images Carousel */}
+                            <div
+                                class="product-image-wrapper"
+                                data-images={JSON.stringify(
+                                    product.images.map(
+                                        (img: string) => `/shop/${img}`,
+                                    ),
+                                )}
+                                data-current-index="0"
+                            >
+                                {/* Image Carousel Track */}
+                                <div class="carousel-track">
+                                    {product.images.map(
+                                        (img: string, idx: number) => (
+                                            <img
+                                                src={`/shop/${img}`}
+                                                alt={`${product.name} - Image ${idx + 1}`}
+                                                class={`product-image ${idx === 0 ? "active" : ""}`}
+                                                loading="lazy"
+                                                data-index={idx}
+                                                onerror="this.src='https://placehold.co/400x300/f4f4f4/999?text=Print'"
+                                            />
+                                        ),
+                                    )}
+                                </div>
+
+                                {/* Navigation Arrows (only if multiple images) */}
+                                {product.images.length > 1 && (
+                                    <>
+                                        <button
+                                            class="carousel-arrow carousel-prev"
+                                            aria-label="Previous image"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke-width="2"
+                                                stroke="currentColor"
+                                            >
+                                                <path
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    d="M15.75 19.5 8.25 12l7.5-7.5"
+                                                />
+                                            </svg>
+                                        </button>
+                                        <button
+                                            class="carousel-arrow carousel-next"
+                                            aria-label="Next image"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke-width="2"
+                                                stroke="currentColor"
+                                            >
+                                                <path
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </>
+                                )}
+
+                                {/* Dot Indicators (only if multiple images) */}
+                                {product.images.length > 1 && (
+                                    <div class="carousel-dots">
+                                        {product.images.map(
+                                            (_: string, idx: number) => (
+                                                <button
+                                                    class={`carousel-dot ${idx === 0 ? "active" : ""}`}
+                                                    data-index={idx}
+                                                    aria-label={`Go to image ${idx + 1}`}
+                                                />
+                                            ),
+                                        )}
+                                    </div>
+                                )}
+
+                                {!product.inStock && (
+                                    <span class="sold-out-badge">Sold Out</span>
+                                )}
+                                {product.discountPrice && product.inStock && (
+                                    <span class="discount-badge">Sale</span>
+                                )}
+
+                                {/* Favorite Button */}
+                                <button
+                                    class="favorite-btn"
+                                    data-id={product.id}
+                                    title="Add to favorites"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="heart-outline"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="heart-filled"
+                                    >
+                                        <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            {/* Product Info */}
+                            <div class="product-info">
+                                <h3 class="product-name">{product.name}</h3>
+                                <p class="product-size">
+                                    Size: {product.size} Postcard
+                                </p>
+
+                                <div class="product-price">
+                                    {product.discountPrice ? (
+                                        <>
+                                            <span class="price-current">
+                                                ₹{product.discountPrice}
+                                            </span>
+                                            <span class="price-original">
+                                                ₹{product.price}
+                                            </span>
+                                        </>
+                                    ) : (
+                                        <span class="price-current">
+                                            ₹{product.price}
+                                        </span>
+                                    )}
+                                </div>
+
+                                <button
+                                    class="buy-now-btn"
+                                    data-name={product.name}
+                                    data-price={
+                                        product.discountPrice || product.price
+                                    }
+                                    data-slug={product.slug}
+                                    disabled={!product.inStock}
+                                >
+                                    {product.inStock
+                                        ? "🛒 Buy Now"
+                                        : "Sold Out"}
+                                </button>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+
+            <!-- Empty State -->
+            <div id="empty-state" class="empty-state" style="display: none;">
+                <div class="empty-state-icon">🔍</div>
+                <h3>No prints found</h3>
+                <p>Try adjusting your search or filters</p>
+                <button id="clear-filters" class="clear-filters-btn"
+                    >Clear Filters</button
+                >
+            </div>
+
+            <!-- Meet the Photographer Section -->
+            <div class="meet-photographer-section">
+                <div class="photographer-card">
+                    <p class="photographer-intro">
+                        Curious about the stories behind these prints?
+                    </p>
+                    <button
+                        id="meet-photographer-btn"
+                        class="meet-photographer-btn"
+                    >
+                        📷 Meet the Photographer
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-overlay">
+        <button class="lightbox-close" aria-label="Close lightbox"
+            >&times;</button
+        >
+        <img id="lightbox-image" src="" alt="Product preview" />
+        <div class="lightbox-caption">
+            <h3 id="lightbox-title"></h3>
+            <p id="lightbox-price"></p>
+        </div>
+    </div>
+
+    <!-- Meet the Photographer Modal -->
+    <div id="photographer-modal" class="modal-overlay photographer-modal">
+        <div class="modal-content photographer-content">
+            <button
+                class="modal-close"
+                id="photographer-close"
+                aria-label="Close modal">&times;</button
+            >
+            <div class="photographer-header">
+                <img
+                    src="/shop/photographer.png"
+                    alt="Photographer"
+                    class="photographer-avatar"
+                    onerror="this.src='https://placehold.co/120x120/f4f4f4/999?text=📷'"
+                />
+                <h2>Eric Alex</h2>
+                <p class="photographer-tagline">
+                    Travel Photographer & Visual Storyteller
+                </p>
+            </div>
+            <div class="photographer-bio">
+                <p>
+                    Hi! I'm Eric, a travel photographer capturing the beauty of
+                    India through my lens. Each print in this collection
+                    represents a moment I've personally experienced across this
+                    incredible country.
+                </p>
+            </div>
+            <a
+                href="https://ericalex.fun/?utm_source=whereinindia&utm_medium=shop&utm_campaign=meetthephotographer"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="photographer-portfolio-btn"
+            >
+                🌐 View Full Portfolio
+            </a>
+        </div>
+    </div>
+
+    <script is:inline define:vars={{ products, whatsappNumber, siteUrl }}>
+        document.addEventListener("DOMContentLoaded", () => {
+            // --- DOM Elements ---
+            const searchInput = document.getElementById("product-search");
+            const sortFilter = document.getElementById("sort-filter");
+            const favoritesToggle = document.getElementById("favorites-toggle");
+            const skeletonGrid = document.getElementById("skeleton-grid");
+            const productsGrid = document.getElementById("products-grid");
+            const emptyState = document.getElementById("empty-state");
+            const clearFiltersBtn = document.getElementById("clear-filters");
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImage = document.getElementById("lightbox-image");
+            const lightboxTitle = document.getElementById("lightbox-title");
+            const lightboxPrice = document.getElementById("lightbox-price");
+            const lightboxClose = document.querySelector(".lightbox-close");
+
+            // Photographer Modal Elements
+            const photographerBtn = document.getElementById(
+                "meet-photographer-btn",
+            );
+            const photographerModal =
+                document.getElementById("photographer-modal");
+            const photographerClose =
+                document.getElementById("photographer-close");
+
+            let showFavoritesOnly = false;
+
+            // --- Favorites (LocalStorage) ---
+            const getFavorites = () => {
+                const stored = localStorage.getItem("shopFavorites");
+                return stored ? JSON.parse(stored) : [];
+            };
+
+            const saveFavorites = (favorites) => {
+                localStorage.setItem(
+                    "shopFavorites",
+                    JSON.stringify(favorites),
+                );
+            };
+
+            const toggleFavorite = (productId) => {
+                let favorites = getFavorites();
+                if (favorites.includes(productId)) {
+                    favorites = favorites.filter((id) => id !== productId);
+                } else {
+                    favorites.push(productId);
+                }
+                saveFavorites(favorites);
+                updateFavoriteButtons();
+                if (showFavoritesOnly) filterAndSortProducts();
+            };
+
+            const updateFavoriteButtons = () => {
+                const favorites = getFavorites();
+                document.querySelectorAll(".favorite-btn").forEach((btn) => {
+                    const productId = btn.dataset.id;
+                    if (favorites.includes(productId)) {
+                        btn.classList.add("is-favorite");
+                    } else {
+                        btn.classList.remove("is-favorite");
+                    }
+                });
+
+                // Update toggle button state
+                if (favorites.length > 0) {
+                    favoritesToggle.querySelector("span").textContent =
+                        `Favorites (${favorites.length})`;
+                } else {
+                    favoritesToggle.querySelector("span").textContent =
+                        "Favorites";
+                }
+            };
+
+            // --- Filtering & Sorting ---
+            const filterAndSortProducts = () => {
+                const searchTerm = searchInput.value.toLowerCase().trim();
+                const sortBy = sortFilter.value;
+                const favorites = getFavorites();
+
+                const cards = Array.from(
+                    productsGrid.querySelectorAll(".product-card"),
+                );
+
+                let visibleCount = 0;
+
+                cards.forEach((card) => {
+                    const name = card.dataset.name.toLowerCase();
+                    const productId = card.dataset.id;
+
+                    let isVisible = true;
+
+                    // Search filter
+                    if (searchTerm && !name.includes(searchTerm)) {
+                        isVisible = false;
+                    }
+
+                    // Favorites filter
+                    if (showFavoritesOnly && !favorites.includes(productId)) {
+                        isVisible = false;
+                    }
+
+                    card.style.display = isVisible ? "block" : "none";
+                    if (isVisible) visibleCount++;
+                });
+
+                // Sort visible cards
+                const visibleCards = cards.filter(
+                    (card) => card.style.display !== "none",
+                );
+                visibleCards.sort((a, b) => {
+                    switch (sortBy) {
+                        case "price-low":
+                            return (
+                                parseFloat(a.dataset.price) -
+                                parseFloat(b.dataset.price)
+                            );
+                        case "price-high":
+                            return (
+                                parseFloat(b.dataset.price) -
+                                parseFloat(a.dataset.price)
+                            );
+                        case "name":
+                            return a.dataset.name.localeCompare(b.dataset.name);
+                        case "featured":
+                        default:
+                            return (
+                                (b.dataset.featured === "true" ? 1 : 0) -
+                                (a.dataset.featured === "true" ? 1 : 0)
+                            );
+                    }
+                });
+
+                // Re-append in sorted order
+                visibleCards.forEach((card) => productsGrid.appendChild(card));
+
+                // Show/hide empty state
+                if (visibleCount === 0) {
+                    productsGrid.style.display = "none";
+                    emptyState.style.display = "flex";
+                } else {
+                    productsGrid.style.display = "grid";
+                    emptyState.style.display = "none";
+                }
+            };
+
+            // --- Event Listeners ---
+            searchInput.addEventListener("input", filterAndSortProducts);
+            sortFilter.addEventListener("change", filterAndSortProducts);
+
+            favoritesToggle.addEventListener("click", () => {
+                showFavoritesOnly = !showFavoritesOnly;
+                favoritesToggle.classList.toggle("active", showFavoritesOnly);
+                filterAndSortProducts();
+            });
+
+            clearFiltersBtn.addEventListener("click", () => {
+                searchInput.value = "";
+                sortFilter.value = "featured";
+                showFavoritesOnly = false;
+                favoritesToggle.classList.remove("active");
+                filterAndSortProducts();
+            });
+
+            // Favorite button clicks
+            document.querySelectorAll(".favorite-btn").forEach((btn) => {
+                btn.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    toggleFavorite(btn.dataset.id);
+                });
+            });
+
+            // Buy Now button clicks (WhatsApp redirect)
+            document.querySelectorAll(".buy-now-btn").forEach((btn) => {
+                btn.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    if (btn.disabled) return;
+
+                    const name = btn.dataset.name;
+                    const price = btn.dataset.price;
+                    const slug = btn.dataset.slug;
+                    const productUrl = `${siteUrl}/shop#${slug}`;
+
+                    const message = `Hi! I'd like to purchase the "${name}" print (₹${price}).\nSize: A6 Postcard\nLink: ${productUrl}`;
+                    const encodedMessage = encodeURIComponent(message);
+                    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+                    window.open(whatsappUrl, "_blank");
+                });
+            });
+
+            // --- Image Carousel ---
+            const initCarousels = () => {
+                document
+                    .querySelectorAll(".product-image-wrapper")
+                    .forEach((wrapper) => {
+                        const images =
+                            wrapper.querySelectorAll(".product-image");
+                        const dots = wrapper.querySelectorAll(".carousel-dot");
+                        const prevBtn = wrapper.querySelector(".carousel-prev");
+                        const nextBtn = wrapper.querySelector(".carousel-next");
+
+                        if (images.length <= 1) return;
+
+                        let currentIndex = 0;
+                        let touchStartX = 0;
+                        let touchEndX = 0;
+
+                        const showImage = (index) => {
+                            images.forEach((img, i) => {
+                                img.classList.toggle("active", i === index);
+                            });
+                            dots.forEach((dot, i) => {
+                                dot.classList.toggle("active", i === index);
+                            });
+                            currentIndex = index;
+                            wrapper.dataset.currentIndex = index;
+                        };
+
+                        const nextImage = () => {
+                            const next = (currentIndex + 1) % images.length;
+                            showImage(next);
+                        };
+
+                        const prevImage = () => {
+                            const prev =
+                                (currentIndex - 1 + images.length) %
+                                images.length;
+                            showImage(prev);
+                        };
+
+                        // Arrow clicks
+                        if (prevBtn) {
+                            prevBtn.addEventListener("click", (e) => {
+                                e.stopPropagation();
+                                prevImage();
+                            });
+                        }
+                        if (nextBtn) {
+                            nextBtn.addEventListener("click", (e) => {
+                                e.stopPropagation();
+                                nextImage();
+                            });
+                        }
+
+                        // Dot clicks
+                        dots.forEach((dot) => {
+                            dot.addEventListener("click", (e) => {
+                                e.stopPropagation();
+                                showImage(parseInt(dot.dataset.index));
+                            });
+                        });
+
+                        // Swipe support
+                        wrapper.addEventListener(
+                            "touchstart",
+                            (e) => {
+                                touchStartX = e.changedTouches[0].screenX;
+                            },
+                            { passive: true },
+                        );
+
+                        wrapper.addEventListener(
+                            "touchend",
+                            (e) => {
+                                touchEndX = e.changedTouches[0].screenX;
+                                const diff = touchStartX - touchEndX;
+                                if (Math.abs(diff) > 50) {
+                                    if (diff > 0) {
+                                        nextImage();
+                                    } else {
+                                        prevImage();
+                                    }
+                                }
+                            },
+                            { passive: true },
+                        );
+                    });
+            };
+
+            // --- Lightbox (uses current carousel image) ---
+            document.querySelectorAll(".carousel-track").forEach((track) => {
+                track.addEventListener("click", (e) => {
+                    if (e.target.classList.contains("product-image")) {
+                        const wrapper = track.closest(".product-image-wrapper");
+                        const card = wrapper.closest(".product-card");
+                        const images = JSON.parse(
+                            wrapper.dataset.images || "[]",
+                        );
+                        const currentIdx =
+                            parseInt(wrapper.dataset.currentIndex) || 0;
+                        const imageSrc = images[currentIdx] || images[0];
+                        const name = card.dataset.name;
+                        const price = card.dataset.price;
+                        const originalPrice = card.dataset.originalPrice;
+
+                        lightboxImage.src = imageSrc;
+                        lightboxImage.onerror = () => {
+                            lightboxImage.src =
+                                "https://placehold.co/800x600/f4f4f4/999?text=Print";
+                        };
+                        lightboxTitle.textContent = name;
+
+                        if (price !== originalPrice) {
+                            lightboxPrice.innerHTML = `<span class="price-current">₹${price}</span> <span class="price-original">₹${originalPrice}</span>`;
+                        } else {
+                            lightboxPrice.innerHTML = `<span class="price-current">₹${price}</span>`;
+                        }
+
+                        lightbox.classList.add("visible");
+                        document.body.style.overflow = "hidden";
+                    }
+                });
+            });
+
+            const closeLightbox = () => {
+                lightbox.classList.remove("visible");
+                document.body.style.overflow = "";
+            };
+
+            lightboxClose.addEventListener("click", closeLightbox);
+            lightbox.addEventListener("click", (e) => {
+                if (e.target === lightbox) closeLightbox();
+            });
+            document.addEventListener("keydown", (e) => {
+                if (
+                    e.key === "Escape" &&
+                    lightbox.classList.contains("visible")
+                ) {
+                    closeLightbox();
+                }
+                // Also close photographer modal on Escape
+                if (
+                    e.key === "Escape" &&
+                    photographerModal.classList.contains("visible")
+                ) {
+                    closePhotographerModal();
+                }
+            });
+
+            // --- Photographer Modal ---
+            const openPhotographerModal = () => {
+                photographerModal.classList.add("visible");
+                document.body.style.overflow = "hidden";
+            };
+
+            const closePhotographerModal = () => {
+                photographerModal.classList.remove("visible");
+                document.body.style.overflow = "";
+            };
+
+            photographerBtn.addEventListener("click", openPhotographerModal);
+            photographerClose.addEventListener("click", closePhotographerModal);
+            photographerModal.addEventListener("click", (e) => {
+                if (e.target === photographerModal) closePhotographerModal();
+            });
+
+            // --- Initialize ---
+            // Simulate loading delay for skeleton effect
+            setTimeout(() => {
+                skeletonGrid.style.display = "none";
+                productsGrid.style.display = "grid";
+                updateFavoriteButtons();
+                filterAndSortProducts();
+                initCarousels();
+            }, 500);
+        });
+    </script>
+</Layout>
+
+<style>
+    /* Shop Hero Image - for split screen design */
+    .shop-hero-image {
+        background-image: url("https://images.unsplash.com/photo-1692792284356-f80113facd09?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-position: center 40%;
+    }
+
+    /* Meet the Photographer Section */
+    .meet-photographer-section {
+        padding: 2.5rem 1rem;
+        text-align: center;
+    }
+
+    .photographer-card {
+        display: inline-block;
+        padding: 1.5rem 2rem;
+        background: #f9f9f9;
+        border-radius: 12px;
+        border: 1px solid #eee;
+    }
+
+    .photographer-intro {
+        color: #666;
+        font-size: 0.95rem;
+        font-style: italic;
+        margin-bottom: 0.75rem;
+    }
+
+    /* Meet the Photographer Button */
+    .meet-photographer-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        margin: 1rem auto 0 auto;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        background: #fff;
+        color: #444;
+        font-size: 0.85rem;
+        font-weight: 500;
+        font-family: "Inter", sans-serif;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .meet-photographer-btn:hover {
+        border-color: #bbb;
+        background: #f8f8f8;
+    }
+
+    /* Photographer Modal */
+    .photographer-modal {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .photographer-content {
+        max-width: 400px;
+        text-align: center;
+        padding: 2.5rem 2rem;
+        position: relative;
+    }
+
+    .photographer-content .modal-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 32px;
+        height: 32px;
+        border: none;
+        background: #f4f4f4;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        color: #666;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+        transition: all 0.2s ease;
+    }
+
+    .photographer-content .modal-close:hover {
+        background: #eee;
+        color: #333;
+    }
+
+    .photographer-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .photographer-avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1rem;
+    }
+
+    .photographer-header h2 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+        color: #1a1a1a;
+    }
+
+    .photographer-tagline {
+        color: #666;
+        font-size: 0.9rem;
+    }
+
+    .photographer-bio {
+        margin-bottom: 1.5rem;
+    }
+
+    .photographer-bio p {
+        color: #555;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .photographer-portfolio-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background: #1a1a1a;
+        color: #fff;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    .photographer-portfolio-btn:hover {
+        background: #333;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+</style>
