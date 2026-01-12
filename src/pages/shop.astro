@@ -589,7 +589,7 @@ const siteUrl = "https://www.whereinindia.online";
                     const encodedMessage = encodeURIComponent(message);
                     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
-                    window.open(whatsappUrl, "_blank");
+                    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
                 });
             });
 
@@ -705,10 +705,22 @@ const siteUrl = "https://www.whereinindia.online";
                         };
                         lightboxTitle.textContent = name;
 
+                        // Build price using safe DOM methods
+                        lightboxPrice.textContent = "";
+                        const currentPriceSpan = document.createElement("span");
+                        currentPriceSpan.className = "price-current";
+                        currentPriceSpan.textContent = `₹${price}`;
+                        lightboxPrice.appendChild(currentPriceSpan);
+
                         if (price !== originalPrice) {
-                            lightboxPrice.innerHTML = `<span class="price-current">₹${price}</span> <span class="price-original">₹${originalPrice}</span>`;
-                        } else {
-                            lightboxPrice.innerHTML = `<span class="price-current">₹${price}</span>`;
+                            lightboxPrice.appendChild(
+                                document.createTextNode(" "),
+                            );
+                            const originalPriceSpan =
+                                document.createElement("span");
+                            originalPriceSpan.className = "price-original";
+                            originalPriceSpan.textContent = `₹${originalPrice}`;
+                            lightboxPrice.appendChild(originalPriceSpan);
                         }
 
                         lightbox.classList.add("visible");

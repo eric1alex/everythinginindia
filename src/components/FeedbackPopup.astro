@@ -213,7 +213,13 @@ const { cityName, formUrl, cityEntry, helpfulEntry, feedbackEntry } =
 
         // Submit Click
         btnSubmit.addEventListener("click", () => {
-            submitToGoogle("No", input.value);
+            const feedbackText = input.value.trim();
+            if (feedbackText.length === 0) {
+                input.placeholder = "Please enter your feedback...";
+                input.focus();
+                return;
+            }
+            submitToGoogle("No", feedbackText);
             showThanks();
         });
 

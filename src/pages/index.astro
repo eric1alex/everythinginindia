@@ -6,12 +6,12 @@ import locations from "~/data/locations.json";
 // 1. Find all the .json files that actually exist.
 // We use '../../' because this file is in src/pages/
 const allCityDataFiles = await import.meta.glob("../data/cities/*.json");
-const existingSlugs = Object.keys(allCityDataFiles).map((path) =>
-	path.split("/").pop().replace(".json", ""),
+const existingSlugs: string[] = Object.keys(allCityDataFiles).map(
+	(path) => path.split("/").pop()?.replace(".json", "") || "",
 );
 
 // 2. Create the list of available FULL PATHS for lucky redirection
-const availablePaths = [];
+const availablePaths: string[] = [];
 [...locations.states, ...locations.unionTerritories].forEach((loc) => {
 	loc.cities.forEach((city) => {
 		// Only add the path if the city's data file exists
@@ -24,7 +24,14 @@ const availablePaths = [];
 // --- END OF NEW LOGIC ---
 
 // --- AUTOCOMPLETE CITIES DATA ---
-const allCities = [];
+interface CityData {
+	cityName: string;
+	citySlug: string;
+	stateName: string;
+	stateSlug: string;
+	hasData: boolean;
+}
+const allCities: CityData[] = [];
 [...locations.states, ...locations.unionTerritories].forEach((loc) => {
 	loc.cities.forEach((city) => {
 		allCities.push({
@@ -78,15 +85,27 @@ const unionTerritories = locations.unionTerritories;
 								d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
 							></path>
 						</svg>
+						<label for="state-search" class="sr-only"
+							>Search for a city</label
+						>
 						<input
 							type="text"
 							id="state-search"
 							placeholder="Search for a city..."
 							autocomplete="off"
+							role="combobox"
+							aria-autocomplete="list"
+							aria-controls="search-dropdown"
+							aria-expanded="false"
 						/>
 					</div>
 					<!-- Autocomplete Dropdown -->
-					<div id="search-dropdown" class="search-dropdown"></div>
+					<div
+						id="search-dropdown"
+						class="search-dropdown"
+						role="listbox"
+					>
+					</div>
 				</div>
 				<button id="feeling-lucky" class="lucky-button"
 					>Feeling Lucky?</button
@@ -242,17 +261,25 @@ const unionTerritories = locations.unionTerritories;
 					return;
 				}
 
-				// Build dropdown HTML
-				dropdown.innerHTML = matches
-					.map(
-						(city) => `
-					<a href="/${city.stateSlug}/${city.citySlug}" class="search-result">
-						<span class="search-result-city">${city.cityName}</span>
-						<span class="search-result-state">${city.stateName}</span>
-					</a>
-				`,
-					)
-					.join("");
+				// Build dropdown using safe DOM methods
+				dropdown.textContent = "";
+				matches.forEach((city) => {
+					const link = document.createElement("a");
+					link.href = `/${city.stateSlug}/${city.citySlug}`;
+					link.className = "search-result";
+
+					const citySpan = document.createElement("span");
+					citySpan.className = "search-result-city";
+					citySpan.textContent = city.cityName;
+
+					const stateSpan = document.createElement("span");
+					stateSpan.className = "search-result-state";
+					stateSpan.textContent = city.stateName;
+
+					link.appendChild(citySpan);
+					link.appendChild(stateSpan);
+					dropdown.appendChild(link);
+				});
 
 				dropdown.style.display = "block";
 			});
