@@ -1,0 +1,847 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import locations from "~/data/locations.json";
+import Breadcrumbs from "~/components/Breadcrumbs.astro";
+
+// --- GET STATIC PATHS ---
+export async function getStaticPaths() {
+    // Helper function - must be inside getStaticPaths for proper scoping
+    function slugify(text: string): string {
+        return text
+            .toLowerCase()
+            .replace(/&/g, "and")
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/(^-|-$)/g, "");
+    }
+
+    const allCityData = await import.meta.glob("../../../data/cities/*.json");
+    const allPages: any[] = [];
+
+    const processLocations = async (locList: any[]) => {
+        for (const loc of locList) {
+            for (const city of loc.cities) {
+                const importPath = `../../../data/cities/${city.slug}.json`;
+
+                if (allCityData[importPath]) {
+                    const cityDataModule = (await allCityData[
+                        importPath
+                    ]()) as any;
+                    const placesData = cityDataModule.default;
+
+                    // Generate a page for each category in this city
+                    for (const category of placesData) {
+                        const categorySlug = slugify(category.title);
+
+                        allPages.push({
+                            params: {
+                                state: loc.slug,
+                                city: city.slug,
+                                listicle: `best-${categorySlug}`,
+                            },
+                            props: {
+                                cityName: city.name,
+                                stateName: loc.name,
+                                stateSlug: loc.slug,
+                                citySlug: city.slug,
+                                heroImageUrl:
+                                    city.imageUrl ||
+                                    "https://placehold.co/1200x600/ccc/aaa?text=Where+In+India",
+                                categoryTitle: category.title,
+                                categoryEmoji: category.emoji,
+                                items: category.items,
+                                allCategories: placesData.map((c: any) => ({
+                                    title: c.title,
+                                    slug: `best-${slugify(c.title)}`,
+                                    emoji: c.emoji,
+                                    count: c.items.length,
+                                })),
+                                // Pass dashboard data for SEO content
+                                dashboard: city.dashboard || null,
+                            },
+                        });
+                    }
+                }
+            }
+        }
+    };
+
+    await processLocations(locations.states);
+    await processLocations(locations.unionTerritories);
+
+    return allPages;
+}
+
+const {
+    cityName,
+    stateName,
+    stateSlug,
+    citySlug,
+    heroImageUrl,
+    categoryTitle,
+    categoryEmoji,
+    items,
+    allCategories,
+    dashboard,
+} = Astro.props;
+
+const itemCount = items.length;
+const categoryLower = categoryTitle.toLowerCase();
+
+// SEO-optimized title and description with long-tail keywords
+const pageTitle = `Top ${itemCount} Best ${categoryTitle} in ${cityName}, ${stateName} (2026 Guide)`;
+const pageDescription = `Looking for the best ${categoryLower} in ${cityName}? Discover our hand-picked list of ${itemCount} top-rated ${categoryLower} with locations, Google Maps links, and local insights. Updated for 2026.`;
+
+// Related listicles (other categories in same city)
+const relatedListicles = allCategories
+    .filter(
+        (c: any) =>
+            c.slug !== `best-${Astro.params.listicle?.replace("best-", "")}`,
+    )
+    .slice(0, 4);
+
+// Category-specific intro content
+const categoryIntros: Record<string, string> = {
+    temples: `${cityName} is home to some of India's most sacred and architecturally stunning temples. Whether you're a spiritual seeker, history enthusiast, or simply appreciate beautiful craftsmanship, these temples offer unforgettable experiences. From ancient shrines to modern architectural marvels, each temple tells a unique story of faith and devotion.`,
+    food: `When it comes to street food and local cuisine, ${cityName} is a paradise for food lovers. The city's culinary scene blends traditional recipes passed down through generations with vibrant street food culture. From savory snacks to sweet delicacies, these are the must-try food spots that locals swear by.`,
+    cafes: `${cityName}'s cafe culture has blossomed into a vibrant scene offering everything from artisanal coffee to cozy workspaces. Whether you're looking for a quiet spot to work, catch up with friends, or simply enjoy a good cup of coffee, these cafes deliver the perfect ambiance and quality brews.`,
+    "cafes-and-restaurants": `From charming cafes to beloved restaurants, ${cityName} offers diverse dining experiences for every palate. Whether you're craving local specialties, international cuisine, or just a peaceful spot for coffee, these establishments have earned their reputation among locals and travelers alike.`,
+    restaurants: `${cityName}'s restaurant scene showcases the city's rich culinary heritage alongside contemporary dining innovations. From family-run eateries serving generations-old recipes to modern establishments pushing culinary boundaries, these are the dining destinations that define the city's food culture.`,
+    hotels: `Finding the perfect place to stay in ${cityName} can make or break your trip. From luxury heritage properties to comfortable budget stays, these hotels offer the best locations, amenities, and value for travelers exploring this incredible destination.`,
+    stays: `Accommodation in ${cityName} ranges from boutique hotels to luxury resorts, each offering unique experiences. These top-rated stays combine comfort, location, and hospitality to ensure your visit is memorable.`,
+    shopping: `${cityName} is a shopper's paradise, famous for its traditional crafts, textiles, and bustling markets. From centuries-old bazaars to curated boutiques, these shopping destinations offer authentic local goods and unforgettable retail experiences.`,
+    "heritage-sites": `${cityName} is steeped in history, with heritage sites that span centuries of cultural evolution. These landmarks offer glimpses into the city's storied past, from ancient monuments to colonial-era architecture.`,
+    pubs: `${cityName}'s nightlife scene offers everything from craft breweries to lively pubs and lounges. Whether you're looking for a quiet drink or a night out with friends, these are the top spots for unwinding after dark.`,
+    museums: `Discover ${cityName}'s rich cultural tapestry through its world-class museums. From art and history to science and technology, these institutions preserve and celebrate the city's heritage and achievements.`,
+    "shopping-malls": `For modern retail therapy, ${cityName} offers impressive shopping malls featuring international brands, entertainment, and dining. These destinations combine convenience with variety for the ultimate shopping experience.`,
+};
+
+// Get intro based on category or use default
+const categorySlugForIntro = categoryTitle
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/&/g, "and");
+const introText =
+    categoryIntros[categorySlugForIntro] ||
+    `${cityName} offers incredible ${categoryLower} experiences that attract visitors from around the world. Whether you're a first-time visitor or returning traveler, these hand-picked recommendations will help you discover the very best the city has to offer in this category.`;
+---
+
+<Layout title={pageTitle} description={pageDescription} ogImage={heroImageUrl}>
+    <!-- Schema.org ItemList for SEO -->
+    <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: pageTitle,
+            description: pageDescription,
+            numberOfItems: itemCount,
+            itemListElement: items.map((item: any, index: number) => ({
+                "@type": "ListItem",
+                position: index + 1,
+                name: item.name,
+                url: item.url,
+            })),
+        })}
+    />
+
+    <!-- FAQ Schema for SEO -->
+    <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+                {
+                    "@type": "Question",
+                    name: `What are the best ${categoryLower} in ${cityName}?`,
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: `The top ${categoryLower} in ${cityName} include ${items
+                            .slice(0, 3)
+                            .map((i: any) => i.name)
+                            .join(
+                                ", ",
+                            )}, among others. Our list features ${itemCount} hand-picked recommendations.`,
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: `When is the best time to visit ${cityName}?`,
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: dashboard?.bestTime
+                            ? `The best time to visit ${cityName} is ${dashboard.bestTime}. ${dashboard.bestTimeDescription || ""}`
+                            : `${cityName} can be visited year-round, though the winter months are generally most pleasant for sightseeing.`,
+                    },
+                },
+                {
+                    "@type": "Question",
+                    name: `How do I get around ${cityName}?`,
+                    acceptedAnswer: {
+                        "@type": "Answer",
+                        text: dashboard?.transport
+                            ? `In ${cityName}, you can get around using ${dashboard.transport}. Most ${categoryLower} are accessible via these transport options.`
+                            : `${cityName} offers various transport options including taxis, auto-rickshaws, and local buses.`,
+                    },
+                },
+            ],
+        })}
+    />
+
+    <main>
+        <!-- Hero Section -->
+        <header class="listicle-hero">
+            <div
+                class="listicle-hero-image"
+                style={`background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url(${heroImageUrl});`}
+            >
+                <div class="listicle-hero-content">
+                    <span class="listicle-badge"
+                        >{categoryEmoji} {categoryTitle}</span
+                    >
+                    <h1>Top {itemCount} Best {categoryTitle} in {cityName}</h1>
+                    <p>
+                        A complete guide to the best {categoryLower} for your {
+                            cityName
+                        } trip in 2026
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <Breadcrumbs
+                stateName={stateName}
+                stateSlug={stateSlug}
+                cityName={cityName}
+                citySlug={citySlug}
+                listicleName={`Best ${categoryTitle}`}
+                listicleSlug={Astro.params.listicle}
+            />
+
+            <!-- Intro Section with SEO keywords -->
+            <section class="listicle-intro">
+                <p>{introText}</p>
+                <p class="intro-highlight">
+                    Below you'll find our carefully curated list of <strong
+                        >{itemCount} must-visit {categoryLower}</strong
+                    > in {cityName}, complete with direct Google Maps links for
+                    easy navigation. Each recommendation has been verified by
+                    locals and travelers who know {cityName} intimately.
+                </p>
+            </section>
+
+            <!-- Listicle Items -->
+            <section class="listicle-section">
+                <h2>The {itemCount} Best {categoryTitle} in {cityName}</h2>
+                <div class="listicle-grid">
+                    {
+                        items.map((item: any, index: number) => (
+                            <article
+                                class="listicle-item"
+                                style={`animation-delay: ${index * 0.05}s`}
+                            >
+                                <div class="listicle-rank">
+                                    <span class="rank-number">{index + 1}</span>
+                                </div>
+                                <div class="listicle-content">
+                                    <h3>{item.name}</h3>
+                                    <a
+                                        href={item.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="listicle-link"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                            <circle cx="12" cy="10" r="3" />
+                                        </svg>
+                                        View on Google Maps
+                                    </a>
+                                </div>
+                            </article>
+                        ))
+                    }
+                </div>
+            </section>
+
+            <!-- Back to City CTA -->
+            <div class="listicle-cta">
+                <h3>Explore More in {cityName}</h3>
+                <p>
+                    Discover hotels, restaurants, attractions and local
+                    favorites in our complete {cityName} travel guide.
+                </p>
+                <a
+                    href={`/${stateSlug}/${citySlug}`}
+                    class="listicle-cta-button"
+                >
+                    View Full {cityName} Guide →
+                </a>
+            </div>
+
+            <!-- Related Listicles -->
+            {
+                relatedListicles.length > 0 && (
+                    <section class="related-listicles">
+                        <h3>More Curated Lists for {cityName}</h3>
+                        <p class="section-subtitle">
+                            Explore other categories to plan your perfect trip
+                        </p>
+                        <div class="related-listicles-grid">
+                            {relatedListicles.map((cat: any) => (
+                                <a
+                                    href={`/${stateSlug}/${citySlug}/${cat.slug}`}
+                                    class="related-listicle-card"
+                                >
+                                    <span class="related-emoji">
+                                        {cat.emoji}
+                                    </span>
+                                    <span class="related-title">
+                                        Best {cat.title}
+                                    </span>
+                                    <span class="related-count">
+                                        {cat.count} places
+                                    </span>
+                                </a>
+                            ))}
+                        </div>
+                    </section>
+                )
+            }
+
+            <!-- Extended FAQ Section -->
+            <section class="listicle-faq">
+                <h3>
+                    Frequently Asked Questions About {categoryTitle} in {
+                        cityName
+                    }
+                </h3>
+                <div class="faq-grid">
+                    <details class="faq-item">
+                        <summary
+                            >What are the best {categoryLower} in {
+                                cityName
+                            }?</summary
+                        >
+                        <p>
+                            Based on local recommendations and verified traveler
+                            reviews, the top {categoryLower} in {cityName} include
+                            <strong
+                                >{
+                                    items
+                                        .slice(0, 3)
+                                        .map((i: any) => i.name)
+                                        .join(", ")
+                                }</strong
+                            >, and more. Our complete list features {itemCount} hand-picked
+                            {categoryLower} that have been curated by locals and frequent
+                            visitors to {cityName}.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary
+                            >How were these {categoryLower} selected?</summary
+                        >
+                        <p>
+                            Our recommendations are curated by local
+                            contributors and travel enthusiasts who know {
+                                cityName
+                            } intimately. We focus on authentic experiences that travelers
+                            actually love, combining crowd favorites with hidden gems
+                            that only locals know about. Each place is verified for
+                            quality and accessibility.
+                        </p>
+                    </details>
+
+                    {
+                        dashboard?.bestTime && (
+                            <details class="faq-item">
+                                <summary>
+                                    When is the best time to visit {cityName}?
+                                </summary>
+                                <p>
+                                    The best time to visit {cityName} is{" "}
+                                    <strong>{dashboard.bestTime}</strong>.
+                                    {dashboard.bestTimeDescription} This timing
+                                    ensures pleasant weather for exploring the{" "}
+                                    {categoryLower} on our list.
+                                </p>
+                            </details>
+                        )
+                    }
+
+                    {
+                        dashboard?.budget && (
+                            <details class="faq-item">
+                                <summary>
+                                    What is the budget for visiting {cityName}?
+                                </summary>
+                                <p>
+                                    A typical daily budget for {cityName} ranges
+                                    from{" "}
+                                    <strong>
+                                        ₹{dashboard.budget.min} to ₹
+                                        {dashboard.budget.max}
+                                    </strong>
+                                    per person, covering accommodation, food,
+                                    transport, and activities. Budget travelers
+                                    can manage on the lower end, while those
+                                    seeking premium experiences should budget
+                                    toward the higher end.
+                                </p>
+                            </details>
+                        )
+                    }
+
+                    {
+                        dashboard?.transport && (
+                            <details class="faq-item">
+                                <summary>
+                                    How do I get around {cityName}?
+                                </summary>
+                                <p>
+                                    Getting around {cityName} is convenient
+                                    using <strong>{dashboard.transport}</strong>
+                                    . Most of the {categoryLower} on our list
+                                    are accessible via these transport options.
+                                    We recommend using the Google Maps links
+                                    provided to navigate to each location
+                                    easily.
+                                </p>
+                            </details>
+                        )
+                    }
+
+                    {
+                        dashboard?.howToReach?.air && (
+                            <details class="faq-item">
+                                <summary>How do I reach {cityName}?</summary>
+                                <p>
+                                    <strong>By Air:</strong>{" "}
+                                    {dashboard.howToReach.air}
+                                    <br />
+                                    {dashboard.howToReach.train && (
+                                        <>
+                                            <strong>By Train:</strong>{" "}
+                                            {dashboard.howToReach.train}
+                                            <br />
+                                        </>
+                                    )}
+                                    {dashboard.howToReach.road && (
+                                        <>
+                                            <strong>By Road:</strong>{" "}
+                                            {dashboard.howToReach.road}
+                                        </>
+                                    )}
+                                </p>
+                            </details>
+                        )
+                    }
+
+                    {
+                        dashboard?.idealDuration && (
+                            <details class="faq-item">
+                                <summary>
+                                    How many days should I spend in {cityName}?
+                                </summary>
+                                <p>
+                                    We recommend spending{" "}
+                                    <strong>{dashboard.idealDuration}</strong>{" "}
+                                    in {cityName} to fully experience the city's
+                                    highlights, including the {categoryLower} on
+                                    this list. This gives you enough time to
+                                    explore without feeling rushed, while also
+                                    leaving room for spontaneous discoveries.
+                                </p>
+                            </details>
+                        )
+                    }
+
+                    <details class="faq-item">
+                        <summary
+                            >Can I visit all {itemCount}
+                            {categoryLower} in one trip?</summary
+                        >
+                        <p>
+                            It depends on your schedule and itinerary! We
+                            recommend picking your top 3-5 favorites and
+                            planning your visit around those. Use the Google
+                            Maps links provided to plan an efficient route. If
+                            you have more time, you can certainly explore more
+                            from the list.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary
+                            >Are these {categoryLower} suitable for families/solo
+                            travelers?</summary
+                        >
+                        <p>
+                            Yes! The {categoryLower} on our list cater to various
+                            types of travelers including families, couples, solo travelers,
+                            and groups. Each location is accessible and welcoming
+                            to all visitors. Check individual Google Maps reviews
+                            for specific accessibility information.
+                        </p>
+                    </details>
+                </div>
+            </section>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    /* Listicle Hero */
+    .listicle-hero {
+        width: 100%;
+    }
+
+    .listicle-hero-image {
+        min-height: 320px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: flex-end;
+        padding: 2rem;
+    }
+
+    .listicle-hero-content {
+        max-width: 1300px;
+        margin: 0 auto;
+        width: 100%;
+        color: white;
+    }
+
+    .listicle-badge {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    .listicle-hero-content h1 {
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        line-height: 1.2;
+    }
+
+    .listicle-hero-content p {
+        font-size: 1rem;
+        opacity: 0.9;
+    }
+
+    /* Intro Section */
+    .listicle-intro {
+        margin: 2rem 0;
+        padding: 1.5rem;
+        background: #fafafa;
+        border-radius: 12px;
+        border-left: 4px solid #1a1a1a;
+    }
+
+    .listicle-intro p {
+        color: #444;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+    }
+
+    .listicle-intro p:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-highlight {
+        font-size: 0.95rem;
+    }
+
+    .intro-highlight strong {
+        color: #1a1a1a;
+    }
+
+    /* Listicle Section */
+    .listicle-section h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        color: #1a1a1a;
+    }
+
+    /* Listicle Grid */
+    .listicle-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .listicle-item {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 1.25rem;
+        background: #fff;
+        border: 1px solid #e2e2e2;
+        border-radius: 12px;
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeInUp 0.4s forwards;
+        transition:
+            box-shadow 0.2s ease,
+            transform 0.2s ease;
+    }
+
+    .listicle-item:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transform: translateY(-2px);
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .listicle-rank {
+        flex-shrink: 0;
+        width: 48px;
+        height: 48px;
+        background: linear-gradient(135deg, #1a1a1a, #333);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rank-number {
+        color: white;
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    .listicle-content {
+        flex: 1;
+    }
+
+    .listicle-content h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+        color: #1a1a1a;
+    }
+
+    .listicle-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.85rem;
+        color: #666;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .listicle-link:hover {
+        color: #1a1a1a;
+    }
+
+    .listicle-link svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    /* CTA Section */
+    .listicle-cta {
+        text-align: center;
+        padding: 2.5rem 1.5rem;
+        background: linear-gradient(135deg, #f8f8f8, #fff);
+        border: 1px solid #e2e2e2;
+        border-radius: 16px;
+        margin: 2rem 0;
+    }
+
+    .listicle-cta h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    .listicle-cta p {
+        color: #666;
+        margin-bottom: 1.5rem;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .listicle-cta-button {
+        display: inline-block;
+        background: #1a1a1a;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        transition:
+            background 0.2s ease,
+            transform 0.2s ease;
+    }
+
+    .listicle-cta-button:hover {
+        background: #333;
+        transform: translateY(-2px);
+    }
+
+    /* Related Listicles */
+    .related-listicles {
+        margin: 2rem 0;
+    }
+
+    .related-listicles h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+    }
+
+    .section-subtitle {
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .related-listicles-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    .related-listicle-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.25rem;
+        background: #fff;
+        border: 1px solid #e2e2e2;
+        border-radius: 12px;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    .related-listicle-card:hover {
+        border-color: #1a1a1a;
+        transform: translateY(-2px);
+    }
+
+    .related-emoji {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .related-title {
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 0.25rem;
+    }
+
+    .related-count {
+        font-size: 0.8rem;
+        color: #888;
+    }
+
+    /* FAQ Section */
+    .listicle-faq {
+        margin: 2rem 0 3rem;
+    }
+
+    .listicle-faq h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .faq-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .faq-item {
+        background: #fff;
+        border: 1px solid #e2e2e2;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .faq-item summary {
+        padding: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .faq-item summary::after {
+        content: "+";
+        font-size: 1.25rem;
+        color: #888;
+        transition: transform 0.2s ease;
+    }
+
+    .faq-item[open] summary::after {
+        transform: rotate(45deg);
+    }
+
+    .faq-item p {
+        padding: 0 1rem 1rem;
+        color: #555;
+        line-height: 1.7;
+    }
+
+    .faq-item strong {
+        color: #1a1a1a;
+    }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+        .listicle-hero-image {
+            min-height: 380px;
+            padding: 3rem;
+        }
+
+        .listicle-grid {
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .listicle-intro {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+</style>

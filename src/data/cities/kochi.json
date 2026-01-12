@@ -1,31 +1,5 @@
 [
   {
-    "title": "Hotels",
-    "emoji": "📍",
-    "items": [
-      {
-        "name": "Brunton Boatyard",
-        "url": "https://maps.google.com/?cid=12655169031125319271"
-      },
-      {
-        "name": "The Malabar House",
-        "url": "https://maps.google.com/?cid=17241834975425694953"
-      },
-      {
-        "name": "Eighth Bastion",
-        "url": "https://maps.google.com/?cid=8222375705608825066"
-      },
-      {
-        "name": "Cochin Club",
-        "url": "https://maps.google.com/?cid=13221700101887917016"
-      },
-      {
-        "name": "Xandari Harbour",
-        "url": "https://maps.google.com/?cid=6333648416653174997"
-      }
-    ]
-  },
-  {
     "title": "Cafes",
     "emoji": "⭐",
     "items": [

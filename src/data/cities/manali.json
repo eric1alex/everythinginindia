@@ -1,39 +1,5 @@
 [
   {
-    "title": "Hotels / Stays",
-    "emoji": "🏨",
-    "items": [
-      {
-        "name": "The Himalayan",
-        "url": "https://maps.google.com/?cid=7845175456359491873"
-      },
-      {
-        "name": "Manuallaya The Resort",
-        "url": "https://maps.google.com/?cid=13095999922371274721"
-      },
-      {
-        "name": "Manali Inn",
-        "url": "https://maps.google.com/?cid=13645273803078421987"
-      },
-      {
-        "name": "Hadimba Cottages",
-        "url": "https://maps.google.com/?cid=10134239008482432387"
-      },
-      {
-        "name": "Zostel Manali",
-        "url": "https://maps.google.com/?cid=10812470477382439337"
-      },
-      {
-        "name": "Neeralaya Estate",
-        "url": "https://maps.google.com/?cid=2133599925992012168"
-      },
-      {
-        "name": "Johnson's Lodge & Restaurant",
-        "url": "https://maps.google.com/?cid=15318972168245963243"
-      }
-    ]
-  },
-  {
     "title": "Cafes / Restaurants",
     "emoji": "☕",
     "items": [

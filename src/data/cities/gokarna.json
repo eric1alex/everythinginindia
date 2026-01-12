@@ -1,39 +1,5 @@
 [
   {
-    "title": "Hotels / Stays",
-    "emoji": "🏨",
-    "items": [
-      {
-        "name": "Nimmu House",
-        "url": "https://maps.google.com/?cid=11545914665051000348"
-      },
-      {
-        "name": "Zostel Gokarna",
-        "url": "https://maps.google.com/?cid=6995848335341176454"
-      },
-      {
-        "name": "Namaste Cafe Cottages",
-        "url": "https://maps.google.com/?cid=13389097492260398226"
-      },
-      {
-        "name": "SAMUDRA BEACH RESORT",
-        "url": "https://maps.google.com/?cid=13358222578026012358"
-      },
-      {
-        "name": "Sanskruti Resort",
-        "url": "https://maps.google.com/?cid=14962003833323390043"
-      },
-      {
-        "name": "Om Beach Resort",
-        "url": "https://maps.google.com/?cid=9182939761985032102"
-      },
-      {
-        "name": "Stone Wood Nature Resort",
-        "url": "https://maps.google.com/?cid=5934152904744657418"
-      }
-    ]
-  },
-  {
     "title": "Cafes",
     "emoji": "☕",
     "items": [

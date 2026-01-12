@@ -1,31 +1,5 @@
 [
   {
-    "title": "Hotels / Stays",
-    "emoji": "🏨",
-    "items": [
-      {
-        "name": "Spice Tree Munnar",
-        "url": "https://maps.google.com/?cid=8814793889546908919"
-      },
-      {
-        "name": "Deshadan Mountain Resort",
-        "url": "https://maps.google.com/?cid=17309444620217394884"
-      },
-      {
-        "name": "Windermere Estate",
-        "url": "https://maps.google.com/?cid=11939435750693059010"
-      },
-      {
-        "name": "Eden Heights",
-        "url": "https://maps.google.com/?cid=14718825635112204124"
-      },
-      {
-        "name": "The Siena Village",
-        "url": "https://maps.google.com/?cid=6624341024338158211"
-      }
-    ]
-  },
-  {
     "title": "Cafes",
     "emoji": "☕",
     "items": [

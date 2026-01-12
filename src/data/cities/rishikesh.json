@@ -1,35 +1,5 @@
 [
   {
-    "title": "Hotels",
-    "emoji": "📍",
-    "items": [
-      {
-        "name": "Aloft Rishikesh",
-        "url": "https://maps.google.com/?cid=11467438741888668591"
-      },
-      {
-        "name": "Ganga Kinare",
-        "url": "https://maps.google.com/?cid=14760253296902921299"
-      },
-      {
-        "name": "The Roseate Ganges",
-        "url": "https://maps.google.com/?cid=7361449368685437193"
-      },
-      {
-        "name": "Swiss Cottage & Spa by Salvus",
-        "url": "https://maps.google.com/?cid=3392754132707991806"
-      },
-      {
-        "name": "Hotel Laxman Jhula",
-        "url": "https://maps.google.com/?cid=6610640692473248853"
-      },
-      {
-        "name": "EllBee Ganga View",
-        "url": "https://maps.google.com/?cid=539187411661005043"
-      }
-    ]
-  },
-  {
     "title": "Cafes",
     "emoji": "⭐",
     "items": [

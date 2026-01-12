@@ -1,39 +1,5 @@
 [
   {
-    "title": "Hotels / Stays",
-    "emoji": "🏨",
-    "items": [
-      {
-        "name": "Le Dupleix",
-        "url": "https://maps.google.com/?cid=15441029214772926481"
-      },
-      {
-        "name": "Palais De Mahe",
-        "url": "https://maps.google.com/?cid=9126491825566628867"
-      },
-      {
-        "name": "Gratitude Heritage",
-        "url": "https://maps.google.com/?cid=5425469018671455924"
-      },
-      {
-        "name": "The Promenade",
-        "url": "https://maps.google.com/?cid=9959456107558295783"
-      },
-      {
-        "name": "Mango Hill",
-        "url": "https://maps.google.com/?cid=3783621292393880027"
-      },
-      {
-        "name": "La Villa",
-        "url": "https://maps.google.com/?cid=15471803750367304624"
-      },
-      {
-        "name": "Villa Caserne",
-        "url": "https://maps.google.com/?cid=17669293219097508320"
-      }
-    ]
-  },
-  {
     "title": "Cafes",
     "emoji": "☕",
     "items": [

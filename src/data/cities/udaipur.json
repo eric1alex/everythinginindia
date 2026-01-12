@@ -1,35 +1,5 @@
 [
   {
-    "title": "Hotels / Stays",
-    "emoji": "🏨",
-    "items": [
-      {
-        "name": "The Artist House",
-        "url": "https://maps.google.com/?cid=609757340457027261"
-      },
-      {
-        "name": "The Hostel Crown Udaipur",
-        "url": "https://maps.google.com/?cid=10888981630480558451"
-      },
-      {
-        "name": "Hotel Lake Pichola",
-        "url": "https://maps.google.com/?cid=2853267652864711353"
-      },
-      {
-        "name": "Hotel Fateh Garh",
-        "url": "https://maps.google.com/?cid=17554007809464248680"
-      },
-      {
-        "name": "Hotel Mahendra Prakash",
-        "url": "https://maps.google.com/?cid=7577571814601050568"
-      },
-      {
-        "name": "The Lalit Laxmi Vilas Palace Udaipur",
-        "url": "https://maps.google.com/?cid=290866380790378176"
-      }
-    ]
-  },
-  {
     "title": "Restaurants",
     "emoji": "🍽️",
     "items": [

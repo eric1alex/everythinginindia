@@ -176,39 +176,5 @@
         "url": "https://maps.google.com/?cid=15417791263477582198"
       }
     ]
-  },
-  {
-    "title": "Hotels",
-    "emoji": "🌳",
-    "items": [
-      {
-        "name": "BrijRama Palace",
-        "url": "https://maps.google.com/?cid=5802851482424224561"
-      },
-      {
-        "name": "Taj Ganges",
-        "url": "https://maps.google.com/?cid=17312077160453205974"
-      },
-      {
-        "name": "Radisson Hotel Varanasi",
-        "url": "https://maps.google.com/?cid=9990832122222701665"
-      },
-      {
-        "name": "Hotel Ganges Grand",
-        "url": "https://maps.google.com/?cid=9827934031483301383"
-      },
-      {
-        "name": "Ramada Plaza by Wyndham",
-        "url": "https://maps.google.com/?cid=1402701523164044592"
-      },
-      {
-        "name": "Palace on Steps",
-        "url": "https://maps.google.com/?cid=8711940168099226769"
-      },
-      {
-        "name": "Hotel Alka",
-        "url": "https://maps.google.com/?cid=6519747674333572254"
-      }
-    ]
   }
 ]

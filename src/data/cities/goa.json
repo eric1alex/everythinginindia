@@ -102,36 +102,6 @@
     ]
   },
   {
-    "title": "Hotels",
-    "emoji": "🏨",
-    "items": [
-      {
-        "name": "W Goa",
-        "url": "https://maps.google.com/?cid=5071144359842669182"
-      },
-      {
-        "name": "Grand Hyatt Goa",
-        "url": "https://maps.google.com/?cid=13340661976445235098"
-      },
-      {
-        "name": "Taj Exotica Resort & Spa",
-        "url": "https://maps.google.com/?cid=3577895111904199784"
-      },
-      {
-        "name": "Vivanta by Taj - Panaji",
-        "url": "https://maps.google.com/?cid=2364290728042337109"
-      },
-      {
-        "name": "Alila Diwa Goa",
-        "url": "https://maps.google.com/?cid=4088066109193354724"
-      },
-      {
-        "name": "Casa Baga",
-        "url": "https://maps.google.com/?cid=8546199384733309865"
-      }
-    ]
-  },
-  {
     "title": "Nightlife",
     "emoji": "🌃",
     "items": [

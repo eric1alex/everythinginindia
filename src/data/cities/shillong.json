@@ -1,47 +1,5 @@
 [
   {
-    "title": "Hotels",
-    "emoji": "📍",
-    "items": [
-      {
-        "name": "Pinewood Hotel",
-        "url": "https://maps.google.com/?cid=17467684413252688746"
-      },
-      {
-        "name": "Hotel Polo Towers",
-        "url": "https://maps.google.com/?cid=9185480343463028842"
-      },
-      {
-        "name": "Ri Kynjai Resort",
-        "url": "https://maps.google.com/?cid=2118984874811233900"
-      },
-      {
-        "name": "Lakewood Hotel",
-        "url": "https://maps.google.com/?cid=10017400897523366250"
-      },
-      {
-        "name": "Hotel Centre Point",
-        "url": "https://maps.google.com/?cid=16017559072098327261"
-      },
-      {
-        "name": "Hotel Heiga",
-        "url": "https://maps.google.com/?cid=972429515790547621"
-      },
-      {
-        "name": "Hotel Serene",
-        "url": "https://maps.google.com/?cid=970629640599456997"
-      },
-      {
-        "name": "Vivanta Shillong",
-        "url": "https://maps.google.com/?cid=6903558056622133321"
-      },
-      {
-        "name": "Amiya Resort",
-        "url": "https://maps.google.com/?cid=11831826292084024310"
-      }
-    ]
-  },
-  {
     "title": "Cafes",
     "emoji": "⭐",
     "items": [

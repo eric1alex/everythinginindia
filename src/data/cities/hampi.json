@@ -1,39 +1,5 @@
 [
   {
-    "title": "Hotels",
-    "emoji": "📍",
-    "items": [
-      {
-        "name": "Hampi's Boulders Resort",
-        "url": "https://maps.google.com/?cid=6558268478156423979"
-      },
-      {
-        "name": "Hotel Hampi International",
-        "url": "https://maps.google.com/?cid=14993730989660611968"
-      },
-      {
-        "name": "Kishkinda Trust Guest House",
-        "url": "https://maps.google.com/?cid=1897183148565287264"
-      },
-      {
-        "name": "Shanthi Guest House",
-        "url": "https://maps.google.com/?cid=2874027557983005478"
-      },
-      {
-        "name": "Netra Guest House",
-        "url": "https://maps.google.com/?cid=11829087912717403145"
-      },
-      {
-        "name": "Rocky's Guest House",
-        "url": "https://maps.google.com/?cid=7829307295833367670"
-      },
-      {
-        "name": "Thilak Home Stay",
-        "url": "https://maps.google.com/?cid=13788914868083743648"
-      }
-    ]
-  },
-  {
     "title": "Restaurants",
     "emoji": "⭐",
     "items": [

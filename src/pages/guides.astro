@@ -1,0 +1,250 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import locations from "~/data/locations.json";
+
+// Helper to generate listicle slugs
+function slugify(text: string): string {
+    return text
+        .toLowerCase()
+        .replace(/&/g, "and")
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/(^-|-$)/g, "");
+}
+
+// Load all city data and build listicle links
+const allCityData = import.meta.glob("../data/cities/*.json", { eager: true });
+
+interface ListicleLink {
+    title: string;
+    url: string;
+    emoji: string;
+}
+
+interface CityWithListicles {
+    cityName: string;
+    stateSlug: string;
+    citySlug: string;
+    cityUrl: string;
+    listicles: ListicleLink[];
+}
+
+const citiesWithListicles: CityWithListicles[] = [];
+
+const processLocations = (locList: any[]) => {
+    for (const loc of locList) {
+        for (const city of loc.cities) {
+            const importPath = `../data/cities/${city.slug}.json`;
+            const cityData = allCityData[importPath] as any;
+
+            if (cityData?.default) {
+                const listicles: ListicleLink[] = cityData.default.map(
+                    (category: any) => ({
+                        title: category.title,
+                        url: `/${loc.slug}/${city.slug}/best-${slugify(category.title)}`,
+                        emoji: category.emoji,
+                    }),
+                );
+
+                citiesWithListicles.push({
+                    cityName: city.name,
+                    stateSlug: loc.slug,
+                    citySlug: city.slug,
+                    cityUrl: `/${loc.slug}/${city.slug}`,
+                    listicles,
+                });
+            }
+        }
+    }
+};
+
+processLocations(locations.states);
+processLocations(locations.unionTerritories);
+
+// Sort cities alphabetically
+citiesWithListicles.sort((a, b) => a.cityName.localeCompare(b.cityName));
+
+// Calculate total guides
+const totalGuides = citiesWithListicles.reduce(
+    (sum, city) => sum + city.listicles.length,
+    0,
+);
+---
+
+<Layout
+    title="City Guides - Best Places in Every Indian City | Where In India"
+    description={`Explore ${totalGuides}+ curated guides covering the best temples, cafes, restaurants, hotels and attractions across ${citiesWithListicles.length} cities in India.`}
+>
+    <main class="guides-page">
+        <header class="guides-header">
+            <h1>City Guides</h1>
+            <p>
+                {totalGuides}+ curated lists across {citiesWithListicles.length} cities
+            </p>
+        </header>
+
+        <div class="guides-content">
+            <div class="city-guides-grid">
+                {
+                    citiesWithListicles.map((city) => (
+                        <div class="city-card">
+                            <div class="city-card-header">
+                                <a href={city.cityUrl} class="city-name">
+                                    {city.cityName}
+                                </a>
+                                <span class="guide-count">
+                                    {city.listicles.length} guides
+                                </span>
+                            </div>
+                            <ul class="listicle-list">
+                                {city.listicles.map((listicle) => (
+                                    <li>
+                                        <a href={listicle.url}>
+                                            <span class="listicle-emoji">
+                                                {listicle.emoji}
+                                            </span>
+                                            Best {listicle.title}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    .guides-page {
+        background-color: var(--background-color);
+        min-height: 60vh;
+    }
+
+    .guides-header {
+        text-align: center;
+        padding: 3rem 1.5rem 2rem;
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #e2e2e2;
+    }
+
+    .guides-header h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin-bottom: 0.25rem;
+    }
+
+    .guides-header p {
+        font-size: 1rem;
+        color: #666;
+    }
+
+    .guides-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2.5rem 1rem;
+    }
+
+    .city-guides-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.25rem;
+    }
+
+    .city-card {
+        background: #fff;
+        border: 1px solid #e2e2e2;
+        border-radius: 12px;
+        overflow: hidden;
+        transition:
+            box-shadow 0.2s ease,
+            transform 0.2s ease;
+    }
+
+    .city-card:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        transform: translateY(-2px);
+    }
+
+    .city-card-header {
+        padding: 1rem 1.25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #f0f0f0;
+        background: #fafafa;
+    }
+
+    .city-name {
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #1a1a1a;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .city-name:hover {
+        color: #555;
+    }
+
+    .guide-count {
+        font-size: 0.8rem;
+        color: #888;
+        background: #f0f0f0;
+        padding: 0.25rem 0.6rem;
+        border-radius: 12px;
+    }
+
+    .listicle-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .listicle-list li {
+        border-bottom: 1px solid #f5f5f5;
+    }
+
+    .listicle-list li:last-child {
+        border-bottom: none;
+    }
+
+    .listicle-list a {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.85rem 1.25rem;
+        color: #444;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition:
+            background 0.2s ease,
+            color 0.2s ease;
+    }
+
+    .listicle-list a:hover {
+        background: #f8f9fa;
+        color: #000;
+    }
+
+    .listicle-emoji {
+        font-size: 1rem;
+        width: 1.5rem;
+        text-align: center;
+    }
+
+    @media (min-width: 640px) {
+        .guides-header {
+            padding: 4rem 1.5rem 3rem;
+        }
+
+        .guides-header h1 {
+            font-size: 2.5rem;
+        }
+
+        .guides-content {
+            padding: 3rem 1.5rem;
+        }
+    }
+</style>

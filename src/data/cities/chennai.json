@@ -1,43 +1,5 @@
 [
   {
-    "title": "Hotels",
-    "emoji": "📍",
-    "items": [
-      {
-        "name": "Taj Coromandel",
-        "url": "https://maps.google.com/?cid=14025586656386349681"
-      },
-      {
-        "name": "ITC Grand Chola",
-        "url": "https://maps.google.com/?cid=6335245403330376696"
-      },
-      {
-        "name": "The Leela Palace Chennai",
-        "url": "https://maps.google.com/?cid=7374804035710576015"
-      },
-      {
-        "name": "Hyatt Regency Chennai",
-        "url": "https://maps.google.com/?cid=18317749460721632765"
-      },
-      {
-        "name": "Radisson Blu Hotel GRT Chennai",
-        "url": "https://maps.google.com/?cid=8238029069025688433"
-      },
-      {
-        "name": "The Park Chennai",
-        "url": "https://maps.google.com/?cid=13997035344535449581"
-      },
-      {
-        "name": "Hilton Chennai",
-        "url": "https://maps.google.com/?cid=8246999964640828333"
-      },
-      {
-        "name": "Novotel Chennai Chamiers Road",
-        "url": "https://maps.google.com/?cid=1125339864176905545"
-      }
-    ]
-  },
-  {
     "title": "Restaurants",
     "emoji": "⭐",
     "items": [

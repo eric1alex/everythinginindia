@@ -176,47 +176,5 @@
         "url": "https://maps.google.com/?cid=14518577053655202839"
       }
     ]
-  },
-  {
-    "title": "Hotels",
-    "emoji": "🌳",
-    "items": [
-      {
-        "name": "The Gateway Hotel Church Road",
-        "url": "https://maps.google.com/?cid=10110253035669550796"
-      },
-      {
-        "name": "Savoy - IHCL Selections",
-        "url": "https://maps.google.com/?cid=14149940726559650613"
-      },
-      {
-        "name": "Sterling Ooty Elk Hill",
-        "url": "https://maps.google.com/?cid=2001536209139381915"
-      },
-      {
-        "name": "King's Cliff",
-        "url": "https://maps.google.com/?cid=10602486580257439516"
-      },
-      {
-        "name": "Fortune Resort Sullivan Court",
-        "url": "https://maps.google.com/?cid=17208393295929318377"
-      },
-      {
-        "name": "Hotel Lakeview",
-        "url": "https://maps.google.com/?cid=5028294114493502742"
-      },
-      {
-        "name": "Club Mahindra Derby Green",
-        "url": "https://maps.google.com/?cid=12848260310440452771"
-      },
-      {
-        "name": "Glyngarth Resorts",
-        "url": "https://maps.google.com/?cid=3169459282324154852"
-      },
-      {
-        "name": "Accord Highland Hotel Ooty",
-        "url": "https://maps.google.com/?cid=11584582369253100782"
-      }
-    ]
   }
 ]

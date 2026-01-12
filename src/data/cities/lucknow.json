@@ -102,40 +102,6 @@
     ]
   },
   {
-    "title": "Hotels",
-    "emoji": "🏛️",
-    "items": [
-      {
-        "name": "Taj Mahal Lucknow",
-        "url": "https://maps.google.com/?cid=16729594004328084795"
-      },
-      {
-        "name": "Hyatt Regency Lucknow",
-        "url": "https://maps.google.com/?cid=14972193087158193699"
-      },
-      {
-        "name": "Renaissance Lucknow Hotel",
-        "url": "https://maps.google.com/?cid=5072125990636390436"
-      },
-      {
-        "name": "The Piccadily",
-        "url": "https://maps.google.com/?cid=14870340950390203937"
-      },
-      {
-        "name": "Hotel Clarks Avadh",
-        "url": "https://maps.google.com/?cid=8414974548526204305"
-      },
-      {
-        "name": "Novotel Lucknow",
-        "url": "https://maps.google.com/?cid=1284025240463191163"
-      },
-      {
-        "name": "Levana Hotel",
-        "url": "https://maps.google.com/?cid=15691288766175371240"
-      }
-    ]
-  },
-  {
     "title": "Cafes",
     "emoji": "🍽️",
     "items": [

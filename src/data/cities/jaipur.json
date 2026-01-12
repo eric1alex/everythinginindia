@@ -1,35 +1,5 @@
 [
   {
-    "title": "Hotels / Stays",
-    "emoji": "🏨",
-    "items": [
-      {
-        "name": "Pearl Palace Heritage",
-        "url": "https://maps.google.com/?cid=13515078123060888676"
-      },
-      {
-        "name": "Hotel Arya Niwas",
-        "url": "https://maps.google.com/?cid=18052708930009386839"
-      },
-      {
-        "name": "Shahpura House",
-        "url": "https://maps.google.com/?cid=213745007535542725"
-      },
-      {
-        "name": "Dera Rawatsar",
-        "url": "https://maps.google.com/?cid=5913607175003160142"
-      },
-      {
-        "name": "Umaid Mahal - A Heritage Hotel",
-        "url": "https://maps.google.com/?cid=12284158776235014231"
-      },
-      {
-        "name": "Samode Haveli",
-        "url": "https://maps.google.com/?cid=13443189738546563270"
-      }
-    ]
-  },
-  {
     "title": "Restaurants",
     "emoji": "🍽️",
     "items": [

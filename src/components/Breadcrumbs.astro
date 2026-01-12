@@ -4,15 +4,18 @@ interface Props {
     stateSlug: string;
     cityName: string;
     citySlug: string;
+    listicleName?: string; // Optional: for listicle pages like "Best Hotels"
+    listicleSlug?: string; // Optional: slug for the listicle
 }
 
-const { stateName, stateSlug, cityName, citySlug } = Astro.props;
+const { stateName, stateSlug, cityName, citySlug, listicleName, listicleSlug } =
+    Astro.props;
 
 // Base URL for the site
 const siteUrl = "https://www.whereinindia.online";
 
 // Build the breadcrumb items for schema
-const breadcrumbItems = [
+const breadcrumbItems: any[] = [
     {
         "@type": "ListItem",
         position: 1,
@@ -32,6 +35,16 @@ const breadcrumbItems = [
         item: `${siteUrl}/${stateSlug}/${citySlug}`,
     },
 ];
+
+// Add 4th level for listicle pages
+if (listicleName && listicleSlug) {
+    breadcrumbItems.push({
+        "@type": "ListItem",
+        position: 4,
+        name: listicleName,
+        item: `${siteUrl}/${stateSlug}/${citySlug}/${listicleSlug}`,
+    });
+}
 
 const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -57,9 +70,25 @@ const breadcrumbSchema = {
             <a href={`/${stateSlug}`}>{stateName}</a>
             <span class="separator" aria-hidden="true">›</span>
         </li>
-        <li aria-current="page">
-            <span>{cityName}</span>
-        </li>
+        {
+            listicleName ? (
+                <>
+                    <li>
+                        <a href={`/${stateSlug}/${citySlug}`}>{cityName}</a>
+                        <span class="separator" aria-hidden="true">
+                            ›
+                        </span>
+                    </li>
+                    <li aria-current="page">
+                        <span>{listicleName}</span>
+                    </li>
+                </>
+            ) : (
+                <li aria-current="page">
+                    <span>{cityName}</span>
+                </li>
+            )
+        }
     </ol>
 </nav>
 

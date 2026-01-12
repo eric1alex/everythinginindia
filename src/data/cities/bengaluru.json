@@ -64,36 +64,6 @@
     ]
   },
   {
-    "title": "Stays",
-    "emoji": "🏨",
-    "items": [
-      {
-        "name": "The Elanza Hotel",
-        "url": "https://www.google.com/maps/place/The+Elanza+Hotel/@12.965287,77.5994056,17z/data=!3m1!4b1!4m11!3m10!1s0x3bae15d67841d135:0xbebb4730efab6666!5m4!1s2025-11-11!2i3!4m1!1i2!8m2!3d12.9652818!4d77.6019805!16s%2Fg%2F1hd_234fd?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
-      },
-      {
-        "name": "Ramanashree Richmond Hotel",
-        "url": "https://maps.app.goo.gl/DCmKPFqj9SZSthVD8"
-      },
-      {
-        "name": "The Leela Palace Bengaluru",
-        "url": "https://www.google.com/maps/place/The+Leela+Palace+Bengaluru+-+Garden+City's+Only+Modern+Palace+Hotel/@12.9603417,77.6458612,17z/data=!3m1!4b1!4m9!3m8!1s0x3bae14067cca9bdd:0x111bbe37cc24e71a!5m2!4m1!1i2!8m2!3d12.9603365!4d77.6484361!16s%2Fg%2F1tf00xs5?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
-      },
-      {
-        "name": "Taj West End",
-        "url": "https://www.google.com/maps/place/Taj+West+End,+Bengaluru/@12.9845513,77.5820075,17z/data=!3m1!4b1!4m9!3m8!1s0x3bae1614ae4e21cb:0x43e3a50b3b1a3d3b!5m2!4m1!1i2!8m2!3d12.9845461!4d77.5845824!16s%2Fg%2F1tfb4_z7?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
-      },
-      {
-        "name": "ITC Gardenia, a Luxury Collection Hotel",
-        "url": "https://www.google.com/maps/place/ITC+Gardenia,+a+Luxury+Collection+Hotel,+Bengaluru/@12.96699,77.5929772,17z/data=!3m1!4b1!4m9!3m8!1s0x3a0276dd2cf216d3:0x523e0c08edd084f2!5m2!4m1!1i2!8m2!3d12.9669848!4d77.5955521!16s%2Fg%2F124stnrjw?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
-      },
-      {
-        "name": "The Ritz-Carlton, Bangalore",
-        "url": "https://www.google.com/maps/place/The+Ritz-Carlton,+Bangalore/@12.9669848,77.5929772,17z/data=!4m9!3m8!1s0x3bae1678b41def33:0xfe8ae8000ba8c87f!5m2!4m1!1i2!8m2!3d12.9683498!4d77.6011114!16s%2Fg%2F1hhk8y6t0?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
-      }
-    ]
-  },
-  {
     "title": "Pubs",
     "emoji": "🍺",
     "items": [

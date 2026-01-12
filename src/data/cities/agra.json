@@ -114,44 +114,6 @@
     ]
   },
   {
-    "title": "Hotels",
-    "emoji": "🗺️",
-    "items": [
-      {
-        "name": "The Oberoi Amarvilas",
-        "url": "https://maps.google.com/?cid=15463794079433072805"
-      },
-      {
-        "name": "ITC Mughal, a Luxury Collection Hotel",
-        "url": "https://maps.google.com/?cid=4946451089327052924"
-      },
-      {
-        "name": "Trident Agra",
-        "url": "https://maps.google.com/?cid=7771251963643958339"
-      },
-      {
-        "name": "Radisson Hotel Agra",
-        "url": "https://maps.google.com/?cid=3315464516297964252"
-      },
-      {
-        "name": "Hotel Clarks Shiraz",
-        "url": "https://maps.google.com/?cid=7166182599153250825"
-      },
-      {
-        "name": "The Gateway Hotel Fatehabad Road Agra",
-        "url": "https://maps.google.com/?cid=3774126816796567328"
-      },
-      {
-        "name": "Crystal Sarovar Premiere Agra",
-        "url": "https://maps.google.com/?cid=6115001340646580040"
-      },
-      {
-        "name": "DoubleTree by Hilton Agra",
-        "url": "https://maps.google.com/?cid=1667746821400872177"
-      }
-    ]
-  },
-  {
     "title": "Museums",
     "emoji": "🏛️",
     "items": [

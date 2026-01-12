@@ -57,43 +57,13 @@
         "name": "Cafe Mondegar",
         "url": "https://maps.app.goo.gl/Xx5GqyBqB6ruippK9"
       },
-       {
+      {
         "name": "Third Wave Coffee Roasters (Seawoods)",
         "url": "https://maps.app.goo.gl/P1unPdwhREU3WaGP7?g_st=ipc"
       },
       {
         "name": "Mockingbird Cafe & Bar",
         "url": "https://maps.google.com/?cid=5120380686526027612"
-      }
-    ]
-  },
-  {
-    "title": "Hotels / Stays",
-    "emoji": "🏨",
-    "items": [
-      {
-        "name": "The Taj Mahal Palace, Mumbai",
-        "url": "https://maps.google.com/?cid=13846603501370031959"
-      },
-      {
-        "name": "The Oberoi Mumbai",
-        "url": "https://maps.google.com/?cid=4061871268329864897"
-      },
-      {
-        "name": "Novotel Mumbai Juhu Beach",
-        "url": "https://maps.google.com/?cid=721098853997857606"
-      },
-      {
-        "name": "Abode Bombay",
-        "url": "https://maps.google.com/?cid=11329700791829472607"
-      },
-      {
-        "name": "The St. Regis Mumbai",
-        "url": "https://maps.google.com/?cid=4132853287433548325"
-      },
-      {
-        "name": "The Lalit Mumbai",
-        "url": "https://maps.google.com/?cid=3107000729813343111"
       }
     ]
   },

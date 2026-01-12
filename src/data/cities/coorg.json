@@ -1,39 +1,5 @@
 [
   {
-    "title": "Hotels",
-    "emoji": "📍",
-    "items": [
-      {
-        "name": "The Tamara Coorg",
-        "url": "https://maps.google.com/?cid=18264745182851611594"
-      },
-      {
-        "name": "Evolve Back Coorg",
-        "url": "https://maps.google.com/?cid=398722658310189783"
-      },
-      {
-        "name": "Coorg Wilderness Resort",
-        "url": "https://maps.google.com/?cid=12055605548969547124"
-      },
-      {
-        "name": "Ambatty Greens Resort",
-        "url": "https://maps.google.com/?cid=14568162126496335436"
-      },
-      {
-        "name": "Club Mahindra Madikeri",
-        "url": "https://maps.google.com/?cid=5189054863547883166"
-      },
-      {
-        "name": "Heritage Resort Coorg",
-        "url": "https://maps.google.com/?cid=9285876599054154856"
-      },
-      {
-        "name": "Palace Estate Homestay",
-        "url": "https://maps.google.com/?cid=7659387506966374007"
-      }
-    ]
-  },
-  {
     "title": "Restaurants",
     "emoji": "⭐",
     "items": [

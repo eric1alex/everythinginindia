@@ -1,35 +1,5 @@
 [
   {
-    "title": "Hotels / Stays",
-    "emoji": "🏨",
-    "items": [
-      {
-        "name": "Clafouti Beach Resort",
-        "url": "https://maps.google.com/?cid=12358656532661968842"
-      },
-      {
-        "name": "Neon Nirvana by Absolute",
-        "url": "https://maps.google.com/?cid=13197661496361911718"
-      },
-      {
-        "name": "Gateway Varkala",
-        "url": "https://maps.google.com/?cid=6216255726415666653"
-      },
-      {
-        "name": "Zostel Varkala",
-        "url": "https://maps.google.com/?cid=15701242482252846713"
-      },
-      {
-        "name": "Kaiya House",
-        "url": "https://maps.google.com/?cid=1751748429376238128"
-      },
-      {
-        "name": "Villa Akaya",
-        "url": "https://maps.google.com/?cid=12955586297691203525"
-      }
-    ]
-  },
-  {
     "title": "Cafes",
     "emoji": "☕",
     "items": [
