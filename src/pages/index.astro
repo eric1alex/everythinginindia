@@ -1,6 +1,7 @@
 ---
 import Layout from "~/layouts/Layout.astro";
 import locations from "~/data/locations.json";
+import reviews from "~/data/reviews.json";
 
 // --- NEW LOGIC FOR "FEELING LUCKY" ---
 // 1. Find all the .json files that actually exist.
@@ -203,6 +204,32 @@ const unionTerritories = locations.unionTerritories;
 						}
 					</ol>
 				</div>
+			</div>
+		</div>
+
+		<!-- Review Quote -->
+		<div class="main-content" style="padding-top: 0;">
+			<div
+				class="list-column"
+				style="text-align: center; padding: 2rem 1.5rem;"
+			>
+				<p
+					style="font-size: 0.8rem; color: #333333c3; margin-bottom: 1rem; margin-top: -0.5rem;"
+				>
+					✓ Rated helpful by 97% of travelers
+				</p>
+				<p
+					style="font-style: italic; color: #333333; font-size: 0.95rem; line-height: 1.6; margin: 0;"
+				>
+					"{reviews[0].text}"
+				</p>
+				<p style="margin-top: 0.75rem; font-size: 0.8rem; color: #999;">
+					— {reviews[0].author} · <a
+						href="/reviews"
+						style="color: #888; text-decoration: underline;"
+						>Read More Reviews</a
+					>
+				</p>
 			</div>
 		</div>
 	</main>

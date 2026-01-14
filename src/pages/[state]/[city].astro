@@ -111,12 +111,29 @@ const filteredSuggestions = allCitiesList
         </header>
 
         <div class="main-content">
-          <Breadcrumbs 
-            stateName={stateName} 
-            stateSlug={currentStateSlug}
-            cityName={cityName}
-            citySlug={currentCitySlug}
-          />
+          <!-- Breadcrumb Row with Share Button -->
+          <div class="breadcrumb-row">
+            <Breadcrumbs 
+              stateName={stateName} 
+              stateSlug={currentStateSlug}
+              cityName={cityName}
+              citySlug={currentCitySlug}
+            />
+            <button 
+              id="share-btn" 
+              class="share-btn"
+              data-url={`https://www.whereinindia.online/${currentStateSlug}/${currentCitySlug}`}
+              data-title={` Best places to visit in ${cityName} - Where In India`}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+                <polyline points="16 6 12 2 8 6"/>
+                <line x1="12" y1="2" x2="12" y2="15"/>
+              </svg>
+              Share
+              <span class="share-tooltip">Link copied!</span>
+            </button>
+          </div>
 
           <div class="recommendation-grid">
             {places.map(category => (
@@ -197,6 +214,68 @@ const filteredSuggestions = allCitiesList
     )}
   </main>
 
+  <style>
+    .breadcrumb-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0;
+    }
+
+    .share-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: none;
+      border: 1px solid #ddd;
+      padding: 0.35rem 0.65rem;
+      border-radius: 5px;
+      font-size: 0.75rem;
+      color: #666;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      position: relative;
+      font-family: inherit;
+    }
+
+    .share-btn:hover {
+      background: #f4f4f4;
+      border-color: #ccc;
+      color: #333;
+    }
+
+    .share-tooltip {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin-top: 6px;
+      background: #333;
+      color: #fff;
+      font-size: 0.65rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 3px;
+      white-space: nowrap;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .share-btn.copied .share-tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    @media (min-width: 640px) {
+      .breadcrumb-row {
+        padding: 0.75rem 0;
+      }
+      .share-btn {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+
   <script is:raw>
     document.addEventListener('DOMContentLoaded', () => {
         const infoBtn = document.getElementById('info-btn');
@@ -210,6 +289,35 @@ const filteredSuggestions = allCitiesList
             document.addEventListener('click', (e) => {
                 if (!infoBtn.contains(e.target) && !tooltip.contains(e.target)) {
                     tooltip.classList.remove('visible');
+                }
+            });
+        }
+
+        // Share Button Logic
+        const shareBtn = document.getElementById('share-btn');
+        if (shareBtn) {
+            shareBtn.addEventListener('click', async () => {
+                const url = shareBtn.dataset.url;
+                const title = shareBtn.dataset.title;
+
+                // Try Web Share API first (mobile)
+                if (navigator.share) {
+                    try {
+                        await navigator.share({ title, url });
+                    } catch (err) {
+                        // User cancelled or error
+                    }
+                } else {
+                    // Fallback: Copy to clipboard
+                    try {
+                        await navigator.clipboard.writeText(url);
+                        shareBtn.classList.add('copied');
+                        setTimeout(() => {
+                            shareBtn.classList.remove('copied');
+                        }, 2000);
+                    } catch (err) {
+                        console.error('Failed to copy:', err);
+                    }
                 }
             });
         }

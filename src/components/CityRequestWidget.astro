@@ -1,4 +1,6 @@
 ---
+import locations from "~/data/locations.json";
+
 export interface Props {
     formUrl: string;
     cityEntryID: string;
@@ -6,6 +8,18 @@ export interface Props {
 }
 
 const { formUrl, cityEntryID, emailEntryID } = Astro.props;
+
+// Build list of all cities for checking
+const allCities = [...locations.states, ...locations.unionTerritories].flatMap(
+    (loc) =>
+        loc.cities.map((city) => ({
+            name: city.name.toLowerCase(),
+            displayName: city.name,
+            slug: city.slug,
+            stateSlug: loc.slug,
+            stateName: loc.name,
+        })),
+);
 ---
 
 <section id="city-request-widget" class="request-container">
@@ -23,6 +37,15 @@ const { formUrl, cityEntryID, emailEntryID } = Astro.props;
                 placeholder="e.g. Jaipur, Shillong, Hampi..."
             />
             <button id="city-next-btn" class="request-btn">Next</button>
+        </div>
+
+        <!-- City Already Exists Message (inline) -->
+        <div id="city-exists-msg" class="exists-message" style="display: none;">
+            <p>
+                🎉 Great news! <strong id="found-city-name"></strong> is already in
+                our directory.
+            </p>
+            <a id="city-link" href="#" class="city-link">View the guide →</a>
         </div>
     </div>
 
@@ -139,6 +162,33 @@ const { formUrl, cityEntryID, emailEntryID } = Astro.props;
         background-color: #0f172a;
     }
 
+    .exists-message {
+        margin-top: 1.5rem;
+        padding: 1rem 1.25rem;
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        color: #475569;
+        line-height: 1.5;
+    }
+
+    .exists-message p {
+        margin: 0;
+    }
+
+    .city-link {
+        display: inline-block;
+        margin-top: 0.5rem;
+        color: #1e293b;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+
+    .city-link:hover {
+        color: #0f172a;
+    }
+
     .skip-btn {
         margin-top: 0.75rem;
         padding: 0.5rem 1rem;
@@ -165,29 +215,53 @@ const { formUrl, cityEntryID, emailEntryID } = Astro.props;
     }
 </style>
 
-<script is:inline define:vars={{ formUrl, cityEntryID, emailEntryID }}>
+<script
+    is:inline
+    define:vars={{ formUrl, cityEntryID, emailEntryID, allCities }}
+>
     document.addEventListener("DOMContentLoaded", () => {
         const step1 = document.getElementById("request-step1");
         const step2 = document.getElementById("request-step2");
         const thanksView = document.getElementById("request-thanks");
+        const existsMsg = document.getElementById("city-exists-msg");
 
         const cityInput = document.getElementById("city-input");
         const cityNextBtn = document.getElementById("city-next-btn");
         const emailInput = document.getElementById("email-input");
         const submitBtn = document.getElementById("request-submit");
         const skipBtn = document.getElementById("skip-email");
+        const cityLink = document.getElementById("city-link");
+        const foundCityName = document.getElementById("found-city-name");
         const cityDisplay = document.querySelector(".city-display");
 
         let cityValue = "";
 
-        // Step 1: City name entry
+        // Hide exists message when user types again
+        cityInput.addEventListener("input", () => {
+            existsMsg.style.display = "none";
+        });
+
+        // Step 1: Check if city exists when clicking Next
         cityNextBtn.addEventListener("click", () => {
             cityValue = cityInput.value.trim();
             if (!cityValue) return;
 
-            cityDisplay.textContent = `You requested: ${cityValue}`;
-            step1.style.display = "none";
-            step2.style.display = "block";
+            // Check if city exists in our list
+            const match = allCities.find(
+                (city) => city.name === cityValue.toLowerCase(),
+            );
+
+            if (match) {
+                // City exists - show message, block submission
+                foundCityName.textContent = match.displayName;
+                cityLink.href = `/${match.stateSlug}/${match.slug}`;
+                existsMsg.style.display = "block";
+            } else {
+                // City doesn't exist - proceed with request
+                cityDisplay.textContent = `You requested: ${cityValue}`;
+                step1.style.display = "none";
+                step2.style.display = "block";
+            }
         });
 
         // Allow Enter key on city input

@@ -89,7 +89,34 @@ const categoryLower = categoryTitle.toLowerCase();
 
 // SEO-optimized title and description with long-tail keywords
 const pageTitle = `Top ${itemCount} Best ${categoryTitle} in ${cityName}, ${stateName} (2026 Guide)`;
-const pageDescription = `Looking for the best ${categoryLower} in ${cityName}? Discover our hand-picked list of ${itemCount} top-rated ${categoryLower} with locations, Google Maps links, and local insights. Updated for 2026.`;
+
+// Category-specific meta descriptions (base ~120 chars + city name)
+const metaDescriptions: Record<string, string> = {
+    cafes: `Best ${itemCount} cafes in ${cityName}. Top coffee spots & cozy hangouts curated by locals.`,
+    restaurants: `Top ${itemCount} restaurants in ${cityName}. Best dining spots for every budget & taste.`,
+    hotels: `${itemCount} best hotels in ${cityName}. Top stays from luxury to budget-friendly options.`,
+    temples: `${itemCount} must-visit temples in ${cityName}. Sacred sites & stunning architecture.`,
+    food: `Best food in ${cityName}. ${itemCount} top spots for street food & local cuisine.`,
+    stays: `${itemCount} best stays in ${cityName}. Top hotels & guesthouses for travelers.`,
+    shopping: `${itemCount} best shopping spots in ${cityName}. Markets, malls & local favorites.`,
+    "heritage-sites": `${itemCount} heritage sites in ${cityName}. Historical monuments & landmarks.`,
+    pubs: `Best ${itemCount} pubs in ${cityName}. Top bars, breweries & nightlife spots.`,
+    museums: `${itemCount} best museums in ${cityName}. Art, history & culture to explore.`,
+    "shopping-malls": `Top ${itemCount} malls in ${cityName}. Best brands, food & entertainment.`,
+    "cafes-and-restaurants": `${itemCount} best cafes & restaurants in ${cityName}. Top dining picks.`,
+    "historical-sites-and-monuments": `${itemCount} historical sites in ${cityName}. Must-see monuments.`,
+    "museums-and-art-galleries": `${itemCount} museums & galleries in ${cityName}. Art & culture spots.`,
+};
+
+// Get description based on category or use default
+const categorySlugForDesc = categoryTitle
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/\//g, "-and-")
+    .replace(/&/g, "and");
+const pageDescription =
+    metaDescriptions[categorySlugForDesc] ||
+    `Top ${itemCount} best ${categoryLower} in ${cityName}. Curated recommendations with maps & local insights.`;
 
 // Related listicles (other categories in same city)
 const relatedListicles = allCategories
