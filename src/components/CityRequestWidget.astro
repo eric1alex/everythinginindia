@@ -254,7 +254,7 @@ const allCities = [...locations.states, ...locations.unionTerritories].flatMap(
             if (match) {
                 // City exists - show message, block submission
                 foundCityName.textContent = match.displayName;
-                cityLink.href = `/${match.stateSlug}/${match.slug}`;
+                cityLink.href = `/${match.stateSlug}/${match.slug}/?utm_source=whereinindia&utm_medium=website&utm_campaign=city_suggest`;
                 existsMsg.style.display = "block";
             } else {
                 // City doesn't exist - proceed with request

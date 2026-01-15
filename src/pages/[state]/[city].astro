@@ -64,6 +64,15 @@ export async function getStaticPaths() {
 const { cityName, stateName, heroImageUrl, mapUrl, places, currentStateSlug, dashboardData } = Astro.props;
 const currentCitySlug = Astro.params.city;
 
+// Helper function to create listicle slugs
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
 // --- PREPARE SUGGESTIONS LIST ---
 const allCitiesList = [];
 [...locations.states, ...locations.unionTerritories].forEach(loc => {
@@ -149,6 +158,12 @@ const filteredSuggestions = allCitiesList
                     </li>
                   ))}
                 </ol>
+                <a 
+                  href={`/${currentStateSlug}/${currentCitySlug}/best-${slugify(category.title)}`} 
+                  class="listicle-link"
+                >
+                  Read full guide →
+                </a>
               </div>
             ))}
           </div>
@@ -273,6 +288,19 @@ const filteredSuggestions = allCitiesList
       .share-btn {
         font-size: 0.8rem;
       }
+    }
+
+    /* Visually hidden link for SEO - crawlable but invisible to users */
+    .listicle-link {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
     }
   </style>
 
