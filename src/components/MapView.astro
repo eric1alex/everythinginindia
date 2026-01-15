@@ -1,0 +1,289 @@
+---
+/**
+ * MapView.astro
+ *
+ * Interactive Leaflet.js map component with black & white styling.
+ * Displays category pins with popups linking to Google Maps.
+ */
+
+interface MapItem {
+    name: string;
+    lat: number;
+    lng: number;
+    url: string;
+    category?: string;
+    emoji?: string;
+}
+
+interface Props {
+    items: MapItem[];
+    cityName: string;
+    categoryTitle: string;
+    categoryEmoji: string;
+}
+
+const { items, cityName, categoryTitle, categoryEmoji } = Astro.props;
+
+// Filter out items without valid coordinates
+const validItems = items.filter((item) => item.lat && item.lng);
+
+// Calculate map center (average of all coordinates)
+const center =
+    validItems.length > 0
+        ? {
+              lat:
+                  validItems.reduce((sum, item) => sum + item.lat, 0) /
+                  validItems.length,
+              lng:
+                  validItems.reduce((sum, item) => sum + item.lng, 0) /
+                  validItems.length,
+          }
+        : { lat: 20.5937, lng: 78.9629 }; // Default to India center
+---
+
+{
+    validItems.length > 0 && (
+        <div class="map-container">
+            <div class="map-header">
+                <span class="map-title">
+                    {categoryEmoji} {categoryTitle} in {cityName}
+                </span>
+                <span class="map-count">{validItems.length} locations</span>
+            </div>
+            <div
+                id="leaflet-map"
+                class="leaflet-map"
+                data-center={JSON.stringify(center)}
+                data-items={JSON.stringify(validItems)}
+            />
+        </div>
+    )
+}
+
+<style>
+    .map-container {
+        margin: 2rem 0;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid #e2e2e2;
+        background: #fff;
+    }
+
+    .map-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.25rem;
+        border-bottom: 1px solid #e2e2e2;
+        background: #fafafa;
+    }
+
+    .map-title {
+        font-weight: 600;
+        color: #1a1a1a;
+    }
+
+    .map-count {
+        font-size: 0.85rem;
+        color: #666;
+        background: #fff;
+        padding: 0.25rem 0.75rem;
+        border-radius: 20px;
+        border: 1px solid #e2e2e2;
+    }
+
+    .leaflet-map {
+        height: 400px;
+        width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        .leaflet-map {
+            height: 500px;
+        }
+    }
+
+    /* Category marker styling */
+    :global(.category-marker) {
+        background: transparent !important;
+    }
+
+    :global(.marker-circle) {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+        transition: transform 0.2s ease;
+        box-sizing: border-box;
+    }
+
+    :global(.marker-circle span) {
+        font-size: 16px;
+        line-height: 1;
+        filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+    }
+
+    :global(.marker-circle:hover) {
+        transform: scale(1.15);
+    }
+
+    /* Hide Leaflet attribution */
+    :global(.leaflet-control-attribution) {
+        display: none !important;
+    }
+
+    /* Leaflet popup styling */
+    :global(.leaflet-popup-content-wrapper) {
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    :global(.leaflet-popup-content) {
+        margin: 12px 16px;
+    }
+
+    :global(.popup-content) {
+        text-align: center;
+    }
+
+    :global(.popup-content h4) {
+        margin: 0 0 8px 0;
+        font-size: 14px;
+        font-weight: 600;
+        color: #1a1a1a;
+    }
+
+    :global(.popup-link) {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 12px;
+        color: #666;
+        text-decoration: none;
+        padding: 4px 12px;
+        background: #f4f4f4;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+    }
+
+    :global(.popup-link:hover) {
+        background: #1a1a1a;
+        color: #fff;
+    }
+</style>
+
+<!-- Leaflet CSS -->
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+/>
+
+<!-- Leaflet JS -->
+<script
+    is:inline
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+<script is:inline>
+    document.addEventListener("DOMContentLoaded", function () {
+        const mapContainer = document.getElementById("leaflet-map");
+        if (!mapContainer) return;
+
+        const center = JSON.parse(mapContainer.dataset.center);
+        const items = JSON.parse(mapContainer.dataset.items);
+
+        // Initialize map (fitBounds will set the proper view)
+        const map = L.map("leaflet-map", {
+            center: [center.lat, center.lng],
+            zoom: 10, // Temporary, will be overridden by fitBounds
+        });
+
+        // OpenStreetMap Standard Tiles (fallback for reliability)
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            maxZoom: 19,
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+
+        // Category color palette
+        const categoryColors = {
+            Experiences: "#e74c3c",
+            Monuments: "#9b59b6",
+            Restaurants: "#f39c12",
+            Hotels: "#3498db",
+            Cafes: "#1abc9c",
+            Museums: "#8e44ad",
+            Shopping: "#e91e63",
+            Temples: "#ff5722",
+            Food: "#ff9800",
+            Pubs: "#673ab7",
+            Viewpoints: "#00bcd4",
+            default: "#1a1a1a",
+        };
+
+        // Get color for category
+        function getCategoryColor(category) {
+            return categoryColors[category] || categoryColors["default"];
+        }
+
+        // Custom emoji marker icon with category color
+        function createCategoryIcon(emoji, category) {
+            const color = getCategoryColor(category);
+            return L.divIcon({
+                className: "category-marker",
+                html: `<div class="marker-circle" style="background: ${color};"><span>${emoji || "📍"}</span></div>`,
+                iconSize: [36, 36],
+                iconAnchor: [18, 18],
+                popupAnchor: [0, -18],
+            });
+        }
+
+        // Add markers with category icons
+        const bounds = [];
+        items.forEach((item) => {
+            const marker = L.marker([item.lat, item.lng], {
+                icon: createCategoryIcon(item.emoji, item.category),
+            }).addTo(map);
+
+            // Popup content
+            const popupContent = `
+                <div class="popup-content">
+                    <h4>${item.name}</h4>
+                    <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="popup-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Open in Google Maps
+                    </a>
+                </div>
+            `;
+
+            marker.bindPopup(popupContent);
+            bounds.push([item.lat, item.lng]);
+        });
+
+        // Fit map to show all markers (with delay to ensure container is ready)
+        function fitMapToBounds() {
+            if (bounds.length > 0) {
+                map.invalidateSize();
+                map.fitBounds(bounds, { padding: [40, 40], maxZoom: 14 });
+            }
+        }
+
+        // Initial fit with delay
+        setTimeout(fitMapToBounds, 250);
+
+        // Re-fit when window resizes (triggered by toggle visibility)
+        window.addEventListener("resize", function () {
+            setTimeout(fitMapToBounds, 150);
+        });
+    });
+</script>

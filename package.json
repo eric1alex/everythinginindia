@@ -4,9 +4,13 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/extract-coordinates.js && astro build",
+    "build:quick": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "extract-coords": "node scripts/extract-coordinates.js",
+    "extract-coords:test": "node scripts/extract-coordinates.js --test",
+    "validate-coords": "node scripts/validate-coordinates.js",
     "sort-locations": "node scripts/sort-locations.js"
   },
   "dependencies": {

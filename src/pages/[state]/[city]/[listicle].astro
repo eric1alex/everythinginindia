@@ -2,6 +2,9 @@
 import Layout from "~/layouts/Layout.astro";
 import locations from "~/data/locations.json";
 import Breadcrumbs from "~/components/Breadcrumbs.astro";
+import RelatedArticles from "~/components/RelatedArticles.astro";
+import FeedbackPopup from "~/components/FeedbackPopup.astro";
+import ListicleRequestWidget from "~/components/ListicleRequestWidget.astro";
 
 // --- GET STATIC PATHS ---
 export async function getStaticPaths() {
@@ -71,6 +74,14 @@ export async function getStaticPaths() {
     return allPages;
 }
 
+// Helper function to slugify category titles (same as in getStaticPaths)
+function slugifyCategory(text: string): string {
+    return text
+        .toLowerCase()
+        .replace(/\s+/g, "-")
+        .replace(/[^\w-]/g, "");
+}
+
 const {
     cityName,
     stateName,
@@ -86,6 +97,8 @@ const {
 
 const itemCount = items.length;
 const categoryLower = categoryTitle.toLowerCase();
+
+// (Map logic removed)
 
 // SEO-optimized title and description with long-tail keywords
 const pageTitle = `Top ${itemCount} Best ${categoryTitle} in ${cityName}, ${stateName} (2026 Guide)`;
@@ -260,8 +273,12 @@ const introText =
                 </p>
             </section>
 
+            <!-- View Toggle removed -->
+
+            <!-- Map View removed -->
+
             <!-- Listicle Items -->
-            <section class="listicle-section">
+            <section id="list-view-container" class="listicle-section">
                 <h2>The {itemCount} Best {categoryTitle} in {cityName}</h2>
                 <div class="listicle-grid">
                     {
@@ -604,6 +621,8 @@ const introText =
         color: #1a1a1a;
     }
 
+    /* View Toggle styles removed */
+
     /* Listicle Section */
     .listicle-section h2 {
         font-size: 1.5rem;
@@ -872,3 +891,7 @@ const introText =
         }
     }
 </style>
+
+<script is:inline>
+    // No map scripts needed
+</script>

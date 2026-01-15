@@ -17,7 +17,7 @@ function parseCSV(csv: string) {
         const values = line.split(",");
         const obj: any = {};
         headers.forEach((header, index) => {
-            let value: any = values[index] || "";
+            let value: any = (values[index] || "").trim();
             const headerName = header.trim();
 
             // Handle images column - split by pipe for multiple images
@@ -158,6 +158,7 @@ const siteUrl = "https://www.whereinindia.online";
                             data-original-price={product.price}
                             data-category={product.category}
                             data-featured={product.featured}
+                            data-bestseller={product.bestseller}
                             data-slug={product.slug}
                             data-in-stock={product.inStock}
                         >
@@ -247,8 +248,10 @@ const siteUrl = "https://www.whereinindia.online";
                                 {!product.inStock && (
                                     <span class="sold-out-badge">Sold Out</span>
                                 )}
-                                {product.discountPrice && product.inStock && (
-                                    <span class="discount-badge">Sale</span>
+                                {product.bestseller && product.inStock && (
+                                    <span class="bestseller-badge">
+                                        ⭐ Bestseller
+                                    </span>
                                 )}
 
                                 {/* Favorite Button */}
@@ -528,10 +531,14 @@ const siteUrl = "https://www.whereinindia.online";
                             return a.dataset.name.localeCompare(b.dataset.name);
                         case "featured":
                         default:
-                            return (
-                                (b.dataset.featured === "true" ? 1 : 0) -
-                                (a.dataset.featured === "true" ? 1 : 0)
-                            );
+                            // Bestsellers first, then featured
+                            const aScore =
+                                (a.dataset.bestseller === "true" ? 2 : 0) +
+                                (a.dataset.featured === "true" ? 1 : 0);
+                            const bScore =
+                                (b.dataset.bestseller === "true" ? 2 : 0) +
+                                (b.dataset.featured === "true" ? 1 : 0);
+                            return bScore - aScore;
                     }
                 });
 
@@ -927,5 +934,24 @@ const siteUrl = "https://www.whereinindia.online";
         background: #333;
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .bestseller-badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: #ffd700;
+        color: #000;
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 20px;
+        z-index: 10;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
     }
 </style>

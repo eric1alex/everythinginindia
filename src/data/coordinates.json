@@ -1,0 +1,5143 @@
+{
+  "agra": {
+    "experiences": [
+      {
+        "name": "Taj Mahal",
+        "lat": 27.175144799999998,
+        "lng": 78.0421422,
+        "url": "https://maps.google.com/?cid=15936801470875598302"
+      },
+      {
+        "name": "Agra Fort",
+        "lat": 27.1795328,
+        "lng": 78.021112,
+        "url": "https://maps.google.com/?cid=7208676187286181238"
+      },
+      {
+        "name": "Mehtab Bagh",
+        "lat": 27.180049399999998,
+        "lng": 78.0420879,
+        "url": "https://maps.google.com/?cid=11297137713572324988"
+      },
+      {
+        "name": "Kinari Bazaar",
+        "lat": 27.1689612,
+        "lng": 78.04272474999999,
+        "url": "https://maps.google.com/?cid=15086453216008242768"
+      },
+      {
+        "name": "Old City Food Tour",
+        "lat": 27.184487200000003,
+        "lng": 78.015379,
+        "url": "https://maps.google.com/?cid=1594170320688474098"
+      },
+      {
+        "name": "Sheroes Hangout",
+        "lat": 27.1601712,
+        "lng": 78.05370710000001,
+        "url": "https://maps.google.com/?cid=3523574645561133475"
+      },
+      {
+        "name": "Kalakriti Cultural & Convention Center",
+        "lat": 27.161931400000004,
+        "lng": 78.0596312,
+        "url": "https://maps.google.com/?cid=11722571607530929772"
+      }
+    ],
+    "monuments": [
+      {
+        "name": "Taj Mahal",
+        "lat": 27.175144799999998,
+        "lng": 78.0421422,
+        "url": "https://maps.google.com/?cid=15936801470875598302"
+      },
+      {
+        "name": "Agra Fort",
+        "lat": 27.1795328,
+        "lng": 78.021112,
+        "url": "https://maps.google.com/?cid=7208676187286181238"
+      },
+      {
+        "name": "Fatehpur Sikri",
+        "lat": 27.0944338,
+        "lng": 77.6735415,
+        "url": "https://maps.google.com/?cid=618071115155241792"
+      },
+      {
+        "name": "Tomb of Itimad-ud-Daulah",
+        "lat": 27.192887300000002,
+        "lng": 78.0309808,
+        "url": "https://maps.google.com/?cid=1438403563923096664"
+      },
+      {
+        "name": "Akbar's Tomb (Sikandra)",
+        "lat": 27.220555599999997,
+        "lng": 77.95050859999999,
+        "url": "https://maps.google.com/?cid=3372045639634597397"
+      },
+      {
+        "name": "Mehtab Bagh",
+        "lat": 27.180049399999998,
+        "lng": 78.0420879,
+        "url": "https://maps.google.com/?cid=11297137713572324988"
+      },
+      {
+        "name": "Jama Masjid",
+        "lat": 27.182047099999995,
+        "lng": 78.01597559999999,
+        "url": "https://maps.google.com/?cid=9057856404525515044"
+      },
+      {
+        "name": "Chini ka Rauza",
+        "lat": 27.2008492,
+        "lng": 78.0342606,
+        "url": "https://maps.google.com/?cid=8068680675270638649"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Pinch of Spice",
+        "lat": 27.1596073,
+        "lng": 78.0431626,
+        "url": "https://maps.google.com/?cid=4138647026718746823"
+      },
+      {
+        "name": "Peshawri (ITC Mughal)",
+        "lat": 27.161150199999994,
+        "lng": 78.04377699999999,
+        "url": "https://maps.google.com/?cid=16365523348208361776"
+      },
+      {
+        "name": "Esphahan (The Oberoi Amarvilas)",
+        "lat": 27.168003199999998,
+        "lng": 78.0490121,
+        "url": "https://maps.google.com/?cid=14333604220416063017"
+      },
+      {
+        "name": "Chapter 1 Cafe",
+        "lat": 27.158138500000003,
+        "lng": 78.0455104,
+        "url": "https://maps.google.com/?cid=8127048340961422079"
+      },
+      {
+        "name": "Dasaprakash",
+        "lat": 27.158535999999998,
+        "lng": 78.05957599999999,
+        "url": "https://maps.google.com/?cid=6542178010406324091"
+      },
+      {
+        "name": "Deviram Sweets & Restaurant",
+        "lat": 27.2057569,
+        "lng": 78.004305,
+        "url": "https://maps.google.com/?cid=11898098919557870715"
+      },
+      {
+        "name": "The Salt Cafe Kitchen & Bar",
+        "lat": 27.1574882,
+        "lng": 78.0497323,
+        "url": "https://maps.google.com/?cid=2719281851311059331"
+      },
+      {
+        "name": "Sheroes Hangout",
+        "lat": 27.1601712,
+        "lng": 78.05370710000001,
+        "url": "https://maps.google.com/?cid=3523574645561133475"
+      }
+    ],
+    "museums": [
+      {
+        "name": "Taj Museum",
+        "lat": 27.1731804,
+        "lng": 78.040668,
+        "url": "https://maps.google.com/?cid=8421333962372134697"
+      },
+      {
+        "name": "Agra Fort Museum",
+        "lat": 27.1795328,
+        "lng": 78.021112,
+        "url": "https://maps.google.com/?cid=7208676187286181238"
+      },
+      {
+        "name": "Fatehpur Sikri Museum",
+        "lat": 27.0977925,
+        "lng": 77.6681424,
+        "url": "https://maps.google.com/?cid=17793363078114814772"
+      },
+      {
+        "name": "Kalakriti Cultural & Convention Center",
+        "lat": 27.161931400000004,
+        "lng": 78.0596312,
+        "url": "https://maps.google.com/?cid=11722571607530929772"
+      },
+      {
+        "name": "Archaeological Museum, Agra",
+        "lat": 27.1731804,
+        "lng": 78.040668,
+        "url": "https://maps.google.com/?cid=8421333962372134697"
+      }
+    ],
+    "viewpoints": [
+      {
+        "name": "Mehtab Bagh",
+        "lat": 27.180049399999998,
+        "lng": 78.0420879,
+        "url": "https://maps.google.com/?cid=11297137713572324988"
+      },
+      {
+        "name": "Agra Fort (Musamman Burj)",
+        "lat": 27.178852799999998,
+        "lng": 78.02351829999999,
+        "url": "https://maps.google.com/?cid=4610669116695216099"
+      },
+      {
+        "name": "Taj Ganj Rooftop Cafes",
+        "lat": 27.169039200000007,
+        "lng": 78.0425325,
+        "url": "https://maps.google.com/?cid=11851744433828309025"
+      },
+      {
+        "name": "Yamuna River Bank (specific spots near Taj)",
+        "lat": 27.1760155,
+        "lng": 78.0438951,
+        "url": "https://maps.google.com/?cid=15442113485924348"
+      },
+      {
+        "name": "Taj Nature Walk",
+        "lat": 27.1701792,
+        "lng": 78.0483878,
+        "url": "https://maps.google.com/?cid=8117895388533137060"
+      },
+      {
+        "name": "The Salt Cafe Kitchen & Bar (rooftop)",
+        "lat": 27.1574882,
+        "lng": 78.0497323,
+        "url": "https://maps.google.com/?cid=2719281851311059331"
+      },
+      {
+        "name": "Saniya Palace Hotel Rooftop",
+        "lat": 27.169244400000004,
+        "lng": 78.0433789,
+        "url": "https://maps.google.com/?cid=2638685134233366175"
+      }
+    ]
+  },
+  "alleppey": {
+    "backwaters": [
+      {
+        "name": "Punnamada Lake",
+        "lat": 9.5111424,
+        "lng": 76.35905109999999,
+        "url": "https://maps.google.com/?cid=16829064228546763240"
+      },
+      {
+        "name": "Vembanad Lake",
+        "lat": 9.671642899999998,
+        "lng": 76.391736,
+        "url": "https://maps.google.com/?cid=4349586211699782748"
+      },
+      {
+        "name": "Thanneermukkom Bund",
+        "lat": 9.674324100000002,
+        "lng": 76.39981999999999,
+        "url": "https://maps.google.com/?cid=8819031440600143289"
+      },
+      {
+        "name": "Kuttanad Backwaters",
+        "lat": 9.5011996,
+        "lng": 76.34407139999999,
+        "url": "https://maps.google.com/?cid=8915551364558829293"
+      },
+      {
+        "name": "Pathiramanal Island",
+        "lat": 9.61818435,
+        "lng": 76.38484065,
+        "url": "https://maps.google.com/?cid=15353935297185769764"
+      },
+      {
+        "name": "R-Block Kuttanad",
+        "lat": 9.536078299999998,
+        "lng": 76.4179795,
+        "url": "https://maps.google.com/?cid=7692660245291538778"
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Marari Beach",
+        "lat": 9.600750399999999,
+        "lng": 76.2982585,
+        "url": "https://maps.google.com/?cid=9175204167992123400"
+      },
+      {
+        "name": "Thumboli Beach",
+        "lat": 9.5193329,
+        "lng": 76.31215630000001,
+        "url": "https://maps.google.com/?cid=9482214271962984554"
+      },
+      {
+        "name": "Andhakaranazhi Beach",
+        "lat": 9.74683465,
+        "lng": 76.28434175,
+        "url": "https://maps.google.com/?cid=4175170544247689471"
+      },
+      {
+        "name": "Valiya Azheekal Beach",
+        "lat": 9.136787499999997,
+        "lng": 76.4649531,
+        "url": "https://maps.google.com/?cid=2932830367631395680"
+      },
+      {
+        "name": "Poochakkal Beach",
+        "lat": 9.4927464,
+        "lng": 76.3176931,
+        "url": "https://maps.google.com/?cid=7471959009638972693"
+      },
+      {
+        "name": "Chettikad Beach",
+        "lat": 9.529372100000002,
+        "lng": 76.31315409999999,
+        "url": "https://maps.google.com/?cid=2251240934387754388"
+      },
+      {
+        "name": "Alappuzha Beach",
+        "lat": 9.487741249999997,
+        "lng": 76.31902815000001,
+        "url": "https://maps.google.com/?cid=11986476419882547799"
+      }
+    ],
+    "museums": [
+      {
+        "name": "Revi Karunakaran Museum",
+        "lat": 9.4986832,
+        "lng": 76.3286524,
+        "url": "https://maps.google.com/?cid=17119077156983073486"
+      },
+      {
+        "name": "International Coir Museum",
+        "lat": 9.563215099999997,
+        "lng": 76.32832719999999,
+        "url": "https://maps.google.com/?cid=11715273444960345225"
+      },
+      {
+        "name": "Alappuzha Lighthouse Museum",
+        "lat": 9.4939197,
+        "lng": 76.3209258,
+        "url": "https://maps.google.com/?cid=16607168727819985188"
+      },
+      {
+        "name": "Krishnapuram Palace Museum",
+        "lat": 9.1502152,
+        "lng": 76.50878639999999,
+        "url": "https://maps.google.com/?cid=17634259357483177459"
+      },
+      {
+        "name": "Kuttanad Museum",
+        "lat": 9.374298999999997,
+        "lng": 76.40707890000002,
+        "url": "https://maps.google.com/?cid=6667847340926717633"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Halais Restaurant",
+        "lat": 9.494642899999997,
+        "lng": 76.3314414,
+        "url": "https://maps.google.com/?cid=3007976237780181865"
+      },
+      {
+        "name": "Thaff Delicacy",
+        "lat": 9.447694900000002,
+        "lng": 76.3425795,
+        "url": "https://maps.google.com/?cid=7107565043593961394"
+      },
+      {
+        "name": "Harbour Restaurant",
+        "lat": 9.493899200000001,
+        "lng": 76.31860139999999,
+        "url": "https://maps.google.com/?cid=11446625254078876569"
+      },
+      {
+        "name": "Cassia Restaurant",
+        "lat": 9.5188583,
+        "lng": 76.3275294,
+        "url": "https://maps.google.com/?cid=4644417358232425440"
+      },
+      {
+        "name": "Kream Korner",
+        "lat": 9.4964604,
+        "lng": 76.3424385,
+        "url": "https://maps.google.com/?cid=13201818017815867305"
+      },
+      {
+        "name": "Cafe Catamaran",
+        "lat": 9.5007992,
+        "lng": 76.3162085,
+        "url": "https://maps.google.com/?cid=8192670677793114941"
+      },
+      {
+        "name": "The Grand Multispeciality Restaurant",
+        "lat": 9.4980126,
+        "lng": 76.3401569,
+        "url": "https://maps.google.com/?cid=14783030907502464885"
+      },
+      {
+        "name": "Dreamers Cafe",
+        "lat": 9.4840096,
+        "lng": 76.3199609,
+        "url": "https://maps.google.com/?cid=3590692584594346592"
+      },
+      {
+        "name": "Chakara Restaurant",
+        "lat": 9.5007992,
+        "lng": 76.3162085,
+        "url": "https://maps.google.com/?cid=8192670677793114941"
+      }
+    ],
+    "houseboats": [
+      {
+        "name": "Spice Routes Luxury Houseboats",
+        "lat": 9.4596158,
+        "lng": 76.3943486,
+        "url": "https://maps.google.com/?cid=15717801410418452495"
+      },
+      {
+        "name": "Evergreen Houseboats",
+        "lat": 9.462404099999999,
+        "lng": 76.3637013,
+        "url": "https://maps.google.com/?cid=9775438481336064976"
+      },
+      {
+        "name": "Rainbow Cruises",
+        "lat": 9.520206,
+        "lng": 76.339219,
+        "url": "https://maps.google.com/?cid=9928453645248373538"
+      },
+      {
+        "name": "Johnson's Houseboats",
+        "lat": 9.497680599999999,
+        "lng": 76.3264043,
+        "url": "https://maps.google.com/?cid=3106898191296520741"
+      },
+      {
+        "name": "Alleppey Houseboat Club",
+        "lat": 9.5087232,
+        "lng": 76.3533355,
+        "url": "https://maps.google.com/?cid=3123934937511425936"
+      },
+      {
+        "name": "Cosy Houseboats",
+        "lat": 9.501117700000002,
+        "lng": 76.3504541,
+        "url": "https://maps.google.com/?cid=5388721500266355185"
+      },
+      {
+        "name": "Blue Bird Houseboats",
+        "lat": 9.417828199999999,
+        "lng": 76.40766909999999,
+        "url": "https://maps.google.com/?cid=4481954581884527026"
+      },
+      {
+        "name": "Lake View Houseboats",
+        "lat": 9.500084000000001,
+        "lng": 76.350191,
+        "url": "https://maps.google.com/?cid=13692847261307401876"
+      },
+      {
+        "name": "Xandari Riverscapes",
+        "lat": 9.464983999999998,
+        "lng": 76.36146339999999,
+        "url": "https://maps.google.com/?cid=15674893929846919626"
+      }
+    ]
+  },
+  "bengaluru": {
+    "restaurants": [
+      {
+        "name": "Olive Beach",
+        "lat": 12.9668972,
+        "lng": 77.6055095,
+        "url": "https://www.google.com/maps/place/Olive+Beach/@12.9668972,77.6055095,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae142aad557cd3:0xe6e1a61c52c08c7d!8m2!3d12.966892!4d77.6080844!16s%2Fg%2F1tdk__ng?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Karavalli",
+        "lat": 12.9724525,
+        "lng": 77.6060786,
+        "url": "https://www.google.com/maps/place/Karavalli+-+Vivanta+Bengaluru,+Residency+Road/@12.9724525,77.6060786,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae167e46fb00e5:0x777b03419880fc1f!8m2!3d12.9724473!4d77.6086535!16s%2Fg%2F11b75nr421?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Truffles",
+        "lat": 12.9807323,
+        "lng": 77.6379464,
+        "url": "https://www.google.com/maps/place/Truffles+-+Indiranagar/@12.9807323,77.6379464,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16bacb0c77fb:0xa25d0ae6e9a9cbbb!8m2!3d12.9807271!4d77.6405213!16s%2Fg%2F11f3tvb5sz?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Mavalli Tiffin Room (MTR)",
+        "lat": 12.9805615,
+        "lng": 77.6379001,
+        "url": "https://www.google.com/maps/place/MTR/@12.9805615,77.6379001,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16a535cbfd23:0x797726e497e5ec59!8m2!3d12.9805563!4d77.640475!16s%2Fg%2F1tg7_xw6?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Vidyarthi Bhavan",
+        "lat": 12.9450397,
+        "lng": 77.5687974,
+        "url": "https://www.google.com/maps/place/Vidyarthi+Bhavan/@12.9450397,77.5687974,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15f2e88ad035:0xed7fede7791f8edc!8m2!3d12.9450345!4d77.5713723!16s%2Fm%2F0hhrhzm?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Burma Burma",
+        "lat": 12.9208581,
+        "lng": 77.6812132,
+        "url": "https://www.google.com/maps/place/Burma+Burma+Restaurant+%26+Tea+Room/@12.9208581,77.6812132,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1300696a29a5:0xf19fa4f967fee5c6!8m2!3d12.9208529!4d77.6837881!16s%2Fg%2F11xgljz3j6?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      }
+    ],
+    "cafes": [
+      {
+        "name": "Third Wave Coffee Roasters",
+        "lat": 12.9208581,
+        "lng": 77.6812132,
+        "url": "https://www.google.com/maps/place/Third+Wave+Coffee/@12.9208581,77.6812132,17z/data=!4m6!3m5!1s0x3bae13d81f6653c1:0xc23c18b5423c5fa0!8m2!3d12.9209413!4d77.684636!16s%2Fg%2F11pc9h350v?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Matteo Coffea",
+        "lat": 12.9781988,
+        "lng": 77.6412538,
+        "url": "https://www.google.com/maps/place/Matteo+Coffea/@12.9781988,77.6412538,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16a4844dd511:0xdb630a8221329920!8m2!3d12.9781936!4d77.6438287!16s%2Fg%2F11r915fsn?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Glen's Bakehouse",
+        "lat": 12.9781988,
+        "lng": 77.6412538,
+        "url": "https://www.google.com/maps/place/Glen's+Bakehouse/@12.9781988,77.6412538,17z/data=!4m6!3m5!1s0x3bae16a514f32b63:0x3fe5c3cae3e71143!8m2!3d12.9791429!4d77.6406209!16s%2Fg%2F1pty39k2w?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "DYU Art Cafe",
+        "lat": 12.9374301,
+        "lng": 77.6150817,
+        "url": "https://www.google.com/maps/place/Dyu+Art+Cafe/@12.9374301,77.6150817,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae144f0a0442f3:0x5cf634310edf27a8!8m2!3d12.9374249!4d77.6176566!16s%2Fg%2F1ydpv9q4x?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "THE BLOOM ",
+        "lat": 12.9261517,
+        "lng": 77.5872706,
+        "url": "https://www.google.com/maps/place/THE+BLOOM+-+Cafe+%26+Patisserie/@12.9261517,77.5872706,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1563d4c4dbff:0x74a597ba36c138c1!8m2!3d12.9261465!4d77.5898455!16s%2Fg%2F11y8nvx9_0?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Indian Coffee House",
+        "lat": 12.9337767,
+        "lng": 77.6133137,
+        "url": "https://www.google.com/maps/place/Indian+Coffee+House+%26+Restaurant/@12.9337767,77.6133137,17z/data=!3m2!4b1!5s0x3bae1451d103e5c7:0x4d536690f4d1444a!4m6!3m5!1s0x3bae1451d1ae0acb:0x71b2e16e644c5ace!8m2!3d12.9337715!4d77.6158886!16s%2Fg%2F11b7q4r6m6?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      }
+    ],
+    "pubs": [
+      {
+        "name": "Arbor Brewing Company",
+        "lat": 12.9703808,
+        "lng": 77.6084276,
+        "url": "https://www.google.com/maps/place/Arbor+Brewing+Company/@12.9703808,77.6084276,17z/data=!3m1!4b1!4m11!3m10!1s0x3bae1681ac1dd657:0x901cdcb9823220c8!5m4!1s2025-11-11!2i3!4m1!1i2!8m2!3d12.9703756!4d77.6110025!16s%2Fm%2F0pd60ry?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Byg Brewski Brewing Company (Sarjapur Road)",
+        "lat": 12.9131472,
+        "lng": 77.6805008,
+        "url": "https://www.google.com/maps/place/Byg+Brewski+Brewing+Company/@12.9131472,77.6805008,17z/data=!3m1!4b1!4m11!3m10!1s0x3bae1311904d59e9:0x2242474248a6064d!5m4!1s2025-11-11!2i3!4m1!1i2!8m2!3d12.913142!4d77.6830757!16s%2Fg%2F1q5bmh7fm?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "District 6",
+        "lat": 13.012333,
+        "lng": 77.5520503,
+        "url": "https://www.google.com/maps/place/District+6+-+Best+German+Microbrewery+in+Bangalore/@13.012333,77.5520503,17z/data=!3m1!4b1!4m11!3m10!1s0x3bae3d78c3e7c1b5:0xcc99c49a0c03c39!5m4!1s2025-11-11!2i3!4m1!1i2!8m2!3d13.0123278!4d77.5546252!16s%2Fg%2F1pp2w_s39?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Ironhill Bengaluru",
+        "lat": 12.9508962,
+        "lng": 77.6961568,
+        "url": "https://www.google.com/maps/place/Ironhill+Bengaluru/@12.9508962,77.6961568,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae13acd685adb7:0x83c53190316ea8cd!8m2!3d12.950891!4d77.6987317!16s%2Fg%2F11r4w7wfq5?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Hard Rock Cafe Bengaluru",
+        "lat": 12.976184,
+        "lng": 77.5989678,
+        "url": "https://www.google.com/maps/place/Hard+Rock+Cafe+Bengaluru/@12.976184,77.5989678,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae167b826ffedd:0x8aefb6358f083984!8m2!3d12.9761788!4d77.6015427!16s%2Fg%2F1w3w1hln?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "The Biere Club",
+        "lat": 12.976184,
+        "lng": 77.5989678,
+        "url": "https://www.google.com/maps/place/The+Biere+Club+%7C+Lavelle+Road/@12.976184,77.5989678,17z/data=!3m1!5s0x3bae1679c7b46aa1:0xa6a62654da1f0d30!4m6!3m5!1s0x3bae1679c65e8131:0xad0dab7a4fe4cc32!8m2!3d12.9708863!4d77.5975839!16s%2Fg%2F1t_kdz9t?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Watson's",
+        "lat": 12.9672778,
+        "lng": 77.6403664,
+        "url": "https://www.google.com/maps/place/Watson's+Indiranagar/@12.9672778,77.6403664,18z/data=!3m1!4b1!4m6!3m5!1s0x3bae15e399488389:0x19397505ce679162!8m2!3d12.967276!4d77.6412768!16s%2Fg%2F11fjqk0vr2?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      }
+    ],
+    "shopping--malls": [
+      {
+        "name": "Phoenix Marketcity",
+        "lat": 12.9957919,
+        "lng": 77.6938262,
+        "url": "https://www.google.com/maps/place/Phoenix+Marketcity/@12.9957919,77.6938262,17z/data=!3m2!4b1!5s0x3bae115dabb584c7:0x7f8d0025f4fe5253!4m6!3m5!1s0x3bae110b04a3be4b:0xcffb252dab2e9643!8m2!3d12.9957867!4d77.6964011!16s%2Fm%2F0_vbklf?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Orion Mall",
+        "lat": 13.0110282,
+        "lng": 77.5521403,
+        "url": "https://www.google.com/maps/place/Orion+Mall/@13.0110282,77.5521403,17z/data=!3m2!4b1!5s0x3bae3d78a22062dd:0xbd0b5e0f866f6375!4m6!3m5!1s0x3bae3d4b805e4167:0xa4c255e80b7e5464!8m2!3d13.011023!4d77.5547152!16s%2Fm%2F0_s3hxr?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "UB City",
+        "lat": 12.971648,
+        "lng": 77.5933618,
+        "url": "https://www.google.com/maps/place/UB+City/@12.971648,77.5933618,17z/data=!3m2!4b1!5s0x3bae16774437089d:0x5ce03bb2faa75835!4m6!3m5!1s0x3bae16775069abf7:0xe138768bb2a0df8a!8m2!3d12.9716428!4d77.5959367!16s%2Fm%2F047skbt?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Forum Shantiniketan",
+        "lat": 12.9896512,
+        "lng": 77.7252248,
+        "url": "https://www.google.com/maps/place/NEXUS+SHANTINIKETAN/@12.9896512,77.7252248,17z/data=!3m1!5s0x3bae11eea69c5edf:0x34290335b2b0a9c5!4m15!1m8!3m7!1s0x3bae11eea79682f1:0xf9b2e0e9ba0b4926!2sPrestige+Shantiniketan+Apartment+Complex,+FORUM+SHANTINIKETAN+MALL,+PRESTIGE+SHANTINIKETAN,+Whitefield+Main+Rd,+Thigalarapalya,+Krishnarajapuram,+Bengaluru,+Karnataka+560048!3b1!8m2!3d12.989646!4d77.7277997!16s%2Fg%2F11f1478kd6!3m5!1s0x3bae11eea0053a71:0x81f6e5e82b75da88!8m2!3d12.989536!4d77.7281015!16s%2Fg%2F11fzcg2z92?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Garuda Mall",
+        "lat": 12.9701644,
+        "lng": 77.6055195,
+        "url": "https://www.google.com/maps/place/Garuda+Mall/@12.9701644,77.6055195,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17eab80cbf77:0x81bdb7b5fc76d166!8m2!3d12.9701592!4d77.6101329!16s%2Fg%2F11n0j1t49c?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Commercial Street",
+        "lat": 12.9822412,
+        "lng": 77.6057981,
+        "url": "https://www.google.com/maps/place/Commercial+Street,+Tasker+Town,+Shivaji+Nagar,+Bengaluru,+Karnataka/@12.9822412,77.6057981,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1689d24ec16d:0xb95d15d2169a107d!8m2!3d12.982236!4d77.608373!16s%2Fg%2F11bxfz11gp?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Brigade Road",
+        "lat": 12.9710481,
+        "lng": 77.6043283,
+        "url": "https://www.google.com/maps/place/Brigade+Rd,+Ashok+Nagar,+Bengaluru,+Karnataka/@12.9710481,77.6043283,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15d55cf36715:0x67c9c68d327b80dd!8m2!3d12.9710429!4d77.6069032!16s%2Fm%2F03nsqmb?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      }
+    ],
+    "museums": [
+      {
+        "name": "Visvesvaraya Industrial & Technological Museum",
+        "lat": 12.9751645,
+        "lng": 77.5938449,
+        "url": "https://www.google.com/maps/place/Visvesvaraya+Industrial+%26+Technological+Museum/@12.9751645,77.5938449,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15df82222aab:0x7fd53f96474af8a7!8m2!3d12.9751593!4d77.5964198!16zL20vMDFzMXYy?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Government Museum (Bangalore)",
+        "lat": 12.9746428,
+        "lng": 77.5932521,
+        "url": "https://www.google.com/maps/place/Government+Museum/@12.9746428,77.5932521,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16709e9ef31d:0x47074d7b480cdacc!8m2!3d12.9746376!4d77.595827!16s%2Fm%2F0n_4zjt?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "HAL Aerospace Museum",
+        "lat": 12.9549681,
+        "lng": 77.6786486,
+        "url": "https://www.google.com/maps/place/Hindustan+Aeronautics+Limited+(Museum)/@12.9549681,77.6786486,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae13bde1f4c3a5:0x681d794227e4c354!8m2!3d12.9549629!4d77.6812235!16s%2Fg%2F11v18ybsp4?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Indian Music Experience Museum",
+        "lat": 12.8917871,
+        "lng": 77.5811359,
+        "url": "https://www.google.com/maps/place/Indian+Music+Experience+Museum/@12.8917871,77.5811359,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1547381aaaab:0xf35fb2e714520a68!8m2!3d12.8917819!4d77.5837108!16s%2Fg%2F11gcx6tp0n?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "National Gallery of Modern Art",
+        "lat": 12.9894168,
+        "lng": 77.5854804,
+        "url": "https://www.google.com/maps/place/National+Gallery+of+Modern+Art+(Bengaluru)/@12.9894168,77.5854804,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16816c3294a9:0x69d86e822f4b337b!8m2!3d12.9894116!4d77.5880553!16s%2Fm%2F0r4khly?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Bangalore Palace",
+        "lat": 12.9966187,
+        "lng": 77.5874447,
+        "url": "https://www.google.com/maps/place/Bangalore+Palace,+Palace+Cross+Rd,+Vasanth+Nagar,+Bengaluru,+Karnataka+560006/@12.9966187,77.5874447,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16446ad0c54b:0x424585bd676e8f7e!8m2!3d12.9966135!4d77.5920581!16s%2Fg%2F11bw4q0krm?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      }
+    ]
+  },
+  "chennai": {
+    "restaurants": [
+      {
+        "name": "Dakshin (ITC Grand Chola)",
+        "lat": 13.0106735,
+        "lng": 80.22080299999999,
+        "url": "https://maps.google.com/?cid=6335245403330376696"
+      },
+      {
+        "name": "Annalakshmi Restaurant",
+        "lat": 13.072070100000001,
+        "lng": 80.252048,
+        "url": "https://maps.google.com/?cid=471429796982750208"
+      },
+      {
+        "name": "Buhari Hotel",
+        "lat": 13.066211700000002,
+        "lng": 80.2684857,
+        "url": "https://maps.google.com/?cid=12657635893200513102"
+      },
+      {
+        "name": "Murugan Idli Shop",
+        "lat": 13.042586600000002,
+        "lng": 80.2352884,
+        "url": "https://maps.google.com/?cid=10685528527644139758"
+      },
+      {
+        "name": "Sangeetha Veg Restaurant",
+        "lat": 13.0083359,
+        "lng": 80.2104602,
+        "url": "https://maps.google.com/?cid=10761110846863215183"
+      },
+      {
+        "name": "Ponnusamy Hotel",
+        "lat": 13.049483499999997,
+        "lng": 80.2623471,
+        "url": "https://maps.google.com/?cid=14249738650936078298"
+      },
+      {
+        "name": "Thalappakatti Biriyani",
+        "lat": 13.0337304,
+        "lng": 80.2382952,
+        "url": "https://maps.google.com/?cid=9772093419241794964"
+      },
+      {
+        "name": "Saravana Bhavan",
+        "lat": 13.076833200000001,
+        "lng": 80.2620949,
+        "url": "https://maps.google.com/?cid=4977663057189920132"
+      }
+    ],
+    "cafes": [
+      {
+        "name": "Writer's Cafe",
+        "lat": 13.054132000000001,
+        "lng": 80.25747439999999,
+        "url": "https://maps.google.com/?cid=13344130577914221873"
+      },
+      {
+        "name": "Amethyst Cafe",
+        "lat": 13.057327599999997,
+        "lng": 80.2593957,
+        "url": "https://maps.google.com/?cid=8481868054091031660"
+      },
+      {
+        "name": "The Brew Room",
+        "lat": 13.0455139,
+        "lng": 80.26098019999999,
+        "url": "https://maps.google.com/?cid=10642377417811054152"
+      },
+      {
+        "name": "Jonah's Bistro",
+        "lat": 12.997976699999999,
+        "lng": 80.2676961,
+        "url": "https://maps.google.com/?cid=16678292625001964542"
+      },
+      {
+        "name": "Madras Coffee House",
+        "lat": 13.047013699999999,
+        "lng": 80.2367993,
+        "url": "https://maps.google.com/?cid=8897268966671878989"
+      },
+      {
+        "name": "Chamiers Cafe",
+        "lat": 13.0283629,
+        "lng": 80.2502141,
+        "url": "https://maps.google.com/?cid=2323879231702500358"
+      }
+    ],
+    "monuments": [
+      {
+        "name": "Fort St. George",
+        "lat": 13.080017549999999,
+        "lng": 80.28505945,
+        "url": "https://maps.google.com/?cid=818982172841012494"
+      },
+      {
+        "name": "Valluvar Kottam",
+        "lat": 13.0538053,
+        "lng": 80.24229129999999,
+        "url": "https://maps.google.com/?cid=526709916114750824"
+      },
+      {
+        "name": "Ripon Building",
+        "lat": 13.081834299999999,
+        "lng": 80.2715885,
+        "url": "https://maps.google.com/?cid=12185238535027074497"
+      },
+      {
+        "name": "Vivekananda House",
+        "lat": 13.0494675,
+        "lng": 80.2803374,
+        "url": "https://maps.google.com/?cid=326711951594524721"
+      },
+      {
+        "name": "Madras High Court",
+        "lat": 13.085629299999997,
+        "lng": 80.2882667,
+        "url": "https://maps.google.com/?cid=6256243913791259378"
+      },
+      {
+        "name": "Light House (Marina Beach)",
+        "lat": 13.039569199999999,
+        "lng": 80.2811608,
+        "url": "https://maps.google.com/?cid=7725666871496495834"
+      },
+      {
+        "name": "Senate House (University of Madras)",
+        "lat": 13.065073100000001,
+        "lng": 80.28288669999999,
+        "url": "https://maps.google.com/?cid=10213805418006634321"
+      },
+      {
+        "name": "Arignar Anna Memorial",
+        "lat": 13.0654523,
+        "lng": 80.28552619999999,
+        "url": "https://maps.google.com/?cid=9559555118482773779"
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Marina Beach",
+        "lat": 13.04372295,
+        "lng": 80.28385355,
+        "url": "https://maps.google.com/?cid=381063856029611530"
+      },
+      {
+        "name": "Besant Nagar Beach (Elliot's Beach)",
+        "lat": 13.002600249999999,
+        "lng": 80.27432054999998,
+        "url": "https://maps.google.com/?cid=9533429003285492113"
+      },
+      {
+        "name": "Kovalam Beach",
+        "lat": 12.789625100000002,
+        "lng": 80.2542395,
+        "url": "https://maps.google.com/?cid=5429200788089851116"
+      },
+      {
+        "name": "Muttukadu Boathouse",
+        "lat": 12.805811599999998,
+        "lng": 80.24197989999999,
+        "url": "https://maps.google.com/?cid=4628987687655710090"
+      },
+      {
+        "name": "Palavakkam Beach",
+        "lat": 12.9650856,
+        "lng": 80.26436729999999,
+        "url": "https://maps.google.com/?cid=12651684680839092592"
+      },
+      {
+        "name": "Neelankarai Beach",
+        "lat": 12.94935435,
+        "lng": 80.2616759,
+        "url": "https://maps.google.com/?cid=7943254142870663485"
+      },
+      {
+        "name": "Thiruvanmiyur Beach",
+        "lat": 12.97384295,
+        "lng": 80.26658,
+        "url": "https://maps.google.com/?cid=9396418523440356703"
+      }
+    ],
+    "shopping": [
+      {
+        "name": "Phoenix Marketcity",
+        "lat": 12.992939899999998,
+        "lng": 80.21786809999999,
+        "url": "https://maps.google.com/?cid=15796983725351682641"
+      },
+      {
+        "name": "Express Avenue Mall",
+        "lat": 13.058454600000001,
+        "lng": 80.26418439999999,
+        "url": "https://maps.google.com/?cid=9769892678297998155"
+      },
+      {
+        "name": "T. Nagar (Pondy Bazaar, Ranganathan Street)",
+        "lat": 13.036919099999999,
+        "lng": 80.2298596,
+        "url": "https://maps.google.com/?cid=8036977018540925854"
+      },
+      {
+        "name": "Sowcarpet",
+        "lat": 13.098735849999999,
+        "lng": 80.27845599999999,
+        "url": "https://maps.google.com/?cid=13534070329507978734"
+      },
+      {
+        "name": "Spencer Plaza",
+        "lat": 13.0614067,
+        "lng": 80.26130239999999,
+        "url": "https://maps.google.com/?cid=17113451026958454351"
+      },
+      {
+        "name": "Nalli Silks",
+        "lat": 13.040391599999998,
+        "lng": 80.2315249,
+        "url": "https://maps.google.com/?cid=9954295348538871290"
+      },
+      {
+        "name": "Saravana Stores",
+        "lat": 13.086365099999998,
+        "lng": 80.2569535,
+        "url": "https://maps.google.com/?cid=14912298340203178125"
+      },
+      {
+        "name": "Mylapore (Kutcheri Road)",
+        "lat": 13.0346305,
+        "lng": 80.2723343,
+        "url": "https://maps.google.com/?cid=12885659010914708300"
+      }
+    ],
+    "museums": [
+      {
+        "name": "Government Museum Chennai",
+        "lat": 13.069764099999999,
+        "lng": 80.2570356,
+        "url": "https://maps.google.com/?cid=10738827242996767798"
+      },
+      {
+        "name": "DakshinaChitra Museum",
+        "lat": 12.823108500000002,
+        "lng": 80.2419908,
+        "url": "https://maps.google.com/?cid=6388113672049129011"
+      },
+      {
+        "name": "Periyar Science and Technology Centre (Planetarium)",
+        "lat": 13.0127211,
+        "lng": 80.2437897,
+        "url": "https://maps.google.com/?cid=13511993563432382321"
+      },
+      {
+        "name": "Fort St. George Museum",
+        "lat": 13.080638299999999,
+        "lng": 80.2876185,
+        "url": "https://maps.google.com/?cid=5548234867178509053"
+      },
+      {
+        "name": "Chennai Rail Museum",
+        "lat": 13.100107300000001,
+        "lng": 80.20867489999999,
+        "url": "https://maps.google.com/?cid=9502542699876413396"
+      },
+      {
+        "name": "Vivekananda House Museum",
+        "lat": 13.0494675,
+        "lng": 80.2803374,
+        "url": "https://maps.google.com/?cid=326711951594524721"
+      },
+      {
+        "name": "Connemara Public Library",
+        "lat": 13.070448599999999,
+        "lng": 80.2567748,
+        "url": "https://maps.google.com/?cid=48585070972393929"
+      }
+    ]
+  },
+  "coorg": {
+    "restaurants": [
+      {
+        "name": "Raintree Restaurant",
+        "lat": 12.419060199999999,
+        "lng": 75.738976,
+        "url": "https://maps.google.com/?cid=13189816883359126504"
+      },
+      {
+        "name": "Fort Mercara Restaurant",
+        "lat": 12.4207305,
+        "lng": 75.7402944,
+        "url": "https://maps.google.com/?cid=12911084811807218320"
+      },
+      {
+        "name": "Capitol Village Restaurant",
+        "lat": 12.398540100000002,
+        "lng": 75.77095190000001,
+        "url": "https://maps.google.com/?cid=5088381738013419910"
+      },
+      {
+        "name": "Hotel Udupi Veg",
+        "lat": 12.447296699999999,
+        "lng": 75.9715011,
+        "url": "https://maps.google.com/?cid=13127322691154624545"
+      },
+      {
+        "name": "Beans N Brews",
+        "lat": 12.4190881,
+        "lng": 75.7389615,
+        "url": "https://maps.google.com/?cid=826325603198672098"
+      }
+    ],
+    "cafes": [
+      {
+        "name": "Coffee Blossom",
+        "lat": 12.4413226,
+        "lng": 75.7166146,
+        "url": "https://maps.google.com/?cid=10628934921688566722"
+      },
+      {
+        "name": "Big Cup Cafe",
+        "lat": 12.430874000000001,
+        "lng": 75.75356699999999,
+        "url": "https://maps.google.com/?cid=2920112968916026093"
+      },
+      {
+        "name": "Coorg Coffee House",
+        "lat": 12.182809399999998,
+        "lng": 75.9161712,
+        "url": "https://maps.google.com/?cid=2721856854846225721"
+      },
+      {
+        "name": "The Funky Bean Cafe",
+        "lat": 12.4190881,
+        "lng": 75.7389615,
+        "url": "https://maps.google.com/?cid=826325603198672098"
+      },
+      {
+        "name": "Cafe Coorg",
+        "lat": 12.438557999999999,
+        "lng": 75.72400329999999,
+        "url": "https://maps.google.com/?cid=12359457517952419725"
+      }
+    ],
+    "viewpoints": [
+      {
+        "name": "Raja's Seat",
+        "lat": 12.414489899999998,
+        "lng": 75.7368986,
+        "url": "https://maps.google.com/?cid=4966457375673908786"
+      },
+      {
+        "name": "Brahmagiri Hill",
+        "lat": 11.9322001,
+        "lng": 75.9940526,
+        "url": "https://maps.google.com/?cid=15948794039050596775"
+      },
+      {
+        "name": "Tadiandamol Peak",
+        "lat": 12.21759735,
+        "lng": 75.60911180000001,
+        "url": "https://maps.google.com/?cid=9404187513946867767"
+      },
+      {
+        "name": "Abbey Falls Viewpoint",
+        "lat": 12.457894600000003,
+        "lng": 75.7164803,
+        "url": "https://maps.google.com/?cid=12481967497890031120"
+      },
+      {
+        "name": "Thadiyandamol Peak Viewpoint",
+        "lat": 12.231959900000001,
+        "lng": 75.6300712,
+        "url": "https://maps.google.com/?cid=9414337089883693909"
+      },
+      {
+        "name": "Mandalpatti Viewpoint",
+        "lat": 12.545356199999999,
+        "lng": 75.701137,
+        "url": "https://maps.google.com/?cid=2954191537605950632"
+      },
+      {
+        "name": "Kote Betta Peak",
+        "lat": 12.543737499999999,
+        "lng": 75.7539219,
+        "url": "https://maps.google.com/?cid=13825805352003501259"
+      }
+    ],
+    "waterfalls": [
+      {
+        "name": "Iruppu Falls",
+        "lat": 11.966102600000001,
+        "lng": 75.9833292,
+        "url": "https://maps.google.com/?cid=7227339232506097309"
+      },
+      {
+        "name": "Mallalli Falls",
+        "lat": 12.680643,
+        "lng": 75.72366699999999,
+        "url": "https://maps.google.com/?cid=7249501979066290052"
+      },
+      {
+        "name": "Chelavara Falls",
+        "lat": 12.206244499999999,
+        "lng": 75.6734701,
+        "url": "https://maps.google.com/?cid=15446347206413111185"
+      },
+      {
+        "name": "Devarakolli Falls",
+        "lat": 12.4405994,
+        "lng": 75.65075379999999,
+        "url": "https://maps.google.com/?cid=13454250971319068345"
+      }
+    ],
+    "trekking": [
+      {
+        "name": "Mandalpatti Trek",
+        "lat": 12.545356199999999,
+        "lng": 75.701137,
+        "url": "https://maps.google.com/?cid=2954191537605950632"
+      },
+      {
+        "name": "Brahmagiri Hill Trek",
+        "lat": 11.932062499999999,
+        "lng": 75.9940625,
+        "url": "https://maps.google.com/?cid=10301088382931641101"
+      },
+      {
+        "name": "Kote Betta Trek",
+        "lat": 12.543737499999999,
+        "lng": 75.7539219,
+        "url": "https://maps.google.com/?cid=13825805352003501259"
+      },
+      {
+        "name": "Galibeedu Trek",
+        "lat": 12.475101599999999,
+        "lng": 75.6834368,
+        "url": "https://maps.google.com/?cid=12786668273018754524"
+      },
+      {
+        "name": "Pushpagiri Trek",
+        "lat": 12.668806,
+        "lng": 75.707031,
+        "url": "https://maps.google.com/?cid=3870732965429380493"
+      },
+      {
+        "name": "Tadiandamol Peak Trek",
+        "lat": 12.217136199999999,
+        "lng": 75.60859674999999,
+        "url": "https://maps.google.com/?cid=1921969330149926391"
+      },
+      {
+        "name": "Kakkabe Trail",
+        "lat": 12.227414999999999,
+        "lng": 75.6455551,
+        "url": "https://maps.google.com/?cid=12610980963537759084"
+      }
+    ]
+  },
+  "delhi": {
+    "cafes": [
+      {
+        "name": "Big Chill Cafe",
+        "lat": 28.6005917,
+        "lng": 77.22757940000001,
+        "url": "https://maps.google.com/?cid=4757838612067977425"
+      },
+      {
+        "name": "Diggin Cafe",
+        "lat": 28.5951894,
+        "lng": 77.1978419,
+        "url": "https://maps.google.com/?cid=10536850271464331904"
+      },
+      {
+        "name": "Rose Cafe",
+        "lat": 28.5289784,
+        "lng": 77.20554779999999,
+        "url": "https://maps.google.com/?cid=16490677547324405113"
+      },
+      {
+        "name": "Ama Cafe",
+        "lat": 28.702602100000004,
+        "lng": 77.2283847,
+        "url": "https://maps.google.com/?cid=10788841886554459827"
+      },
+      {
+        "name": "Third Wave Coffee Roasters",
+        "lat": 28.6325978,
+        "lng": 77.22149370000001,
+        "url": "https://maps.google.com/?cid=8908757060241105984"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Indian Accent",
+        "lat": 28.591833599999994,
+        "lng": 77.2382224,
+        "url": "https://maps.google.com/?cid=18235984543408532518"
+      },
+      {
+        "name": "Bukhara (ITC Maurya)",
+        "lat": 28.597057499999995,
+        "lng": 77.173717,
+        "url": "https://maps.google.com/?cid=11128754767225469245"
+      },
+      {
+        "name": "Karim's",
+        "lat": 28.649496100000007,
+        "lng": 77.2337642,
+        "url": "https://maps.google.com/?cid=4430913657428603197"
+      },
+      {
+        "name": "Moti Mahal Delux",
+        "lat": 28.568342700000002,
+        "lng": 77.219174,
+        "url": "https://maps.google.com/?cid=3782665240195862084"
+      },
+      {
+        "name": "Dum Pukht (ITC Maurya)",
+        "lat": 28.597130999999997,
+        "lng": 77.1737083,
+        "url": "https://maps.google.com/?cid=1674376735495521805"
+      },
+      {
+        "name": "Saravana Bhavan",
+        "lat": 28.632330399999997,
+        "lng": 77.2162487,
+        "url": "https://maps.google.com/?cid=173920835258415332"
+      }
+    ],
+    "historical-sites--monuments": [
+      {
+        "name": "Qutub Minar",
+        "lat": 28.5244754,
+        "lng": 77.18552059999999,
+        "url": "https://maps.google.com/?cid=9460257356206415288"
+      },
+      {
+        "name": "Humayun's Tomb",
+        "lat": 28.5932848,
+        "lng": 77.2507492,
+        "url": "https://maps.google.com/?cid=13398695069844744205"
+      },
+      {
+        "name": "Red Fort",
+        "lat": 28.656159199999998,
+        "lng": 77.2410203,
+        "url": "https://maps.google.com/?cid=4908416671633375995"
+      },
+      {
+        "name": "India Gate",
+        "lat": 28.612911999999998,
+        "lng": 77.2295097,
+        "url": "https://maps.google.com/?cid=511043182630420061"
+      },
+      {
+        "name": "Lotus Temple",
+        "lat": 28.553492000000002,
+        "lng": 77.25882639999999,
+        "url": "https://maps.google.com/?cid=7294682539436721786"
+      },
+      {
+        "name": "Jantar Mantar",
+        "lat": 28.627054700000006,
+        "lng": 77.21662669999999,
+        "url": "https://maps.google.com/?cid=11694281193640434444"
+      }
+    ],
+    "museums--art-galleries": [
+      {
+        "name": "National Museum",
+        "lat": 28.6119078,
+        "lng": 77.21929089999999,
+        "url": "https://maps.google.com/?cid=2324595356918476495"
+      },
+      {
+        "name": "National Rail Museum",
+        "lat": 28.584987299999998,
+        "lng": 77.1814107,
+        "url": "https://maps.google.com/?cid=15800545424413862402"
+      },
+      {
+        "name": "Crafts Museum",
+        "lat": 28.613611099999996,
+        "lng": 77.24249999999999,
+        "url": "https://maps.google.com/?cid=45417273872685570"
+      },
+      {
+        "name": "Kiran Nadar Museum of Art",
+        "lat": 28.528566700000002,
+        "lng": 77.2204946,
+        "url": "https://maps.google.com/?cid=9553506046077884333"
+      },
+      {
+        "name": "Sanskriti Kendra Museums",
+        "lat": 28.485157599999994,
+        "lng": 77.1280355,
+        "url": "https://maps.google.com/?cid=11958668777013369283"
+      }
+    ],
+    "markets--shopping": [
+      {
+        "name": "Dilli Haat",
+        "lat": 28.5733233,
+        "lng": 77.2075473,
+        "url": "https://maps.google.com/?cid=17533572276851875844"
+      },
+      {
+        "name": "Chandni Chowk",
+        "lat": 28.651374699999998,
+        "lng": 77.23163735000001,
+        "url": "https://maps.google.com/?cid=166532288977157713"
+      },
+      {
+        "name": "Sarojini Nagar Market",
+        "lat": 28.57690695,
+        "lng": 77.196263,
+        "url": "https://maps.google.com/?cid=13998257908350362705"
+      }
+    ]
+  },
+  "goa": {
+    "beaches": [
+      {
+        "name": "Baga Beach",
+        "lat": 15.55671855,
+        "lng": 73.75076855,
+        "url": "https://maps.google.com/?cid=13434350667262444000"
+      },
+      {
+        "name": "Anjuna Beach",
+        "lat": 15.5743239,
+        "lng": 73.74010275,
+        "url": "https://maps.google.com/?cid=15526102552613289889"
+      },
+      {
+        "name": "Palolem Beach",
+        "lat": 15.009294149999999,
+        "lng": 74.02139715,
+        "url": "https://maps.google.com/?cid=2169545886941559797"
+      },
+      {
+        "name": "Calangute Beach",
+        "lat": 15.546835549999999,
+        "lng": 73.75368954999999,
+        "url": "https://maps.google.com/?cid=14652795284265205015"
+      },
+      {
+        "name": "Vagator Beach",
+        "lat": 15.603353299999998,
+        "lng": 73.73305884999999,
+        "url": "https://maps.google.com/?cid=2299015755817294595"
+      },
+      {
+        "name": "Colva Beach",
+        "lat": 15.280678550000001,
+        "lng": 73.91189049999998,
+        "url": "https://maps.google.com/?cid=13104941790697163061"
+      },
+      {
+        "name": "Morjim Beach",
+        "lat": 15.6277403,
+        "lng": 73.7280048,
+        "url": "https://maps.google.com/?cid=10163254927124642201"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Thalassa",
+        "lat": 15.616353699999996,
+        "lng": 73.75553219999999,
+        "url": "https://maps.google.com/?cid=6936201024142943676"
+      },
+      {
+        "name": "Gunpowder",
+        "lat": 15.596955700000002,
+        "lng": 73.78832299999999,
+        "url": "https://maps.google.com/?cid=11621766487240373066"
+      },
+      {
+        "name": "Fisherman's Wharf",
+        "lat": 15.157618300000005,
+        "lng": 73.95219089999999,
+        "url": "https://maps.google.com/?cid=9702393433282642372"
+      },
+      {
+        "name": "Antares Restaurant & Beach Club",
+        "lat": 15.594385599999999,
+        "lng": 73.7353127,
+        "url": "https://maps.google.com/?cid=7853548847268226536"
+      },
+      {
+        "name": "Tuscany Gardens",
+        "lat": 15.5029052,
+        "lng": 73.7713922,
+        "url": "https://maps.google.com/?cid=1088934797944766725"
+      },
+      {
+        "name": "Brittos",
+        "lat": 15.561489199999999,
+        "lng": 73.7497345,
+        "url": "https://maps.google.com/?cid=5400565344108990532"
+      },
+      {
+        "name": "Martin's Corner",
+        "lat": 15.3037876,
+        "lng": 73.9143001,
+        "url": "https://maps.google.com/?cid=557956864238280341"
+      }
+    ],
+    "cafes--shacks": [
+      {
+        "name": "Curlies Beach Shack",
+        "lat": 15.569435,
+        "lng": 73.7421889,
+        "url": "https://maps.google.com/?cid=2275617403466601617"
+      },
+      {
+        "name": "Shiva Valley",
+        "lat": 15.5689546,
+        "lng": 73.7420751,
+        "url": "https://maps.google.com/?cid=9228660492423884670"
+      },
+      {
+        "name": "Artjuna Cafe",
+        "lat": 15.580893600000001,
+        "lng": 73.7475441,
+        "url": "https://maps.google.com/?cid=10413137421516158434"
+      },
+      {
+        "name": "Cafe CO2 Goa",
+        "lat": 15.593808699999999,
+        "lng": 73.7356849,
+        "url": "https://maps.google.com/?cid=5703866522508361401"
+      },
+      {
+        "name": "German Bakery",
+        "lat": 15.573955699999999,
+        "lng": 73.74768,
+        "url": "https://maps.google.com/?cid=18166142861061889894"
+      },
+      {
+        "name": "Guru Bar",
+        "lat": 15.580592000000001,
+        "lng": 73.7379861,
+        "url": "https://maps.google.com/?cid=11788910071290342855"
+      },
+      {
+        "name": "ICE BOX BEACH SHACK",
+        "lat": 15.592212799999999,
+        "lng": 73.7339903,
+        "url": "https://maps.google.com/?cid=3991412901481307507"
+      }
+    ],
+    "nightlife": [
+      {
+        "name": "Tito's Lane",
+        "lat": 15.5563188,
+        "lng": 73.7531612,
+        "url": "https://maps.google.com/?cid=2620403295419803159"
+      },
+      {
+        "name": "Club LPK Waterfront",
+        "lat": 15.514690899999998,
+        "lng": 73.7833663,
+        "url": "https://maps.google.com/?cid=1475460059931692614"
+      },
+      {
+        "name": "Hammerzz Nightclub",
+        "lat": 15.564992499999995,
+        "lng": 73.7508447,
+        "url": "https://maps.google.com/?cid=3555772666686219172"
+      },
+      {
+        "name": "Cohiba Bar & Kitchen",
+        "lat": 15.498069699999999,
+        "lng": 73.7756637,
+        "url": "https://maps.google.com/?cid=16765143987069820552"
+      },
+      {
+        "name": "SinQ Night Club",
+        "lat": 15.501389,
+        "lng": 73.77164599999999,
+        "url": "https://maps.google.com/?cid=4064647926809813818"
+      },
+      {
+        "name": "Soro - The Village Pub",
+        "lat": 15.6012401,
+        "lng": 73.76137969999999,
+        "url": "https://maps.google.com/?cid=16578563329949774361"
+      },
+      {
+        "name": "Leopard Valley",
+        "lat": 15.034257500000002,
+        "lng": 74.01408049999999,
+        "url": "https://maps.google.com/?cid=3178905454967003059"
+      }
+    ],
+    "attractions": [
+      {
+        "name": "Dudhsagar Falls",
+        "lat": 15.314437499999997,
+        "lng": 74.3143073,
+        "url": "https://maps.google.com/?cid=18272309745798545957"
+      },
+      {
+        "name": "Fort Aguada",
+        "lat": 15.492251900000001,
+        "lng": 73.77374619999999,
+        "url": "https://maps.google.com/?cid=11782391001671891740"
+      },
+      {
+        "name": "Basilica of Bom Jesus",
+        "lat": 15.5008238,
+        "lng": 73.9114061,
+        "url": "https://maps.google.com/?cid=2197851625502386104"
+      },
+      {
+        "name": "Chapora Fort",
+        "lat": 15.6046375,
+        "lng": 73.7369631,
+        "url": "https://maps.google.com/?cid=3966512387993215239"
+      },
+      {
+        "name": "Goa State Museum",
+        "lat": 15.5007546,
+        "lng": 73.82986799999999,
+        "url": "https://maps.google.com/?cid=10735649641859217348"
+      },
+      {
+        "name": "Salim Ali Bird Sanctuary",
+        "lat": 15.5130468,
+        "lng": 73.8704154,
+        "url": "https://maps.google.com/?cid=15215378127878781305"
+      },
+      {
+        "name": "Fontainhas",
+        "lat": 15.495593300000001,
+        "lng": 73.8314762,
+        "url": "https://maps.google.com/?cid=11733140210155931401"
+      }
+    ]
+  },
+  "gokarna": {
+    "cafes": [
+      {
+        "name": "Bhagavan Cafe",
+        "lat": 14.561245199999998,
+        "lng": 74.3082548,
+        "url": "https://maps.google.com/?cid=5031461493840081209"
+      },
+      {
+        "name": "Ganga Cafe",
+        "lat": 14.531432400000002,
+        "lng": 74.3142014,
+        "url": "https://maps.google.com/?cid=13877336351214934604"
+      },
+      {
+        "name": "The Coco Leaf Cafe",
+        "lat": 14.5487736,
+        "lng": 74.3123625,
+        "url": "https://maps.app.goo.gl/WDeJ3iH5m8kx232z8"
+      },
+      {
+        "name": "Dolphin Shanti Cafe",
+        "lat": 14.517497899999997,
+        "lng": 74.3263195,
+        "url": "https://maps.google.com/?cid=2235049165918110664"
+      },
+      {
+        "name": "Cafe Paradise",
+        "lat": 14.525504399999999,
+        "lng": 74.3156333,
+        "url": "https://maps.google.com/?cid=12620439566821920926"
+      },
+      {
+        "name": "Shiva Cafe",
+        "lat": 14.552775099999998,
+        "lng": 74.31088770000001,
+        "url": "https://maps.google.com/?cid=4550794350240278546"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Mahalaxmi Restaurant",
+        "lat": 14.5434664,
+        "lng": 74.3153322,
+        "url": "https://maps.google.com/?cid=15563541382390017984"
+      },
+      {
+        "name": "Shree Shakti Pure Veg",
+        "lat": 14.5434325,
+        "lng": 74.3197817,
+        "url": "https://maps.google.com/?cid=2667384490568790304"
+      },
+      {
+        "name": "Namaste Samudra",
+        "lat": 14.5500978,
+        "lng": 74.3120849,
+        "url": "https://maps.google.com/?cid=7118249792878986672"
+      },
+      {
+        "name": "Mantra Cafe",
+        "lat": 14.5401478,
+        "lng": 74.3151233,
+        "url": "https://maps.google.com/?cid=14801790840604921901"
+      },
+      {
+        "name": "Sea Rock Cafe",
+        "lat": 14.528260500000002,
+        "lng": 74.3162535,
+        "url": "https://maps.google.com/?cid=18441993676635169055"
+      },
+      {
+        "name": "Hotel Gokarna International",
+        "lat": 14.548165700000002,
+        "lng": 74.3223415,
+        "url": "https://maps.google.com/?cid=2372565153101016688"
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Gokarna Main Beach",
+        "lat": 14.543735199999999,
+        "lng": 74.3136288,
+        "url": "https://maps.google.com/?cid=10418255072641029977"
+      },
+      {
+        "name": "Kudle Beach",
+        "lat": 14.526034699999999,
+        "lng": 74.3152819,
+        "url": "https://maps.google.com/?cid=5026394495678506561"
+      },
+      {
+        "name": "Om Beach",
+        "lat": 14.518827099999998,
+        "lng": 74.322888,
+        "url": "https://maps.google.com/?cid=2976685267142006899"
+      },
+      {
+        "name": "Half Moon Beach",
+        "lat": 14.517879400000002,
+        "lng": 74.3314684,
+        "url": "https://maps.google.com/?cid=10538361646011272541"
+      },
+      {
+        "name": "Small Hell Beach",
+        "lat": 14.518574300000001,
+        "lng": 74.33620865,
+        "url": "https://maps.google.com/?cid=5763250848594761577"
+      },
+      {
+        "name": "Nirvana Beach",
+        "lat": 14.475134899999999,
+        "lng": 74.36889185,
+        "url": "https://maps.google.com/?cid=2767407341545402221"
+      },
+      {
+        "name": "Paradise Beach",
+        "lat": 14.518011000000001,
+        "lng": 74.33744089999999,
+        "url": "https://maps.google.com/?cid=3438147879393229547"
+      }
+    ],
+    "trekking--viewpoints": [
+      {
+        "name": "Half Moon Beach Trek",
+        "lat": 14.5179177,
+        "lng": 74.3262759,
+        "url": "https://maps.google.com/?cid=15320113373367163006"
+      },
+      {
+        "name": "Gokarna Cliff Viewpoint",
+        "lat": 14.5220439,
+        "lng": 74.3110728,
+        "url": "https://maps.google.com/?cid=8906177242679185875"
+      },
+      {
+        "name": "Paradise Beach Trek",
+        "lat": 14.522890299999998,
+        "lng": 74.339225,
+        "url": "https://maps.google.com/?cid=7104607341089293307"
+      },
+      {
+        "name": "Om Beach Viewpoint",
+        "lat": 14.5154607,
+        "lng": 74.326414,
+        "url": "https://maps.google.com/?cid=1455735904025900056"
+      },
+      {
+        "name": "Mirjan Fort",
+        "lat": 14.4893403,
+        "lng": 74.41756459999999,
+        "url": "https://maps.google.com/?cid=11730475394730943432"
+      }
+    ]
+  },
+  "hampi": {
+    "restaurants": [
+      {
+        "name": "Tipples Restaurant",
+        "lat": 15.345371499999999,
+        "lng": 76.4173811,
+        "url": "https://maps.google.com/?cid=842475046075737313"
+      },
+      {
+        "name": "Hampi Roof Restaurant",
+        "lat": 15.335819100000005,
+        "lng": 76.46135319999999,
+        "url": "https://maps.google.com/?cid=14899607991321925098"
+      },
+      {
+        "name": "Udupi Sri Krishna Bhavan",
+        "lat": 15.275569800000001,
+        "lng": 76.38983379999999,
+        "url": "https://maps.google.com/?cid=3807432737930608013"
+      },
+      {
+        "name": "Laughing Buddha Cafe",
+        "lat": 15.352649399999997,
+        "lng": 76.3979213,
+        "url": "https://maps.google.com/?cid=922820100396631884"
+      },
+      {
+        "name": "Evergreen Cafe",
+        "lat": 15.306211300000001,
+        "lng": 76.4471437,
+        "url": "https://maps.google.com/?cid=9144106511348612703"
+      },
+      {
+        "name": "Shanthi Restaurant",
+        "lat": 15.304817499999999,
+        "lng": 76.4468326,
+        "url": "https://maps.google.com/?cid=2874027557983005478"
+      }
+    ],
+    "temples": [
+      {
+        "name": "Virupaksha Temple",
+        "lat": 15.335133299999999,
+        "lng": 76.45865289999999,
+        "url": "https://maps.google.com/?cid=4727749493327849997"
+      },
+      {
+        "name": "Vittala Temple",
+        "lat": 15.342498599999999,
+        "lng": 76.4750285,
+        "url": "https://maps.google.com/?cid=11703949993497433197"
+      },
+      {
+        "name": "Achyutaraya Temple",
+        "lat": 15.3319048,
+        "lng": 76.4700229,
+        "url": "https://maps.google.com/?cid=12188461617304782855"
+      },
+      {
+        "name": "Krishna Temple",
+        "lat": 15.3302734,
+        "lng": 76.46045889999999,
+        "url": "https://maps.google.com/?cid=1789686407588664628"
+      },
+      {
+        "name": "Lakshmi Narasimha Temple",
+        "lat": 15.3290842,
+        "lng": 76.4589251,
+        "url": "https://maps.google.com/?cid=13134150062170850235"
+      },
+      {
+        "name": "Hazara Rama Temple",
+        "lat": 15.3177657,
+        "lng": 76.4687682,
+        "url": "https://maps.google.com/?cid=6711998325548132584"
+      },
+      {
+        "name": "Kodanda Rama Temple",
+        "lat": 15.335980599999996,
+        "lng": 76.46843009999999,
+        "url": "https://maps.google.com/?cid=3840290351625356902"
+      },
+      {
+        "name": "Pattabhirama Temple",
+        "lat": 15.305696399999997,
+        "lng": 76.48281829999999,
+        "url": "https://maps.google.com/?cid=16776925360325304536"
+      },
+      {
+        "name": "Hemakuta Hill Temples",
+        "lat": 15.332482349999998,
+        "lng": 76.45989935,
+        "url": "https://maps.google.com/?cid=16518542748161161520"
+      }
+    ],
+    "monuments": [
+      {
+        "name": "Stone Chariot",
+        "lat": 15.342257700000001,
+        "lng": 76.4758465,
+        "url": "https://maps.google.com/?cid=4353177017768843332"
+      },
+      {
+        "name": "Elephant Stables",
+        "lat": 15.321118999999998,
+        "lng": 76.47273679999999,
+        "url": "https://maps.google.com/?cid=1732608320396810811"
+      },
+      {
+        "name": "Queen's Bath",
+        "lat": 15.313413600000002,
+        "lng": 76.4724944,
+        "url": "https://maps.google.com/?cid=18014252487286514979"
+      },
+      {
+        "name": "Mahanavami Dibba",
+        "lat": 15.315956799999999,
+        "lng": 76.4708588,
+        "url": "https://maps.google.com/?cid=14475770357179818036"
+      },
+      {
+        "name": "Pushkarini (Stepped Tank)",
+        "lat": 15.31502035,
+        "lng": 76.47027814999998,
+        "url": "https://maps.google.com/?cid=4539182302432023864"
+      },
+      {
+        "name": "King's Balance",
+        "lat": 15.3408935,
+        "lng": 76.47414730000001,
+        "url": "https://maps.google.com/?cid=15047197707585098650"
+      },
+      {
+        "name": "Pattabhirama Temple Complex",
+        "lat": 15.305696399999997,
+        "lng": 76.48281829999999,
+        "url": "https://maps.google.com/?cid=16776925360325304536"
+      },
+      {
+        "name": "Lotus Mahal",
+        "lat": 15.3202851,
+        "lng": 76.47132429999999,
+        "url": "https://maps.google.com/?cid=2764866153203647745"
+      },
+      {
+        "name": "Hampi Bazaar",
+        "lat": 15.334123199999999,
+        "lng": 76.4643603,
+        "url": "https://maps.google.com/?cid=777639695611320330"
+      }
+    ],
+    "viewpoints": [
+      {
+        "name": "Matanga Hill",
+        "lat": 15.331697399999998,
+        "lng": 76.46792655,
+        "url": "https://maps.google.com/?cid=16726972542964973804"
+      },
+      {
+        "name": "Hemakuta Hill",
+        "lat": 15.332482349999998,
+        "lng": 76.45989935,
+        "url": "https://maps.google.com/?cid=16518542748161161520"
+      },
+      {
+        "name": "Anjaneya Hill (Monkey Temple)",
+        "lat": 15.3523592,
+        "lng": 76.4704198,
+        "url": "https://maps.google.com/?cid=13283496446412919140"
+      },
+      {
+        "name": "Sunset Point (near Virupaksha Temple)",
+        "lat": 15.3316141,
+        "lng": 76.4684657,
+        "url": "https://maps.google.com/?cid=14105948764832077104"
+      },
+      {
+        "name": "Rishyamukha Hill",
+        "lat": 15.3361732,
+        "lng": 76.4677821,
+        "url": "https://maps.google.com/?cid=14496971277927534125"
+      },
+      {
+        "name": "Tungabhadra River banks",
+        "lat": 15.336812799999997,
+        "lng": 76.4589556,
+        "url": "https://maps.google.com/?cid=6028651096775718411"
+      },
+      {
+        "name": "View from Vittala Temple complex",
+        "lat": 15.342498599999999,
+        "lng": 76.4750285,
+        "url": "https://maps.google.com/?cid=11703949993497433197"
+      }
+    ],
+    "shopping": [
+      {
+        "name": "Hampi Bazaar",
+        "lat": 15.334123199999999,
+        "lng": 76.4643603,
+        "url": "https://maps.google.com/?cid=777639695611320330"
+      },
+      {
+        "name": "Crafts Village",
+        "lat": 15.334183299999998,
+        "lng": 76.46593620000002,
+        "url": "https://maps.google.com/?cid=2269728250992953114"
+      },
+      {
+        "name": "Shops near Hampi Bus Stand",
+        "lat": 15.334123199999999,
+        "lng": 76.4643603,
+        "url": "https://maps.google.com/?cid=777639695611320330"
+      },
+      {
+        "name": "Anegundi village shops",
+        "lat": 15.3509783,
+        "lng": 76.4936701,
+        "url": "https://maps.google.com/?cid=11093293629880312173"
+      },
+      {
+        "name": "Local artisan stalls",
+        "lat": 15.334123199999999,
+        "lng": 76.4643603,
+        "url": "https://maps.google.com/?cid=777639695611320330"
+      }
+    ],
+    "museums": [
+      {
+        "name": "Archaeological Museum, Hampi",
+        "lat": 15.3073493,
+        "lng": 76.4771336,
+        "url": "https://maps.google.com/?cid=17817151674238356670"
+      },
+      {
+        "name": "Anegundi Heritage Centre",
+        "lat": 15.3525108,
+        "lng": 76.4925617,
+        "url": "https://maps.google.com/?cid=12142298483755865776"
+      },
+      {
+        "name": "Kishkinda Trust Display",
+        "lat": 15.351689299999999,
+        "lng": 76.4924976,
+        "url": "https://maps.google.com/?cid=1897183148565287264"
+      }
+    ]
+  },
+  "jaipur": {
+    "restaurants": [
+      {
+        "name": "Handi Restaurant",
+        "lat": 26.916889100000002,
+        "lng": 75.8039984,
+        "url": "https://maps.google.com/?cid=14433092704581672109"
+      },
+      {
+        "name": "Niros",
+        "lat": 26.916287999999998,
+        "lng": 75.81145459999999,
+        "url": "https://maps.google.com/?cid=6765645601380862042"
+      },
+      {
+        "name": "Baluchi at The Lalit Jaipur",
+        "lat": 26.840530299999994,
+        "lng": 75.8075537,
+        "url": "https://maps.google.com/?cid=11772362276451505167"
+      },
+      {
+        "name": "Sethi Bar-Be-Que",
+        "lat": 26.895514199999997,
+        "lng": 75.83012819999999,
+        "url": "https://maps.google.com/?cid=9954605224654996253"
+      },
+      {
+        "name": "Kanha Restaurant",
+        "lat": 26.9122763,
+        "lng": 75.8005665,
+        "url": "https://maps.google.com/?cid=3400241091002588371"
+      },
+      {
+        "name": "Rawat Misthan Bhandar",
+        "lat": 26.9212614,
+        "lng": 75.7967221,
+        "url": "https://maps.google.com/?cid=12642927634706444064"
+      },
+      {
+        "name": "Spice Court",
+        "lat": 26.910827899999997,
+        "lng": 75.7889568,
+        "url": "https://maps.google.com/?cid=15338035396026959247"
+      }
+    ],
+    "cafes": [
+      {
+        "name": "Tapri Central",
+        "lat": 26.905517900000003,
+        "lng": 75.8111115,
+        "url": "https://maps.google.com/?cid=12502191192263122506"
+      },
+      {
+        "name": "Anokhi Cafe",
+        "lat": 26.9108034,
+        "lng": 75.798574,
+        "url": "https://maps.google.com/?cid=10971838361334104819"
+      },
+      {
+        "name": "Curious Life Coffee Roasters",
+        "lat": 26.909277399999997,
+        "lng": 75.8087409,
+        "url": "https://maps.google.com/?cid=16813533208246670210"
+      },
+      {
+        "name": "Cafe Bae",
+        "lat": 26.899733599999998,
+        "lng": 75.7928297,
+        "url": "https://maps.google.com/?cid=304095306035974032"
+      },
+      {
+        "name": "The Tattoo Cafe & Lounge",
+        "lat": 26.9238945,
+        "lng": 75.8273346,
+        "url": "https://maps.google.com/?cid=11819943941184933124"
+      },
+      {
+        "name": "OTH (On The House)",
+        "lat": 26.905223799999998,
+        "lng": 75.7945355,
+        "url": "https://maps.google.com/?cid=10866123031082923333"
+      }
+    ],
+    "forts--palaces": [
+      {
+        "name": "Nahargarh Fort",
+        "lat": 26.9401659,
+        "lng": 75.8170373,
+        "url": "https://maps.google.com/?cid=768610193590099595"
+      },
+      {
+        "name": "Jaigarh Fort",
+        "lat": 26.981605199999997,
+        "lng": 75.8447917,
+        "url": "https://maps.google.com/?cid=13554080739731002241"
+      },
+      {
+        "name": "City Palace",
+        "lat": 26.9257943,
+        "lng": 75.8236714,
+        "url": "https://maps.google.com/?cid=4935968491820645216"
+      },
+      {
+        "name": "Hawa Mahal",
+        "lat": 26.9240458,
+        "lng": 75.8267144,
+        "url": "https://maps.google.com/?cid=9659760862336692748"
+      },
+      {
+        "name": "Jal Mahal (Viewpoint)",
+        "lat": 26.953468199999996,
+        "lng": 75.846138,
+        "url": "https://maps.google.com/?cid=10940174856982080466"
+      },
+      {
+        "name": "Panna Meena ka Kund",
+        "lat": 26.991230899999998,
+        "lng": 75.8512851,
+        "url": "https://maps.google.com/?cid=16089960436941263472"
+      },
+      {
+        "name": "Amber Fort",
+        "lat": 26.985486500000004,
+        "lng": 75.8513454,
+        "url": "https://maps.google.com/?cid=7071178524615540267"
+      }
+    ],
+    "markets--bazaars": [
+      {
+        "name": "Bapu Bazaar",
+        "lat": 26.916361299999995,
+        "lng": 75.8232956,
+        "url": "https://maps.google.com/?cid=8924709007358644531"
+      },
+      {
+        "name": "Kishanpole Bazaar",
+        "lat": 26.92042055,
+        "lng": 75.8159468,
+        "url": "https://maps.google.com/?cid=18375807824380771691"
+      },
+      {
+        "name": "Chandpole Bazaar",
+        "lat": 26.92211605,
+        "lng": 75.81333829999998,
+        "url": "https://maps.google.com/?cid=6375533732932522948"
+      },
+      {
+        "name": "Chaura Rasta",
+        "lat": 26.92221095,
+        "lng": 75.82121814999999,
+        "url": "https://maps.google.com/?cid=15885248535926106729"
+      },
+      {
+        "name": "Johari Bazaar",
+        "lat": 26.92003475,
+        "lng": 75.827127,
+        "url": "https://maps.google.com/?cid=14661966290454385460"
+      },
+      {
+        "name": "Nehru Bazaar",
+        "lat": 26.91837445,
+        "lng": 75.81899545,
+        "url": "https://maps.google.com/?cid=15083066967009851568"
+      },
+      {
+        "name": "Tripolia Bazaar",
+        "lat": 26.9287811,
+        "lng": 75.8246215,
+        "url": "https://maps.google.com/?cid=16409519141840141708"
+      }
+    ],
+    "heritage-sites": [
+      {
+        "name": "Jantar Mantar",
+        "lat": 26.924761999999998,
+        "lng": 75.82455999999999,
+        "url": "https://maps.google.com/?cid=16810253135964384190"
+      },
+      {
+        "name": "Galtaji Temple",
+        "lat": 26.917223399999997,
+        "lng": 75.85814649999999,
+        "url": "https://maps.google.com/?cid=11348130656272944704"
+      },
+      {
+        "name": "Sisodia Rani Ka Bagh",
+        "lat": 26.899421799999995,
+        "lng": 75.8587309,
+        "url": "https://maps.google.com/?cid=17720047048609439798"
+      },
+      {
+        "name": "Gaitore Ki Chhatriyan",
+        "lat": 26.9430691,
+        "lng": 75.8246528,
+        "url": "https://maps.google.com/?cid=5565317460805966565"
+      },
+      {
+        "name": "Govind Dev Ji Temple",
+        "lat": 26.9288341,
+        "lng": 75.8240701,
+        "url": "https://maps.google.com/?cid=2477209854261747804"
+      }
+    ]
+  },
+  "jaisalmer": {
+    "forts": [],
+    "havelis": [
+      {
+        "name": "Patwon Ki Haveli",
+        "lat": 26.916364500000004,
+        "lng": 70.9143452,
+        "url": "https://maps.google.com/?cid=8825217264517732677"
+      },
+      {
+        "name": "Salim Singh Ki Haveli",
+        "lat": 26.913753699999997,
+        "lng": 70.916106,
+        "url": "https://maps.google.com/?cid=13082517580579868662"
+      },
+      {
+        "name": "Nathmal Ki Haveli",
+        "lat": 26.915906800000002,
+        "lng": 70.91268889999999,
+        "url": "https://maps.google.com/?cid=6105126652536415186"
+      },
+      {
+        "name": "Mandir Palace",
+        "lat": 26.916019499999994,
+        "lng": 70.9103855,
+        "url": "https://maps.google.com/?cid=2886866965336647486"
+      },
+      {
+        "name": "Shreenath Haveli",
+        "lat": 26.9123381,
+        "lng": 70.9125467,
+        "url": "https://maps.google.com/?cid=13757551390458116849"
+      },
+      {
+        "name": "Kothari's Patwa Haveli",
+        "lat": 26.916364500000004,
+        "lng": 70.9143452,
+        "url": "https://maps.google.com/?cid=8825217264517732677"
+      }
+    ],
+    "lakes": [
+      {
+        "name": "Gadisar Lake",
+        "lat": 26.907802450000002,
+        "lng": 70.92128104999999,
+        "url": "https://maps.google.com/?cid=11908643667255992773"
+      }
+    ],
+    "museums": [
+      {
+        "name": "Desert Culture Centre & Museum",
+        "lat": 26.910674999999998,
+        "lng": 70.9190674,
+        "url": "https://maps.google.com/?cid=12086912238187011889"
+      },
+      {
+        "name": "Jaisalmer Folklore Museum",
+        "lat": 26.9093022,
+        "lng": 70.92036,
+        "url": "https://maps.google.com/?cid=6665275877131404404"
+      },
+      {
+        "name": "Government Museum",
+        "lat": 26.9140223,
+        "lng": 70.9029917,
+        "url": "https://maps.google.com/?cid=2061238492480465499"
+      },
+      {
+        "name": "Jaisalmer Fort Palace Museum",
+        "lat": 26.9130601,
+        "lng": 70.9129987,
+        "url": "https://maps.google.com/?cid=10668439033089593454"
+      },
+      {
+        "name": "Thar Heritage Museum",
+        "lat": 26.924550399999998,
+        "lng": 70.9049805,
+        "url": "https://maps.google.com/?cid=1867950784591976606"
+      },
+      {
+        "name": "Kothari's Patwa Haveli Museum",
+        "lat": 26.916364500000004,
+        "lng": 70.9143452,
+        "url": "https://maps.google.com/?cid=8825217264517732677"
+      }
+    ],
+    "food--dining": [
+      {
+        "name": "Cafe The Kaku",
+        "lat": 26.920381199999998,
+        "lng": 70.9134687,
+        "url": "https://maps.google.com/?cid=7890055347081082032"
+      },
+      {
+        "name": "Gaji's Restaurant",
+        "lat": 26.918705499999998,
+        "lng": 70.9110008,
+        "url": "https://maps.google.com/?cid=7857457740345964462"
+      },
+      {
+        "name": "Chandan Shree Restaurant",
+        "lat": 26.913615399999998,
+        "lng": 70.9142158,
+        "url": "https://maps.google.com/?cid=6756277742929422354"
+      },
+      {
+        "name": "Pleasant Haveli Restaurant",
+        "lat": 26.9177625,
+        "lng": 70.91124119999999,
+        "url": "https://maps.google.com/?cid=2474377936718073853"
+      },
+      {
+        "name": "The Trio Restaurant",
+        "lat": 26.916152800000003,
+        "lng": 70.9103246,
+        "url": "https://maps.google.com/?cid=1885347924009134914"
+      },
+      {
+        "name": "Jaisalmer Oasis Restaurant",
+        "lat": 26.903560499999998,
+        "lng": 70.9123326,
+        "url": "https://maps.google.com/?cid=399503247631519313"
+      },
+      {
+        "name": "Milan Restaurant",
+        "lat": 26.910926,
+        "lng": 70.9148384,
+        "url": "https://maps.google.com/?cid=1153950258459762610"
+      },
+      {
+        "name": "Desert Boy's Dhani",
+        "lat": 26.9096208,
+        "lng": 70.91407079999999,
+        "url": "https://maps.google.com/?cid=2792580851704864873"
+      }
+    ],
+    "viewpoints": [
+      {
+        "name": "Vyas Chhatri",
+        "lat": 26.922401599999997,
+        "lng": 70.90663529999999,
+        "url": "https://maps.google.com/?cid=17862972781983916467"
+      },
+      {
+        "name": "Sunset Point (Gadisar Lake)",
+        "lat": 26.9112293,
+        "lng": 70.9112207,
+        "url": "https://maps.google.com/?cid=3440202422080197884"
+      },
+      {
+        "name": "Jaisalmer Fort Ramparts",
+        "lat": 26.912455499999997,
+        "lng": 70.9126093,
+        "url": "https://maps.google.com/?cid=15322661848046508403"
+      },
+      {
+        "name": "Mandir Palace Rooftop",
+        "lat": 26.916152800000003,
+        "lng": 70.9103246,
+        "url": "https://maps.google.com/?cid=1885347924009134914"
+      },
+      {
+        "name": "Bada Bagh",
+        "lat": 26.9551114,
+        "lng": 70.8877225,
+        "url": "https://maps.google.com/?cid=5109130245215655976"
+      },
+      {
+        "name": "Cannon Point",
+        "lat": 26.912502200000002,
+        "lng": 70.91457849999999,
+        "url": "https://maps.google.com/?cid=17312953070125585582"
+      },
+      {
+        "name": "Jaisalmer Oasis Rooftop",
+        "lat": 26.903560499999998,
+        "lng": 70.9123326,
+        "url": "https://maps.google.com/?cid=399503247631519313"
+      }
+    ]
+  },
+  "kochi": {
+    "cafes": [
+      {
+        "name": "Kashi Art Cafe",
+        "lat": 9.966805500000001,
+        "lng": 76.2431234,
+        "url": "https://maps.google.com/?cid=7450356519731343985"
+      },
+      {
+        "name": "Qissa Cafe",
+        "lat": 9.967339,
+        "lng": 76.244548,
+        "url": "https://maps.google.com/?cid=7393419170994746190"
+      },
+      {
+        "name": "Loafers Corner Cafe",
+        "lat": 9.965837400000002,
+        "lng": 76.2420595,
+        "url": "https://maps.google.com/?cid=10023721611015390979"
+      },
+      {
+        "name": "Pepper House Cafe",
+        "lat": 9.968859,
+        "lng": 76.250199,
+        "url": "https://maps.google.com/?cid=6266547905633857724"
+      },
+      {
+        "name": "Tea Pot Cafe",
+        "lat": 9.965308799999999,
+        "lng": 76.2419132,
+        "url": "https://maps.google.com/?cid=16729970121188042644"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Dal Roti",
+        "lat": 9.963277800000002,
+        "lng": 76.2394417,
+        "url": "https://maps.google.com/?cid=1087659397130421389"
+      },
+      {
+        "name": "The Rice Boat",
+        "lat": 9.968739200000002,
+        "lng": 76.2582469,
+        "url": "https://maps.google.com/?cid=5988952717613638296"
+      },
+      {
+        "name": "Fort House Restaurant",
+        "lat": 9.968801099999999,
+        "lng": 76.249782,
+        "url": "https://maps.google.com/?cid=16211437879403175842"
+      },
+      {
+        "name": "Oceanos Restaurant",
+        "lat": 9.963074500000001,
+        "lng": 76.2390552,
+        "url": "https://maps.google.com/?cid=2395764134138034321"
+      },
+      {
+        "name": "Grand Pavilion",
+        "lat": 9.970612299999997,
+        "lng": 76.28533949999999,
+        "url": "https://maps.google.com/?cid=7388571776457796662"
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Fort Kochi Beach",
+        "lat": 9.9637482,
+        "lng": 76.2374507,
+        "url": "https://maps.google.com/?cid=15592985211711799084"
+      },
+      {
+        "name": "Cherai Beach",
+        "lat": 10.1416991,
+        "lng": 76.17805659999999,
+        "url": "https://maps.google.com/?cid=13828093533428178227"
+      },
+      {
+        "name": "Puthuvype Beach",
+        "lat": 9.998597699999998,
+        "lng": 76.2189046,
+        "url": "https://maps.google.com/?cid=11094967991710683796"
+      },
+      {
+        "name": "Kuzhupilly Beach",
+        "lat": 10.1018864,
+        "lng": 76.1889185,
+        "url": "https://maps.google.com/?cid=10914702353621339244"
+      },
+      {
+        "name": "Njarakkal Beach",
+        "lat": 10.0366368,
+        "lng": 76.20810399999999,
+        "url": "https://maps.google.com/?cid=6698777495756305869"
+      }
+    ],
+    "attractions": [
+      {
+        "name": "Chinese Fishing Nets",
+        "lat": 9.968395899999999,
+        "lng": 76.2422419,
+        "url": "https://maps.google.com/?cid=14917941290917562193"
+      },
+      {
+        "name": "Mattancherry Palace",
+        "lat": 9.958277299999999,
+        "lng": 76.25935079999999,
+        "url": "https://maps.google.com/?cid=7530199669452092872"
+      },
+      {
+        "name": "St. Francis Church",
+        "lat": 9.9660596,
+        "lng": 76.2408739,
+        "url": "https://maps.google.com/?cid=10042024578390689953"
+      },
+      {
+        "name": "Santa Cruz Basilica",
+        "lat": 9.9648197,
+        "lng": 76.2428293,
+        "url": "https://maps.google.com/?cid=5681460040086821435"
+      },
+      {
+        "name": "Jewish Synagogue",
+        "lat": 9.956614000000002,
+        "lng": 76.2599153,
+        "url": "https://maps.google.com/?cid=11723462229914143240"
+      }
+    ],
+    "shopping": [
+      {
+        "name": "Jew Town",
+        "lat": 9.9561331,
+        "lng": 76.25944555,
+        "url": "https://maps.google.com/?cid=15412299403191662442"
+      },
+      {
+        "name": "Marine Drive",
+        "lat": 9.9752184,
+        "lng": 76.27728789999999,
+        "url": "https://maps.google.com/?cid=14278660169659061970"
+      },
+      {
+        "name": "Lulu International Shopping Mall",
+        "lat": 10.0271556,
+        "lng": 76.3082302,
+        "url": "https://maps.google.com/?cid=6436192621425828734"
+      },
+      {
+        "name": "Princess Street",
+        "lat": 9.966902599999997,
+        "lng": 76.24281669999999,
+        "url": "https://maps.google.com/?cid=2813639766935279377"
+      },
+      {
+        "name": "Broadway Market",
+        "lat": 9.9798449,
+        "lng": 76.2776792,
+        "url": "https://maps.google.com/?cid=12267022317704134616"
+      }
+    ]
+  },
+  "kodaikanal": {
+    "restaurants": [
+      {
+        "name": "Mann Manam",
+        "lat": 10.2383375,
+        "lng": 77.4856021,
+        "url": "https://maps.google.com/?cid=7479635549950803813"
+      },
+      {
+        "name": "Cloud Street",
+        "lat": 10.236737699999999,
+        "lng": 77.4909691,
+        "url": "https://maps.google.com/?cid=3654549701339256545"
+      },
+      {
+        "name": "The Pulney Hills Café",
+        "lat": 10.2359781,
+        "lng": 77.4909587,
+        "url": "https://maps.google.com/?cid=797833073906522876"
+      },
+      {
+        "name": "Altaf's Cafe",
+        "lat": 10.2148598,
+        "lng": 77.4853995,
+        "url": "https://maps.google.com/?cid=7262757133109857594"
+      },
+      {
+        "name": "Woody's",
+        "lat": 10.243834299999998,
+        "lng": 77.4885133,
+        "url": "https://maps.google.com/?cid=15156319366902132332"
+      },
+      {
+        "name": "Aromas of Kodai",
+        "lat": 10.235913799999999,
+        "lng": 77.4923913,
+        "url": "https://maps.google.com/?cid=10995153079755062689"
+      },
+      {
+        "name": "Pastry Corner",
+        "lat": 10.234806499999998,
+        "lng": 77.49043499999999,
+        "url": "https://maps.google.com/?cid=2781759816876971009"
+      }
+    ],
+    "viewpoints": [
+      {
+        "name": "Coaker's Walk",
+        "lat": 10.2300603,
+        "lng": 77.49375189999999,
+        "url": "https://maps.google.com/?q=Coaker%27s+Walk,+Kodaikanal,+Tamil+Nadu+624101,+India&ftid=0x3b07665d55df2ddf:0x5272c250856a4406"
+      },
+      {
+        "name": "Pillar Rocks",
+        "lat": 10.2109477,
+        "lng": 77.4617833,
+        "url": "https://maps.google.com/?cid=452319748536911724"
+      },
+      {
+        "name": "Green Valley View (Suicide Point)",
+        "lat": 10.2098551,
+        "lng": 77.476588,
+        "url": "https://maps.google.com/?cid=2029695062768601120"
+      },
+      {
+        "name": "Moir Point",
+        "lat": 10.210484,
+        "lng": 77.4481595,
+        "url": "https://maps.google.com/?cid=14794404301134641773"
+      },
+      {
+        "name": "Pine Forest Viewpoint",
+        "lat": 10.213635799999999,
+        "lng": 77.4588208,
+        "url": "https://maps.google.com/?cid=9058384620577993441"
+      },
+      {
+        "name": "Berijam Lake Viewpoint",
+        "lat": 10.186802850000001,
+        "lng": 77.39778,
+        "url": "https://maps.google.com/?cid=3581438398378877018"
+      }
+    ],
+    "waterfalls": [
+      {
+        "name": "Vattakanal Waterfalls",
+        "lat": 10.221010099999999,
+        "lng": 77.4817875,
+        "url": "https://maps.google.com/?cid=6721982563305508028"
+      },
+      {
+        "name": "Pambar Falls",
+        "lat": 10.2211823,
+        "lng": 77.4746183,
+        "url": "https://maps.google.com/?cid=3142118215713620069"
+      },
+      {
+        "name": "Fairy Falls",
+        "lat": 10.223690499999998,
+        "lng": 77.466973,
+        "url": "https://maps.google.com/?cid=16412841665129418219"
+      },
+      {
+        "name": "Thalaiyar Falls (Distant View)",
+        "lat": 10.2240126,
+        "lng": 77.5984868,
+        "url": "https://maps.google.com/?cid=5400478298385620633"
+      },
+      {
+        "name": "Kumbakkarai Falls",
+        "lat": 10.1803695,
+        "lng": 77.5307187,
+        "url": "https://maps.google.com/?cid=5661481399347315795"
+      },
+      {
+        "name": "Silver Cascade Falls",
+        "lat": 10.241778799999999,
+        "lng": 77.51080770000002,
+        "url": "https://maps.google.com/?cid=4616339161443082263"
+      }
+    ],
+    "attractions": [
+      {
+        "name": "Kodaikanal Lake",
+        "lat": 10.233934199999998,
+        "lng": 77.4866507,
+        "url": "https://maps.google.com/?cid=17130466229107753994"
+      },
+      {
+        "name": "Guna Caves (Devil's Kitchen)",
+        "lat": 10.210145700000002,
+        "lng": 77.46302399999999,
+        "url": "https://maps.google.com/?cid=17806996146761807664"
+      },
+      {
+        "name": "Solar Physical Observatory",
+        "lat": 10.2288692,
+        "lng": 77.4627297,
+        "url": "https://maps.google.com/?cid=3167798432899652319"
+      },
+      {
+        "name": "Shembaganur Museum of Natural History",
+        "lat": 10.231154900000002,
+        "lng": 77.50092959999999,
+        "url": "https://maps.google.com/?cid=2146947025392983495"
+      },
+      {
+        "name": "Bryant Park",
+        "lat": 10.231499799999998,
+        "lng": 77.493196,
+        "url": "https://maps.google.com/?cid=15900931003896344489"
+      },
+      {
+        "name": "Kurunji Andavar Temple",
+        "lat": 10.2532187,
+        "lng": 77.5018867,
+        "url": "https://maps.google.com/?cid=11919106082883537767"
+      }
+    ]
+  },
+  "lucknow": {
+    "monuments": [
+      {
+        "name": "Chota Imambara",
+        "lat": 26.874509899999996,
+        "lng": 80.90446240000001,
+        "url": "https://maps.google.com/?cid=2606937481108120312"
+      },
+      {
+        "name": "Rumi Darwaza",
+        "lat": 26.871247699999998,
+        "lng": 80.9121431,
+        "url": "https://maps.google.com/?cid=12841745038091676899"
+      },
+      {
+        "name": "British Residency",
+        "lat": 26.8606372,
+        "lng": 80.9267863,
+        "url": "https://maps.google.com/?cid=6391775294808710346"
+      },
+      {
+        "name": "Husainabad Clock Tower",
+        "lat": 26.873997,
+        "lng": 80.9080068,
+        "url": "https://maps.google.com/?cid=9502191381661774256"
+      },
+      {
+        "name": "Shah Najaf Imambara",
+        "lat": 26.858293900000003,
+        "lng": 80.9460009,
+        "url": "https://maps.google.com/?cid=16861044943607752027"
+      },
+      {
+        "name": "Dilkusha Kothi",
+        "lat": 26.8286451,
+        "lng": 80.9647322,
+        "url": "https://maps.google.com/?cid=7787444153149775939"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Tunday Kababi",
+        "lat": 26.8483062,
+        "lng": 80.9272325,
+        "url": "https://maps.google.com/?cid=3204521909238061596"
+      },
+      {
+        "name": "Royal Cafe",
+        "lat": 26.848147199999996,
+        "lng": 80.94393939999999,
+        "url": "https://maps.google.com/?cid=14634895879218345284"
+      },
+      {
+        "name": "Dastarkhwan",
+        "lat": 26.847925399999998,
+        "lng": 80.9396005,
+        "url": "https://maps.google.com/?cid=4426558394339315122"
+      },
+      {
+        "name": "Idris Biryani",
+        "lat": 26.862805899999998,
+        "lng": 80.9099495,
+        "url": "https://maps.google.com/?cid=11777321186609594375"
+      },
+      {
+        "name": "Moti Mahal Delux",
+        "lat": 26.843380999999997,
+        "lng": 80.947121,
+        "url": "https://maps.google.com/?cid=396442335977345021"
+      },
+      {
+        "name": "Oudhyana",
+        "lat": 26.851135099999997,
+        "lng": 80.9739274,
+        "url": "https://maps.google.com/?cid=13253472367243203856"
+      },
+      {
+        "name": "Sharma Tea Stall",
+        "lat": 26.847739799999996,
+        "lng": 80.9406583,
+        "url": "https://maps.google.com/?cid=15203386876128271390"
+      },
+      {
+        "name": "Grand Cabana",
+        "lat": 26.8656987,
+        "lng": 80.9968209,
+        "url": "https://maps.google.com/?cid=13623668521988763739"
+      }
+    ],
+    "gardens": [
+      {
+        "name": "Bara Imambara Complex",
+        "lat": 26.868516800000002,
+        "lng": 80.9127127,
+        "url": "https://maps.google.com/?cid=3832067487070426943"
+      },
+      {
+        "name": "Residency Gardens",
+        "lat": 26.8624802,
+        "lng": 80.9264741,
+        "url": "https://maps.google.com/?cid=12066049885522315052"
+      },
+      {
+        "name": "National Botanical Research Institute Garden",
+        "lat": 26.8562908,
+        "lng": 80.94985969999999,
+        "url": "https://maps.google.com/?cid=1948709849479737825"
+      },
+      {
+        "name": "Gautam Buddha Park",
+        "lat": 26.869059,
+        "lng": 80.91966,
+        "url": "https://maps.google.com/?cid=100643587348311131"
+      },
+      {
+        "name": "Ambedkar Memorial Park",
+        "lat": 26.849381099999995,
+        "lng": 80.9767756,
+        "url": "https://maps.google.com/?cid=7109179806645517341"
+      },
+      {
+        "name": "Gomti Riverfront",
+        "lat": 26.851868699999997,
+        "lng": 80.9713482,
+        "url": "https://maps.google.com/?cid=6044467470635911231"
+      }
+    ],
+    "cafes": [
+      {
+        "name": "The Urban Terrace",
+        "lat": 26.851672100000002,
+        "lng": 81.0234577,
+        "url": "https://maps.google.com/?cid=9550404872022978342"
+      },
+      {
+        "name": "Cappuccino Blast",
+        "lat": 26.8334716,
+        "lng": 80.9479739,
+        "url": "https://maps.google.com/?cid=15337496229192648568"
+      },
+      {
+        "name": "Garden Bakery & Cafe",
+        "lat": 26.876518199999996,
+        "lng": 80.982697,
+        "url": "https://maps.google.com/?cid=7977520037371921984"
+      },
+      {
+        "name": "Chai Cofee Co.",
+        "lat": 26.811997299999998,
+        "lng": 80.99769719999999,
+        "url": "https://maps.google.com/?cid=3168980884701155950"
+      },
+      {
+        "name": "Maison Des Connaisseur",
+        "lat": 26.8526715,
+        "lng": 81.00111729999999,
+        "url": "https://maps.google.com/?cid=6725642844840520533"
+      },
+      {
+        "name": "Gossip Cafe & Lounge",
+        "lat": 26.9598153,
+        "lng": 81.00148990000001,
+        "url": "https://maps.google.com/?cid=3412754564254047504"
+      }
+    ],
+    "museums": [
+      {
+        "name": "State Museum Lucknow",
+        "lat": 26.8453247,
+        "lng": 80.9550271,
+        "url": "https://maps.google.com/?cid=14189872821490311009"
+      },
+      {
+        "name": "Folk Art Museum",
+        "lat": 26.8453247,
+        "lng": 80.9550271,
+        "url": "https://maps.google.com/?cid=14189872821490311009"
+      },
+      {
+        "name": "Residency Museum",
+        "lat": 26.861440499999997,
+        "lng": 80.9254481,
+        "url": "https://maps.google.com/?cid=12976506649087398595"
+      },
+      {
+        "name": "Regional Science City",
+        "lat": 26.8894242,
+        "lng": 80.94042329999999,
+        "url": "https://maps.google.com/?cid=1336737555468332533"
+      }
+    ],
+    "viewpoints": [
+      {
+        "name": "Top of Bara Imambara (Bhool Bhulaiya)",
+        "lat": 26.868516800000002,
+        "lng": 80.9127127,
+        "url": "https://maps.google.com/?cid=3832067487070426943"
+      },
+      {
+        "name": "Gomti Riverfront Promenade",
+        "lat": 26.851868699999997,
+        "lng": 80.9713482,
+        "url": "https://maps.google.com/?cid=6044467470635911231"
+      },
+      {
+        "name": "Ambedkar Memorial Park",
+        "lat": 26.849381099999995,
+        "lng": 80.9767756,
+        "url": "https://maps.google.com/?cid=7109179806645517341"
+      },
+      {
+        "name": "Janeshwar Mishra Park",
+        "lat": 26.8388003,
+        "lng": 80.99419999999999,
+        "url": "https://maps.google.com/?cid=3484102650071778056"
+      },
+      {
+        "name": "Rumi Darwaza area",
+        "lat": 26.871247699999998,
+        "lng": 80.9121431,
+        "url": "https://maps.google.com/?cid=12841745038091676899"
+      },
+      {
+        "name": "Husainabad Clock Tower area",
+        "lat": 26.873997,
+        "lng": 80.9080068,
+        "url": "https://maps.google.com/?cid=9502191381661774256"
+      }
+    ]
+  },
+  "manali": {
+    "cafes--restaurants": [
+      {
+        "name": "Singh Saab Food Truck & Riverside Restaurant",
+        "lat": 32.265898400000005,
+        "lng": 77.18467079999999,
+        "url": "https://maps.google.com/?cid=18217944096566904250"
+      },
+      {
+        "name": "Cafe 1947",
+        "lat": 32.282985,
+        "lng": 77.18050339999999,
+        "url": "https://maps.google.com/?cid=16349313308763280428"
+      },
+      {
+        "name": "Dylans Toasted & Roasted Coffee House",
+        "lat": 32.2527657,
+        "lng": 77.1782922,
+        "url": "https://maps.google.com/?cid=6688405209942900445"
+      },
+      {
+        "name": "Chopsticks",
+        "lat": 32.2439251,
+        "lng": 77.18920729999999,
+        "url": "https://maps.google.com/?cid=1333227146972206893"
+      },
+      {
+        "name": "Johnson's Cafe",
+        "lat": 32.247507500000005,
+        "lng": 77.1873987,
+        "url": "https://maps.google.com/?cid=16493807488697696469"
+      },
+      {
+        "name": "Fat Plate Cafe",
+        "lat": 32.217848,
+        "lng": 77.19718499999999,
+        "url": "https://maps.google.com/?cid=561835632109054563"
+      },
+      {
+        "name": "Sunshine Cafe",
+        "lat": 32.252911399999995,
+        "lng": 77.1771765,
+        "url": "https://maps.google.com/?cid=1133400081163872956"
+      },
+      {
+        "name": "Corner House",
+        "lat": 32.2455265,
+        "lng": 77.18951799999999,
+        "url": "https://maps.google.com/?cid=1008652996358930507"
+      }
+    ],
+    "trekking": [
+      {
+        "name": "Bhrigu Lake Trek",
+        "lat": 32.314015100000006,
+        "lng": 77.1591838,
+        "url": "https://maps.google.com/?cid=8641469137471698425"
+      },
+      {
+        "name": "Beas Kund Trek",
+        "lat": 32.32933630000001,
+        "lng": 77.1502884,
+        "url": "https://maps.google.com/?cid=9529778388314591893"
+      },
+      {
+        "name": "Patalsu Peak Trek",
+        "lat": 32.323026299999995,
+        "lng": 77.1564253,
+        "url": "https://maps.google.com/?cid=14628644052406453944"
+      },
+      {
+        "name": "Lamadugh Meadow Trek",
+        "lat": 32.2489026,
+        "lng": 77.1750129,
+        "url": "https://maps.google.com/?cid=6068163507218304233"
+      },
+      {
+        "name": "Bijli Mahadev Temple Trek",
+        "lat": 31.9233442,
+        "lng": 77.1503615,
+        "url": "https://maps.google.com/?cid=12610445506861639113"
+      }
+    ],
+    "viewpoints": [
+      {
+        "name": "Solang Valley",
+        "lat": 32.316184199999995,
+        "lng": 77.15684710000001,
+        "url": "https://maps.google.com/?cid=10737879570819143749"
+      },
+      {
+        "name": "Kothi Village",
+        "lat": 32.314812599999996,
+        "lng": 77.1858676,
+        "url": "https://maps.google.com/?cid=16832392208311684250"
+      },
+      {
+        "name": "Naggar Castle",
+        "lat": 32.112017800000004,
+        "lng": 77.1647347,
+        "url": "https://maps.google.com/?cid=7912596790421008424"
+      },
+      {
+        "name": "Old Manali Bridge View",
+        "lat": 32.25292050000001,
+        "lng": 77.17957899999999,
+        "url": "https://maps.google.com/?cid=407156674088412212"
+      },
+      {
+        "name": "Sethan Village",
+        "lat": 32.2365566,
+        "lng": 77.2218493,
+        "url": "https://maps.google.com/?cid=14289124594095469970"
+      },
+      {
+        "name": "Sissu Valley",
+        "lat": 32.479863449999996,
+        "lng": 77.123648,
+        "url": "https://maps.google.com/?cid=6995630744138823130"
+      }
+    ],
+    "waterfalls": [
+      {
+        "name": "Knoi Waterfall",
+        "lat": 32.175451599999995,
+        "lng": 77.1975324,
+        "url": "https://maps.google.com/?cid=11342372425190038430"
+      },
+      {
+        "name": "Baror Parsha Waterfall",
+        "lat": 32.2067855,
+        "lng": 77.1823255,
+        "url": "https://maps.app.goo.gl/FEZxQB3ZGyouzLJCA"
+      },
+      {
+        "name": "Jogini Falls",
+        "lat": 32.2750756,
+        "lng": 77.1881463,
+        "url": "https://maps.google.com/?cid=17192517173995747844"
+      },
+      {
+        "name": "Rahala Waterfalls",
+        "lat": 32.3363624,
+        "lng": 77.2183648,
+        "url": "https://maps.google.com/?cid=8654023725308950042"
+      },
+      {
+        "name": "Jana Waterfall, Jana Gaon",
+        "lat": 32.0536427,
+        "lng": 77.17276989999999,
+        "url": "https://maps.google.com/?cid=13697571585812522191"
+      }
+    ],
+    "temples--monasteries": [
+      {
+        "name": "Hadimba Devi Temple",
+        "lat": 32.2483526,
+        "lng": 77.18157269999999,
+        "url": "https://maps.google.com/?cid=3290482383344535452"
+      },
+      {
+        "name": "Manu Temple",
+        "lat": 32.257042,
+        "lng": 77.1760523,
+        "url": "https://maps.google.com/?cid=7000778892376485553"
+      },
+      {
+        "name": "Vashisht Temple",
+        "lat": 32.2656705,
+        "lng": 77.18786,
+        "url": "https://maps.google.com/?cid=10966175281046846565"
+      },
+      {
+        "name": "Ghatotkach Temple",
+        "lat": 32.246347199999995,
+        "lng": 77.18048859999999,
+        "url": "https://maps.google.com/?cid=9832360732916924853"
+      },
+      {
+        "name": "Naggar Castle Monastery",
+        "lat": 32.112017800000004,
+        "lng": 77.1647347,
+        "url": "https://maps.google.com/?cid=7912596790421008424"
+      },
+      {
+        "name": "Buddhist Monastery, Manali",
+        "lat": 32.2420094,
+        "lng": 77.1880419,
+        "url": "https://maps.google.com/?cid=16053422117256869720"
+      },
+      {
+        "name": "Bhutanese Buddhist temple",
+        "lat": 32.237345899999994,
+        "lng": 77.1957762,
+        "url": "https://maps.google.com/?cid=9393294264486700304"
+      }
+    ]
+  },
+  "mumbai": {
+    "restaurants": [
+      {
+        "name": "Britannia & Co. Restaurant",
+        "lat": 18.934568399999996,
+        "lng": 72.8402979,
+        "url": "https://maps.google.com/?cid=14658569313884345562"
+      },
+      {
+        "name": "Gajalee",
+        "lat": 19.1173853,
+        "lng": 72.8672229,
+        "url": "https://maps.google.com/?cid=11647659474680570114"
+      },
+      {
+        "name": "Swati Snacks",
+        "lat": 18.924450699999998,
+        "lng": 72.8245618,
+        "url": "https://maps.google.com/?cid=11217860342706596800"
+      },
+      {
+        "name": "O Pedro",
+        "lat": 19.059362999999998,
+        "lng": 72.864943,
+        "url": "https://maps.google.com/?cid=17937293282269675930"
+      },
+      {
+        "name": "The Bombay Canteen",
+        "lat": 19.003245,
+        "lng": 72.827576,
+        "url": "https://maps.google.com/?cid=7371392037146984617"
+      },
+      {
+        "name": "Mahesh Lunch Home",
+        "lat": 19.106962400000004,
+        "lng": 72.88457819999999,
+        "url": "https://maps.google.com/?cid=2940605209354155114"
+      }
+    ],
+    "cafes": [
+      {
+        "name": "Kala Ghoda Cafe",
+        "lat": 18.9284954,
+        "lng": 72.8322067,
+        "url": "https://maps.google.com/?cid=10662298444487936803"
+      },
+      {
+        "name": "Prithvi Cafe",
+        "lat": 19.106129199999998,
+        "lng": 72.8257094,
+        "url": "https://maps.google.com/?cid=17276058869733511356"
+      },
+      {
+        "name": "Blue Tokai Coffee Roasters (Bandra)",
+        "lat": 19.0603995,
+        "lng": 72.8243282,
+        "url": "https://maps.google.com/?cid=2880557828914949876"
+      },
+      {
+        "name": "Grandmama's Cafe",
+        "lat": 19.0168049,
+        "lng": 72.84618689999999,
+        "url": "https://maps.google.com/?cid=6165357271816602172"
+      },
+      {
+        "name": "The Nutcracker",
+        "lat": 19.050127799999995,
+        "lng": 72.8263372,
+        "url": "https://maps.google.com/?cid=16861955774551383575"
+      },
+      {
+        "name": "Cafe Mondegar",
+        "lat": 18.9240503,
+        "lng": 72.8321547,
+        "url": "https://maps.app.goo.gl/Xx5GqyBqB6ruippK9"
+      },
+      {
+        "name": "Third Wave Coffee Roasters (Seawoods)",
+        "lat": 19.010467300000002,
+        "lng": 73.0120301,
+        "url": "https://maps.app.goo.gl/P1unPdwhREU3WaGP7?g_st=ipc"
+      },
+      {
+        "name": "Mockingbird Cafe & Bar",
+        "lat": 18.9335015,
+        "lng": 72.82627500000001,
+        "url": "https://maps.google.com/?cid=5120380686526027612"
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Juhu Beach",
+        "lat": 19.1001746,
+        "lng": 72.82355965,
+        "url": "https://maps.google.com/?cid=15233250799684907383"
+      },
+      {
+        "name": "Chowpatty Beach",
+        "lat": 18.954657549999997,
+        "lng": 72.8095924,
+        "url": "https://maps.google.com/?cid=13901590956132764726"
+      },
+      {
+        "name": "Aksa Beach",
+        "lat": 19.17605175,
+        "lng": 72.79527424999999,
+        "url": "https://maps.google.com/?cid=5211294253046099447"
+      },
+      {
+        "name": "Versova Beach",
+        "lat": 19.123617749999998,
+        "lng": 72.8177031,
+        "url": "https://maps.google.com/?cid=6816058009267325071"
+      },
+      {
+        "name": "Gorai Beach",
+        "lat": 19.2414027,
+        "lng": 72.78056069999998,
+        "url": "https://maps.google.com/?cid=1775585586070245798"
+      }
+    ],
+    "attractions": [
+      {
+        "name": "Gateway of India",
+        "lat": 18.9219841,
+        "lng": 72.8346543,
+        "url": "https://maps.google.com/?cid=14342317363051655996"
+      },
+      {
+        "name": "Chhatrapati Shivaji Maharaj Terminus",
+        "lat": 18.941726600000003,
+        "lng": 72.836682,
+        "url": "https://maps.google.com/?cid=11876918521030452299"
+      },
+      {
+        "name": "Elephanta Caves",
+        "lat": 18.9633474,
+        "lng": 72.9314864,
+        "url": "https://maps.google.com/?cid=17630211670962795839"
+      },
+      {
+        "name": "Haji Ali Dargah",
+        "lat": 18.9827097,
+        "lng": 72.8088729,
+        "url": "https://maps.google.com/?cid=9625488183952519509"
+      },
+      {
+        "name": "Bandra-Worli Sea Link",
+        "lat": 19.026482499999997,
+        "lng": 72.8342281,
+        "url": "https://maps.google.com/?cid=15404756529957071358"
+      },
+      {
+        "name": "Global Vipassana Pagoda",
+        "lat": 19.228203399999998,
+        "lng": 72.8058891,
+        "url": "https://maps.google.com/?cid=5541797966175574202"
+      }
+    ],
+    "nightlife": [
+      {
+        "name": "AER (Four Seasons)",
+        "lat": 18.993742399999995,
+        "lng": 72.8202742,
+        "url": "https://maps.google.com/?cid=4019450429003192029"
+      },
+      {
+        "name": "Olive Bar & Kitchen",
+        "lat": 19.0718273,
+        "lng": 72.8252236,
+        "url": "https://maps.google.com/?cid=12223927885628971276"
+      },
+      {
+        "name": "Dome (InterContinental Mumbai)",
+        "lat": 18.9350495,
+        "lng": 72.8242023,
+        "url": "https://maps.google.com/?cid=16065528136085508130"
+      },
+      {
+        "name": "Gadda Da Vida (Novotel Mumbai Juhu Beach)",
+        "lat": 19.108385000000002,
+        "lng": 72.824569,
+        "url": "https://maps.google.com/?cid=11547771828690023570"
+      },
+      {
+        "name": "Toit",
+        "lat": 19.0006454,
+        "lng": 72.8297163,
+        "url": "https://maps.google.com/?cid=16886121530627244755"
+      },
+      {
+        "name": "Tryst",
+        "lat": 18.9944128,
+        "lng": 72.82471939999999,
+        "url": "https://maps.google.com/?cid=11085462879905078099"
+      }
+    ],
+    "museums": [
+      {
+        "name": "Chhatrapati Shivaji Maharaj Vastu Sangrahalaya (CSMVS)",
+        "lat": 18.9269015,
+        "lng": 72.83269159999999,
+        "url": "https://maps.google.com/?cid=4964978965790757459"
+      },
+      {
+        "name": "Dr. Bhau Daji Lad Mumbai City Museum",
+        "lat": 18.978988899999997,
+        "lng": 72.8348153,
+        "url": "https://maps.google.com/?cid=8786485953797303813"
+      },
+      {
+        "name": "National Gallery of Modern Art",
+        "lat": 18.925772399999996,
+        "lng": 72.83144659999999,
+        "url": "https://maps.google.com/?cid=231797977766698702"
+      },
+      {
+        "name": "Mani Bhavan Gandhi Sangrahalaya",
+        "lat": 18.959845299999998,
+        "lng": 72.8115152,
+        "url": "https://maps.google.com/?cid=13885008832326285821"
+      },
+      {
+        "name": "Nehru Science Centre",
+        "lat": 18.9918142,
+        "lng": 72.82072459999999,
+        "url": "https://maps.google.com/?cid=17919872616827938107"
+      },
+      {
+        "name": "RBI Monetary Museum",
+        "lat": 18.9338333,
+        "lng": 72.8360852,
+        "url": "https://maps.google.com/?cid=2593424273119725821"
+      }
+    ],
+    "shopping": [
+      {
+        "name": "Colaba Causeway",
+        "lat": 18.916652,
+        "lng": 72.8268978,
+        "url": "https://maps.google.com/?q=Colaba+Causeway,+Badhwar+Park,+Apollo+Bandar,+Colaba,+Mumbai,+Maharashtra,+India&ftid=0x3be7d194218579c9:0xd9ae43411acdb561"
+      },
+      {
+        "name": "Linking Road (Bandra)",
+        "lat": 19.0653716,
+        "lng": 72.834428,
+        "url": "https://maps.google.com/?cid=4105983659893513853"
+      },
+      {
+        "name": "High Street Phoenix",
+        "lat": 18.994850899999996,
+        "lng": 72.8252115,
+        "url": "https://maps.google.com/?cid=7325305838549719239"
+      },
+      {
+        "name": "Crawford Market",
+        "lat": 18.947614599999998,
+        "lng": 72.8342861,
+        "url": "https://maps.google.com/?cid=9773657006804612471"
+      },
+      {
+        "name": "Fashion Street",
+        "lat": 18.9389419,
+        "lng": 72.83010689999999,
+        "url": "https://maps.google.com/?cid=17791719222368042043"
+      },
+      {
+        "name": "Chor Bazaar",
+        "lat": 18.95999305,
+        "lng": 72.8246673,
+        "url": "https://maps.google.com/?cid=6155052589213284843"
+      },
+      {
+        "name": "Palladium Mall",
+        "lat": 18.994307799999994,
+        "lng": 72.82447189999999,
+        "url": "https://maps.google.com/?q=Palladium+Mall+Pedestrian+Walkway,+Gandhi+Nagar,+Upper+Worli,+Worli,+Mumbai,+Maharashtra+400013,+India&ftid=0x3be7ce8c80112577:0x1cfb9766a915ef35"
+      }
+    ]
+  },
+  "munnar": {
+    "cafes": [
+      {
+        "name": "Tea Tales Cafe",
+        "lat": 10.0870825,
+        "lng": 77.0599426,
+        "url": "https://maps.google.com/?cid=2798595037586768145"
+      },
+      {
+        "name": "Munnar Cafe",
+        "lat": 10.088571199999999,
+        "lng": 77.05982500000002,
+        "url": "https://maps.google.com/?cid=10449338755917956249"
+      },
+      {
+        "name": "ChillOut",
+        "lat": 10.028032,
+        "lng": 77.0456701,
+        "url": "https://maps.google.com/?cid=7796305159182642597"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Rapsy Restaurant",
+        "lat": 10.088058499999999,
+        "lng": 77.06034540000002,
+        "url": "https://maps.google.com/?cid=557339003858970721"
+      },
+      {
+        "name": "Rochas Restaurant",
+        "lat": 10.0876284,
+        "lng": 77.06461689999999,
+        "url": "https://maps.google.com/?cid=11675129612910096644"
+      },
+      {
+        "name": "Hotel Saravana Bhavan",
+        "lat": 10.087562499999999,
+        "lng": 77.06593749999999,
+        "url": "https://maps.google.com/?cid=6963491665407823451"
+      },
+      {
+        "name": "Hotel Gurubhavan",
+        "lat": 10.087786099999999,
+        "lng": 77.0649779,
+        "url": "https://maps.google.com/?cid=15275698556300127054"
+      },
+      {
+        "name": "East End",
+        "lat": 10.087380200000002,
+        "lng": 77.06232229999999,
+        "url": "https://maps.google.com/?cid=10117586068745321271"
+      }
+    ],
+    "viewpoints": [
+      {
+        "name": "Pothamedu Viewpoint",
+        "lat": 10.059624999999999,
+        "lng": 77.0641632,
+        "url": "https://maps.google.com/?cid=15575903156572323293"
+      },
+      {
+        "name": "Chithirapuram Viewpoint",
+        "lat": 10.0363542,
+        "lng": 77.0383523,
+        "url": "https://maps.google.com/?cid=233353963667460572"
+      },
+      {
+        "name": "Attukad Waterfalls Viewpoint",
+        "lat": 10.053440799999999,
+        "lng": 77.05885010000002,
+        "url": "https://maps.google.com/?cid=1578527597596709082"
+      },
+      {
+        "name": "Lock Heart Gap Viewpoint",
+        "lat": 10.0367623,
+        "lng": 77.1226015,
+        "url": "https://maps.google.com/?cid=9519565711346580068"
+      },
+      {
+        "name": "Kolukkumalai Tea Estate Viewpoint",
+        "lat": 10.0889332,
+        "lng": 77.0595247,
+        "url": "https://maps.google.com/?cid=5314835618563833938"
+      }
+    ],
+    "nature-trails--treks": [
+      {
+        "name": "Chokramudi Peak Trek",
+        "lat": 10.0361412,
+        "lng": 77.1220276,
+        "url": "https://maps.google.com/?cid=11651972754853332335"
+      },
+      {
+        "name": "Rhodo Valley Trek",
+        "lat": 10.098551299999999,
+        "lng": 77.18819560000001,
+        "url": "https://maps.google.com/?cid=9755267549294853351"
+      },
+      {
+        "name": "Phantom Rock Trail",
+        "lat": 10.051757,
+        "lng": 77.21794299999999,
+        "url": "https://maps.google.com/?cid=6309729225363248885"
+      },
+      {
+        "name": "Lakshmi Hills Trek",
+        "lat": 10.0889332,
+        "lng": 77.0595247,
+        "url": "https://maps.google.com/?cid=4114252177196445233"
+      },
+      {
+        "name": "Anaerangal Camp Trail",
+        "lat": 10.046887999999997,
+        "lng": 77.2104549,
+        "url": "https://maps.google.com/?cid=4643508427650641127"
+      }
+    ],
+    "waterfalls": [
+      {
+        "name": "Lakkam Waterfalls",
+        "lat": 10.188772000000002,
+        "lng": 77.1115059,
+        "url": "https://maps.google.com/?cid=1003657979723056441"
+      },
+      {
+        "name": "Nyayamakad Waterfalls",
+        "lat": 10.135911400000001,
+        "lng": 77.0609838,
+        "url": "https://maps.google.com/?cid=5754331536069661082"
+      },
+      {
+        "name": "Valara Waterfalls",
+        "lat": 10.046156,
+        "lng": 76.8386646,
+        "url": "https://maps.google.com/?cid=14482398237935533688"
+      },
+      {
+        "name": "Cheeyappara Waterfalls",
+        "lat": 10.0538528,
+        "lng": 76.8294126,
+        "url": "https://maps.google.com/?cid=3024405414896447274"
+      },
+      {
+        "name": "Thoovanam Waterfalls",
+        "lat": 10.2842912,
+        "lng": 77.18831599999999,
+        "url": "https://maps.google.com/?cid=2875633395285587281"
+      },
+      {
+        "name": "Kuthumkal Waterfalls",
+        "lat": 9.9412488,
+        "lng": 77.105822,
+        "url": "https://maps.google.com/?cid=13284220253525563919"
+      },
+      {
+        "name": "Periyakanal Waterfalls",
+        "lat": 10.037856999999999,
+        "lng": 77.1549825,
+        "url": "https://maps.google.com/?cid=1735551145173227165"
+      }
+    ]
+  },
+  "ooty": {
+    "viewpoints": [
+      {
+        "name": "Doddabetta Peak",
+        "lat": 11.40175665,
+        "lng": 76.73644949999999,
+        "url": "https://maps.google.com/?cid=12464487913492439417"
+      },
+      {
+        "name": "Pine Forest",
+        "lat": 11.440093399999999,
+        "lng": 76.65968060000002,
+        "url": "https://maps.google.com/?cid=8272696789164804016"
+      },
+      {
+        "name": "Wenlock Downs",
+        "lat": 11.4280587,
+        "lng": 76.6360759,
+        "url": "https://maps.google.com/?cid=3573832516857425123"
+      },
+      {
+        "name": "Dolphin's Nose",
+        "lat": 11.368922999999999,
+        "lng": 76.859338,
+        "url": "https://maps.google.com/?cid=1100572562688597383"
+      },
+      {
+        "name": "Lamb's Rock",
+        "lat": 11.351812500000001,
+        "lng": 76.8385625,
+        "url": "https://maps.google.com/?cid=6471543660076174103"
+      },
+      {
+        "name": "Needle Rock Viewpoint",
+        "lat": 11.499229500000002,
+        "lng": 76.52084529999999,
+        "url": "https://maps.google.com/?cid=5495632777427017569"
+      },
+      {
+        "name": "Catherine Falls Viewpoint",
+        "lat": 11.383600600000001,
+        "lng": 76.857953,
+        "url": "https://maps.google.com/?cid=14230113048116429009"
+      },
+      {
+        "name": "Glenmorgan Viewpoint",
+        "lat": 11.388316500000002,
+        "lng": 76.7226426,
+        "url": "https://maps.google.com/?cid=13054170630730153689"
+      }
+    ],
+    "lakes": [
+      {
+        "name": "Pykara Lake",
+        "lat": 11.411852600000001,
+        "lng": 76.6934216,
+        "url": "https://maps.google.com/?cid=1701194166584622914"
+      },
+      {
+        "name": "Emerald Lake",
+        "lat": 11.338720400000001,
+        "lng": 76.6207874,
+        "url": "https://maps.google.com/?cid=6588041552367557250"
+      },
+      {
+        "name": "Avalanche Lake",
+        "lat": 11.316860049999999,
+        "lng": 76.59406185,
+        "url": "https://maps.google.com/?cid=15808824796755561689"
+      },
+      {
+        "name": "Parsons Valley Lake",
+        "lat": 11.4015778,
+        "lng": 76.59943705,
+        "url": "https://maps.google.com/?cid=1510916632557304715"
+      },
+      {
+        "name": "Ooty Lake",
+        "lat": 11.403551149999998,
+        "lng": 76.68685815,
+        "url": "https://maps.google.com/?cid=9253629936393629843"
+      },
+      {
+        "name": "Upper Bhavani Lake",
+        "lat": 11.266001099999999,
+        "lng": 76.5628017,
+        "url": "https://maps.google.com/?cid=15702393937252633986"
+      },
+      {
+        "name": "Kamaraj Sagar Lake",
+        "lat": 11.444003300000002,
+        "lng": 76.65208609999999,
+        "url": "https://maps.google.com/?cid=4560901724093845479"
+      }
+    ],
+    "museums": [
+      {
+        "name": "Government Museum",
+        "lat": 11.4122936,
+        "lng": 76.715355,
+        "url": "https://maps.google.com/?cid=7427360547422747828"
+      },
+      {
+        "name": "Ooty Wax Museum",
+        "lat": 11.417187499999997,
+        "lng": 76.7156875,
+        "url": "https://maps.google.com/?cid=9950816607532306930"
+      },
+      {
+        "name": "Doddabetta Tea Factory & Museum",
+        "lat": 11.4118724,
+        "lng": 76.7208363,
+        "url": "https://maps.google.com/?cid=15573124602750895356"
+      },
+      {
+        "name": "Honey & Bee Museum",
+        "lat": 11.5396501,
+        "lng": 76.03638579999999,
+        "url": "https://maps.google.com/?cid=8608796084879203152"
+      },
+      {
+        "name": "Tribal Research Center Museum",
+        "lat": 11.368473700000001,
+        "lng": 76.66225,
+        "url": "https://maps.google.com/?cid=8788741955114861400"
+      },
+      {
+        "name": "Chocolate Museum",
+        "lat": 11.426333900000001,
+        "lng": 76.67087219999999,
+        "url": "https://maps.google.com/?cid=6043083529562798694"
+      }
+    ],
+    "shopping": [
+      {
+        "name": "Commercial Road",
+        "lat": 11.4072881,
+        "lng": 76.70389449999999,
+        "url": "https://maps.google.com/?cid=661713613689468198"
+      },
+      {
+        "name": "Charring Cross",
+        "lat": 11.411999299999998,
+        "lng": 76.708556,
+        "url": "https://maps.google.com/?cid=16905215376151446120"
+      },
+      {
+        "name": "Ooty Municipal Market",
+        "lat": 11.406933999999998,
+        "lng": 76.7035808,
+        "url": "https://maps.google.com/?cid=18257185567637899377"
+      },
+      {
+        "name": "Nilgiri Super Market",
+        "lat": 11.411232,
+        "lng": 76.70742820000001,
+        "url": "https://maps.google.com/?cid=16299671876446610292"
+      },
+      {
+        "name": "The Green Shop",
+        "lat": 11.413295,
+        "lng": 76.696935,
+        "url": "https://maps.google.com/?cid=15219480629416299832"
+      },
+      {
+        "name": "Bombay Kulfi & Snacks",
+        "lat": 11.0091172,
+        "lng": 76.9468964,
+        "url": "https://maps.google.com/?cid=3331959028956363382"
+      },
+      {
+        "name": "Adam's Fountain Area Shops",
+        "lat": 11.4120172,
+        "lng": 76.7083183,
+        "url": "https://maps.google.com/?cid=4203640643996838358"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Sidewalk Cafe (Hotel Nahar)",
+        "lat": 11.411500099999998,
+        "lng": 76.7078901,
+        "url": "https://maps.google.com/?cid=14080983001500043248"
+      },
+      {
+        "name": "Earl's Secret (King's Cliff)",
+        "lat": 11.419991499999998,
+        "lng": 76.69828400000002,
+        "url": "https://maps.google.com/?cid=5940351450717023691"
+      },
+      {
+        "name": "Place To Bee",
+        "lat": 11.413248,
+        "lng": 76.6969142,
+        "url": "https://maps.google.com/?cid=586767276704760690"
+      },
+      {
+        "name": "Shinkows Chinese Restaurant",
+        "lat": 11.411477,
+        "lng": 76.7027873,
+        "url": "https://maps.google.com/?cid=5920728672097556824"
+      },
+      {
+        "name": "Garden Restaurant (Hotel Preethi Classic)",
+        "lat": 11.4095192,
+        "lng": 76.7119718,
+        "url": "https://maps.google.com/?cid=17817827659281520341"
+      },
+      {
+        "name": "Adyar Ananda Bhavan",
+        "lat": 11.410739,
+        "lng": 76.70743999999999,
+        "url": "https://maps.google.com/?cid=10120128047671403476"
+      },
+      {
+        "name": "Hotel Welcome",
+        "lat": 11.3970615,
+        "lng": 76.6857594,
+        "url": "https://maps.google.com/?cid=1536572961056914386"
+      },
+      {
+        "name": "Angaara Restaurant",
+        "lat": 11.4078763,
+        "lng": 76.7067071,
+        "url": "https://maps.google.com/?cid=11494136267396506101"
+      },
+      {
+        "name": "Nahars Restaurant",
+        "lat": 11.4107337,
+        "lng": 76.7081571,
+        "url": "https://maps.google.com/?cid=14518577053655202839"
+      }
+    ]
+  },
+  "puducherry": {
+    "cafes": [
+      {
+        "name": "Baker Street",
+        "lat": 11.929254000000002,
+        "lng": 79.828876,
+        "url": "https://maps.google.com/?cid=14735248435283185442"
+      },
+      {
+        "name": "Cafe Xtasi",
+        "lat": 11.9338433,
+        "lng": 79.83093219999999,
+        "url": "https://maps.google.com/?cid=17359941053964204569"
+      },
+      {
+        "name": "Coffee House",
+        "lat": 11.9293504,
+        "lng": 79.8282531,
+        "url": "https://maps.google.com/?cid=16026406212508360713"
+      },
+      {
+        "name": "Bread & Chocolate",
+        "lat": 11.990738,
+        "lng": 79.829758,
+        "url": "https://maps.google.com/?cid=16077675973571283395"
+      },
+      {
+        "name": "Kasha ki Aasha",
+        "lat": 11.930356500000002,
+        "lng": 79.83139539999999,
+        "url": "https://maps.google.com/?cid=12106161970152422858"
+      },
+      {
+        "name": "Zuka Choco-la",
+        "lat": 11.929853,
+        "lng": 79.8302416,
+        "url": "https://maps.google.com/?cid=13086481350364995263"
+      },
+      {
+        "name": "New Banana Cafe",
+        "lat": 11.927364899999999,
+        "lng": 79.8303165,
+        "url": "https://maps.google.com/?cid=369889192756723578"
+      },
+      {
+        "name": "Auroville Bakery",
+        "lat": 12.0097125,
+        "lng": 79.8111406,
+        "url": "https://maps.google.com/?cid=4723893135598974674"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Copper Kitchen",
+        "lat": 11.933099499999999,
+        "lng": 79.8076596,
+        "url": "https://maps.google.com/?cid=7536963474465973478"
+      },
+      {
+        "name": "KAMATCHI ",
+        "lat": 11.9279528,
+        "lng": 79.8323508,
+        "url": "https://maps.google.com/?cid=5370644141672233824"
+      },
+      {
+        "name": "Annapoorna",
+        "lat": 11.947892,
+        "lng": 79.83078359999999,
+        "url": "https://maps.google.com/?cid=18328612002730097360"
+      },
+      {
+        "name": "Bay of Buddha",
+        "lat": 11.9332347,
+        "lng": 79.83583829999999,
+        "url": "https://maps.google.com/?cid=10590783348741321410"
+      },
+      {
+        "name": "Maison Perumal",
+        "lat": 11.9404489,
+        "lng": 79.8315714,
+        "url": "https://maps.google.com/?cid=11353973177948947220"
+      },
+      {
+        "name": "Seagulls Restaurant",
+        "lat": 11.924339699999999,
+        "lng": 79.8337493,
+        "url": "https://maps.google.com/?cid=9073514294855636811"
+      },
+      {
+        "name": "Carte Blanche",
+        "lat": 11.9277637,
+        "lng": 79.8334555,
+        "url": "https://maps.google.com/?cid=5393598629995767493"
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Bay Beach",
+        "lat": 11.9244804,
+        "lng": 79.83439700000001,
+        "url": "https://maps.google.com/?cid=471189717773471964"
+      },
+      {
+        "name": "Rock Beach",
+        "lat": 11.9339038,
+        "lng": 79.83619569999999,
+        "url": "https://maps.google.com/?cid=12599657740789543457"
+      },
+      {
+        "name": "Puducherry Beach",
+        "lat": 11.9353017,
+        "lng": 79.8364573,
+        "url": "https://maps.google.com/?cid=1821423667756561511"
+      },
+      {
+        "name": "Auroville Beach",
+        "lat": 11.9864943,
+        "lng": 79.84983985,
+        "url": "https://maps.google.com/?cid=711085015990466225"
+      },
+      {
+        "name": "Veerampattinam Beach",
+        "lat": 11.892354799999998,
+        "lng": 79.8270246,
+        "url": "https://maps.google.com/?cid=5345436199714551715"
+      },
+      {
+        "name": "Eden Beach",
+        "lat": 11.8814318,
+        "lng": 79.8242184,
+        "url": "https://maps.google.com/?cid=11185380801012671122"
+      },
+      {
+        "name": "Chinnaveerampattinam Beach",
+        "lat": 11.8827419,
+        "lng": 79.8246361,
+        "url": "https://maps.google.com/?cid=13863753953816669995"
+      },
+      {
+        "name": "Paradise Beach",
+        "lat": 11.871729,
+        "lng": 79.81925670000001,
+        "url": "https://maps.google.com/?cid=4177478798684600859"
+      }
+    ],
+    "museums": [
+      {
+        "name": "Pondicherry Museum",
+        "lat": 11.9344884,
+        "lng": 79.83485,
+        "url": "https://maps.google.com/?cid=14805784674668239233"
+      },
+      {
+        "name": "Bharathidasan Memorial Museum",
+        "lat": 11.939161799999999,
+        "lng": 79.8325084,
+        "url": "https://maps.google.com/?cid=13706914718570698614"
+      },
+      {
+        "name": "Puducherry Science Centre & Planetarium",
+        "lat": 11.9518361,
+        "lng": 79.8078791,
+        "url": "https://maps.google.com/?cid=11358610937069831662"
+      }
+    ],
+    "historical-site": [
+      {
+        "name": "Arikamedu",
+        "lat": 11.9012163,
+        "lng": 79.82012259999999,
+        "url": "https://maps.google.com/?cid=11771681082775439268"
+      },
+      {
+        "name": "Old Lighthouse",
+        "lat": 11.932923400000002,
+        "lng": 79.8357532,
+        "url": "https://maps.google.com/?cid=12944206231524232826"
+      },
+      {
+        "name": "Manakula Vinayagar Temple",
+        "lat": 11.9357756,
+        "lng": 79.8336621,
+        "url": "https://maps.google.com/?cid=6950680071425998278"
+      },
+      {
+        "name": "Aayi Mandapam",
+        "lat": 11.933078199999997,
+        "lng": 79.83420269999999,
+        "url": "https://maps.google.com/?cid=9216775583941410626"
+      },
+      {
+        "name": "Dupleix Statue",
+        "lat": 11.925661000000002,
+        "lng": 79.8342699,
+        "url": "https://maps.google.com/?cid=508309769145690976"
+      }
+    ],
+    "shopping": [
+      {
+        "name": "Mission Street",
+        "lat": 11.932979500000002,
+        "lng": 79.830693,
+        "url": "https://maps.google.com/?q=Mission+St,+MG+Road+Area,+Puducherry,+605001,+India&ftid=0x3a5363d679cc599b:0xc10f95ee1faec19e"
+      },
+      {
+        "name": "Auroville Craft Stores",
+        "lat": 11.991934099999998,
+        "lng": 79.81900259999999,
+        "url": "https://maps.google.com/?cid=619002245221975910"
+      },
+      {
+        "name": "Janaki",
+        "lat": 11.905855500000001,
+        "lng": 79.8066793,
+        "url": "https://maps.google.com/?cid=15890545034025949289"
+      },
+      {
+        "name": "Sunday Market",
+        "lat": 11.929409499999998,
+        "lng": 79.8279982,
+        "url": "https://maps.google.com/?cid=13535921882922523896"
+      },
+      {
+        "name": "Hidesign Factory Outlet",
+        "lat": 11.9357615,
+        "lng": 79.83089369999999,
+        "url": "https://maps.google.com/?cid=4799676160399809702"
+      }
+    ]
+  },
+  "pune": {
+    "restaurants": [
+      {
+        "name": "Shabree Restaurant",
+        "lat": 18.5245066,
+        "lng": 73.8416289,
+        "url": "https://maps.google.com/?cid=6949257982573282987"
+      },
+      {
+        "name": "Vaishali Restaurant",
+        "lat": 18.5208838,
+        "lng": 73.84123699999999,
+        "url": "https://maps.google.com/?cid=10472716797973979168"
+      },
+      {
+        "name": "Chaitanya Parathas",
+        "lat": 18.5242053,
+        "lng": 73.8414683,
+        "url": "https://maps.google.com/?cid=454347218934080171"
+      },
+      {
+        "name": "Marz-o-rin",
+        "lat": 18.516480699999995,
+        "lng": 73.8789937,
+        "url": "https://maps.google.com/?cid=14552292039793765408"
+      },
+      {
+        "name": "Hotel Shreyas",
+        "lat": 18.5191507,
+        "lng": 73.8441404,
+        "url": "https://maps.google.com/?cid=12372758960232485333"
+      },
+      {
+        "name": "SP's Biryani House",
+        "lat": 18.5083151,
+        "lng": 73.8503233,
+        "url": "https://maps.google.com/?cid=6134270749183560075"
+      },
+      {
+        "name": "Good Luck Cafe",
+        "lat": 18.517313100000003,
+        "lng": 73.8414923,
+        "url": "https://maps.google.com/?cid=8658948330152762135"
+      },
+      {
+        "name": "Durvankur Thali",
+        "lat": 18.510734,
+        "lng": 73.8461745,
+        "url": "https://maps.google.com/?cid=2731617318499829843"
+      },
+      {
+        "name": "German Bakery",
+        "lat": 18.5396337,
+        "lng": 73.887395,
+        "url": "https://maps.google.com/?cid=11497747092582602833"
+      }
+    ],
+    "cafes": [
+      {
+        "name": "Irani Cafe",
+        "lat": 18.5142481,
+        "lng": 73.83773839999999,
+        "url": "https://maps.google.com/?cid=692879000241773006"
+      },
+      {
+        "name": "Waari Book Cafe",
+        "lat": 18.5061834,
+        "lng": 73.8210525,
+        "url": "https://maps.google.com/?cid=16778387254199586206"
+      },
+      {
+        "name": "Katriya Cafe",
+        "lat": 18.520764,
+        "lng": 73.8405691,
+        "url": "https://maps.google.com/?cid=6290328090928613236"
+      },
+      {
+        "name": "Peter's Pan",
+        "lat": 18.5940874,
+        "lng": 73.7253149,
+        "url": "https://maps.google.com/?cid=5387581026150811186"
+      },
+      {
+        "name": "Cafe Eastwood",
+        "lat": 18.498703199999998,
+        "lng": 73.81934980000001,
+        "url": "https://maps.google.com/?cid=811869756174047596"
+      },
+      {
+        "name": "Zen Cafe",
+        "lat": 18.538643,
+        "lng": 73.8865596,
+        "url": "https://maps.google.com/?cid=11214967080516341097"
+      },
+      {
+        "name": "Third Wave Coffee Roasters",
+        "lat": 18.5562353,
+        "lng": 73.8089403,
+        "url": "https://maps.google.com/?cid=14112001053197993945"
+      },
+      {
+        "name": "Cafe Delhi Heights",
+        "lat": 18.5627752,
+        "lng": 73.9166537,
+        "url": "https://maps.google.com/?cid=1963699324507943166"
+      },
+      {
+        "name": "Starbucks (various locations)",
+        "lat": 18.522520099999998,
+        "lng": 73.841217,
+        "url": "https://maps.google.com/?cid=11289566935565270148"
+      }
+    ],
+    "forts": [
+      {
+        "name": "Sinhagad Fort",
+        "lat": 18.366277,
+        "lng": 73.7558777,
+        "url": "https://maps.google.com/?cid=14678591873247144203"
+      },
+      {
+        "name": "Rajgad Fort",
+        "lat": 18.2466334,
+        "lng": 73.6822128,
+        "url": "https://maps.google.com/?cid=16353453953744817457"
+      },
+      {
+        "name": "Torna Fort",
+        "lat": 18.2769367,
+        "lng": 73.6219158,
+        "url": "https://maps.google.com/?cid=7365967646774621164"
+      },
+      {
+        "name": "Lohagad Fort",
+        "lat": 18.7101945,
+        "lng": 73.47586179999999,
+        "url": "https://maps.google.com/?cid=288641403003685725"
+      },
+      {
+        "name": "Visapur Fort",
+        "lat": 18.7213297,
+        "lng": 73.4914357,
+        "url": "https://maps.google.com/?cid=6190457662375941487"
+      },
+      {
+        "name": "Pratapgad Fort",
+        "lat": 17.937118699999996,
+        "lng": 73.57820079999999,
+        "url": "https://maps.google.com/?cid=57842066892678891"
+      },
+      {
+        "name": "Korigad Fort",
+        "lat": 18.6212339,
+        "lng": 73.38573699999999,
+        "url": "https://maps.google.com/?cid=7489450772157549659"
+      }
+    ],
+    "museums": [
+      {
+        "name": "Aga Khan Palace",
+        "lat": 18.5525887,
+        "lng": 73.9015388,
+        "url": "https://maps.google.com/?cid=11370352744348810206"
+      },
+      {
+        "name": "Raja Dinkar Kelkar Museum",
+        "lat": 18.510685499999997,
+        "lng": 73.8544307,
+        "url": "https://maps.google.com/?cid=5030356971079101939"
+      },
+      {
+        "name": "Mahatma Phule Museum",
+        "lat": 18.523711799999997,
+        "lng": 73.8456291,
+        "url": "https://maps.google.com/?cid=15194077179636750659"
+      },
+      {
+        "name": "Dajikaka Gadgil Museum",
+        "lat": 18.4174594,
+        "lng": 73.7372068,
+        "url": "https://maps.google.com/?cid=13375483741373162572"
+      },
+      {
+        "name": "Darshan Museum",
+        "lat": 18.5240953,
+        "lng": 73.8764697,
+        "url": "https://maps.google.com/?cid=4624365805672305194"
+      },
+      {
+        "name": "Joshi's Museum of Miniature Railways",
+        "lat": 18.5015865,
+        "lng": 73.822345,
+        "url": "https://maps.google.com/?cid=11223702584778133221"
+      },
+      {
+        "name": "Pune Tribal Museum",
+        "lat": 18.5297077,
+        "lng": 73.88587799999999,
+        "url": "https://maps.google.com/?cid=6862886575202304220"
+      }
+    ],
+    "shopping": [
+      {
+        "name": "Laxmi Road",
+        "lat": 18.515608699999998,
+        "lng": 73.85618769999999,
+        "url": "https://maps.google.com/?cid=10486988457187473921"
+      },
+      {
+        "name": "Phoenix Marketcity",
+        "lat": 18.562253999999996,
+        "lng": 73.9166943,
+        "url": "https://maps.google.com/?cid=8034383015643105150"
+      },
+      {
+        "name": "Amanora Mall",
+        "lat": 18.518534,
+        "lng": 73.9350918,
+        "url": "https://maps.google.com/?cid=16080448077101298364"
+      },
+      {
+        "name": "Fergusson College Road",
+        "lat": 18.517497199999998,
+        "lng": 73.84161259999999,
+        "url": "https://maps.google.com/?cid=14858390434230390793"
+      },
+      {
+        "name": "Hong Kong Lane",
+        "lat": 18.5159321,
+        "lng": 73.84207030000002,
+        "url": "https://maps.google.com/?cid=2572187048226892760"
+      },
+      {
+        "name": "Camp area",
+        "lat": 18.50886295,
+        "lng": 73.88560584999999,
+        "url": "https://maps.google.com/?cid=776791400740593620"
+      },
+      {
+        "name": "J M Road",
+        "lat": 18.521206499999998,
+        "lng": 73.8467797,
+        "url": "https://maps.google.com/?cid=14185403703794588168"
+      },
+      {
+        "name": "MG Road",
+        "lat": 18.5059014,
+        "lng": 73.87854089999999,
+        "url": "https://maps.google.com/?cid=9656941090292335496"
+      },
+      {
+        "name": "Fashion Street",
+        "lat": 18.5159344,
+        "lng": 73.8793049,
+        "url": "https://maps.google.com/?cid=1801875669350624883"
+      }
+    ],
+    "nightlife": [
+      {
+        "name": "High Spirits Cafe",
+        "lat": 18.539098499999998,
+        "lng": 73.9044759,
+        "url": "https://maps.google.com/?cid=17240113165055999461"
+      },
+      {
+        "name": "Swig",
+        "lat": 18.5397855,
+        "lng": 73.8936123,
+        "url": "https://maps.google.com/?cid=18336904813514284512"
+      },
+      {
+        "name": "Effingut Brewerkz",
+        "lat": 18.5339952,
+        "lng": 73.8984822,
+        "url": "https://maps.google.com/?cid=7173026014635129701"
+      },
+      {
+        "name": "Toit Brewery",
+        "lat": 18.553850499999996,
+        "lng": 73.9052687,
+        "url": "https://maps.google.com/?cid=9002555247741602170"
+      },
+      {
+        "name": "Unwind",
+        "lat": 18.5386853,
+        "lng": 73.9127725,
+        "url": "https://maps.google.com/?cid=14372113663149464953"
+      },
+      {
+        "name": "FBeach House",
+        "lat": 17.795719,
+        "lng": 73.1061965,
+        "url": "https://maps.google.com/?cid=9659010260129386711"
+      },
+      {
+        "name": "Mix@36 (The Westin)",
+        "lat": 18.538987199999998,
+        "lng": 73.90593190000001,
+        "url": "https://maps.google.com/?cid=14739985648870940002"
+      },
+      {
+        "name": "House of Medici (Conrad)",
+        "lat": 18.5353548,
+        "lng": 73.8834007,
+        "url": "https://maps.google.com/?cid=16768843138613220651"
+      },
+      {
+        "name": "One Restaurant & Bar",
+        "lat": 18.5365042,
+        "lng": 73.9108815,
+        "url": "https://maps.google.com/?cid=17663848562401845017"
+      }
+    ]
+  },
+  "rishikesh": {
+    "cafes": [
+      {
+        "name": "Little Buddha Cafe",
+        "lat": 30.123731899999996,
+        "lng": 78.3291446,
+        "url": "https://maps.google.com/?cid=14852766774856582957"
+      },
+      {
+        "name": "Freedom Cafe",
+        "lat": 30.12398769999999,
+        "lng": 78.3292103,
+        "url": "https://maps.google.com/?cid=12448054817507164126"
+      },
+      {
+        "name": "German Bakery",
+        "lat": 30.123554999999996,
+        "lng": 78.3286698,
+        "url": "https://maps.google.com/?cid=7296810112238208589"
+      },
+      {
+        "name": "The Sitting Elephant Cafe",
+        "lat": 30.102247300000002,
+        "lng": 78.2925456,
+        "url": "https://maps.google.com/?cid=7537311754461539425"
+      },
+      {
+        "name": "Oasis Cafe",
+        "lat": 30.120138799999996,
+        "lng": 78.31735499999999,
+        "url": "https://maps.google.com/?cid=17680407787231125963"
+      },
+      {
+        "name": "Cafe Karma",
+        "lat": 30.130801499999997,
+        "lng": 78.3241269,
+        "url": "https://maps.google.com/?cid=12897359003598365373"
+      },
+      {
+        "name": "Bistro Nirvana",
+        "lat": 30.128001399999995,
+        "lng": 78.3188952,
+        "url": "https://maps.google.com/?cid=15306277080750203630"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Chotiwala Restaurant",
+        "lat": 30.121689000000003,
+        "lng": 78.315091,
+        "url": "https://maps.google.com/?cid=322817184726713429"
+      },
+      {
+        "name": "The Ganga View Restaurant",
+        "lat": 30.127532499999997,
+        "lng": 78.33136789999999,
+        "url": "https://maps.google.com/?cid=15776935640636023915"
+      },
+      {
+        "name": "Rajasthani Restaurant",
+        "lat": 30.106626300000002,
+        "lng": 78.29859189999999,
+        "url": "https://maps.google.com/?cid=4755703116050997725"
+      },
+      {
+        "name": "Honest Restaurant",
+        "lat": 30.343882599999997,
+        "lng": 77.9533574,
+        "url": "https://maps.google.com/?cid=16000600629569024447"
+      },
+      {
+        "name": "Ayurpak Restaurant",
+        "lat": 30.129911000000007,
+        "lng": 78.3251598,
+        "url": "https://maps.google.com/?cid=18253652633672039695"
+      },
+      {
+        "name": "Shivani Restaurant",
+        "lat": 30.1287052,
+        "lng": 78.3318187,
+        "url": "https://maps.google.com/?cid=859287673415343849"
+      },
+      {
+        "name": "The 60's Cafe",
+        "lat": 30.1308241,
+        "lng": 78.323865,
+        "url": "https://maps.google.com/?cid=7105348679816533620"
+      }
+    ],
+    "waterfalls": [
+      {
+        "name": "Neer Garh Waterfall",
+        "lat": 30.1409843,
+        "lng": 78.3453658,
+        "url": "https://maps.google.com/?cid=13331105910111861866"
+      },
+      {
+        "name": "Garud Chatti Waterfall",
+        "lat": 30.1244099,
+        "lng": 78.3545981,
+        "url": "https://maps.google.com/?cid=235830312670458644"
+      },
+      {
+        "name": "Shivpuri Waterfall",
+        "lat": 30.1244099,
+        "lng": 78.3545981,
+        "url": "https://maps.google.com/?cid=235830312670458644"
+      },
+      {
+        "name": "Patna Waterfall",
+        "lat": 30.124400100000003,
+        "lng": 78.3543983,
+        "url": "https://maps.google.com/?cid=13525039763878336302"
+      },
+      {
+        "name": "Himshail Waterfall",
+        "lat": 30.116059,
+        "lng": 78.32126769999999,
+        "url": "https://maps.google.com/?cid=6124405513649786647"
+      }
+    ],
+    "viewpoints": [
+      {
+        "name": "Kunjapuri Temple Viewpoint",
+        "lat": 30.173989999999993,
+        "lng": 78.3145722,
+        "url": "https://maps.google.com/?cid=15353735518751717680"
+      },
+      {
+        "name": "Lakshman Jhula Bridge View",
+        "lat": 30.126330999999997,
+        "lng": 78.3299801,
+        "url": "https://maps.google.com/?cid=17681564717730321424"
+      },
+      {
+        "name": "Ram Jhula Bridge View",
+        "lat": 30.123345899999997,
+        "lng": 78.3144507,
+        "url": "https://maps.google.com/?cid=9487165647415702138"
+      },
+      {
+        "name": "Vashishta Gufa Surroundings",
+        "lat": 30.114269799999995,
+        "lng": 78.4320327,
+        "url": "https://maps.google.com/?cid=12293318327505517951"
+      },
+      {
+        "name": "Sivananda Ashram Terrace View",
+        "lat": 30.123841,
+        "lng": 78.3124371,
+        "url": "https://maps.google.com/?cid=17035402340431112512"
+      }
+    ]
+  },
+  "shillong": {
+    "cafes": [
+      {
+        "name": "Cafe Shillong",
+        "lat": 25.570314099999994,
+        "lng": 91.89464199999999,
+        "url": "https://maps.google.com/?cid=9940614228293606152"
+      },
+      {
+        "name": "Living Roof",
+        "lat": 25.572208399999997,
+        "lng": 91.89295680000001,
+        "url": "https://maps.google.com/?cid=15398364902928099556"
+      },
+      {
+        "name": "ML 05 Cafe",
+        "lat": 25.544736399999998,
+        "lng": 91.8379827,
+        "url": "https://maps.google.com/?cid=951615716726594995"
+      },
+      {
+        "name": "Deja Vu",
+        "lat": 25.5715906,
+        "lng": 91.8971888,
+        "url": "https://maps.google.com/?cid=1799906294882560025"
+      },
+      {
+        "name": "The Grub",
+        "lat": 25.569266,
+        "lng": 91.89821950000001,
+        "url": "https://maps.google.com/?cid=1773341396775603100"
+      },
+      {
+        "name": "Dylan's Cafe",
+        "lat": 25.566187799999998,
+        "lng": 91.894517,
+        "url": "https://maps.google.com/?cid=11082345713538751733"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Jiva Sizzlers",
+        "lat": 25.5756464,
+        "lng": 91.88162299999999,
+        "url": "https://maps.google.com/?cid=11031240771850346411"
+      },
+      {
+        "name": "Ginger Restaurant",
+        "lat": 25.580705800000004,
+        "lng": 91.8868026,
+        "url": "https://maps.google.com/?cid=10117399868843288648"
+      },
+      {
+        "name": "City Hut Family Dhaba",
+        "lat": 25.577562399999998,
+        "lng": 91.88494180000001,
+        "url": "https://maps.google.com/?cid=14683584980619898819"
+      },
+      {
+        "name": "La Galerie",
+        "lat": 25.5760573,
+        "lng": 91.8822752,
+        "url": "https://maps.google.com/?cid=7315325269750338667"
+      },
+      {
+        "name": "Broadway Restaurant",
+        "lat": 25.575858500000002,
+        "lng": 91.88118639999999,
+        "url": "https://maps.google.com/?cid=1387548810624404124"
+      },
+      {
+        "name": "Lal's Bistro",
+        "lat": 25.5806787,
+        "lng": 91.8952046,
+        "url": "https://maps.google.com/?cid=8822461230130172580"
+      },
+      {
+        "name": "Madras Cafe",
+        "lat": 25.576627300000002,
+        "lng": 91.881456,
+        "url": "https://maps.google.com/?cid=10094986748148158192"
+      }
+    ],
+    "viewpoints": [
+      {
+        "name": "Shillong Peak",
+        "lat": 25.547326,
+        "lng": 91.8749656,
+        "url": "https://maps.google.com/?cid=14323646929365765976"
+      },
+      {
+        "name": "Laitlum Canyons",
+        "lat": 25.4506992,
+        "lng": 91.91185809999999,
+        "url": "https://maps.google.com/?cid=524850964348759497"
+      },
+      {
+        "name": "Elephant Falls Viewpoint",
+        "lat": 25.538075900000003,
+        "lng": 91.8221071,
+        "url": "https://maps.google.com/?cid=9631142227465317234"
+      },
+      {
+        "name": "Ward's Lake",
+        "lat": 25.574841749999997,
+        "lng": 91.8865031,
+        "url": "https://maps.google.com/?cid=9526908262842847498"
+      },
+      {
+        "name": "Mawphlang Sacred Forest",
+        "lat": 25.4452356,
+        "lng": 91.7488968,
+        "url": "https://maps.google.com/?cid=504949229012798570"
+      },
+      {
+        "name": "Spread Eagle Falls Viewpoint",
+        "lat": 25.5769419,
+        "lng": 91.9101755,
+        "url": "https://maps.google.com/?cid=11152730296002598348"
+      }
+    ],
+    "waterfalls": [
+      {
+        "name": "Elephant Falls",
+        "lat": 25.537537399999998,
+        "lng": 91.8225513,
+        "url": "https://maps.google.com/?cid=5429974205575368080"
+      },
+      {
+        "name": "Sweet Falls",
+        "lat": 25.564775699999995,
+        "lng": 91.9565112,
+        "url": "https://maps.google.com/?cid=3868784963376141472"
+      },
+      {
+        "name": "Spread Eagle Falls",
+        "lat": 25.5769419,
+        "lng": 91.9101755,
+        "url": "https://maps.google.com/?cid=11152730296002598348"
+      },
+      {
+        "name": "Bishop Falls",
+        "lat": 25.5790999,
+        "lng": 91.8633601,
+        "url": "https://maps.google.com/?cid=10180986236400745876"
+      },
+      {
+        "name": "Beadon Falls",
+        "lat": 25.5912724,
+        "lng": 91.86745719999999,
+        "url": "https://maps.google.com/?cid=15801320652411907895"
+      },
+      {
+        "name": "Weikai Falls",
+        "lat": 25.471142099999998,
+        "lng": 92.192037,
+        "url": "https://maps.google.com/?cid=1895973294306268846"
+      }
+    ],
+    "museums": [
+      {
+        "name": "Don Bosco Centre for Indigenous Cultures",
+        "lat": 25.592838399999998,
+        "lng": 91.88273199999999,
+        "url": "https://maps.google.com/?cid=3067257739993552237"
+      },
+      {
+        "name": "Meghalaya State Museum",
+        "lat": 25.569668600000007,
+        "lng": 91.8840197,
+        "url": "https://maps.google.com/?cid=11930104802199138699"
+      },
+      {
+        "name": "Ever Living Museum",
+        "lat": 25.560363099999996,
+        "lng": 91.9345567,
+        "url": "https://maps.google.com/?cid=10704791089597519763"
+      },
+      {
+        "name": "Air Force Museum",
+        "lat": 25.5366415,
+        "lng": 91.82743190000001,
+        "url": "https://maps.google.com/?cid=7044159069083439445"
+      },
+      {
+        "name": "Rhino Museum",
+        "lat": 25.571322,
+        "lng": 91.87142140000002,
+        "url": "https://maps.google.com/?cid=7187045267649354776"
+      }
+    ]
+  },
+  "udaipur": {
+    "restaurants": [
+      {
+        "name": "Ambrai Restaurant",
+        "lat": 24.578158499999997,
+        "lng": 73.6801224,
+        "url": "https://maps.google.com/?cid=16404611817941260945"
+      },
+      {
+        "name": "Khamma Ghani Restaurant",
+        "lat": 24.585669,
+        "lng": 73.680697,
+        "url": "https://maps.google.com/?cid=10413829625136439682"
+      },
+      {
+        "name": "Natraj Dining Hall & Restaurant",
+        "lat": 24.5723618,
+        "lng": 73.69966459999999,
+        "url": "https://maps.google.com/?cid=266128787437808050"
+      },
+      {
+        "name": "Restaurant 1559 AD",
+        "lat": 24.592654000000003,
+        "lng": 73.6812549,
+        "url": "https://maps.google.com/?cid=2422489531384356702"
+      },
+      {
+        "name": "Santosh Bhojanalaya",
+        "lat": 24.5786047,
+        "lng": 73.6960369,
+        "url": "https://maps.google.com/?cid=18206421560609644108"
+      },
+      {
+        "name": "Udai Kothi Restaurant",
+        "lat": 24.5797296,
+        "lng": 73.6800663,
+        "url": "https://maps.google.com/?cid=8745889902866943605"
+      }
+    ],
+    "cafes": [
+      {
+        "name": "Jheel's Ginger Coffee Bar & Bakery",
+        "lat": 24.580847499999997,
+        "lng": 73.6818364,
+        "url": "https://maps.google.com/?cid=4962119991369523672"
+      },
+      {
+        "name": "Cafe Edelweiss",
+        "lat": 24.580191199999994,
+        "lng": 73.6824066,
+        "url": "https://maps.google.com/?cid=9301767168862011054"
+      },
+      {
+        "name": "Hello Boho Lake Side Cafe",
+        "lat": 24.583958799999994,
+        "lng": 73.68318459999999,
+        "url": "https://maps.google.com/?cid=14397702338910772782"
+      },
+      {
+        "name": "Brew Villa - Cafe & Restro",
+        "lat": 24.5802245,
+        "lng": 73.6826241,
+        "url": "https://maps.google.com/?cid=6788109175198395280"
+      },
+      {
+        "name": "The Artist House",
+        "lat": 24.5801251,
+        "lng": 73.6968591,
+        "url": "https://maps.google.com/?cid=609757340457027261"
+      },
+      {
+        "name": "Sun & Moon Cafe",
+        "lat": 24.5803056,
+        "lng": 73.6829103,
+        "url": "https://maps.google.com/?cid=8489910439537585935"
+      }
+    ],
+    "lakes--boat-rides": [
+      {
+        "name": "Lake Pichola",
+        "lat": 24.5719996,
+        "lng": 73.67899999999999,
+        "url": "https://maps.google.com/?cid=16136281485325290960"
+      },
+      {
+        "name": "Fateh Sagar Lake",
+        "lat": 24.6016329,
+        "lng": 73.6718314,
+        "url": "https://maps.google.com/?cid=8754412202283979704"
+      },
+      {
+        "name": "Doodh Talai Lake",
+        "lat": 24.568429549999998,
+        "lng": 73.68476844999998,
+        "url": "https://maps.google.com/?cid=1588946485181738673"
+      },
+      {
+        "name": "Badi Lake / Jiyan Sagar",
+        "lat": 24.617076450000003,
+        "lng": 73.62217419999999,
+        "url": "https://maps.google.com/?cid=610842835066440974"
+      },
+      {
+        "name": "Swaroop Sagar Lake",
+        "lat": 24.588560800000003,
+        "lng": 73.6847073,
+        "url": "https://maps.google.com/?cid=7174507751741692132"
+      }
+    ],
+    "palaces--heritage-sites": [
+      {
+        "name": "Ambrai Ghat",
+        "lat": 24.5775547,
+        "lng": 73.67990209999999,
+        "url": "https://maps.google.com/?cid=9264987387168891034"
+      },
+      {
+        "name": "Jag Mandir Palace",
+        "lat": 24.567594399999997,
+        "lng": 73.6777615,
+        "url": "https://maps.google.com/?cid=5951116065565877862"
+      },
+      {
+        "name": "Jagdish Temple",
+        "lat": 24.579653600000004,
+        "lng": 73.6836153,
+        "url": "https://maps.google.com/?cid=17298046345835533112"
+      },
+      {
+        "name": "Saheliyon-ki-Bari",
+        "lat": 24.6030064,
+        "lng": 73.6854901,
+        "url": "https://maps.google.com/?cid=11340521396609279041"
+      },
+      {
+        "name": "Bagore Ki Haveli",
+        "lat": 24.5800483,
+        "lng": 73.6822576,
+        "url": "https://maps.google.com/?cid=17526235240995823629"
+      },
+      {
+        "name": "Monsoon Palace (Sajjangarh Palace)",
+        "lat": 24.5931853,
+        "lng": 73.6396056,
+        "url": "https://maps.google.com/?cid=9255976409530578213"
+      },
+      {
+        "name": "Ahar Cenotaphs",
+        "lat": 24.586413299999997,
+        "lng": 73.72112469999999,
+        "url": "https://maps.google.com/?cid=11084978375282937264"
+      },
+      {
+        "name": "City Palace",
+        "lat": 24.576442099999998,
+        "lng": 73.6835109,
+        "url": "https://maps.google.com/?cid=10545089978061990670"
+      }
+    ],
+    "markets--shopping": [
+      {
+        "name": "Ashwini Bazaar Road",
+        "lat": 24.586649899999998,
+        "lng": 73.68835469999999,
+        "url": "https://maps.google.com/?q=Ashwini+Bazaar+Rd,+Basti+Ram+Jiki+Badi,+Udaipur,+Rajasthan+313004,+India&ftid=0x3967e571ab19ae0f:0xb7ddd0d1f50622e"
+      },
+      {
+        "name": "Bada Bazaar",
+        "lat": 24.5817503,
+        "lng": 73.68704079999999,
+        "url": "https://maps.google.com/?q=Sindhi+Bazar+Rd,+Old+City,+Rao+Ji+Ka+Hata,+Udaipur,+Rajasthan+313001,+India&ftid=0x3967e57961295cf7:0x7ebdac1702552269"
+      },
+      {
+        "name": "Chetak Circle",
+        "lat": 24.59105245,
+        "lng": 73.69043345,
+        "url": "https://maps.google.com/?cid=10061598874622877005"
+      },
+      {
+        "name": "Shilpgram",
+        "lat": 24.6123095,
+        "lng": 73.66403700000001,
+        "url": "https://maps.google.com/?cid=193133210102250982"
+      },
+      {
+        "name": "Mochiwada Bazaar",
+        "lat": 24.582386200000002,
+        "lng": 73.6898836,
+        "url": "https://maps.google.com/?cid=13603448466003310333"
+      }
+    ]
+  },
+  "varanasi": {
+    "temples": [
+      {
+        "name": "Kashi Vishwanath Temple",
+        "lat": 25.310853200000004,
+        "lng": 83.0106783,
+        "url": "https://maps.google.com/?cid=5215184104416049939"
+      },
+      {
+        "name": "Durga Temple",
+        "lat": 25.288666699999997,
+        "lng": 82.99910560000001,
+        "url": "https://maps.google.com/?cid=2253729730996482129"
+      },
+      {
+        "name": "Tulsi Manas Temple",
+        "lat": 25.287205200000002,
+        "lng": 83.0001044,
+        "url": "https://maps.google.com/?cid=15462148269733888671"
+      },
+      {
+        "name": "Bharat Mata Mandir",
+        "lat": 25.317280600000004,
+        "lng": 82.989235,
+        "url": "https://maps.google.com/?cid=10128270541442524150"
+      },
+      {
+        "name": "Kal Bhairav Temple",
+        "lat": 25.3176788,
+        "lng": 83.0159867,
+        "url": "https://maps.google.com/?cid=9601595516183374279"
+      },
+      {
+        "name": "New Vishwanath Temple (BHU)",
+        "lat": 25.2659362,
+        "lng": 82.9879509,
+        "url": "https://maps.google.com/?cid=17724790986172839723"
+      },
+      {
+        "name": "Nepali Temple",
+        "lat": 25.3099532,
+        "lng": 83.0130755,
+        "url": "https://maps.google.com/?cid=4335805247785518914"
+      },
+      {
+        "name": "Sankat Mochan Hanuman Temple",
+        "lat": 25.282856600000002,
+        "lng": 83.0001793,
+        "url": "https://maps.google.com/?cid=892498779322628562"
+      }
+    ],
+    "food": [
+      {
+        "name": "Kachori Gali",
+        "lat": 25.312513199999998,
+        "lng": 83.0113045,
+        "url": "https://maps.google.com/?cid=2763727002302117088"
+      },
+      {
+        "name": "Ram Bhandar",
+        "lat": 25.3147147,
+        "lng": 83.01346199999999,
+        "url": "https://maps.google.com/?cid=11618173720782935806"
+      },
+      {
+        "name": "Blue Lassi",
+        "lat": 25.3123167,
+        "lng": 83.01147259999999,
+        "url": "https://maps.google.com/?cid=527485727967296743"
+      },
+      {
+        "name": "Dina Chat Bhandar",
+        "lat": 25.3090364,
+        "lng": 83.0023819,
+        "url": "https://maps.google.com/?cid=6182659973631916116"
+      },
+      {
+        "name": "Kashi Chat Bhandar",
+        "lat": 25.3094225,
+        "lng": 83.0060233,
+        "url": "https://maps.google.com/?cid=12151670069203829558"
+      },
+      {
+        "name": "Baati Chokha Restaurant",
+        "lat": 25.328339,
+        "lng": 82.995413,
+        "url": "https://maps.google.com/?cid=2031572800050235347"
+      },
+      {
+        "name": "Shree Shiv Thandai",
+        "lat": 25.309081,
+        "lng": 83.00674219999999,
+        "url": "https://maps.google.com/?cid=11254044531613003070"
+      },
+      {
+        "name": "Malaiyyo Stalls",
+        "lat": 25.3139279,
+        "lng": 83.0112846,
+        "url": "https://maps.google.com/?cid=14011567933396357777"
+      }
+    ],
+    "shopping": [
+      {
+        "name": "Godowlia Market",
+        "lat": 25.309016099999997,
+        "lng": 83.0083954,
+        "url": "https://maps.google.com/?cid=5954642519352523084"
+      },
+      {
+        "name": "Thatheri Bazaar",
+        "lat": 25.3139771,
+        "lng": 83.0123772,
+        "url": "https://maps.google.com/?cid=14767021124057955056"
+      },
+      {
+        "name": "Gyanvapi Market",
+        "lat": 25.3112602,
+        "lng": 83.0105117,
+        "url": "https://maps.google.com/?cid=17282669926162235862"
+      },
+      {
+        "name": "Chowk Bazaar",
+        "lat": 25.3154321,
+        "lng": 83.0117029,
+        "url": "https://maps.google.com/?cid=14374271023304388508"
+      },
+      {
+        "name": "Lahurabir",
+        "lat": 25.3220645,
+        "lng": 83.00168955000001,
+        "url": "https://maps.google.com/?cid=17341471864467170865"
+      },
+      {
+        "name": "Banarasi Silk Emporium",
+        "lat": 25.334140299999994,
+        "lng": 83.00405529999999,
+        "url": "https://maps.google.com/?cid=6370796494956281088"
+      },
+      {
+        "name": "Vishwanath Gali",
+        "lat": 25.309872199999997,
+        "lng": 83.0094816,
+        "url": "https://maps.google.com/?cid=8060477221744904482"
+      }
+    ],
+    "heritage-sites": [
+      {
+        "name": "Dashashwamedh Ghat",
+        "lat": 25.306253899999998,
+        "lng": 83.0102193,
+        "url": "https://maps.google.com/?cid=11969141977600804924"
+      },
+      {
+        "name": "Manikarnika Ghat",
+        "lat": 25.3110832,
+        "lng": 83.0141165,
+        "url": "https://maps.google.com/?cid=9034287784815775792"
+      },
+      {
+        "name": "Assi Ghat",
+        "lat": 25.288471199999996,
+        "lng": 83.0064451,
+        "url": "https://maps.google.com/?cid=9275168188361037964"
+      },
+      {
+        "name": "Sarnath",
+        "lat": 25.3729372,
+        "lng": 83.02483484999999,
+        "url": "https://maps.google.com/?cid=11656307264043592052"
+      },
+      {
+        "name": "Ramnagar Fort",
+        "lat": 25.2695243,
+        "lng": 83.0248913,
+        "url": "https://maps.google.com/?cid=11713985735756136538"
+      },
+      {
+        "name": "Alamgir Mosque",
+        "lat": 25.3152397,
+        "lng": 83.01778449999999,
+        "url": "https://maps.google.com/?cid=14604175264545333109"
+      },
+      {
+        "name": "Kedar Ghat",
+        "lat": 25.29893375,
+        "lng": 83.0074073,
+        "url": "https://maps.google.com/?cid=333540781198690290"
+      }
+    ],
+    "cafes--restaurants": [
+      {
+        "name": "Brown Bread Bakery",
+        "lat": 25.3034103,
+        "lng": 83.007322,
+        "url": "https://maps.google.com/?cid=14173149163143906258"
+      },
+      {
+        "name": "Kashi Cafe",
+        "lat": 25.288083699999994,
+        "lng": 83.0049518,
+        "url": "https://maps.google.com/?cid=6026058881267810217"
+      },
+      {
+        "name": "Aum Cafe",
+        "lat": 25.2893695,
+        "lng": 83.00567199999999,
+        "url": "https://maps.google.com/?cid=12694110036965978543"
+      },
+      {
+        "name": "Open Hand Cafe",
+        "lat": 25.2879521,
+        "lng": 83.0045591,
+        "url": "https://maps.google.com/?cid=11313076001281609943"
+      },
+      {
+        "name": "Dosa Cafe",
+        "lat": 25.308329,
+        "lng": 83.0102352,
+        "url": "https://maps.google.com/?cid=6381924093030287337"
+      },
+      {
+        "name": "Pizzeria Vaatika Cafe",
+        "lat": 25.3348513,
+        "lng": 82.9821596,
+        "url": "https://maps.google.com/?cid=7311440646687993835"
+      },
+      {
+        "name": "Mona Lisa Cafe",
+        "lat": 25.303376,
+        "lng": 83.0071711,
+        "url": "https://maps.google.com/?cid=15417791263477582198"
+      }
+    ]
+  },
+  "varkala": {
+    "cafes": [
+      {
+        "name": "Cafe del Mar",
+        "lat": 8.737622400000001,
+        "lng": 76.7018964,
+        "url": "https://maps.google.com/?cid=1757999155444723408"
+      },
+      {
+        "name": "Coffee Temple",
+        "lat": 8.7373894,
+        "lng": 76.7025197,
+        "url": "https://maps.google.com/?cid=11977233794159108191"
+      },
+      {
+        "name": "Little Tibet",
+        "lat": 8.736871099999998,
+        "lng": 76.7029994,
+        "url": "https://maps.google.com/?cid=9055713266384868211"
+      },
+      {
+        "name": "Rock N Roll Cafe",
+        "lat": 8.739948599999998,
+        "lng": 76.6997218,
+        "url": "https://maps.google.com/?cid=4572050798770989211"
+      },
+      {
+        "name": "Aum Cafe",
+        "lat": 8.7420209,
+        "lng": 76.69899970000002,
+        "url": "https://maps.google.com/?cid=6138493833623375387"
+      },
+      {
+        "name": "Lumuma Cafe",
+        "lat": 8.740855,
+        "lng": 76.6995535,
+        "url": "https://maps.google.com/?cid=18158935240543595905"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Theeram Beach Restaurant",
+        "lat": 8.733530599999998,
+        "lng": 76.70550639999999,
+        "url": "https://maps.google.com/?cid=8909126398599507938"
+      },
+      {
+        "name": "Abba Restaurant",
+        "lat": 8.737791099999999,
+        "lng": 76.7018042,
+        "url": "https://maps.google.com/?cid=8381138096722083074"
+      },
+      {
+        "name": "God's Own Country Kitchen",
+        "lat": 8.7364556,
+        "lng": 76.7033032,
+        "url": "https://maps.google.com/?cid=13330976175180632248"
+      },
+      {
+        "name": "Tibetan Kitchen",
+        "lat": 8.736871099999998,
+        "lng": 76.7029994,
+        "url": "https://www.google.com/maps?cid=9055713266384868211"
+      },
+      {
+        "name": "Mamma Champos",
+        "lat": 8.733053300000002,
+        "lng": 76.7068701,
+        "url": "https://maps.google.com/?cid=8498696016850963433"
+      }
+    ],
+    "beaches--cliffs": [
+      {
+        "name": "Crab Beach",
+        "lat": 8.7182978,
+        "lng": 76.7178847,
+        "url": "https://maps.google.com/?cid=16268253459456300368"
+      },
+      {
+        "name": "Varkala Cliff",
+        "lat": 8.7347923,
+        "lng": 76.70339944999999,
+        "url": "https://maps.google.com/?cid=5952106106515175065"
+      },
+      {
+        "name": "Papanasam Beach",
+        "lat": 8.7332299,
+        "lng": 76.7052532,
+        "url": "https://maps.google.com/?cid=16972721441786795315"
+      },
+      {
+        "name": "Kappil Beach",
+        "lat": 8.77183425,
+        "lng": 76.67971250000001,
+        "url": "https://maps.google.com/?cid=12720552926195516728"
+      },
+      {
+        "name": "Edava Beach",
+        "lat": 8.760302700000002,
+        "lng": 76.687272,
+        "url": "https://maps.google.com/?cid=276950108226944565"
+      },
+      {
+        "name": "Black Beach",
+        "lat": 8.7447471,
+        "lng": 76.697566,
+        "url": "https://maps.google.com/?cid=2465469815741631145"
+      },
+      {
+        "name": "Odayam Beach",
+        "lat": 8.74923875,
+        "lng": 76.6947708,
+        "url": "https://maps.google.com/?cid=10684738801387950923"
+      }
+    ]
+  }
+}
