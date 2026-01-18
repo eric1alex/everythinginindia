@@ -481,6 +481,13 @@ const filteredSuggestions = allCitiesList
             shareBtn.addEventListener('click', async () => {
                 const url = shareBtn.dataset.url;
                 const title = shareBtn.dataset.title;
+                
+                // Track "Share" Button Click
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    event: 'share_location',
+                    location_name: document.title.split('|')[0].trim()
+                });
 
                 if (navigator.share) {
                     try {

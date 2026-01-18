@@ -126,6 +126,30 @@
           "imageUrl": "https://images.unsplash.com/photo-1636903684031-e187417f3e77?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
           "lat": 15.335,
           "lon": 76.46
+        },
+        {
+          "name": "Mysore",
+          "slug": "mysore",
+          "imageUrl": "https://images.unsplash.com/photo-1659126574791-13313aa424bd?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "mapUrl": "https://maps.app.goo.gl/XUMQKF2Wj2fkWc7a7",
+          "lat": 12.3106334,
+          "lon": 76.5532878,
+          "dashboard": {
+            "bestTime": "Oct - Mar",
+            "bestTimeDescription": "Pleasantly cool weather ideal for sightseeing and vibrant festivals like Dasara in October.",
+            "idealDuration": "2-4 Days",
+            "budget": {
+              "min": "1500",
+              "max": "3000",
+              "currency": "INR"
+            },
+            "transport": "Taxi, Auto, Buses and Rent Scooters",
+            "howToReach": {
+              "air": "Mysore Airport (MYQ), Bengaluru Airport (BLR)",
+              "train": "Mysore Junction (MYS)",
+              "road": ""
+            }
+          }
         }
       ]
     },
@@ -246,30 +270,6 @@
           "lon": 75.6257462
         },
         {
-          "name": "Udaipur",
-          "slug": "udaipur",
-          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1o-FbSY9PHn0KQUh_-ey_vT0xDjGTG68&usp=sharing",
-          "imageUrl": "https://plus.unsplash.com/premium_photo-1697730426227-9056296a0315?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
-          "lat": 24.6082638,
-          "lon": 73.6224704,
-          "dashboard": {
-            "bestTime": "October to March",
-            "bestTimeDescription": "Pleasant weather with mild temperatures and clear skies, ideal for sightseeing and outdoor activities. Many festivals also take place during this period",
-            "idealDuration": "3-4 Days",
-            "budget": {
-              "min": "1,500",
-              "max": "2,500",
-              "currency": "INR"
-            },
-            "transport": "Auto-rickshaws, app-based taxis (Uber/Ola), local buses, bicycles, and tongas.",
-            "howToReach": {
-              "air": "Maharana Pratap Airport (UDR)",
-              "train": "Udaipur City railway station (UDZ)",
-              "road": "Bus from Mumbai/BLR"
-            }
-          }
-        },
-        {
           "name": "Jaisalmer ",
           "slug": "jaisalmer",
           "imageUrl": "https://images.unsplash.com/photo-1600871215197-c68059ada01a?q=80&w=2044&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -290,6 +290,30 @@
               "air": "Jaisalmer Airport",
               "train": "Jaisalmer Railway Station",
               "road": ""
+            }
+          }
+        },
+        {
+          "name": "Udaipur",
+          "slug": "udaipur",
+          "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=1o-FbSY9PHn0KQUh_-ey_vT0xDjGTG68&usp=sharing",
+          "imageUrl": "https://plus.unsplash.com/premium_photo-1697730426227-9056296a0315?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+          "lat": 24.6082638,
+          "lon": 73.6224704,
+          "dashboard": {
+            "bestTime": "October to March",
+            "bestTimeDescription": "Pleasant weather with mild temperatures and clear skies, ideal for sightseeing and outdoor activities. Many festivals also take place during this period",
+            "idealDuration": "3-4 Days",
+            "budget": {
+              "min": "1,500",
+              "max": "2,500",
+              "currency": "INR"
+            },
+            "transport": "Auto-rickshaws, app-based taxis (Uber/Ola), local buses, bicycles, and tongas.",
+            "howToReach": {
+              "air": "Maharana Pratap Airport (UDR)",
+              "train": "Udaipur City railway station (UDZ)",
+              "road": "Bus from Mumbai/BLR"
             }
           }
         }
@@ -346,25 +370,25 @@
       "slug": "uttar-pradesh",
       "cities": [
         {
-          "name": "Varanasi",
-          "slug": "varanasi",
-          "imageUrl": "https://images.unsplash.com/photo-1571536802807-30451e3955d8?q=80&w=1220&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "mapUrl": "https://www.google.com/maps/place/Varanasi,+Uttar+Pradesh/@25.3207397,82.9087073,12z/data=!3m1!4b1!4m6!3m5!1s0x398e2db76febcf4d:0x68131710853ff0b5!8m2!3d25.3176452!4d82.9739144!16zL20vMDFqOTIy?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D",
-          "lat": 25.3207397,
-          "lon": 82.9087073,
+          "name": "Agra",
+          "slug": "agra",
+          "imageUrl": "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "mapUrl": "https://maps.app.goo.gl/36BdhDpHwYYPsAWp8",
+          "lat": 27.1761504,
+          "lon": 77.8976115,
           "dashboard": {
-            "bestTime": "Nov - Mar",
-            "bestTimeDescription": "Pleasant, cooler weather ideal for sightseeing, boat rides, and exploring ghats. Major festivals like Dev Deepawali and Maha Shivratri occur during this period.\n\n",
-            "idealDuration": "3-5 Days",
+            "bestTime": "October to March",
+            "bestTimeDescription": "Pleasant, cool, and breezy weather ideal for sightseeing, avoiding extreme summer heat and humid monsoons.\n\n",
+            "idealDuration": "2-3 Days",
             "budget": {
-              "min": "1500",
-              "max": "3500",
+              "min": "3,000",
+              "max": "5,000",
               "currency": "INR"
             },
-            "transport": "Taxis, auto-rickshaws, cycle rickshaws, and local buses",
+            "transport": "Auto-rickshaws, cycle-rickshaws, taxis (including app-based like Uber/Ola), local buses, and walking.",
             "howToReach": {
-              "air": "Lal Bahadur Shastri International Airport (VNS)",
-              "train": "Varanasi Junction (BSB), Banaras Railway Station (BNRS)",
+              "air": "Agra Airport (AGR),  Indira Gandhi International Airport (DEL)",
+              "train": "Agra Cantt (AGC)",
               "road": ""
             }
           }
@@ -394,25 +418,25 @@
           }
         },
         {
-          "name": "Agra",
-          "slug": "agra",
-          "imageUrl": "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "mapUrl": "https://maps.app.goo.gl/36BdhDpHwYYPsAWp8",
-          "lat": 27.1761504,
-          "lon": 77.8976115,
+          "name": "Varanasi",
+          "slug": "varanasi",
+          "imageUrl": "https://images.unsplash.com/photo-1571536802807-30451e3955d8?q=80&w=1220&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "mapUrl": "https://www.google.com/maps/place/Varanasi,+Uttar+Pradesh/@25.3207397,82.9087073,12z/data=!3m1!4b1!4m6!3m5!1s0x398e2db76febcf4d:0x68131710853ff0b5!8m2!3d25.3176452!4d82.9739144!16zL20vMDFqOTIy?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D",
+          "lat": 25.3207397,
+          "lon": 82.9087073,
           "dashboard": {
-            "bestTime": "October to March",
-            "bestTimeDescription": "Pleasant, cool, and breezy weather ideal for sightseeing, avoiding extreme summer heat and humid monsoons.\n\n",
-            "idealDuration": "2-3 Days",
+            "bestTime": "Nov - Mar",
+            "bestTimeDescription": "Pleasant, cooler weather ideal for sightseeing, boat rides, and exploring ghats. Major festivals like Dev Deepawali and Maha Shivratri occur during this period.\n\n",
+            "idealDuration": "3-5 Days",
             "budget": {
-              "min": "3,000",
-              "max": "5,000",
+              "min": "1500",
+              "max": "3500",
               "currency": "INR"
             },
-            "transport": "Auto-rickshaws, cycle-rickshaws, taxis (including app-based like Uber/Ola), local buses, and walking.",
+            "transport": "Taxis, auto-rickshaws, cycle rickshaws, and local buses",
             "howToReach": {
-              "air": "Agra Airport (AGR),  Indira Gandhi International Airport (DEL)",
-              "train": "Agra Cantt (AGC)",
+              "air": "Lal Bahadur Shastri International Airport (VNS)",
+              "train": "Varanasi Junction (BSB), Banaras Railway Station (BNRS)",
               "road": ""
             }
           }

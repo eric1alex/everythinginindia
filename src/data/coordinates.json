@@ -258,6 +258,12 @@
         "lat": 9.536078299999998,
         "lng": 76.4179795,
         "url": "https://maps.google.com/?cid=7692660245291538778"
+      },
+      {
+        "name": "Champakulam Backwaters",
+        "lat": 9.654967599999997,
+        "lng": 76.38466260000001,
+        "url": "https://maps.google.com/?cid=6790452550043805771"
       }
     ],
     "beaches": [
@@ -1646,6 +1652,12 @@
         "lat": 14.4893403,
         "lng": 74.41756459999999,
         "url": "https://maps.google.com/?cid=11730475394730943432"
+      },
+      {
+        "name": "Tadri Lighthouse",
+        "lat": 14.514607100000003,
+        "lng": 74.3409281,
+        "url": "https://maps.google.com/?cid=3442122602846840166"
       }
     ]
   },
@@ -2102,7 +2114,14 @@
     ]
   },
   "jaisalmer": {
-    "forts": [],
+    "forts": [
+      {
+        "name": "Jaisalmer Fort",
+        "lat": 26.912455499999997,
+        "lng": 70.9126093,
+        "url": "https://maps.google.com/?cid=15322661848046508403"
+      }
+    ],
     "havelis": [
       {
         "name": "Patwon Ki Haveli",
@@ -2525,6 +2544,12 @@
         "lat": 10.186802850000001,
         "lng": 77.39778,
         "url": "https://maps.google.com/?cid=3581438398378877018"
+      },
+      {
+        "name": "Dolphin's Nose",
+        "lat": 10.209085600000002,
+        "lng": 77.4872073,
+        "url": "https://maps.google.com/?cid=7715385411681633325"
       }
     ],
     "waterfalls": [
@@ -2641,6 +2666,12 @@
         "lat": 26.8286451,
         "lng": 80.9647322,
         "url": "https://maps.google.com/?cid=7787444153149775939"
+      },
+      {
+        "name": "Bara Imambara",
+        "lat": 26.868516800000002,
+        "lng": 80.9127127,
+        "url": "https://maps.google.com/?cid=3832067487070426943"
       }
     ],
     "restaurants": [
@@ -2915,6 +2946,12 @@
         "lat": 31.9233442,
         "lng": 77.1503615,
         "url": "https://maps.google.com/?cid=12610445506861639113"
+      },
+      {
+        "name": "Hampta Pass Trek",
+        "lat": 32.2590301,
+        "lng": 77.2409218,
+        "url": "https://maps.google.com/?cid=14564158019384230916"
       }
     ],
     "viewpoints": [
@@ -5137,6 +5174,182 @@
         "lat": 8.74923875,
         "lng": 76.6947708,
         "url": "https://maps.google.com/?cid=10684738801387950923"
+      }
+    ]
+  },
+  "mysore": {
+    "palaces": [
+      {
+        "name": "Mysore Palace (Amba Vilas Palace)",
+        "lat": 12.305163,
+        "lng": 76.65517489999999,
+        "url": "https://maps.google.com/?cid=14087183641967122957"
+      },
+      {
+        "name": "Jayalakshmi Vilas Mansion",
+        "lat": 12.313926499999997,
+        "lng": 76.62222729999999,
+        "url": "https://maps.google.com/?cid=15905379584147832795"
+      },
+      {
+        "name": "Rajendra Vilas Palace",
+        "lat": 12.2784334,
+        "lng": 76.6710513,
+        "url": "https://maps.google.com/?cid=5317793988563077744"
+      }
+    ],
+    "gardens": [
+      {
+        "name": "Cheluvamba Park",
+        "lat": 12.321551200000002,
+        "lng": 76.6365782,
+        "url": "https://maps.google.com/?cid=4483208521674307723"
+      },
+      {
+        "name": "Brindavan Gardens",
+        "lat": 12.423273199999999,
+        "lng": 76.5745085,
+        "url": "https://maps.google.com/?cid=10475296312388925106"
+      },
+      {
+        "name": "Karanji Lake Nature Park",
+        "lat": 12.298157500000002,
+        "lng": 76.6723837,
+        "url": "https://maps.google.com/?cid=13739869184091461093"
+      },
+      {
+        "name": "Kuppanna Park",
+        "lat": 12.3076657,
+        "lng": 76.6619522,
+        "url": "https://maps.google.com/?cid=8584129102163316081"
+      },
+      {
+        "name": "Happy Man Park",
+        "lat": 12.299487499999998,
+        "lng": 76.6248962,
+        "url": "https://maps.google.com/?cid=8376939964739724253"
+      }
+    ],
+    "museums": [
+      {
+        "name": "Folklore Museum",
+        "lat": 12.3134557,
+        "lng": 76.62261950000001,
+        "url": "https://maps.google.com/?cid=11004829438042097425"
+      },
+      {
+        "name": "Sand Museum",
+        "lat": 12.294984900000001,
+        "lng": 76.68198629999999,
+        "url": "https://maps.google.com/?cid=12246673307038851121"
+      },
+      {
+        "name": "Melody World Wax Museum",
+        "lat": 12.302295200000001,
+        "lng": 76.6775885,
+        "url": "https://maps.google.com/?cid=6887127902310534148"
+      },
+      {
+        "name": "Jaganmohan Palace Art Gallery and Museum",
+        "lat": 12.3068216,
+        "lng": 76.6497928,
+        "url": "https://maps.google.com/?cid=17670511572562239436"
+      }
+    ],
+    "zoo": [
+      {
+        "name": "Sri Chamarajendra Zoological Gardens",
+        "lat": 12.3024092,
+        "lng": 76.6638194,
+        "url": "https://maps.google.com/?cid=16886021732772397003"
+      },
+      {
+        "name": "Lingambudhi Lake",
+        "lat": 12.26937175,
+        "lng": 76.61197800000001,
+        "url": "https://maps.google.com/?cid=8318472354467589720"
+      },
+      {
+        "name": "Kukkarahalli Lake",
+        "lat": 12.311335,
+        "lng": 76.63182195,
+        "url": "https://maps.google.com/?cid=6464621745691224654"
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Vinayaka Mylari",
+        "lat": 12.3085089,
+        "lng": 76.6658264,
+        "url": "https://maps.google.com/?cid=14141549717311384522"
+      },
+      {
+        "name": "Hotel RRR",
+        "lat": 12.311104,
+        "lng": 76.6549884,
+        "url": "https://maps.google.com/?cid=6529556366823189961"
+      },
+      {
+        "name": "Depth N Brew",
+        "lat": 12.330735200000001,
+        "lng": 76.6286902,
+        "url": "https://maps.google.com/?cid=3578697216529870736"
+      },
+      {
+        "name": "Rasooi",
+        "lat": 12.3247539,
+        "lng": 76.6233463,
+        "url": "https://maps.google.com/?cid=4544591426650774287"
+      },
+      {
+        "name": "GTR (Gayathri Tiffin Room)",
+        "lat": 12.2880573,
+        "lng": 76.6495554,
+        "url": "https://maps.google.com/?cid=12454353879189718313"
+      },
+      {
+        "name": "Guru Sweets",
+        "lat": 12.3099037,
+        "lng": 76.6525953,
+        "url": "https://maps.google.com/?cid=1294437022875626425"
+      }
+    ],
+    "shopping": [
+      {
+        "name": "Devaraja Market",
+        "lat": 12.3104046,
+        "lng": 76.65248249999999,
+        "url": "https://maps.google.com/?cid=13425966264962779212"
+      },
+      {
+        "name": "Cauvery Handicrafts Emporium",
+        "lat": 12.3136976,
+        "lng": 76.651847,
+        "url": "https://maps.google.com/?cid=6418574893980515881"
+      },
+      {
+        "name": "Badri Stores",
+        "lat": 12.309215699999998,
+        "lng": 76.64999,
+        "url": "https://maps.google.com/?cid=4310211119908676820"
+      },
+      {
+        "name": "Sayyaji Rao Road",
+        "lat": 12.315441799999997,
+        "lng": 76.6510058,
+        "url": "https://maps.google.com/?cid=12285155545407736314"
+      },
+      {
+        "name": "Mall of Mysore",
+        "lat": 12.2975437,
+        "lng": 76.6643888,
+        "url": "https://maps.google.com/?cid=6589727983251102557"
+      },
+      {
+        "name": "Dhanvanthri Road",
+        "lat": 12.3125211,
+        "lng": 76.6483906,
+        "url": "https://maps.google.com/?cid=8537887759672238159"
       }
     ]
   }

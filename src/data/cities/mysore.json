@@ -1,0 +1,202 @@
+[
+  {
+    "title": "Palaces",
+    "emoji": "📍",
+    "items": [
+      {
+        "name": "Mysore Palace (Amba Vilas Palace)",
+        "url": "https://maps.google.com/?cid=14087183641967122957"
+      },
+      {
+        "name": "Jaganmohan Palace",
+        "url": "https://maps.google.com/?cid=17670511572562239436"
+      },
+      {
+        "name": "Lalitha Mahal Palace",
+        "url": "https://maps.google.com/?cid=14381959970581603095"
+      },
+      {
+        "name": "Cheluvamba Mansion",
+        "url": "https://maps.google.com/?cid=9206195855056192891"
+      },
+      {
+        "name": "Jayalakshmi Vilas Mansion",
+        "url": "https://maps.google.com/?cid=15905379584147832795"
+      },
+      {
+        "name": "Rajendra Vilas Palace",
+        "url": "https://maps.google.com/?cid=5317793988563077744"
+      }
+    ]
+  },
+  {
+    "title": "Gardens",
+    "emoji": "⭐",
+    "items": [
+      {
+        "name": "Brindavan Gardens",
+        "url": "https://maps.google.com/?cid=10475296312388925106"
+      },
+      {
+        "name": "Karanji Lake Nature Park",
+        "url": "https://maps.google.com/?cid=13739869184091461093"
+      },
+      {
+        "name": "Kuppanna Park",
+        "url": "https://maps.google.com/?cid=8584129102163316081"
+      },
+      {
+        "name": "Happy Man Park",
+        "url": "https://maps.google.com/?cid=8376939964739724253"
+      },
+      {
+        "name": "Government House Gardens",
+        "url": "https://maps.google.com/?cid=14428403466801300288"
+      },
+      {
+        "name": "Cheluvamba Park",
+        "url": "https://maps.google.com/?cid=4483208521674307723"
+      }
+    ]
+  },
+  {
+    "title": "Museums",
+    "emoji": "🗺️",
+    "items": [
+      {
+        "name": "Jaganmohan Palace Art Gallery and Museum",
+        "url": "https://maps.google.com/?cid=17670511572562239436"
+      },
+      {
+        "name": "Railway Museum",
+        "url": "https://maps.google.com/?cid=3588062565120394314"
+      },
+      {
+        "name": "Folklore Museum",
+        "url": "https://maps.google.com/?cid=11004829438042097425"
+      },
+      {
+        "name": "Regional Museum of Natural History",
+        "url": "https://maps.google.com/?cid=17900884978972727507"
+      },
+      {
+        "name": "Sand Museum",
+        "url": "https://maps.google.com/?cid=12246673307038851121"
+      },
+      {
+        "name": "Melody World Wax Museum",
+        "url": "https://maps.google.com/?cid=6887127902310534148"
+      }
+    ]
+  },
+  {
+    "title": "Zoo",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Sri Chamarajendra Zoological Gardens",
+        "url": "https://maps.google.com/?cid=16886021732772397003"
+      },
+      {
+        "name": "Karanji Lake Nature Park",
+        "url": "https://maps.google.com/?cid=13739869184091461093"
+      },
+      {
+        "name": "Ranganathittu Bird Sanctuary",
+        "url": "https://maps.google.com/?cid=16128088101496208451"
+      },
+      {
+        "name": "Lingambudhi Lake",
+        "url": "https://maps.google.com/?cid=8318472354467589720"
+      },
+      {
+        "name": "Kukkarahalli Lake",
+        "url": "https://maps.google.com/?cid=6464621745691224654"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Vinayaka Mylari",
+        "url": "https://maps.google.com/?cid=14141549717311384522"
+      },
+      {
+        "name": "Hotel RRR",
+        "url": "https://maps.google.com/?cid=6529556366823189961"
+      },
+      {
+        "name": "Old House",
+        "url": "https://maps.google.com/?cid=6049504034676052539"
+      },
+      {
+        "name": "GTR (Gayathri Tiffin Room)",
+        "url": "https://maps.google.com/?cid=12454353879189718313"
+      },
+      {
+        "name": "Guru Sweets",
+        "url": "https://maps.google.com/?cid=1294437022875626425"
+      },
+      {
+        "name": "Depth N Brew",
+        "url": "https://maps.google.com/?cid=3578697216529870736"
+      },
+      {
+        "name": "Oyster Bay",
+        "url": "https://maps.google.com/?cid=5833260781932575246"
+      },
+      {
+        "name": "Malgudi Coffee",
+        "url": "https://maps.google.com/?cid=4434545459799783498"
+      },
+      {
+        "name": "Rasooi",
+        "url": "https://maps.google.com/?cid=4544591426650774287"
+      }
+    ]
+  },
+  {
+    "title": "Shopping",
+    "emoji": "🌳",
+    "items": [
+      {
+        "name": "Devaraja Market",
+        "url": "https://maps.google.com/?cid=13425966264962779212"
+      },
+      {
+        "name": "Cauvery Handicrafts Emporium",
+        "url": "https://maps.google.com/?cid=6418574893980515881"
+      },
+      {
+        "name": "Badri Stores",
+        "url": "https://maps.google.com/?cid=4310211119908676820"
+      },
+      {
+        "name": "Government Silk Factory",
+        "url": "https://maps.google.com/?cid=347437383246526725"
+      },
+      {
+        "name": "Sayyaji Rao Road",
+        "url": "https://maps.google.com/?cid=12285155545407736314"
+      },
+      {
+        "name": "Garuda Mall",
+        "url": "https://maps.google.com/?cid=16937555889372204131"
+      },
+      {
+        "name": "Mall of Mysore",
+        "url": "https://maps.google.com/?cid=6589727983251102557"
+      },
+      {
+        "name": "KSIC Silk Showroom",
+        "url": "https://maps.google.com/?cid=347437383246526725"
+      },
+      {
+        "name": "Dhanvanthri Road",
+        "url": "https://maps.google.com/?cid=8537887759672238159"
+      }
+    ]
+  }
+]

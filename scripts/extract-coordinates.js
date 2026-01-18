@@ -30,6 +30,10 @@ const TEST_MODE = process.argv.includes('--test');
 const DEBUG_MODE = process.argv.includes('--debug');
 const TEST_LIMIT = 25;
 
+// City filter
+const cityArg = process.argv.find(arg => arg.startsWith('--city='));
+const TARGET_CITY = cityArg ? cityArg.split('=')[1] : null;
+
 // Rate limiting
 const REQUEST_DELAY = 1500;
 const REQUEST_TIMEOUT = 20000;
@@ -252,7 +256,20 @@ async function processAllCities() {
     }
 
     const coordinates = { ...existingCoords };
-    const cityFiles = fs.readdirSync(CITIES_DIR).filter(f => f.endsWith('.json'));
+    const allCityFiles = fs.readdirSync(CITIES_DIR).filter(f => f.endsWith('.json'));
+    const cityFiles = TARGET_CITY
+        ? allCityFiles.filter(f => f.replace('.json', '') === TARGET_CITY)
+        : allCityFiles;
+
+    if (TARGET_CITY) {
+        if (cityFiles.length === 0) {
+            console.error(`\n❌ City "${TARGET_CITY}" not found in ${CITIES_DIR}`);
+            console.log('Available cities:');
+            allCityFiles.forEach(f => console.log(` - ${f.replace('.json', '')}`));
+            return;
+        }
+        console.log(`\n🎯 Target City: ${TARGET_CITY}`);
+    }
 
     let successCount = 0, skipCount = 0, failCount = 0, processedCount = 0, tooFarCount = 0;
 
