@@ -9,7 +9,7 @@ interface Props {
 // 2. Set default values for the new props
 const {
 	title,
-	description = "A curated travel directory for India. Stop getting lost on Google.",
+	description = "A community-curated travel directory for India. Stop getting lost on Google.",
 	ogImage = "https://www.whereinindia.online/flag.png",
 } = Astro.props;
 
@@ -102,7 +102,7 @@ const canonicalURL = Astro.url.href;
 				"alternateName": "WhereInIndia",
 				"url": "https://www.whereinindia.online",
 				"logo": "https://www.whereinindia.online/flag.png",
-				"description": "A hand-curated travel directory for India, built for easy exploration and trip planning.",
+				"description": "A community-curated travel directory for India, built for easy exploration and trip planning.",
 				"foundingDate": "2025",
 				"email": "hello@whereinindia.online",
 				"sameAs": ["https://in.pinterest.com/TravelIndiaNow/"]
@@ -147,8 +147,8 @@ const canonicalURL = Astro.url.href;
 						<a href="/aboutus" class="footer-link">About Us</a>
 					</h4>
 					<p class="footer-text">
-						A hand-curated travel directory for India. Stop getting
-						lost on Google.
+						A community-curated travel directory for India. Stop
+						getting lost on Google.
 					</p>
 				</div>
 				<div class="footer-column">
@@ -162,6 +162,12 @@ const canonicalURL = Astro.url.href;
 						<li>
 							<a href="/blog" class="footer-link"
 								>Blog & Stories</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://forms.gle/JqRqaRjVqDba1Dso7"
+								class="footer-link">Submit Your Place</a
 							>
 						</li>
 						<li>
