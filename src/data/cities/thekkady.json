@@ -1,0 +1,200 @@
+[
+  {
+    "title": "Restaurants",
+    "emoji": "📍",
+    "items": [
+      {
+        "name": "Krishna Restaurant",
+        "url": "https://maps.google.com/?cid=7065723231294736323"
+      },
+      {
+        "name": "Spice Garden Restaurant",
+        "url": "https://maps.google.com/?cid=10656820405516594871"
+      },
+      {
+        "name": "Hotel Ambadi Restaurant",
+        "url": "https://maps.google.com/?cid=8019810690988783756"
+      },
+      {
+        "name": "Coffee Garden Restaurant",
+        "url": "https://maps.google.com/?cid=15334957658690418747"
+      },
+      {
+        "name": "Bamboo Cafe Thekkady",
+        "url": "https://maps.google.com/?cid=2183695883300205692"
+      },
+      {
+        "name": "Sagar Restaurant",
+        "url": "https://maps.google.com/?cid=17893343538230963831"
+      },
+      {
+        "name": "French Restaurant Thekkady",
+        "url": "https://maps.google.com/?cid=17893343538230963831"
+      },
+      {
+        "name": "Grand Thekkady Restaurant",
+        "url": "https://maps.google.com/?cid=18381620855111338348"
+      },
+      {
+        "name": "Shalom Bake House",
+        "url": "https://maps.google.com/?cid=12674493710321309585"
+      }
+    ]
+  },
+  {
+    "title": "Wildlife",
+    "emoji": "⭐",
+    "items": [
+      {
+        "name": "Periyar Wildlife Sanctuary",
+        "url": "https://maps.google.com/?cid=2270947506433934971"
+      },
+      {
+        "name": "Periyar Tiger Reserve",
+        "url": "https://maps.google.com/?cid=2270947506433934971"
+      },
+      {
+        "name": "Mangaladevi Temple (within forest)",
+        "url": "https://maps.google.com/?cid=6891820421470164389"
+      },
+      {
+        "name": "Gavi Forest",
+        "url": "https://maps.google.com/?cid=2980388778360510249"
+      },
+      {
+        "name": "Mullaperiyar Dam Area",
+        "url": "https://maps.google.com/?cid=7259117586082200729"
+      },
+      {
+        "name": "Jungle Patrol Routes",
+        "url": "https://maps.google.com/?cid=14519205868802604150"
+      },
+      {
+        "name": "Border Hiking Trails",
+        "url": "https://maps.google.com/?cid=15647841951671204590"
+      },
+      {
+        "name": "Nature Walk Trails",
+        "url": "https://maps.google.com/?cid=9976036011374000093"
+      },
+      {
+        "name": "Bamboo Rafting Routes",
+        "url": "https://maps.google.com/?cid=14262887308612827728"
+      }
+    ]
+  },
+  {
+    "title": "Trekking",
+    "emoji": "🗺️",
+    "items": [
+      {
+        "name": "Periyar Tiger Reserve Trekking",
+        "url": "https://maps.google.com/?cid=18204471737716903705"
+      },
+      {
+        "name": "Gavi Forest Trekking",
+        "url": "https://maps.google.com/?cid=2980388778360510249"
+      },
+      {
+        "name": "Border Hiking Program",
+        "url": "https://maps.google.com/?cid=9263040181146025198"
+      },
+      {
+        "name": "Jungle Patrol Night Trek",
+        "url": "https://maps.google.com/?cid=1098504779975214066"
+      },
+      {
+        "name": "Mangaladevi Temple Trek",
+        "url": "https://maps.google.com/?cid=6891820421470164389"
+      },
+      {
+        "name": "Pullumedu Trek",
+        "url": "https://maps.google.com/?cid=17129188938219162665"
+      }
+    ]
+  },
+  {
+    "title": "Viewpoints",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Chellarkovil Viewpoint",
+        "url": "https://maps.google.com/?cid=2845011399515656412"
+      },
+      {
+        "name": "Pandikuzhi Viewpoint",
+        "url": "https://maps.google.com/?cid=2831071307433923946"
+      },
+      {
+        "name": "Ottakathalamedu Viewpoint",
+        "url": "https://maps.google.com/?q=Ottakathalamedu+View+Point+Rd,+Thekkady,+Kumily,+Kerala+685509,+India&ftid=0x3b06550616642141:0x214dbaee0fc7da77"
+      },
+      {
+        "name": "Pullumedu Viewpoint",
+        "url": "https://maps.google.com/?cid=7549697780520755383"
+      },
+      {
+        "name": "Murikkady Spice Plantations View",
+        "url": "https://maps.google.com/?cid=1618496190563274973"
+      },
+      {
+        "name": "Ambarakuzhi Viewpoint",
+        "url": "https://maps.google.com/?cid=2831071307433923946"
+      },
+      {
+        "name": "Vandiperiyar Tea Gardens View",
+        "url": "https://maps.google.com/?cid=14863168579775617905"
+      },
+      {
+        "name": "Periyar Lake Sunset Point",
+        "url": "https://maps.google.com/?cid=17066850940045774552"
+      },
+      {
+        "name": "Grampi Viewpoint",
+        "url": "https://maps.google.com/?cid=2831071307433923946"
+      }
+    ]
+  },
+  {
+    "title": "Boating",
+    "emoji": "🍽️",
+    "items": [
+      {
+        "name": "Periyar Lake Boating",
+        "url": "https://maps.google.com/?cid=7353379362315789642"
+      },
+      {
+        "name": "Mullaperiyar Dam Boating",
+        "url": "https://maps.google.com/?cid=7353379362315789642"
+      },
+      {
+        "name": "Gavi Lake Boating",
+        "url": "https://maps.google.com/?cid=7353379362315789642"
+      },
+      {
+        "name": "Bamboo Rafting on Periyar Lake",
+        "url": "https://maps.google.com/?cid=14800614536242490693"
+      },
+      {
+        "name": "Thekkady Boating Terminal",
+        "url": "https://maps.google.com/?cid=7353379362315789642"
+      },
+      {
+        "name": "Lake Periyar Boat Landing",
+        "url": "https://maps.google.com/?cid=7353379362315789642"
+      },
+      {
+        "name": "Periyar National Park Boating Area",
+        "url": "https://maps.google.com/?cid=9034092720527942192"
+      },
+      {
+        "name": "Thekkady Boat Safari",
+        "url": "https://maps.google.com/?cid=18204471737716903705"
+      },
+      {
+        "name": "Periyar Wildlife Sanctuary Boating",
+        "url": "https://maps.google.com/?cid=2270947506433934971"
+      }
+    ]
+  }
+]

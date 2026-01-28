@@ -67,7 +67,11 @@ function loadCityCenters() {
         for (const loc of locList) {
             for (const city of loc.cities) {
                 if (city.lat && city.lon) {
-                    centers[city.slug] = { lat: city.lat, lng: city.lon };
+                    centers[city.slug] = {
+                        lat: city.lat,
+                        lng: city.lon,
+                        name: city.name // Store name for verification 
+                    };
                 }
             }
         }
@@ -84,20 +88,12 @@ function loadCityCenters() {
  */
 function extractCoordinates(text) {
     const patterns = [
-        // Pattern: APP_INITIALIZATION_STATE=[[[viewport, lng, lat]
-        // Found in debug HTML: window.APP_INITIALIZATION_STATE=[[[3549.4,78.042,27.175]
-        /APP_INITIALIZATION_STATE\s*=\s*\[\s*\[\s*\[\s*[^,]+\s*,\s*(-?\d+\.?\d*)\s*,\s*(-?\d+\.?\d*)\s*\]/,
-
         // Pattern: @lat,lng,zoom in URLs
         /@(-?\d+\.\d{4,}),(-?\d+\.\d{4,}),\d+z/,
         /@(-?\d+\.\d{4,}),(-?\d+\.\d{4,})/,
 
         // Pattern: !3dlat!4dlng format
         /!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)/,
-
-        // Pattern: center=lat%2Clng in og:image URL
-        /center=(-?\d+\.\d+)%2C(-?\d+\.\d+)/,
-        /center=(-?\d+\.\d+),(-?\d+\.\d+)/,
 
         // Pattern: ll=lat,lng
         /ll=(-?\d+\.\d+),(-?\d+\.\d+)/,
@@ -118,6 +114,14 @@ function extractCoordinates(text) {
 
         // Pattern: /place/ URL with coordinates
         /\/place\/[^/]+\/@(-?\d+\.\d+),(-?\d+\.\d+)/,
+
+        // Pattern: APP_INITIALIZATION_STATE=[[[viewport, lng, lat]
+        // Found in debug HTML: window.APP_INITIALIZATION_STATE=[[[3549.4,78.042,27.175]
+        // /APP_INITIALIZATION_STATE\s*=\s*\[\s*\[\s*\[\s*[^,]+\s*,\s*(-?\d+\.?\d*)\s*,\s*(-?\d+\.?\d*)\s*\]/,
+
+        // Pattern: center=lat%2Clng in og:image URL
+        // /center=(-?\d+\.\d+)%2C(-?\d+\.\d+)/,
+        // /center=(-?\d+\.\d+),(-?\d+\.\d+)/,
     ];
 
     for (const pattern of patterns) {
@@ -280,7 +284,14 @@ async function processAllCities() {
     outerLoop:
     for (const cityFile of cityFiles) {
         const citySlug = cityFile.replace('.json', '');
+        const cityCenterInfo = cityCenters[citySlug];
+
         console.log(`\n📍 Processing: ${citySlug}`);
+        if (cityCenterInfo) {
+            console.log(`   [Verify] Validating against: ${cityCenterInfo.name} (${cityCenterInfo.lat}, ${cityCenterInfo.lng})`);
+        } else {
+            console.warn(`   [Verify] ⚠️ No center found for ${citySlug} - validation disabled`);
+        }
 
         const cityData = JSON.parse(fs.readFileSync(path.join(CITIES_DIR, cityFile), 'utf8'));
         if (!coordinates[citySlug]) coordinates[citySlug] = {};

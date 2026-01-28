@@ -5352,5 +5352,12 @@
         "url": "https://maps.google.com/?cid=8537887759672238159"
       }
     ]
+  },
+  "thekkady": {
+    "restaurants": [],
+    "wildlife": [],
+    "trekking": [],
+    "viewpoints": [],
+    "boating": []
   }
 }

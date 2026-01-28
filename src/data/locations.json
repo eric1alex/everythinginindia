@@ -180,6 +180,29 @@
           "lon": 77.0538781
         },
         {
+          "name": "Thekkady",
+          "slug": "thekkady",
+          "imageUrl": "https://images.unsplash.com/photo-1716404985743-8c0e007cb358?q=80&w=1168&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "lat": 9.6093963,
+          "lon": 77.1399012,
+          "dashboard": {
+            "bestTime": "October to Feburary",
+            "bestTimeDescription": "Pleasant and cool weather (15-30°C) ideal for wildlife spotting, trekking, and exploring plantations.",
+            "idealDuration": "2-3 Days",
+            "budget": {
+              "min": "1,500",
+              "max": "5,000",
+              "currency": "INR"
+            },
+            "transport": "Auto-rickshaws, taxis, local buses",
+            "howToReach": {
+              "air": "Madurai International Airport (IXM)",
+              "train": "Kottayam Railway Station",
+              "road": ""
+            }
+          }
+        },
+        {
           "name": "Varkala",
           "slug": "varkala",
           "mapUrl": "https://www.google.com/maps/d/u/0/edit?mid=15hGIcxZgyLNXW1ppt_ZfwMqTWxbm3e8&usp=sharing",
