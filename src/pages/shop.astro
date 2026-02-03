@@ -54,17 +54,123 @@ const siteUrl = "https://www.whereinindia.online";
     ogImage="https://www.whereinindia.online/flag.png"
 >
     <main>
-        <!-- Hero Section (Split-screen like homepage) -->
+        <!-- Hero Section (Same pattern as homepage) -->
         <header class="hero">
-            <div class="hero-image shop-hero-image"></div>
+            <div class="hero-image shop-hero-mockup"></div>
             <div class="hero-text">
-                <h1>Indian Travel Postcards</h1>
+                <h1>India on your Phone Screen.</h1>
                 <p>
-                    Beautiful A6 postcards capturing India's most stunning
-                    moments — perfect for your wall, desk, or as a gift.
+                    Download the Official 4K Wallpaper Pack. Perfectly cropped
+                    for iPhone & Android. Free forever.
                 </p>
+                <button id="open-wallpaper-modal" class="download-btn">
+                    📱 Download Free Pack
+                </button>
             </div>
         </header>
+
+        <!-- Email Capture Modal -->
+        <div id="wallpaper-modal" class="modal-overlay">
+            <div class="modal-content wallpaper-modal-content">
+                <button id="close-wallpaper-modal" class="modal-close-btn"
+                    >&times;</button
+                >
+
+                <!-- Form State -->
+                <div id="modal-form-state">
+                    <!-- Preview Carousel -->
+                    <div class="modal-preview">
+                        <button
+                            class="carousel-arrow carousel-prev"
+                            id="preview-prev"
+                            type="button">‹</button
+                        >
+                        <div class="carousel-images">
+                            <img
+                                src="/shop/phone-mockup-hero.png"
+                                alt="India 4K Wallpapers"
+                                class="carousel-img active"
+                            />
+                            <img
+                                src="/shop/Wallpaper 1.png"
+                                alt="Wallpaper preview"
+                                class="carousel-img"
+                            />
+                            <img
+                                src="/shop/Wallpaper 2.png"
+                                alt="Wallpaper preview"
+                                class="carousel-img"
+                            />
+                            <img
+                                src="/shop/Wallpaper 3.png"
+                                alt="Wallpaper preview"
+                                class="carousel-img"
+                            />
+                            <img
+                                src="/shop/Wallpaper 4.png"
+                                alt="Wallpaper preview"
+                                class="carousel-img"
+                            />
+                            <img
+                                src="/shop/Wallpaper 5.png"
+                                alt="Wallpaper preview"
+                                class="carousel-img"
+                            />
+                            <img
+                                src="/shop/Wallpaper 6.png"
+                                alt="Wallpaper preview"
+                                class="carousel-img"
+                            />
+                            <img
+                                src="/shop/Wallpaper 7.png"
+                                alt="Wallpaper preview"
+                                class="carousel-img"
+                            />
+                        </div>
+                        <button
+                            class="carousel-arrow carousel-next"
+                            id="preview-next"
+                            type="button">›</button
+                        >
+                        <div class="carousel-dots" id="carousel-dots"></div>
+                    </div>
+
+                    <h2>Get Your Free Wallpapers</h2>
+                    <p class="modal-subtitle">
+                        4K resolution, perfectly cropped for your phone.
+                    </p>
+
+                    <form id="wallpaper-form">
+                        <input
+                            type="email"
+                            id="wallpaper-email"
+                            placeholder="your@email.com"
+                            required
+                            autocomplete="email"
+                        />
+                        <button type="submit" class="submit-btn">
+                            📱 Send to Inbox
+                        </button>
+                    </form>
+                    <p id="form-error" class="form-error"></p>
+                    <p class="modal-hint">
+                        We'll email the download link instantly.
+                    </p>
+                </div>
+
+                <!-- Success State -->
+                <div id="modal-success-state" style="display: none;">
+                    <div class="success-icon">📬</div>
+                    <h2>Sent! Check your inbox.</h2>
+                    <p class="modal-subtitle">
+                        Your wallpapers + a special discount are waiting.
+                    </p>
+                    <button id="close-success" class="submit-btn"
+                        >Browse Postcards</button
+                    >
+                </div>
+            </div>
+        </div>
 
         <!-- Shop Controls -->
         <div class="shop-controls">
@@ -778,6 +884,126 @@ const siteUrl = "https://www.whereinindia.online";
                 if (e.target === photographerModal) closePhotographerModal();
             });
 
+            // --- Wallpaper Email Modal ---
+            const wallpaperModal = document.getElementById("wallpaper-modal");
+            const openModalBtn = document.getElementById(
+                "open-wallpaper-modal",
+            );
+            const closeModalBtn = document.getElementById(
+                "close-wallpaper-modal",
+            );
+            const closeSuccessBtn = document.getElementById("close-success");
+            const wallpaperForm = document.getElementById("wallpaper-form");
+            const emailInput = document.getElementById("wallpaper-email");
+            const formError = document.getElementById("form-error");
+            const formState = document.getElementById("modal-form-state");
+            const successState = document.getElementById("modal-success-state");
+
+            // --- Preview Carousel ---
+            const carouselImages = document.querySelectorAll(".carousel-img");
+            const prevBtn = document.getElementById("preview-prev");
+            const nextBtn = document.getElementById("preview-next");
+            const dotsContainer = document.getElementById("carousel-dots");
+            let currentSlide = 0;
+
+            // Create dots
+            carouselImages.forEach((_, index) => {
+                const dot = document.createElement("span");
+                dot.className = `carousel-dot${index === 0 ? " active" : ""}`;
+                dot.addEventListener("click", () => goToSlide(index));
+                dotsContainer.appendChild(dot);
+            });
+
+            const updateCarousel = () => {
+                carouselImages.forEach((img, index) => {
+                    img.classList.toggle("active", index === currentSlide);
+                });
+                document
+                    .querySelectorAll(".carousel-dot")
+                    .forEach((dot, index) => {
+                        dot.classList.toggle("active", index === currentSlide);
+                    });
+            };
+
+            const goToSlide = (index) => {
+                currentSlide = index;
+                updateCarousel();
+            };
+
+            prevBtn.addEventListener("click", () => {
+                currentSlide =
+                    (currentSlide - 1 + carouselImages.length) %
+                    carouselImages.length;
+                updateCarousel();
+            });
+
+            nextBtn.addEventListener("click", () => {
+                currentSlide = (currentSlide + 1) % carouselImages.length;
+                updateCarousel();
+            });
+
+            const openWallpaperModal = () => {
+                wallpaperModal.classList.add("visible");
+                document.body.style.overflow = "hidden";
+                emailInput.focus();
+            };
+
+            const closeWallpaperModal = () => {
+                wallpaperModal.classList.remove("visible");
+                document.body.style.overflow = "";
+            };
+
+            openModalBtn.addEventListener("click", openWallpaperModal);
+            closeModalBtn.addEventListener("click", closeWallpaperModal);
+            closeSuccessBtn.addEventListener("click", closeWallpaperModal);
+            wallpaperModal.addEventListener("click", (e) => {
+                if (e.target === wallpaperModal) closeWallpaperModal();
+            });
+
+            wallpaperForm.addEventListener("submit", async (e) => {
+                e.preventDefault();
+                formError.textContent = "";
+
+                const email = emailInput.value.trim();
+                if (!email) {
+                    formError.textContent = "Please enter your email";
+                    return;
+                }
+
+                const submitBtn = wallpaperForm.querySelector("button");
+                const originalText = submitBtn.textContent;
+
+                // Show loading state
+                submitBtn.textContent = "Sending...";
+                submitBtn.disabled = true;
+
+                try {
+                    const response = await fetch("/api/send-wallpapers", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ email }),
+                    });
+
+                    const data = await response.json();
+
+                    if (data.success) {
+                        // Show success state
+                        formState.style.display = "none";
+                        successState.style.display = "block";
+                    } else {
+                        formError.textContent =
+                            data.error ||
+                            "Something went wrong. Please try again.";
+                    }
+                } catch (err) {
+                    formError.textContent = "Network error. Please try again.";
+                } finally {
+                    // Reset loading state
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }
+            });
+
             // --- Initialize ---
             // Simulate loading delay for skeleton effect
             setTimeout(() => {
@@ -792,10 +1018,263 @@ const siteUrl = "https://www.whereinindia.online";
 </Layout>
 
 <style>
-    /* Shop Hero Image - for split screen design */
-    .shop-hero-image {
-        background-image: url("https://images.unsplash.com/photo-1692792284356-f80113facd09?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-        background-position: center 40%;
+    /* Shop Hero - Phone Mockup Background */
+    .shop-hero-mockup {
+        background-image: url("/shop/phone-mockup-hero.png");
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #f4f4f4;
+    }
+
+    @media (max-width: 768px) {
+        .shop-hero-mockup {
+            background-size: 100%;
+            min-height: 200px;
+        }
+    }
+
+    /* Download Button (matches header-submit style) */
+    .download-btn {
+        display: block;
+        width: fit-content;
+        margin: 0.5rem auto 0 auto;
+        padding: 0.5rem 1rem;
+        background-color: #1a1a1a;
+        color: #fff;
+        font-size: 0.8rem;
+        font-weight: 600;
+        font-family: "Inter", sans-serif;
+        border-radius: 6px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+        background-color: #333;
+    }
+
+    /* Wallpaper Email Modal */
+    .wallpaper-modal-content {
+        max-width: 380px;
+        text-align: center;
+        padding: 1.5rem;
+        position: relative;
+    }
+
+    .modal-close-btn {
+        position: absolute;
+        top: 0.75rem;
+        right: 0.75rem;
+        width: 28px;
+        height: 28px;
+        border: none;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        font-size: 1.25rem;
+        line-height: 1;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-close-btn:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .modal-preview {
+        margin: -1.5rem -1.5rem 1rem -1.5rem;
+        background: #f4f4f4;
+        padding: 1.5rem 3rem;
+        border-radius: 12px 12px 0 0;
+        position: relative;
+    }
+
+    .carousel-images {
+        position: relative;
+        width: 280px;
+        height: 200px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .carousel-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 8px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .carousel-img.active {
+        opacity: 1;
+    }
+
+    .carousel-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 32px;
+        height: 32px;
+        border: none;
+        background: #1a1a1a;
+        color: #fff;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        z-index: 5;
+    }
+
+    .carousel-prev {
+        left: 0.5rem;
+    }
+
+    .carousel-next {
+        right: 0.5rem;
+    }
+
+    .carousel-arrow:hover {
+        background: #333;
+    }
+
+    .carousel-dots {
+        position: absolute;
+        bottom: 0.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 0.35rem;
+    }
+
+    .carousel-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    .carousel-dot.active {
+        background: #1a1a1a;
+    }
+
+    .wallpaper-modal-content h2 {
+        font-size: 1.35rem;
+        margin-bottom: 0.25rem;
+        color: #1a1a1a;
+    }
+
+    .modal-subtitle {
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .modal-hint {
+        font-size: 0.8rem;
+        color: #999;
+        margin-top: 0.75rem;
+    }
+
+    #wallpaper-form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    #wallpaper-email {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        outline: none;
+        transition: border-color 0.2s;
+    }
+
+    #wallpaper-email:focus {
+        border-color: #1a1a1a;
+    }
+
+    .submit-btn {
+        padding: 0.75rem 1.5rem;
+        background-color: #1a1a1a;
+        color: #fff;
+        font-size: 0.95rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .submit-btn:hover {
+        background-color: #333;
+    }
+
+    .submit-btn:disabled {
+        background-color: #999;
+        cursor: not-allowed;
+    }
+
+    .form-error {
+        color: #dc2626;
+        font-size: 0.85rem;
+        margin-top: 0.5rem;
+    }
+
+    .success-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .discount-box {
+        background-color: #f4f4f4;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1.5rem 0;
+    }
+
+    .discount-box p {
+        margin: 0;
+        color: #333;
+    }
+
+    .discount-box strong {
+        color: #1a1a1a;
+        font-size: 1.1rem;
+    }
+
+    /* Postcards Section Header */
+    .section-header {
+        padding: 2rem 1rem 1rem;
+        text-align: center;
+        border-bottom: 1px solid #e2e2e2;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-header p {
+        font-size: 0.95rem;
+        color: #666;
+        margin: 0;
     }
 
     /* Meet the Photographer Section */

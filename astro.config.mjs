@@ -1,11 +1,13 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import vercel from '@astrojs/vercel';
 
 // --- 1. Import Node.js helpers to create the path ---
 import { fileURLToPath, URL } from 'url';
 
 // --- This is the updated file ---
 export default defineConfig({
+  adapter: vercel(),
   site: 'https://www.whereinindia.online', // Make sure this is your correct URL
   integrations: [sitemap()],
 
