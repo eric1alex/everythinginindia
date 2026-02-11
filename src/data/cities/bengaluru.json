@@ -30,6 +30,18 @@
       {
         "name": "Burma Burma",
         "url": "https://www.google.com/maps/place/Burma+Burma+Restaurant+%26+Tea+Room/@12.9208581,77.6812132,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1300696a29a5:0xf19fa4f967fee5c6!8m2!3d12.9208529!4d77.6837881!16s%2Fg%2F11xgljz3j6?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Amiel Gourmet",
+        "url": "https://maps.app.goo.gl/1cF169Rj6577bmDNA"
+      },
+      {
+        "name": "MTR ",
+        "url": "https://maps.app.goo.gl/hL3JPryrckjzxH6Y8"
+      },
+      {
+        "name": "",
+        "url": ""
       }
     ]
   },
@@ -94,6 +106,14 @@
       {
         "name": "Watson's",
         "url": "https://www.google.com/maps/place/Watson's+Indiranagar/@12.9672778,77.6403664,18z/data=!3m1!4b1!4m6!3m5!1s0x3bae15e399488389:0x19397505ce679162!8m2!3d12.967276!4d77.6412768!16s%2Fg%2F11fjqk0vr2?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Toit ",
+        "url": "https://maps.app.goo.gl/F8XmHBTqCFKwdNNk9"
+      },
+      {
+        "name": "Windmills Craftworks",
+        "url": "https://maps.app.goo.gl/CDkApGbpFRwjLpra9"
       }
     ]
   },
@@ -158,6 +178,44 @@
       {
         "name": "Bangalore Palace",
         "url": "https://www.google.com/maps/place/Bangalore+Palace,+Palace+Cross+Rd,+Vasanth+Nagar,+Bengaluru,+Karnataka+560006/@12.9966187,77.5874447,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae16446ad0c54b:0x424585bd676e8f7e!8m2!3d12.9966135!4d77.5920581!16s%2Fg%2F11bw4q0krm?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Tipu Sultan’s Summer Palace",
+        "url": "https://maps.app.goo.gl/d7T857WtCB9fMpwu8"
+      },
+      {
+        "name": "Rangashankara ",
+        "url": "https://maps.app.goo.gl/L7KoT8zVMj79R26t6"
+      }
+    ]
+  },
+  {
+    "title": "Parks and Lakes",
+    "emoji": "📍",
+    "items": [
+      {
+        "name": "Sri Chamarajendra Park",
+        "url": "https://maps.app.goo.gl/dyFny4zbvBhmYjUP7"
+      },
+      {
+        "name": "The Weekend Dog Park ",
+        "url": "https://maps.app.goo.gl/2SVnSGsKdY6FjDst6"
+      },
+      {
+        "name": "Lalbagh Botanical Garden",
+        "url": "https://maps.app.goo.gl/MgF7upyobnsbbqEd7"
+      },
+      {
+        "name": "Ulsoor Lake",
+        "url": "https://maps.app.goo.gl/8T8RWNYJtpowZF7a9"
+      },
+      {
+        "name": "Agara Lake",
+        "url": "https://maps.app.goo.gl/n4byuZwQTUPcUuBs7"
+      },
+      {
+        "name": "",
+        "url": ""
       }
     ]
   }
