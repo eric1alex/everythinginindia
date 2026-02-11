@@ -167,34 +167,17 @@ const filteredSuggestions = allCitiesList
             />
             
             <div class="action-buttons">
-                {hasMapData && (
-                    <button 
-                      id="map-toggle-btn" 
-                      class="action-btn"
-                      aria-label="Toggle Map View"
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
-                        <line x1="8" y1="2" x2="8" y2="18"></line>
-                        <line x1="16" y1="6" x2="16" y2="22"></line>
-                      </svg>
-                      <span class="btn-text">Map View</span>
-                    </button>
-                )}
-
                 <button 
-                  id="share-btn" 
-                  class="action-btn share-btn"
-                  data-url={`https://www.whereinindia.online/${currentStateSlug}/${currentCitySlug}`}
-                  data-title={`Best places to visit in ${cityName} - Where In India`}
+                  id="download-list-btn" 
+                  class="action-btn"
+                  aria-label="Download List as Image"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
-                    <polyline points="16 6 12 2 8 6"/>
-                    <line x1="12" y1="2" x2="12" y2="15"/>
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
                   </svg>
-                  Share
-                  <span class="share-tooltip">Link copied!</span>
+                  <span class="btn-text">Download List</span>
                 </button>
             </div>
           </div>
@@ -248,6 +231,38 @@ const filteredSuggestions = allCitiesList
           {dashboardData && (
             <CityFAQ cityName={cityName} dashboard={dashboardData} />
           )}
+
+          <div class="bottom-map-toggle">
+            {hasMapData && (
+                <button 
+                  id="map-toggle-btn" 
+                  class="action-btn"
+                  aria-label="Toggle Map View"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                    <line x1="8" y1="2" x2="8" y2="18"></line>
+                    <line x1="16" y1="6" x2="16" y2="22"></line>
+                  </svg>
+                  <span class="btn-text">Map View</span>
+                </button>
+            )}
+
+            <button 
+                id="share-btn" 
+                class="action-btn share-btn"
+                data-url={`https://www.whereinindia.online/${currentStateSlug}/${currentCitySlug}`}
+                data-title={`Best places to visit in ${cityName} - Where In India`}
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+                <polyline points="16 6 12 2 8 6"/>
+                <line x1="12" y1="2" x2="12" y2="15"/>
+                </svg>
+                Share
+                <span class="share-tooltip">Link copied!</span>
+            </button>
+          </div>
 
           <RelatedDestinations
             currentCitySlug={currentCitySlug}
@@ -400,6 +415,26 @@ const filteredSuggestions = allCitiesList
         to { opacity: 1; }
     }
 
+    .bottom-map-toggle {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+        gap: 0.75rem; /* Add gap between buttons */
+    }
+    
+    .bottom-map-toggle .action-btn {
+        background-color: #1a1a1a;
+        color: white;
+        border-color: #1a1a1a;
+        padding: 0.5rem 1rem; /* Smaller padding: 0.5rem vs 0.6rem */
+        font-size: 0.85rem; /* Smaller font: 0.85rem vs 0.95rem */
+    }
+
+    .bottom-map-toggle .action-btn:hover {
+         background-color: #333;
+    }
+
+
     /* Visually hidden link for SEO */
     .listicle-link {
       position: absolute;
@@ -420,7 +455,9 @@ const filteredSuggestions = allCitiesList
     }
   </style>
 
-  <script is:inline>
+  <script>
+    import { toPng } from 'html-to-image';
+
     document.addEventListener('DOMContentLoaded', () => {
         // ... (Info/Tooltip logic omitted, assuming standard layout logic handled elsewhere or if needed) ...
 
@@ -505,6 +542,165 @@ const filteredSuggestions = allCitiesList
                     } catch (err) {
                         console.error('Failed to copy:', err);
                     }
+                }
+            });
+        }
+
+        // Download List Logic
+        const downloadBtn = document.getElementById('download-list-btn');
+
+        if (downloadBtn) {
+            downloadBtn.addEventListener('click', async () => {
+                const cityName = document.title.split('|')[0].trim();
+                
+                // 1. Create a container for the clone to ensure styles resolve correctly
+                const container = document.createElement('div');
+                container.style.position = 'absolute';
+                container.style.top = '-9999px';
+                container.style.left = '-9999px';
+                container.style.width = '1200px'; // Force Desktop Width
+                container.style.height = 'auto';
+                container.style.overflow = 'hidden'; // changes
+                container.style.zIndex = '-1';
+                document.body.appendChild(container);
+
+                try {
+                    // 2. Clone the body
+                    // We wrap it in a div to serve as the simplified root
+                    const wrapper = document.createElement('div');
+                    wrapper.className = 'download-wrapper'; 
+                    wrapper.style.backgroundColor = '#ffffff';
+                    wrapper.style.width = '100%';
+                    wrapper.style.height = '100%';
+                    
+                    // Copy innerHTML is often safer for styles than cloneNode(true) for specific isolation, 
+                    // but cloneNode is better for preserving some state. 
+                    // Let's use cloneNode(true) of body, but we need to match the specific layout constraints.
+                    // Actually, let's just clone the main parts we want: Header, Main, Footer.
+                    // But body has the styles.
+                    
+                    const clone = document.body.cloneNode(true);
+                    
+                    // 3. Clean up the Clone (Remove unwanted elements)
+                    const elementsToRemoveSelectors = [
+                        'noscript',
+                        '#feedback-popup',
+                        '#city-request-widget',
+                        '.nearby-destinations',
+                        '.action-buttons',
+                        '.bottom-map-toggle',
+                        '#map-toggle-btn', // Just in case
+                        'script', // Remove scripts to avoid re-execution
+                        'iframe',  // Remove iframes (like GTM) to avoid reload issues
+                        '.site-footer', // Remove default footer
+                        'footer'        // Remove any other footer tags
+                    ];
+
+                    elementsToRemoveSelectors.forEach(selector => {
+                        const elements = clone.querySelectorAll(selector);
+                        elements.forEach(el => el.remove());
+                    });
+                    
+                    // Force clone to fit our container
+                    clone.style.width = '1200px';
+                    clone.style.minWidth = '1200px';
+                    clone.style.overflow = 'visible';
+                    // Reset any transforms that might interfere
+                    clone.style.transform = 'none';
+                    
+                    // Add Simple Footer Text
+                    const simpleFooter = document.createElement('div');
+                    simpleFooter.textContent = 'www.whereinindia.online';
+                    simpleFooter.style.textAlign = 'center';
+                    simpleFooter.style.padding = '2rem';
+                    simpleFooter.style.width = '100%';
+                    simpleFooter.style.fontSize = '1.2rem';
+                    simpleFooter.style.fontWeight = '600';
+                    simpleFooter.style.color = '#333';
+                    simpleFooter.style.backgroundColor = '#fff';
+                    simpleFooter.style.fontFamily = getComputedStyle(document.body).fontFamily;
+                    
+                    clone.appendChild(simpleFooter);
+
+                    // force grid display -> Ensure List View is active in the screenshot
+                    const grid = clone.querySelector('#recommendation-grid');
+                    if (grid) {
+                        grid.style.display = 'grid';
+                    }
+                    const mapContainer = clone.querySelector('#city-map-container');
+                    if (mapContainer) {
+                        mapContainer.style.display = 'none';
+                    }
+
+                    // Fix Card Visibility (animations cause opacity: 0)
+                    const cards = clone.querySelectorAll('.recommendation-card');
+                    cards.forEach(card => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'none';
+                        card.style.animation = 'none';
+                    });
+
+                    // Fix List Numbers (CSS counters often fail in clones)
+                    const lists = clone.querySelectorAll('.recommendation-card ol');
+                    lists.forEach(ol => {
+                        const items = ol.querySelectorAll('li');
+                        items.forEach((li, index) => {
+                            // Create manual number span
+                            const numSpan = document.createElement('span');
+                            numSpan.textContent = `${index + 1}. `;
+                            numSpan.style.marginRight = '0.5rem';
+                            numSpan.style.color = '#888'; 
+                            numSpan.style.minWidth = '1.5em';
+                            numSpan.style.fontWeight = '400';
+                            
+                            // Insert at start
+                            li.insertBefore(numSpan, li.firstChild);
+                        });
+                    });
+
+                    // Fix Logo & Images (Relative paths might fail in blob)
+                    const images = clone.querySelectorAll('img');
+                    images.forEach(img => {
+                        if (img.src && img.src.startsWith('/')) {
+                             img.src = window.location.origin + img.getAttribute('src');
+                        }
+                    });
+
+                    // Inject Style to hide original CSS counters
+                    const style = document.createElement('style');
+                    style.innerHTML = `
+                        .recommendation-card li::before { content: none !important; }
+                        .recommendation-card li { display: flex; align-items: center; } 
+                    `;
+                    clone.appendChild(style);
+                    
+                    wrapper.appendChild(clone);
+                    container.appendChild(wrapper);
+
+                    // Allow images to load? cloneNode copies incomplete images sometimes.
+                    // toPng handles it, ideally.
+
+                    // 4. Generate Image
+                    const dataUrl = await toPng(wrapper, { 
+                        cacheBust: true, 
+                        width: 1200, // Explicitly tell html-to-image the width
+                        backgroundColor: '#ffffff',
+                        style: {
+                             // Ensure fonts rendering
+                            fontFamily: getComputedStyle(document.body).fontFamily
+                        }
+                    });
+
+                    const link = document.createElement('a');
+                    link.download = `${cityName}-guide.png`;
+                    link.href = dataUrl;
+                    link.click();
+
+                } catch (error) {
+                    console.error('Download failed:', error);
+                } finally {
+                    // 5. Cleanup
+                    document.body.removeChild(container);
                 }
             });
         }
