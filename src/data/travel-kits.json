@@ -1,0 +1,25 @@
+{
+    "categories": [
+        {
+            "id": "essentials",
+            "name": "Travel Essentials",
+            "icon": "🎒"
+        },
+        {
+            "id": "photography",
+            "name": "Photography Gear",
+            "icon": "📸"
+        },
+        {
+            "id": "tech",
+            "name": "Smart Tech",
+            "icon": "🔌"
+        },
+        {
+            "id": "clothing",
+            "name": "Clothing",
+            "icon": "👕"
+        }
+    ],
+    "items": []
+}

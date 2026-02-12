@@ -313,9 +313,19 @@ const filteredSuggestions = allCitiesList
         )}
       </div>
     )}
+
+    <!-- Download Loading Overlay -->
+    <div id="download-loading-overlay" class="loading-overlay">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <p>Generating your guide...</p>
+            <p class="sub-text">This may take a few seconds.</p>
+        </div>
+    </div>
   </main>
 
   <style>
+    /* ... existing styles ... */
     .breadcrumb-row {
       display: flex;
       justify-content: space-between;
@@ -434,7 +444,6 @@ const filteredSuggestions = allCitiesList
          background-color: #333;
     }
 
-
     /* Visually hidden link for SEO */
     .listicle-link {
       position: absolute;
@@ -446,6 +455,61 @@ const filteredSuggestions = allCitiesList
       clip: rect(0, 0, 0, 0);
       white-space: nowrap;
       border: 0;
+    }
+
+    /* Loading Overlay Styles */
+    .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease;
+    }
+
+    .loading-overlay.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .loading-content {
+        text-align: center;
+        color: #333;
+    }
+
+    .loading-content p {
+        margin: 1rem 0 0.5rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+
+    .loading-content .sub-text {
+        font-weight: 400;
+        font-size: 0.9rem;
+        color: #666;
+        margin-top: 0;
+    }
+
+    .spinner {
+        width: 40px;
+        height: 40px;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #1a1a1a;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
     }
 
     @media (min-width: 640px) {
@@ -548,11 +612,15 @@ const filteredSuggestions = allCitiesList
 
         // Download List Logic
         const downloadBtn = document.getElementById('download-list-btn');
+        const loadingOverlay = document.getElementById('download-loading-overlay');
 
         if (downloadBtn) {
             downloadBtn.addEventListener('click', async () => {
                 const cityName = document.title.split('|')[0].trim();
                 
+                // Show Loading Overlay
+                if (loadingOverlay) loadingOverlay.classList.add('visible');
+
                 // 1. Create a container for the clone to ensure styles resolve correctly
                 const container = document.createElement('div');
                 container.style.position = 'absolute';
@@ -593,7 +661,8 @@ const filteredSuggestions = allCitiesList
                         'script', // Remove scripts to avoid re-execution
                         'iframe',  // Remove iframes (like GTM) to avoid reload issues
                         '.site-footer', // Remove default footer
-                        'footer'        // Remove any other footer tags
+                        'footer',       // Remove any other footer tags
+                        '#download-loading-overlay' // Don't include the loading overlay itself
                     ];
 
                     elementsToRemoveSelectors.forEach(selector => {
@@ -701,6 +770,8 @@ const filteredSuggestions = allCitiesList
                 } finally {
                     // 5. Cleanup
                     document.body.removeChild(container);
+                    // Hide Overlay
+                    if (loadingOverlay) loadingOverlay.classList.remove('visible');
                 }
             });
         }

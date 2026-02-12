@@ -17,7 +17,6 @@
     "@astrojs/sitemap": "^3.6.0",
     "@astrojs/vercel": "^8.0.4",
     "astro": "^5.14.4",
-    "resend": "^6.9.1",
     "html-to-image": "^1.11.11"
   }
 }
