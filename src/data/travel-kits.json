@@ -1,27 +1,117 @@
 {
   "categories": [
     {
-      "id": "essentials",
-      "name": "Travel Essentials",
-      "icon": "🎒"
-    },
-    {
-      "id": "photography",
-      "name": "Photography Gear",
-      "icon": "📸"
-    },
-    {
       "id": "tech",
-      "name": "Tech",
+      "name": "Tech Products",
       "icon": "🔌"
     },
     {
-      "id": "clothing",
-      "name": "Clothing",
-      "icon": "👕"
+      "id": "organizers",
+      "name": "Organizers",
+      "icon": "🗂️"
+    },
+    {
+      "id": "storage-packing",
+      "name": "Storage & Packing",
+      "icon": "🧳"
+    },
+    {
+      "id": "personal-care-hygiene",
+      "name": "Personal Care & Hygiene",
+      "icon": "💗"
+    },
+    {
+      "id": "comfort",
+      "name": "Comfort",
+      "icon": "😴"
+    },
+    {
+      "id": "health-safety",
+      "name": "Health & Safety",
+      "icon": "🩹"
     }
   ],
   "items": [
+    {
+      "id": "1770908128924",
+      "name": "Hansaplast Fast Aid Kit",
+      "category": "health-safety",
+      "price": "₹363",
+      "image": "https://m.media-amazon.com/images/I/61ylQ5euPYL._SL1000_.jpg",
+      "affiliateLink": "https://amzn.to/4rJiO6R",
+      "description": "Emergency Medical Kit for Home, Office, Travel, Car, Sports, Outdoor | Multi-Use Pack for Cuts, Wounds & Injuries | Lightweight & Compact | 9 Items - 38 Pieces",
+      "bestSeller": false
+    },
+    {
+      "id": "1770908070613",
+      "name": "Billebon Premium Neck Pillow Eye Mask Combo",
+      "category": "comfort",
+      "price": "₹299",
+      "image": "https://m.media-amazon.com/images/I/81c5udSNhPL._SL1500_.jpg",
+      "affiliateLink": "https://amzn.to/4coDMU8",
+      "description": "Billebon Premium Neck Pillow Eye Mask Combo Airplane Travel Pillow with Comfortable Velvet Sleeping Eyemask Head Rest Pillow",
+      "bestSeller": false
+    },
+    {
+      "id": "1770908003177",
+      "name": "Zollyss 2Pc Capsule Shape Travel Toothbrush Toothpaste Case Holder",
+      "category": "personal-care-hygiene",
+      "price": "₹229 ",
+      "image": "https://m.media-amazon.com/images/I/6179vAUX3XL._SL1431_.jpg",
+      "affiliateLink": "https://amzn.to/4tnKqjA",
+      "description": "Zollyss 2Pc Capsule Shape Travel Toothbrush Toothpaste Case Holder",
+      "bestSeller": false
+    },
+    {
+      "id": "1770907942042",
+      "name": "GLUN® Electronic Portable Digital Weighing Scale",
+      "category": "tech",
+      "price": "₹248",
+      "image": "https://m.media-amazon.com/images/I/61Z35SZs7lL._SL1500_.jpg",
+      "affiliateLink": "https://amzn.to/4657dqx",
+      "description": "GLUN® Electronic Portable Digital LED Screen Luggage Weighing Scale, 50 kg/110 Lb For Multi-Purpose Use.",
+      "bestSeller": false
+    },
+    {
+      "id": "1770907862152",
+      "name": "Boldfit Chest Bag for Men & Women",
+      "category": "organizers",
+      "price": "₹329",
+      "image": "https://m.media-amazon.com/images/I/71sXlX7vdyL._SL1500_.jpg",
+      "affiliateLink": "https://amzn.to/403SE2O",
+      "description": "Crossbody Waist Pouch with 3 Zippered Compartments & Adjustable Strap",
+      "bestSeller": false
+    },
+    {
+      "id": "1770907821975",
+      "name": "Elfora Cable Organizer Pouch",
+      "category": "organizers",
+      "price": "₹289 ",
+      "image": "https://m.media-amazon.com/images/I/61AjYAjuSfL._SL1080_.jpg",
+      "affiliateLink": "https://amzn.to/4tuvj7Y",
+      "description": "Double Layer Storage for USB Cables, Chargers, Earphone, Power Bank, Hard disc & Other Accessories",
+      "bestSeller": false
+    },
+    {
+      "id": "1770907784261",
+      "name": "Lifelong Shoe Bags for Travel",
+      "category": "storage-packing",
+      "price": "₹199",
+      "image": "https://m.media-amazon.com/images/I/71sJX24y6yL._SL1500_.jpg",
+      "affiliateLink": "https://amzn.to/4bKLGad",
+      "description": "Drawstring Travel Shoe Bags for Packing, Dustproof Portable Travel Shoe Storage Bag for Men and Women, Clear, Large, 10 Pack",
+      "bestSeller": false
+    },
+    {
+      "id": "1770907725482",
+      "name": "amazon basics Vacuum Compression Storage Bags",
+      "category": "storage-packing",
+      "price": "₹526",
+      "image": "https://m.media-amazon.com/images/I/71qEqnkZg8L._SL1500_.jpg",
+      "affiliateLink": "https://amzn.to/4kwXkHT",
+      "description": "amazon basics Vacuum Compression Storage Bags with Hand Pump - Medium, 5-Pack",
+      "bestSeller": false
+    },
     {
       "id": "1770859172316",
       "name": "Ambrane Universal Travel Socket",
