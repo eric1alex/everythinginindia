@@ -1,25 +1,36 @@
 {
-    "categories": [
-        {
-            "id": "essentials",
-            "name": "Travel Essentials",
-            "icon": "🎒"
-        },
-        {
-            "id": "photography",
-            "name": "Photography Gear",
-            "icon": "📸"
-        },
-        {
-            "id": "tech",
-            "name": "Smart Tech",
-            "icon": "🔌"
-        },
-        {
-            "id": "clothing",
-            "name": "Clothing",
-            "icon": "👕"
-        }
-    ],
-    "items": []
+  "categories": [
+    {
+      "id": "essentials",
+      "name": "Travel Essentials",
+      "icon": "🎒"
+    },
+    {
+      "id": "photography",
+      "name": "Photography Gear",
+      "icon": "📸"
+    },
+    {
+      "id": "tech",
+      "name": "Tech",
+      "icon": "🔌"
+    },
+    {
+      "id": "clothing",
+      "name": "Clothing",
+      "icon": "👕"
+    }
+  ],
+  "items": [
+    {
+      "id": "1770859172316",
+      "name": "Ambrane Universal Travel Socket",
+      "category": "tech",
+      "price": "₹749 ",
+      "image": "https://m.media-amazon.com/images/I/61TQIZKgEKL._SL1500_.jpg",
+      "affiliateLink": "https://amzn.to/4aJPRSG",
+      "description": "International All in One Worldwide Travel Adapter Socket with 2500W High Power Output with 9 Hole Universal Socket, Compatible in 150+ Countries",
+      "bestSeller": false
+    }
+  ]
 }
