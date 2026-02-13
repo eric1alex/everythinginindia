@@ -1,7 +1,8 @@
 ---
 title: "What Should Be on Your Travel Essentials Packing List for a Trip to India?"
+description: "We analyze the ultimate packing strategy for India, from avoiding \"Delhi Belly\" to choosing the right tech, ensuring your adventure is safe and stress-free."
 pubDate: 2026-02-11T00:00:00.000Z
-updatedDate: 2026-02-13T15:28:27.164Z
+updatedDate: 2026-02-13T23:21:40.813Z
 heroImage: "https://images.unsplash.com/photo-1496950866446-3253e1470e8e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 tags: ["Travel Essentials"]
 ---
