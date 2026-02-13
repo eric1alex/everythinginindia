@@ -1,7 +1,8 @@
 ---
 title: "How Can You Master Packing for Goa? Packing Tips and Tricks to Goa Revealed"
+description: "Discover the ultimate packing guide for your Goa trip. From monsoon essentials to the perfect beachwear, we analyze top tips for a stress-free vacation."
 pubDate: 2026-02-11T00:00:00.000Z
-updatedDate: 2026-02-13T15:27:15.928Z
+updatedDate: 2026-02-13T23:20:57.356Z
 heroImage: "https://images.unsplash.com/photo-1522199710521-72d69614c702?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 tags: ["Goa"]
 ---
