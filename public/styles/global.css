@@ -615,7 +615,7 @@ body {
   color: var(--link-hover-color);
 }
 
-.recommendation-card a::after {
+.recommendation-card li a::after {
   content: '↗';
   margin-left: 0.25rem;
   font-size: 0.8em;

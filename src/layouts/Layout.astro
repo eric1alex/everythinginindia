@@ -17,6 +17,7 @@ const {
 const canonicalURL = Astro.url.href;
 
 // REMOVED: ContributionModal import
+import ShivratriPopup from "../components/ShivratriPopup.astro";
 ---
 
 <!doctype html>
@@ -193,7 +194,7 @@ const canonicalURL = Astro.url.href;
 					<p class="footer-text">
 						Curated essentials for your next Indian adventure.
 					</p>
-					<a href="/travel-kits" class="footer-donate-button"
+					<a href="/travel-essentials" class="footer-donate-button"
 						>View Travel essentials</a
 					>
 				</div>
@@ -202,5 +203,6 @@ const canonicalURL = Astro.url.href;
 
 		<!-- City Page Fade-in Script -->
 		<script is:raw src="/scripts/main.js"></script>
+		<ShivratriPopup />
 	</body>
 </html>
