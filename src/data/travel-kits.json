@@ -29,9 +29,84 @@
       "id": "health-safety",
       "name": "Health & Safety",
       "icon": "🩹"
+    },
+    {
+      "id": "food-beverage",
+      "name": "Food & Beverage",
+      "icon": "🥤"
     }
   ],
   "items": [
+    {
+      "id": "1771027374252sd58vgfyz",
+      "name": "DOCOSS Locks for Luggage,",
+      "category": "storage-packing",
+      "price": "₹599",
+      "image": "https://m.media-amazon.com/images/I/7191e9hrFlL._SL1500_.jpg",
+      "affiliateLink": "https://amzn.to/4twFpFD",
+      "description": "DOCOSS-Set of 2-202 TSA Approved Locks for Luggage, Number Lock for Bag,Small TSA Locks for Luggage Combination Password Lock for Travel",
+      "bestSeller": false
+    },
+    {
+      "id": "177102737425255sdx0ucd",
+      "name": "Pill Medicine Organizer Storage Box with 8 Compartments",
+      "category": "health-safety",
+      "price": "₹329",
+      "image": "https://m.media-amazon.com/images/I/71GQ2AqsPMS._SL1500_.jpg",
+      "affiliateLink": "https://amzn.to/4awBNdM",
+      "description": "Pill Medicine Organizer Storage Box with 8 Compartments - Moisture Proof, Made of Food Grade Cereal Fiber, BPA free Wheat Straw Material, Ideal for Travel, Pocket, Purse, Daily Pill Case, Portable Medicine Vitamin Holder Container - 1 Pc",
+      "bestSeller": false
+    },
+    {
+      "id": "177102737425241ptcdkp9",
+      "name": "FLYNGO Memory Foam Neck Pillow",
+      "category": "comfort",
+      "price": "₹499",
+      "image": "https://m.media-amazon.com/images/I/81h0-2f8dCL._SL1500_.jpg",
+      "affiliateLink": "https://amzn.to/3OGuEAo",
+      "description": "FLYNGO Memory Foam Neck Pillow for Travel Neck Support Pillow with Rest Eye Mask, Noise Isolating Ear Plugs Portable Combo",
+      "bestSeller": false
+    },
+    {
+      "id": "1771027374252jndiiw5mx",
+      "name": "VELOMAX Portable Travel Bidet",
+      "category": "personal-care-hygiene",
+      "price": "₹1,885",
+      "image": "https://m.media-amazon.com/images/I/514CjUuwXTL._SL1500_.jpg",
+      "affiliateLink": "https://amzn.to/4as65OY",
+      "description": "VELOMAX Portable Travel Bidet, IPX7 Waterproof Electric Rechargeable Mini Handheld Spray with 2 Pressure Options for Women & Men, Adjustable Speed, Hygienic Cleaning, Postpartum & Baby Care",
+      "bestSeller": false
+    },
+    {
+      "id": "17710273742528cqifn158",
+      "name": "Borosil Hydra Coffeemate 260 ml",
+      "category": "food-beverage",
+      "price": "₹697",
+      "image": "https://m.media-amazon.com/images/I/51eRe2S1lGL._SL1500_.jpg",
+      "affiliateLink": "https://amzn.to/4cqhpO7",
+      "description": "Borosil Hydra Coffeemate 260 ml Stainless Steel Travel Mug | Double Wall Vacuum Insulated, Black | 8 Hrs Hot & 14 Hours Cold | Ideal for Personal & Corporate Gifting",
+      "bestSeller": false
+    },
+    {
+      "id": "1771027374252cie7jhhq5",
+      "name": "nsb herbals 100ml Empty Clear Plastic Bottles (Pack Of 3)",
+      "category": "storage-packing",
+      "price": "₹109",
+      "image": "https://m.media-amazon.com/images/I/51WpzhIDprL._SL1500_.jpg",
+      "affiliateLink": "https://amzn.to/3OGuNnq",
+      "description": "nsb herbals 100ml Empty Clear Plastic Bottles Refillable Travel Size Cosmetic Containers Small Squeeze Bottles With Black Flip Cap For Toiletries, Shampoos, Lotions, Creams (Pack Of 3)",
+      "bestSeller": false
+    },
+    {
+      "id": "17710273742522isei0wta",
+      "name": "50Pcs Compressed Towel Tablets",
+      "category": "personal-care-hygiene",
+      "price": "₹149",
+      "image": "https://m.media-amazon.com/images/I/517E2Kp6GRL._SL1080_.jpg",
+      "affiliateLink": "https://amzn.to/4rOI0ZN",
+      "description": "50Pcs Compressed Towel Tablets, Facial Cleansing Tissue, Mini Tablets Disposable Towels, Makeup Remover Pads, Water Activated Coin Tissue for Beauty Salon, Travel, Sports & Personal Use",
+      "bestSeller": false
+    },
     {
       "id": "1770908128924",
       "name": "Hansaplast Fast Aid Kit",
