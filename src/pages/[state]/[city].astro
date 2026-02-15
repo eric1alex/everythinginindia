@@ -604,6 +604,13 @@ const filteredSuggestions = allCitiesList
             downloadBtn.addEventListener('click', async () => {
                 const cityName = document.title.split('|')[0].trim();
                 
+                // Track "Download List" Button Click
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    event: 'download_list_clicked',
+                    city: cityName
+                });
+                
                 // Show Loading Overlay
                 if (loadingOverlay) loadingOverlay.classList.add('visible');
 
