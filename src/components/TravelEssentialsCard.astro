@@ -1,0 +1,82 @@
+---
+// src/components/TravelEssentialsCard.astro
+---
+
+<div class="recommendation-card travel-essentials-card">
+    <a href="/travel-essentials" class="te-card-link-wrapper">
+        <h2>
+            Pack Better. Travel Easier. <span class="emoji">🧳</span>
+        </h2>
+        <p class="te-card-desc">
+            Lightweight, reliable, and tested gear every traveler needs.
+        </p>
+        <span class="te-card-button">Check the Essentials</span>
+    </a>
+</div>
+
+<style>
+    /* Enforce column layout for the card content */
+    .travel-essentials-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        text-align: left;
+    }
+
+    .te-card-link-wrapper {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        height: auto; /* Allow auto height */
+        width: 100%;
+    }
+
+    .te-card-link-wrapper h2 {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.1rem;
+        margin: 0 0 0.5rem 0;
+        line-height: 1.3;
+    }
+
+    .te-card-desc {
+        font-size: 0.95rem;
+        color: #555;
+        margin-bottom: 1.25rem;
+        line-height: 1.5;
+        margin-top: 0;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .te-card-button {
+        display: block; /* Block level for full width */
+        background-color: #f4f4f4;
+        color: #1a1a1a;
+        font-weight: 600;
+        padding: 0.75rem 1rem;
+        border-radius: 6px;
+        text-align: center;
+        width: 100%;
+        font-size: 0.9rem;
+        transition: background-color 0.2s;
+        border: 1px solid #e5e5e5;
+        margin-top: auto;
+    }
+
+    .te-card-link-wrapper:hover .te-card-button {
+        background-color: #1a1a1a;
+        color: white;
+        border-color: #1a1a1a;
+    }
+
+    /* Only show on mobile */
+    @media (min-width: 640px) {
+        .travel-essentials-card {
+            display: none;
+        }
+    }
+</style>

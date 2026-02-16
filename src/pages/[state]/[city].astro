@@ -11,6 +11,8 @@ import CityDashboard from '~/components/CityDashboard.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
 import CityFAQ from '~/components/CityFAQ.astro';
 import MapView from '~/components/MapView.astro';
+import TravelEssentialsPopup from '~/components/TravelEssentialsPopup.astro';
+import TravelEssentialsCard from '~/components/TravelEssentialsCard.astro';
 
 // --- DATA LOADING (Coordinates) ---
 // Try to load coordinates data safely
@@ -199,27 +201,39 @@ const filteredSuggestions = allCitiesList
               </div>
           )}
 
+
+
+
+
           <!-- Recommendation Grid (Default View) -->
           <div id="recommendation-grid" class="recommendation-grid">
-            {places.map((category: any) => (
-              <div class="recommendation-card">
-                  <a 
-                    href={`/${currentStateSlug}/${currentCitySlug}/best-${slugify(category.title)}`}
-                    style="text-decoration: none; color: inherit; display: block;"
-                  >
-                    <h2>
-                      <span class="emoji">{category.emoji}</span>
-                      {category.title}
-                    </h2>
-                  </a>
-                <ol>
-                  {category.items.map((item: any) => (
-                    <li>
-                      <a href={item.url} target="_blank" rel="noopener noreferrer">{item.name}</a>
-                    </li>
-                  ))}
-                </ol>
-              </div>
+            
+            {places.map((category: any, index: number) => (
+              <>
+                <div class="recommendation-card">
+                    <a 
+                      href={`/${currentStateSlug}/${currentCitySlug}/best-${slugify(category.title)}`}
+                      style="text-decoration: none; color: inherit; display: block;"
+                    >
+                      <h2>
+                        <span class="emoji">{category.emoji}</span>
+                        {category.title}
+                      </h2>
+                    </a>
+                  <ol>
+                    {category.items.map((item: any) => (
+                      <li>
+                        <a href={item.url} target="_blank" rel="noopener noreferrer">{item.name}</a>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+
+                {/* Inject Travel Essentials Card after the 2nd item (index 1) */}
+                {index === 1 && (
+                    <TravelEssentialsCard />
+                )}
+              </>
             ))}
           </div>
 
@@ -281,6 +295,8 @@ const filteredSuggestions = allCitiesList
             helpfulEntry={HELPFUL_ENTRY_ID}
             feedbackEntry={FEEDBACK_ENTRY_ID}
           />
+
+          <TravelEssentialsPopup />
           
         </div>
       </>

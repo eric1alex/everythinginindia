@@ -1,0 +1,126 @@
+---
+// src/components/TravelEssentialsPopup.astro
+---
+
+<div id="travel-essentials-popup" class="travel-essentials-popup">
+    <button id="te-popup-close" class="te-popup-close" aria-label="Close"
+        >&times;</button
+    >
+    <a href="/travel-essentials" class="te-popup-link">
+        <span class="te-icon">🎒</span>
+        <span class="te-text">Get your travel essentials</span>
+    </a>
+</div>
+
+<style>
+    .travel-essentials-popup {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background: white;
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border: 1px solid #eee;
+        z-index: 9998;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+        pointer-events: none;
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .travel-essentials-popup.visible {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        pointer-events: all;
+    }
+
+    .travel-essentials-popup:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .te-popup-link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .te-icon {
+        font-size: 1.2rem;
+    }
+
+    .te-text {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        white-space: nowrap;
+    }
+
+    .te-popup-close {
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #666;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        padding: 0;
+        line-height: 1;
+    }
+
+    .te-popup-close:hover {
+        background: #f9f9f9;
+        color: #333;
+    }
+
+    @media (max-width: 640px) {
+        .travel-essentials-popup {
+            display: none !important;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const popup = document.getElementById("travel-essentials-popup");
+        const closeBtn = document.getElementById("te-popup-close");
+
+        if (!popup || !closeBtn) return;
+
+        const STORAGE_KEY = "travel-essentials-popup-closed";
+
+        // Check if already closed by user locally
+        if (localStorage.getItem(STORAGE_KEY)) {
+            return;
+        }
+
+        // Show after delay
+        setTimeout(() => {
+            popup.classList.add("visible");
+        }, 3000); // 3 seconds delay
+
+        // Close logic
+        closeBtn.addEventListener("click", (e) => {
+            e.stopPropagation(); // Prevent ensuring link click
+            popup.classList.remove("visible");
+
+            // Remember choice
+            localStorage.setItem(STORAGE_KEY, "true");
+        });
+    });
+</script>
