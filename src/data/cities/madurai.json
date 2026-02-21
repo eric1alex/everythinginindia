@@ -1,0 +1,156 @@
+[
+  {
+    "title": "Temples",
+    "emoji": "🛕",
+    "items": [
+      {
+        "name": "Meenakshi Amman Temple",
+        "url": "https://maps.google.com/?cid=17380624738172823299"
+      },
+      {
+        "name": "Arulmigu Kallazhagar Sundararaja Perumal Kovil",
+        "url": "https://maps.google.com/?cid=10218934888388933646"
+      },
+      {
+        "name": "Arulmigu Subramaniya Swami Temple, Tirupparankundram",
+        "url": "https://maps.google.com/?cid=7543514924574473242"
+      },
+      {
+        "name": "Arulmigu Koodal Azhagar Temple",
+        "url": "https://maps.google.com/?cid=16931267507532662886"
+      },
+      {
+        "name": "Arulmigu Solaimalai Murugan Temple, Pazhamudircholai",
+        "url": "https://maps.google.com/?cid=5121033835119461843"
+      },
+      {
+        "name": "Arulmigu Sri Pandi Muneeswaran Temple",
+        "url": "https://maps.google.com/?cid=8229176296366986851"
+      },
+      {
+        "name": "Vandiyur Maariamman Kovil Theppakulam -Madurai",
+        "url": "https://maps.google.com/?cid=11984740493054768631"
+      },
+      {
+        "name": "Arulmigu Immaiyilum Nanmai Tharuvar Temple",
+        "url": "https://maps.google.com/?cid=18274274519180268052"
+      }
+    ]
+  },
+  {
+    "title": "Palaces",
+    "emoji": "🏰",
+    "items": [
+      {
+        "name": "Thirumalai Nayakkar Mahal",
+        "url": "https://maps.google.com/?cid=15004226044750678793"
+      }
+    ]
+  },
+  {
+    "title": "Museums",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Gandhi Memorial Museum",
+        "url": "https://maps.google.com/?cid=4358614634329961351"
+      },
+      {
+        "name": "World Thamizh Sangam",
+        "url": "https://maps.google.com/?cid=5786790545681079798"
+      },
+      {
+        "name": "Keeladi Museum",
+        "url": "https://maps.google.com/?cid=18382588695525877707"
+      },
+      {
+        "name": "Thirumalai Nayakkar Mahal",
+        "url": "https://maps.google.com/?cid=15004226044750678793"
+      },
+      {
+        "name": "Govt. Museum Madurai",
+        "url": "https://maps.google.com/?cid=14135761706067871857"
+      },
+      {
+        "name": "Archaeological Museum",
+        "url": "https://maps.google.com/?cid=727493432987063488"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🍴",
+    "items": [
+      {
+        "name": "Zaitoon Restaurant, Madurai",
+        "url": "https://maps.google.com/?cid=17369544775766729280"
+      },
+      {
+        "name": "Sree Sabarees",
+        "url": "https://maps.google.com/?cid=15728314792430938885"
+      },
+      {
+        "name": "Kumar Mess- Non-veg Restaurant",
+        "url": "https://maps.google.com/?cid=16217077461446101735"
+      },
+      {
+        "name": "Gowri Parvathi Bhavan, Madurai",
+        "url": "https://maps.google.com/?cid=17664377616684437907"
+      },
+      {
+        "name": "Raaha Restaurant & Grill",
+        "url": "https://maps.google.com/?cid=12122686450506298545"
+      },
+      {
+        "name": "BHAGAWATI MOHANS BHOJANALAYA (FORMER - SREE MOHAN BHOJANALAYA )(NORTH INDIAN RESTAURANT) (PURE VEG)",
+        "url": "https://maps.google.com/?cid=11578715344016921437"
+      },
+      {
+        "name": "Heaven's park Arabian Multi Cuisine Restaurant Madurai",
+        "url": "https://maps.google.com/?cid=9314360197547108811"
+      },
+      {
+        "name": "Amma Mess",
+        "url": "https://maps.google.com/?cid=11131332166404201687"
+      }
+    ]
+  },
+  {
+    "title": "Cafes",
+    "emoji": "☕",
+    "items": [
+      {
+        "name": "LeDa cafe",
+        "url": "https://maps.google.com/?cid=8580010859331445206"
+      },
+      {
+        "name": "Hotcups | Coffee & Tea Delivery in Madurai",
+        "url": "https://maps.google.com/?cid=7043192451597488954"
+      },
+      {
+        "name": "Le Brew Cafe",
+        "url": "https://maps.google.com/?cid=9939168505335116791"
+      },
+      {
+        "name": "Thank U Bakery & Cafe - Moondrumavadi, Madurai",
+        "url": "https://maps.google.com/?cid=1346680626708973629"
+      },
+      {
+        "name": "Mug & Beans Cafe",
+        "url": "https://maps.google.com/?cid=18245717529563924204"
+      },
+      {
+        "name": "Caffé 11:11",
+        "url": "https://maps.google.com/?cid=8313301102122362269"
+      },
+      {
+        "name": "LARA COFFEE AND CREAMERY",
+        "url": "https://maps.google.com/?cid=15271547807518674651"
+      },
+      {
+        "name": "Namma Cafe Lounge",
+        "url": "https://maps.google.com/?cid=10737910399623802031"
+      }
+    ]
+  }
+]
