@@ -150,6 +150,30 @@
               "road": ""
             }
           }
+        },
+        {
+          "name": "Udupi",
+          "slug": "udupi",
+          "imageUrl": "https://images.unsplash.com/photo-1664266377437-b280eae37573?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "lat": 13.3318888,
+          "lon": 74.705809413,
+          "dashboard": {
+            "bestTime": "October to March",
+            "bestTimeDescription": "Pleasant, cool, and dry weather ideal for sightseeing, beach activities, and festivals like Diwali and Janmashtami.",
+            "idealDuration": "2-4 Days",
+            "budget": {
+              "min": "2,000",
+              "max": "4,500",
+              "currency": "INR"
+            },
+            "transport": "Auto-rickshaws, KSRTC/Private Buses, and Uber.",
+            "howToReach": {
+              "air": "Mangalore International Airport (IXE)",
+              "train": "Udupi Railway Station (UD)",
+              "road": ""
+            }
+          },
+          "mapUrl": "https://maps.app.goo.gl/NXbdhjdGmkk3Fsvp8"
         }
       ]
     },
@@ -377,6 +401,30 @@
           "imageUrl": "https://images.unsplash.com/photo-1593692867948-bb6ba7c03fd1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1384",
           "lat": 10.2360925,
           "lon": 77.4777206
+        },
+        {
+          "name": "Madurai",
+          "slug": "madurai",
+          "imageUrl": "https://images.unsplash.com/photo-1692173248120-59547c3d4653?q=80&w=801&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "lat": 9.9179959,
+          "lon": 78.0404204,
+          "dashboard": {
+            "bestTime": "October to March",
+            "bestTimeDescription": "Pleasant weather (20-30°C) ideal for temple tours; coincides with Pongal and the Float Festival.\n\n",
+            "idealDuration": "2-3 Days",
+            "budget": {
+              "min": "1,500 ",
+              "max": "5,000",
+              "currency": "INR"
+            },
+            "transport": "City buses, Auto-rickshaws, Ola/Uber,",
+            "howToReach": {
+              "air": "Madurai International Airport (IXM)",
+              "train": "Madurai Junction (MDU)",
+              "road": ""
+            }
+          },
+          "mapUrl": "https://maps.app.goo.gl/gNw3jLGPNbVwPd8CA"
         },
         {
           "name": "Ooty",
