@@ -1,0 +1,140 @@
+[
+  {
+    "title": "Beaches",
+    "emoji": "🏖️",
+    "items": [
+      {
+        "name": "Malpe Beach",
+        "url": "https://maps.google.com/?cid=8961526923656935874"
+      },
+      {
+        "name": "Kapu Beach",
+        "url": "https://maps.google.com/?cid=17718841988038467272"
+      },
+      {
+        "name": "Mattu Beach",
+        "url": "https://maps.google.com/?cid=13611897156392848098"
+      },
+      {
+        "name": "Blue flag beach Padubidri",
+        "url": "https://maps.google.com/?cid=7091701880477960322"
+      },
+      {
+        "name": "Bengre Beach",
+        "url": "https://maps.google.com/?cid=6779140508352302492"
+      },
+      {
+        "name": "Kodi Beach",
+        "url": "https://maps.google.com/?cid=10727227326761438415"
+      },
+      {
+        "name": "St.Mary's Island",
+        "url": "https://maps.google.com/?cid=13216583717392187678"
+      }
+    ]
+  },
+  {
+    "title": "Restaurants",
+    "emoji": "🍴",
+    "items": [
+      {
+        "name": "Woodlands Restaurant",
+        "url": "https://maps.google.com/?cid=8377971743421883162"
+      },
+      {
+        "name": "Udupi Rasoi ( Ranjitha Palace )",
+        "url": "https://maps.google.com/?cid=1412956485109031074"
+      },
+      {
+        "name": "MTR",
+        "url": "https://maps.google.com/?cid=14464350242035662183"
+      },
+      {
+        "name": "Hotel Sri Krishna - Pure Veg",
+        "url": "https://maps.google.com/?cid=15454757351470552216"
+      },
+      {
+        "name": "NEW SHANTHI SAGAR",
+        "url": "https://maps.google.com/?cid=12735294453312743811"
+      },
+      {
+        "name": "Thimmappa Fish Hotel",
+        "url": "https://maps.google.com/?cid=12946044338494380666"
+      },
+      {
+        "name": "Machali Udupi",
+        "url": "https://maps.google.com/?cid=10867398148937963394"
+      },
+      {
+        "name": "Gokul Krishna Veg Restaurant",
+        "url": "https://maps.google.com/?cid=2507069465986584882"
+      }
+    ]
+  },
+  {
+    "title": "Islands",
+    "emoji": "🏝️",
+    "items": [
+      {
+        "name": "St. Mary's Islands",
+        "url": "https://maps.google.com/?cid=13216583717392187678"
+      }
+    ]
+  },
+  {
+    "title": "Museums",
+    "emoji": "🏛️",
+    "items": [
+      {
+        "name": "Corporation Bank Heritage Museum (Coin Museum) Udpi",
+        "url": "https://maps.google.com/?cid=18371533536517008579"
+      },
+      {
+        "name": "Hasta Shilpa Heritage Village Museum",
+        "url": "https://maps.google.com/?cid=10838550750240505863"
+      },
+      {
+        "name": "Manipal Museum of Anatomy & Pathology",
+        "url": "https://maps.google.com/?cid=11392386766433443534"
+      },
+      {
+        "name": "Smriti Bhavan Museum",
+        "url": "https://maps.google.com/?cid=5546547457574795765"
+      },
+      {
+        "name": "Saraswati sadana",
+        "url": "https://maps.google.com/?cid=14579757745882180016"
+      }
+    ]
+  },
+  {
+    "title": "Lighthouses",
+    "emoji": "🗼",
+    "items": [
+      {
+        "name": "Kaup Light House",
+        "url": "https://maps.google.com/?cid=8814715026701564525"
+      },
+      {
+        "name": "Kodi Lighthouse",
+        "url": "https://maps.google.com/?cid=5589477620802579656"
+      },
+      {
+        "name": "Malpe Light House, Navy Operated",
+        "url": "https://maps.google.com/?cid=14509662702572471641"
+      },
+      {
+        "name": "Bhatkal Lighthouse",
+        "url": "https://maps.google.com/?cid=8059088645471800783"
+      },
+      {
+        "name": "Light House Gangolli",
+        "url": "https://maps.google.com/?cid=13935456472992453962"
+      },
+      {
+        "name": "Surathkal Lighthouse Beach",
+        "url": "https://maps.google.com/?cid=8190577181219816698"
+      }
+    ]
+  }
+]
